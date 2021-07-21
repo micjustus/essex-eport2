@@ -1,0 +1,70 @@
+.accordion__item {
+  -webkit-transition: box-shadow 300ms ease;
+  transition: box-shadow 300ms ease;
+}
+.accordion-header:hover {
+  background-color:hsl(208, 61%, 76%);
+}
+.accordion-header[aria-expanded="true"].active {
+  border: 1px solid hsla(297, 49%, 75%, 0.5);
+  background-color: rgba(235, 235, 235, 0.6);
+}
+.accordion-header[aria-expanded="false"].active {
+  border: 1px solid hsla(297, 49%, 75%, 0.1);
+  background-color: #bf54c50d;
+}
+.accordion-body {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: initial;
+  font-weight: initial;
+}
+section.accordion-body{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.accordion-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8px;
+  user-select: none;
+  cursor: pointer;
+  background-color: rgb(26, 70, 109);
+  transition: background-color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.accordion-header.active {
+  font-weight: 500;
+}
+.accordion-header.expander:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+  content: "\f077";
+  color: hsl(346, 89%, 53%);
+  float: right;
+  position: relative;
+  display: block;
+  top: 2px;
+  transition: 0.3s all cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  transform: rotate(-0deg);
+  opacity: 100;
+}
+.accordion-header[aria-expanded="true"].expander::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 16px;
+  content: "\f077";
+  color: hsl(354, 81%, 73%);
+  float: right;
+  position: relative;
+  display: block;
+  top: 2px;
+  transition: 0.3s all cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  transform: rotate(-180deg);
+  opacity: 100;
+}

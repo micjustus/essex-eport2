@@ -1,0 +1,7 @@
+{
+    "dependencies": {
+        "define": "^1.0.1",
+        "lit": "^2.0.0-rc.2",
+        "requirejs": "^2.3.6"
+    }
+}

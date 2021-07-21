@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html lang="en-UK">
+
+<head>
+    <title>Launching into Computer Science</title>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet"
+          href="/assets/css/main.css" />
+    <link rel="stylesheet"
+          href="/assets/css/secondary.css" />
+    <link rel="stylesheet"
+          href="/assets/css/media.css" />
+    <link rel="stylesheet"
+          href="/assets/css/accordion.css" />
+
+
+</head>
+
+<body class="homepage is-preload">
+
+    <module-header pageTitle="Michael Justus"
+                   animation="true"></module-header>
+
+    <div>
+        <!-- Main -->
+        <section id="main">
+            <section>
+                <module-info moduleId="1"></module-info>
+            </section>
+
+            <section class="row left">
+                <menu-sidebar id="sidebar"
+                              class="sidebar units-block col-2"
+                              content-area="unit-content"
+                              content-template="unit-info-template-1"></menu-sidebar>
+                <div class="unit-content-outer col-10 gradient-background">
+                    <div class="unit-content"
+                         id="unit-content">
+                         <unit-card-empty></unit-card-empty>
+                        </div>
+                </div>
+
+    </div>
+    <section></section>
+    </section>
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <header>
+                <h2>Contact</h2>
+            </header>
+
+            <div class="row col-12 left ">
+                <section>
+                    <div class="row col-gap-3">
+                        <div>
+
+                            <h3>Address</h3>
+                            <p>
+                                Newbury<br />
+                                United Kingdom
+                            </p>
+                        </div>
+                        <div>
+
+                            <h3>Mail</h3>
+                            <p><a href="#">micjustus@gmail.com</a></p>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(800) 000-0000</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="col-12">
+                    <!-- Copyright -->
+                    <div id="copyright">
+                        <ul class="links">
+                            <li>&copy; Michael Justus. All rights reserved.</li>
+                            <li>Design adapted from: <a href="http://html5up.net">HTML5 UP</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/jquery.dropotron.min.js"></script>
+    <script src="/assets/js/browser.min.js"></script>
+    <script src="/assets/js/breakpoints.min.js"></script>
+    <script src="/assets/js/util.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/posts.js"></script>
+    <script src="/assets/js/doc.js"></script>
+
+    <script type="module"
+            src="/assets/js/comps/sidebar.js"></script>
+
+    <script type="module"
+            src="/assets/js/comps/module-info.js"></script>
+
+    <script type="module" src="/assets/js/comps/module-header.js"></script>
+    <script src="/assets/js/comps/module-header-animations.js"></script>
+
+    <script type="module"
+            src="/assets/js/comps/renderer-units-1.js"></script>
+
+    <script type="module">
+        import { module } from '/assets/js/modules1.js';
+
+        var sb = document.getElementById("sidebar");
+        if (sb) {
+            sb.items = module.units;
+        }
+    </script>
+</body>
+
+</html>
