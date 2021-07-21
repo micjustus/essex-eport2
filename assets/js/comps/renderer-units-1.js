@@ -53,7 +53,7 @@ function buildActivities(content) {
       <section class="left nowrap card" onclick='loadPdf("${content.title} - Launching", "${content.writing}")'>
         <h4>Reflective Writing</h4>
         <p>
-          Thoughts, findings or additional reserch related to <strong>${content.title}</strong>.
+          Thoughts, findings or additional research related to <strong>${content.title}</strong>.
         </p>
         <div class="click-more">
           <p><em>Click to read more</em></p>

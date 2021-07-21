@@ -335,6 +335,12 @@ export const module = {
       },
       activities: [
       
+        {
+          title: "Collaborative Discussion - Responses",
+          description: "Continue to engage fellow students in the discussion about alternates to SQL databases.",
+          href: "../assets/artefacts/Reflections-M2-U9-Discussions_Responses.pdf",
+          ref: "pdf"
+        }
       ],
     },
 
