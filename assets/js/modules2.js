@@ -41,6 +41,7 @@ export const module = {
           ref: "pdf",
           href: "../assets/artefacts/Reflections-M2-U1-Initial_Post.pdf",
         },
+
         {
           ref: "pdf",
           title: "Seminar 1 Preparation",
@@ -59,7 +60,6 @@ export const module = {
         "Evaluate a range of issues and appropriate solutions or mitigations.",
       ],
       writing:
-        // "https://docs.google.com/document/d/e/2PACX-1vRms_xQ9HNJJ3auWwZ5cuRLxjqwg6H-91IVFF62LTRTwI7abODBwZo_nsSyXfGngMMazEFwY3rzyAu_/pub?embedded=true",
         "../assets/artefacts/Reflections-M2-U2.pdf",
       activities: [
         {
@@ -69,7 +69,6 @@ export const module = {
           ref: "pdf",
           month: "May",
           day: 11,
-          // href: "https://docs.google.com/document/d/e/2PACX-1vQ6sMs36WZZgqc8ly-Oi3CwTccpVN73FSXgJDt1ZG6RFF6fvj4JOQjvJa2KqA9wDB57WNvYzjGxMOxL/pub?embedded=true"
           href: "../assets/artefacts/Reflections-M2-U1-Seminar1_Preparation.pdf",
         },
       ],
@@ -91,28 +90,27 @@ export const module = {
         "Correctly apply composition and inheritance where appropriate.",
       ],
       writing:
-        // "https://docs.google.com/document/d/e/2PACX-1vTL8mLFC19cPpHEI21-MgTEzjAlXHvfwmXM8v0ojC4c5P-K9s0_K4PPF3csN-VCeDA3PlWtPD-I7dw0/pub?embedded=true",
         "../assets/artefacts/Reflections-M2-U3.pdf",
       activities: [
         {
-          title: "Discussion Post Summary",
+          title: "Discussion Forum - Summary",
           description:
             "Identify an instance of a failure with an information system, with a focus on the reasons for the failure.",
           ref: "pdf",
-          // href: "/assets/activity-m2u3.html",
-
           href: "../assets/artefacts/Reflections-M2-U3-Summary_Post.pdf",
         },
+
         {
           title: "Practical Activity",
           description:
             "This activity for this unit involves putting your object-oriented design skills into practice. Create an object model to represent a supermarket.",
-          // href: "/assets/activity-m2u3-2.html",
           ref: "pdf",
           href: "../assets/artefacts/Reflections-M2-U3_Practical.pdf",
           postClass: "image-only",
         },
+
         {
+
           title: "Seminar 2 - Preparation",
           description:
             "Python Programming that covers classes and objects, class functions and methods and inheritance.",
@@ -132,7 +130,6 @@ export const module = {
         "Develop object-oriented software using the Python programming languages.",
       ],
       writing:
-        // "https://docs.google.com/document/d/e/2PACX-1vRM4FWo0EuDuQkR-5cCX--iBe7C94gUBE-4S469qdLuEPC_n13zGYs_ofw8tQRaH1hbzzqnjmTx7n74/pub?embedded=true",
         "../assets/artefacts/Reflections-M2-U4.pdf",
       activities: [
         {
@@ -140,6 +137,7 @@ export const module = {
           description:
             "Use the Codio environment to conduct Python programming for classes and objects, class functions and methods and inheritance.",
         },
+
         {
           display: "date",
           month: "May",
@@ -166,7 +164,6 @@ export const module = {
         "Identify and use the correct elements of UML to design a system.",
       ],
       writing:
-        // "https://docs.google.com/document/d/e/2PACX-1vQLSmYMvm1q3HpZ22CaWU2oiBrQoDiTFi9HUDYPt12OdR_2EhMAdMlOyztAzeKESfQZCUM8BgqAek_d/pub?embedded=true",
         "../assets/artefacts/Reflections-M2-U5.pdf",
       reading: {
         required: [
@@ -196,7 +193,6 @@ export const module = {
         "Develop a set of UML documentation for a specific scenario",
       ],
       writing:
-        // "https://docs.google.com/document/d/e/2PACX-1vQLSmYMvm1q3HpZ22CaWU2oiBrQoDiTFi9HUDYPt12OdR_2EhMAdMlOyztAzeKESfQZCUM8BgqAek_d/pub?embedded=true",
         "../assets/artefacts/Reflections-M2-U6.pdf",
       reading: {
         required: [
@@ -230,7 +226,6 @@ export const module = {
         "Design a database that has been correctly normalised"
       ],
       writing:
-        // "https://docs.google.com/document/d/e/2PACX-1vQLSmYMvm1q3HpZ22CaWU2oiBrQoDiTFi9HUDYPt12OdR_2EhMAdMlOyztAzeKESfQZCUM8BgqAek_d/pub?embedded=true",
         "../assets/artefacts/Reflections-M2-U7.pdf",
       reading: {
         required: [
@@ -278,17 +273,7 @@ export const module = {
         ],
       },
       activities: [
-        {
-          title: "Seminar 3 Preparation - Database Design",
-          display: "date",
-          month: "May",
-          day: 10,
-          description:
-            "Consider a worked example of database design from beginning to end and construct an ERD.",
-          href: "../assets/artefacts/Reflections-M2-U8-Seminar4.pdf",
-          ref: "pdf"
-        },
-
+       
         {
           title: "Collaborative Discussion - Alternatives to SQL",
           description:
@@ -303,7 +288,26 @@ export const module = {
             "Continue the discussion concerning alternatives to traditional relational database systems.",
             href: "../assets/artefacts/Reflections-M2-U8-Discussions.pdf",
             ref: "pdf"
-        }
+        },
+
+        {
+          title: "Database Design",
+          description: "Produce an entity relationship diagram based on the mid-module assigment submitted in unit 7.",
+          href: "../assets/artefacts/Reflections-M2-U8_Practical.pdf",
+          ref: "pdf"
+        },
+
+        {
+          title: "Seminar 4 Preparation - Database Design",
+          display: "date",
+          month: "Jun",
+          day: 24,
+          description:
+            "Consider a worked example of database design from beginning to end and construct an ERD.",
+          href: "../assets/artefacts/Reflections-M2-U8-Seminar4.pdf",
+          ref: "pdf"
+        },
+
       ],
     },
 
@@ -354,6 +358,14 @@ export const module = {
       },
       activities: [
         {
+          title: "Codio Exercises - MySQL",
+          description:
+            "Continue coding exercises to gain experience with MySQL.",
+          href: "../assets/artefacts/Reflections-M2-U10-Practical.pdf",
+          ref: "pdf"
+        },
+
+        {
           title: "Seminar 5 Preparation - System Implementation Discussion",
           display: "date",
           month: "Jul",
@@ -362,15 +374,7 @@ export const module = {
             "Consider an example of creating a system based on a design document.",
           href: "../assets/artefacts/Reflections-M2-U10-Seminar5.pdf",
           ref: "pdf"
-        },
-
-        {
-          title: "Codio Exercies - MySQL",
-          description:
-            "Continue coding exercises to gain experience with MySQL.",
-          href: "../assets/artefacts/Reflections-M2-U10-Practical.pdf",
-          ref: "pdf"
-        },
+        }
       ],
     },
 
@@ -427,9 +431,11 @@ export const module = {
         ],
       },
       activities: [
-        {
-        
-        },
+          {
+            title: "Blog Post - Emerging Trends in Information Systems",
+            description: "Consideration given to emerging technology and its implications",
+            href: "../assets/artefacts/Reflections-M2-U12-Practical.pdf",
+          }
       ],
     },
   ],
