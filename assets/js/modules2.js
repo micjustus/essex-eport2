@@ -252,7 +252,8 @@ export const module = {
         {
           title: "Mid-Module Assignment: Feedback",
           description: "Tutor feedback of submitted work",
-          href: "../assets/artefacts/M2_Mid-module_Assignment_Feedback.pdf"
+          href: "../assets/artefacts/M2_Mid-module_Assignment_Feedback.pdf",
+          ref: "pdf"
         }
       ],
     },
@@ -406,7 +407,7 @@ export const module = {
 
     {
       title: "Unit 12",
-      description: "Hands-on with UML",
+      description: "The Future of Information Systems",
       outcomes: [
         "Consider the importance of securing information systems.",
         "Explore the privacy concerns associated with modern information systems.",
