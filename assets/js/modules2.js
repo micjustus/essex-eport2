@@ -221,5 +221,215 @@ export const module = {
         },
       ],
     },
+
+    {
+      title: "Unit 7",
+      description: "Database Design",
+      outcomes: [
+        "Develop knowledge and skills to apply database design principles",
+        "Design a database that has been correctly normalised"
+      ],
+      writing:
+        // "https://docs.google.com/document/d/e/2PACX-1vQLSmYMvm1q3HpZ22CaWU2oiBrQoDiTFi9HUDYPt12OdR_2EhMAdMlOyztAzeKESfQZCUM8BgqAek_d/pub?embedded=true",
+        "../assets/artefacts/Reflections-M2-U7.pdf",
+      reading: {
+        required: [
+          "Connolly, T. & Beg, C. (2015) Database Systems: A Practical Approach to Design, Implementation, and Management. Global Edition. Edinburgh: Pearson. Chapters 1, 4 & 14.",
+        ],
+        optional: [
+          "Kroenke, D. (2015) Database processing : fundamentals, design, and implementation. Upper Saddle River: Pearson. Chapters 1, 3, 4",
+        ],
+      },
+      activities: [
+        {
+          title: "Mid-Module Assignment: System Design",
+          description:
+            "Develop a class diagram, activity and state diagram for a given scenario describing online shopping.",
+          href: "../assets/artefacts/M2_Mid-module_Assignment.pdf",
+          ref: "pdf"
+        },
+
+        {
+          title: "Mid-Module Assignment: Feedback",
+          description: "Tutor feedback of submitted work",
+          href: "../assets/artefacts/M2_Mid-module_Assignment_Feedback.pdf"
+        }
+      ],
+    },
+
+    {
+      title: "Unit 8",
+      description: "Hands-on with Database Design",
+      outcomes: [
+        "Develop a structure for a database for a given scenario.",
+        "Create an entity relationship diagram to document your design.",
+      ],
+      writing:
+        "../assets/artefacts/Reflections-M2-U8.pdf",
+      reading: {
+        required: [
+          "Connolly, T. & Beg, C. (2015) Database Systems: A Practical Approach to Design, Implementation, and Management. Global Edition. Edinburgh: Pearson. Chapters 12, 13.",
+          "Lucidchart (2017) What is an Entity Relationship Diagram?",
+        ],
+        optional: [
+          "Kroenke, D. (2015) Database processing : fundamentals, design, and implementation. Upper Saddle River: Pearson. Chapter 5.",
+          "Creately (2020) Ultimate Entity Relationship Diagram Tutorial"
+        ],
+      },
+      activities: [
+        {
+          title: "Seminar 3 Preparation - Database Design",
+          display: "date",
+          month: "May",
+          day: 10,
+          description:
+            "Consider a worked example of database design from beginning to end and construct an ERD.",
+          href: "../assets/artefacts/Reflections-M2-U8-Seminar4.pdf",
+          ref: "pdf"
+        },
+
+        {
+          title: "Collaborative Discussion - Alternatives to SQL",
+          description:
+            "Consider a worked example of database design from beginning to end and construct an ERD.",
+          href: "../assets/artefacts/Reflections-M2-U8-Initial_Post.pdf",
+          ref: "pdf"
+        },
+
+        {
+          title: "Collaborative Discussion - Reponses",
+          description:
+            "Continue the discussion concerning alternatives to traditional relational database systems.",
+            href: "../assets/artefacts/Reflections-M2-U8-Discussions.pdf",
+            ref: "pdf"
+        }
+      ],
+    },
+
+    {
+      title: "Unit 9",
+      description: "Implementing Databases with SQL",
+      outcomes: [
+        "Implement a database design using SQL.",
+        "Create appropriate queries using SQL.",
+        "Understand the access and security issues around SQL."
+      ],
+      writing:
+        "../assets/artefacts/Reflections-M2-U9.pdf",
+      reading: {
+        required: [
+          "Han J., Haihong E., Guan L. & Jian D. (2011) 'Survey on NoSQL database'. 2011 6th International Conference on Pervasive Computing and Applications. Port Elizabeth, South Africa, 26-28 October. IEEE. 363-366. doi: 10.1109/ICPCA.2011.6106531.",
+          "MySQL Training (2020) MySQL 8.0 Reference Manual"
+        ],
+        optional: [
+          "Sharma, V. & Dave, M. (2012) SQL and NoSQL Databases. International Journal of Advanced Research in Computer Science and Software Engineering 2(8): 20-27.",
+          "IBM Big Data & Analytics Hub (2018) The Four V's of Big Data",
+          "Be a Better Dev (2020) SQL vs NoSQL Explained",
+          "Stajano, F. (1998) A gentle introduction to relational and object oriented databases. ORL Technical Report."
+        ],
+      },
+      activities: [
+      
+      ],
+    },
+
+    {
+      title: "Unit 10",
+      description: "Working with SQL",
+      outcomes: [
+        "Implement a table structure based on a specification.",
+        "Perform simple queries in order to extract information.",
+        "Develop queries requiring multiple tables using either subqueries or joins."
+      ],
+      writing:
+        "../assets/artefacts/Reflections-M2-U10.pdf",
+      reading: {
+        required: [
+          "Connolly, T. & Beg, C. (2015) Database Systems: A Practical Approach to Design, Implementation, and Management. Global Edition. Edinburgh: Pearson. Chapters 6, 7, 8",
+        ],
+        optional: [
+          "Bruegge, B. (2014) Object-oriented software engineering : using UML, patterns, and Java. Harlow: Pearson Chapter 2",
+        ],
+      },
+      activities: [
+        {
+          title: "Seminar 5 Preparation - System Implementation Discussion",
+          display: "date",
+          month: "Jul",
+          day: 9,
+          description:
+            "Consider an example of creating a system based on a design document.",
+          href: "../assets/artefacts/Reflections-M2-U10-Seminar5.pdf",
+          ref: "pdf"
+        },
+
+        {
+          title: "Codio Exercies - MySQL",
+          description:
+            "Continue coding exercises to gain experience with MySQL.",
+          href: "../assets/artefacts/Reflections-M2-U10-Practical.pdf",
+          ref: "pdf"
+        },
+      ],
+    },
+
+    {
+      title: "Unit 11",
+      description: "Web Development in Python",
+      outcomes: [
+        "Implement a simple web server.",
+        "Create dynamic templates using Jinja.",
+        "Connect a database to a Flask application.",
+        "Understand some of the security considerations around web applications."
+      ],
+      writing:
+        "../assets/artefacts/Reflections-M2-U11.pdf",
+      reading: {
+        required: [
+          "Ginberg, M. (2017) The Flask Mega Tutorial",
+          "Pallets Projects (2010) Flask Tutorial"
+        ],
+        optional: [
+          "RealPython (n.d.) Flask Tutorials"
+        ],
+      },
+      activities: [
+        {
+          title: "Codio - Introduction to Flask",
+          description:
+            "Learn to instantiate a simple web server and show data via a template.",
+          href: "../assets/artefacts/Reflections-M2-U11-Practical.pdf",
+          ref: "pdf"
+        },
+      ],
+    },
+
+    {
+      title: "Unit 12",
+      description: "Hands-on with UML",
+      outcomes: [
+        "Consider the importance of securing information systems.",
+        "Explore the privacy concerns associated with modern information systems.",
+        "Discuss the emerging technologies in information systems."       
+      ],
+      writing:
+        "../assets/artefacts/Reflections-M2-U12.pdf",
+      reading: {
+        required: [
+          "Valacich, J. & Schneider, C. (2014) Information Systems Today: Managing in the Digital World. 6th ed. Boston, MA: Pearson. Chapters 1, 10.",
+          "Bourgeois, D. (2014) Welcome to Information Systems for Business and Beyond. Saylor Academy., Chapters 11, 12, 13.",
+          "Jablonski, J. & Robak, S. (2019) 'Information Systems Development and Usage with Consideration of Privacy and Cyber Security Aspects', in: Ganzha, M., Maciaszek, L. & Paprzycki, M. (eds) Proceedings of the 2019 Federated Conference on Computer Science and Information Systems ACSIS. 18: 547–554. doi: 10.15439/2019F261.",
+          "Brooks, N., Greer, T. & Morris, S. (2018) Information systems security job advertisement analysis: Skills review and implications for information systems curriculum. Journal of Education for Business 93(5): 213–221. doi: 10.1080/08832323.2018.1446893."
+        ],
+        optional: [
+        
+        ],
+      },
+      activities: [
+        {
+        
+        },
+      ],
+    },
   ],
 };
