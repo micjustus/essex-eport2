@@ -367,7 +367,7 @@ export const module = {
           title: "Codio Exercises - MySQL",
           description:
             "Continue coding exercises to gain experience with MySQL.",
-          href: "../assets/artefacts/Reflections-M2-U10-Practical.pdf",
+          href: "../assets/artefacts/Reflections-M2-U10_Practical.pdf",
           ref: "pdf"
         },
 
@@ -378,7 +378,7 @@ export const module = {
           day: 9,
           description:
             "Consider an example of creating a system based on a design document.",
-          href: "../assets/artefacts/Reflections-M2-U10-Seminar5.pdf",
+          href: "../assets/artefacts/Reflections-M2-U10_Seminar5.pdf",
           ref: "pdf"
         }
       ],
