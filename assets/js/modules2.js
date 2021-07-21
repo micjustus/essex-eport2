@@ -18,7 +18,7 @@ export const module = {
       ],
       writing:
         // "https://docs.google.com/document/d/e/2PACX-1vSi3xebYOpKEfD2j074nWIXStcLGI1sVFxB8jLgLRQMEb_gTTZkT-x3W3eFz6DogDiLOnKwIR-oj_Kq/pub?embedded=true",
-        "/assets/artefacts/Reflections-M2-U1.pdf",
+        "../assets/artefacts/Reflections-M2-U1.pdf",
 
       reading: {
         required: [
@@ -39,7 +39,7 @@ export const module = {
             "Identify an instance of a failure with an information system, with a focus on the reasons for the failure.",
           // href: "/assets/activity-m2u1.html",
           ref: "pdf",
-          href: "/assets/artefacts/Reflections-M2-U1-Initial_Post.pdf",
+          href: "../assets/artefacts/Reflections-M2-U1-Initial_Post.pdf",
         },
         {
           ref: "pdf",
@@ -47,7 +47,7 @@ export const module = {
           description:
             "Prepare for seminar which focuses on the En Route Automation Modernization failure. <em>Please refer to Reflective Writing for additional information</em>",
           // href: "https://docs.google.com/document/d/e/2PACX-1vQ6sMs36WZZgqc8ly-Oi3CwTccpVN73FSXgJDt1ZG6RFF6fvj4JOQjvJa2KqA9wDB57WNvYzjGxMOxL/pub?embedded=true"
-          href: "/assets/artefacts/Reflections-M2-U1-Seminar1_Preparation.pdf",
+          href: "../assets/artefacts/Reflections-M2-U1-Seminar1_Preparation.pdf",
         },
       ],
     },
@@ -60,7 +60,7 @@ export const module = {
       ],
       writing:
         // "https://docs.google.com/document/d/e/2PACX-1vRms_xQ9HNJJ3auWwZ5cuRLxjqwg6H-91IVFF62LTRTwI7abODBwZo_nsSyXfGngMMazEFwY3rzyAu_/pub?embedded=true",
-        "/assets/artefacts/Reflections-M2-U2.pdf",
+        "../assets/artefacts/Reflections-M2-U2.pdf",
       activities: [
         {
           title: "Seminar 1 - En Route Automation Modernization (ERAM) System",
@@ -70,7 +70,7 @@ export const module = {
           month: "May",
           day: 11,
           // href: "https://docs.google.com/document/d/e/2PACX-1vQ6sMs36WZZgqc8ly-Oi3CwTccpVN73FSXgJDt1ZG6RFF6fvj4JOQjvJa2KqA9wDB57WNvYzjGxMOxL/pub?embedded=true"
-          href: "/assets/artefacts/Reflections-M2-U1-Seminar1_Preparation.pdf",
+          href: "../assets/artefacts/Reflections-M2-U1-Seminar1_Preparation.pdf",
         },
       ],
       reading: {
@@ -92,7 +92,7 @@ export const module = {
       ],
       writing:
         // "https://docs.google.com/document/d/e/2PACX-1vTL8mLFC19cPpHEI21-MgTEzjAlXHvfwmXM8v0ojC4c5P-K9s0_K4PPF3csN-VCeDA3PlWtPD-I7dw0/pub?embedded=true",
-        "/assets/artefacts/Reflections-M2-U3.pdf",
+        "../assets/artefacts/Reflections-M2-U3.pdf",
       activities: [
         {
           title: "Discussion Post Summary",
@@ -101,7 +101,7 @@ export const module = {
           ref: "pdf",
           // href: "/assets/activity-m2u3.html",
 
-          href: "/assets/artefacts/Reflections-M2-U3-Summary_Post.pdf",
+          href: "../assets/artefacts/Reflections-M2-U3-Summary_Post.pdf",
         },
         {
           title: "Practical Activity",
@@ -109,7 +109,7 @@ export const module = {
             "This activity for this unit involves putting your object-oriented design skills into practice. Create an object model to represent a supermarket.",
           // href: "/assets/activity-m2u3-2.html",
           ref: "pdf",
-          href: "/assets/artefacts/Reflections-M2-U3_Practical.pdf",
+          href: "../assets/artefacts/Reflections-M2-U3_Practical.pdf",
           postClass: "image-only",
         },
         {
@@ -133,7 +133,7 @@ export const module = {
       ],
       writing:
         // "https://docs.google.com/document/d/e/2PACX-1vRM4FWo0EuDuQkR-5cCX--iBe7C94gUBE-4S469qdLuEPC_n13zGYs_ofw8tQRaH1hbzzqnjmTx7n74/pub?embedded=true",
-        "/assets/artefacts/Reflections-M2-U4.pdf",
+        "../assets/artefacts/Reflections-M2-U4.pdf",
       activities: [
         {
           title: "Python Programming Exercises",
@@ -148,7 +148,7 @@ export const module = {
           description:
             "Classes and objects, class functions and methods and inheritance.",
           ref: "pdf",
-          href: "/assets/artefacts/Reflections-M2-U4-Seminar2.pdf",
+          href: "../assets/artefacts/Reflections-M2-U4-Seminar2.pdf",
         },
       ],
       reading: {
@@ -167,7 +167,7 @@ export const module = {
       ],
       writing:
         // "https://docs.google.com/document/d/e/2PACX-1vQLSmYMvm1q3HpZ22CaWU2oiBrQoDiTFi9HUDYPt12OdR_2EhMAdMlOyztAzeKESfQZCUM8BgqAek_d/pub?embedded=true",
-        "/assets/artefacts/Reflections-M2-U5.pdf",
+        "../assets/artefacts/Reflections-M2-U5.pdf",
       reading: {
         required: [
           "Fowler, M. (2013) UML Distilled: a brief guide to the standard object modeling language. 3rd ed. Boston, MA: Addison Wesley Chapters 3, 4, 10 & 11",
@@ -184,7 +184,7 @@ export const module = {
           description:
             "Extend object model from <strong>Unit 3</strong> into a UML class diagram.",
           ref: "pdf",
-          href: "/assets/artefacts/Reflections-M2-U5_Practical.pdf",
+          href: "../assets/artefacts/Reflections-M2-U5_Practical.pdf",
         }       
       ],
     },
@@ -197,7 +197,7 @@ export const module = {
       ],
       writing:
         // "https://docs.google.com/document/d/e/2PACX-1vQLSmYMvm1q3HpZ22CaWU2oiBrQoDiTFi9HUDYPt12OdR_2EhMAdMlOyztAzeKESfQZCUM8BgqAek_d/pub?embedded=true",
-        "/assets/artefacts/Reflections-M2-U6.pdf",
+        "../assets/artefacts/Reflections-M2-U6.pdf",
       reading: {
         required: [
           "Ambler, S. (2003) Elements of UML Style. Cambridge: Cambridge University Press Chapters 4, 6, 8 & 9",
@@ -216,7 +216,7 @@ export const module = {
           day: 10,
           description:
             "Develop a class diagram, sequence diagram and activity diagram for a given scenario.",
-          href: "/assets/artefacts/Reflections-M2-U6-Seminar3.pdf",
+          href: "../assets/artefacts/Reflections-M2-U6-Seminar3.pdf",
           ref: "pdf"
         },
       ],

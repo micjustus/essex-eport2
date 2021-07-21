@@ -28,7 +28,7 @@ export const module =
               title: "Discussion Forum",
               description:
                 "Review an IT organisation's Code of Conduct and reflect on <strong>areas of improvement</strong>, <strong>best practices</strong>, or <strong>incidents</strong>.",
-              href: "/assets/activity-m1u1.html",
+              href: "../assets/activity-m1u1.html",
             },
           ],
   
@@ -106,7 +106,7 @@ export const module =
               title: "Discussion Post Summary",
               description:
                 "Review an IT organisation's Code of Conduct and reflect on <strong>areas of improvement </strong>, <strong> best practices</strong>, or <strong>incidents</strong>.",
-              href: "/assets/activity-m1u3.html",
+              href: "../assets/activity-m1u3.html",
             },
             {
               title: "Explore AI tools developed by Google",
