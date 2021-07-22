@@ -42,7 +42,7 @@ export class ModuleInfo extends HTMLElement {
 
       if (mod.reflections){
         first = first + 
-        `<div class="card full-width no-aspect" onclick='loadPdf("Module Reflections", "${mod.reflections}")'>
+        `<div class="card active text-center full-width no-aspect" onclick='loadPdf("Module Reflections", "${mod.reflections}")'>
           <h4>Reflections about ${mod.title}</h4>
         </div>`
       }
