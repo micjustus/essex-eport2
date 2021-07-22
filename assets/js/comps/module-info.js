@@ -38,22 +38,19 @@ export class ModuleInfo extends HTMLElement {
             <h2>${mod.title}</h2>
             </header>
             <ul>${items}</ul>
-          </div>
-        </section>
         `;
 
-        var second = '';
       if (mod.reflections){
-        second = 
-        `<section class="nowrap card band-2 p-5">
-          <div class="centered mw-80ch" onclick='loadPdf("Module Reflections", "${mod.reflections}")'>
-            <h4>Reflections about ${mod.title}</h4>
-          </div>
-        </section>
-        `;
+        first = first + 
+        `<div class="card full-width no-aspect" onclick='loadPdf("Module Reflections", "${mod.reflections}")'>
+          <h4>Reflections about ${mod.title}</h4>
+        </div>`
       }
 
-      this.innerHTML = first + second;
+      first = first + 
+          `</div></section>`;
+
+      this.innerHTML = first;
   }
 }
 

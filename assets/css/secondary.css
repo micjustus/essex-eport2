@@ -539,6 +539,12 @@ ol{
 .centered{
   margin: 0 auto;
 }
+.full-width{
+  width: 100%;
+}
+.no-aspect{
+  aspect-ratio: revert;
+}
 figcaption{
   font-style: italic;
   font-size: 0.8em;
