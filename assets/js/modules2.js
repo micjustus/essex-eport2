@@ -7,6 +7,7 @@ export const module = {
     "Develop an object-oriented information system design, implementing this knowledge in applicable programming languages, such as Python and SQL.",
     "Develop, implement and evaluate critically information system solutions to facilitate business decisions.",
   ],
+  reflections: "../assets/artefacts/Reflections-M2.pdf",
   units: [
     {
       title: "Unit 1",

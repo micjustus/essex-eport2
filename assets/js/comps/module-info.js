@@ -31,17 +31,29 @@ export class ModuleInfo extends HTMLElement {
       })
       .join("");
 
-    this.innerHTML = ` 
-        <section class="band-1 p-5">
-     
+      var first = 
+        `<section class="band-1 p-5">
           <div class="centered content-width mw-80ch">
-          <header class="text-center">
-          <h2>${mod.title}</h2>
-</header>
-        <ul>${items}</ul>
-        </div>
+            <header class="text-center">
+            <h2>${mod.title}</h2>
+            </header>
+            <ul>${items}</ul>
+          </div>
         </section>
         `;
+
+        var second = '';
+      if (mod.reflections){
+        second = 
+        `<section class="nowrap card band-2 p-5">
+          <div class="centered mw-80ch" onclick='loadPdf("Module Reflections", "${mod.reflections}")'>
+            <h4>Reflections about ${mod.title}</h4>
+          </div>
+        </section>
+        `;
+      }
+
+      this.innerHTML = first + second;
   }
 }
 
