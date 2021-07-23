@@ -441,7 +441,7 @@ export const module = {
           {
             title: "Blog Post - Emerging Trends in Information Systems",
             description: "Consideration given to emerging technology and its implications",
-            href: "../assets/artefacts/Reflections-M2-U12-Practical.pdf",
+            href: "../assets/artefacts/Reflections-M2-U12-Blog_Post.pdf",
           }
       ],
     },
