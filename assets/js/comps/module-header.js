@@ -2,7 +2,7 @@
 
 class ModuleHeader extends HTMLElement {
   static get observedAttributes() {
-    return ["pageTitle", "animation"];
+    return ["pageTitle", "animation", "pageBase"];
   }
 
   constructor() {
@@ -14,10 +14,20 @@ class ModuleHeader extends HTMLElement {
       this.title = newValue;
     else if (name == "animation")
       this.animate = newValue;
+    else if (name == "pageBase")
+      this.base = newValue;
+  }
+
+  get base(){
+    return this.getAttribute("pageBase");
   }
 
   get title() {
     return this.getAttribute("pageTitle");
+  }
+
+  set base(value){
+    this.setAttribute("pageBase", value);
   }
 
   set title(value) {
@@ -38,11 +48,13 @@ class ModuleHeader extends HTMLElement {
       animation = 'onmouseenter="mouseenter();" onmouseleave="mouseleave()";';
     }
 
+    var path = this.base || './';
+
     this.innerHTML = `
             <section id="header" class="header" >
-                <a href="/index.html"><div class="header-back"></div></a>
+                <a href="${path}index.html"><div class="header-back"></div></a>
                
-               <h1 id="header-thing"><a data-hover="${this.title}" ${animation} href="/about.html">${this.title}</a></h1>
+               <h1 id="header-thing"><a data-hover="${this.title}" ${animation} href="${path}about.html">${this.title}</a></h1>
                 
             </section>
     `;
