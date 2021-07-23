@@ -40,9 +40,9 @@ class ModuleHeader extends HTMLElement {
 
     this.innerHTML = `
             <section id="header" class="header" >
-                <a href="../index.html"><div class="header-back"></div></a>
+                <a href="./index.html"><div class="header-back"></div></a>
                
-               <h1 id="header-thing"><a data-hover="${this.title}" ${animation} href="../about.html">${this.title}</a></h1>
+               <h1 id="header-thing"><a data-hover="${this.title}" ${animation} href="./about.html">${this.title}</a></h1>
                 
             </section>
     `;
