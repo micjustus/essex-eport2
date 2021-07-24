@@ -18,7 +18,6 @@ export const module = {
         "Gain an understanding of the SDLC, its phases and their importance.",
       ],
       writing:
-        // "https://docs.google.com/document/d/e/2PACX-1vSi3xebYOpKEfD2j074nWIXStcLGI1sVFxB8jLgLRQMEb_gTTZkT-x3W3eFz6DogDiLOnKwIR-oj_Kq/pub?embedded=true",
         "../assets/artefacts/Reflections-M2-U1.pdf",
 
       reading: {
@@ -40,7 +39,7 @@ export const module = {
             "Identify an instance of a failure with an information system, with a focus on the reasons for the failure.",
           // href: "/assets/activity-m2u1.html",
           ref: "pdf",
-          href: "../assets/artefacts/Reflections-M2-U1-Initial_Post.pdf",
+          href: "../assets/artefacts/Reflections-M2-U1_Initial_Post.pdf",
         },
 
         {
@@ -48,8 +47,7 @@ export const module = {
           title: "Seminar 1 Preparation",
           description:
             "Prepare for seminar which focuses on the En Route Automation Modernization failure. <em>Please refer to Reflective Writing for additional information</em>",
-          // href: "https://docs.google.com/document/d/e/2PACX-1vQ6sMs36WZZgqc8ly-Oi3CwTccpVN73FSXgJDt1ZG6RFF6fvj4JOQjvJa2KqA9wDB57WNvYzjGxMOxL/pub?embedded=true"
-          href: "../assets/artefacts/Reflections-M2-U1-Seminar1_Preparation.pdf",
+          href: "../assets/artefacts/Reflections-M2-U1_Seminar1_Preparation.pdf",
         },
       ],
     },
@@ -70,7 +68,7 @@ export const module = {
           ref: "pdf",
           month: "May",
           day: 11,
-          href: "../assets/artefacts/Reflections-M2-U1-Seminar1_Preparation.pdf",
+          href: "../assets/artefacts/Reflections-M2-U1_Seminar1_Preparation.pdf",
         },
       ],
       reading: {
@@ -98,7 +96,7 @@ export const module = {
           description:
             "Identify an instance of a failure with an information system, with a focus on the reasons for the failure.",
           ref: "pdf",
-          href: "../assets/artefacts/Reflections-M2-U3-Summary_Post.pdf",
+          href: "../assets/artefacts/Reflections-M2-U3_Summary_Post.pdf",
         },
 
         {
@@ -107,15 +105,8 @@ export const module = {
             "This activity for this unit involves putting your object-oriented design skills into practice. Create an object model to represent a supermarket.",
           ref: "pdf",
           href: "../assets/artefacts/Reflections-M2-U3_Practical.pdf",
-          postClass: "image-only",
-        },
+        }
 
-        {
-
-          title: "Seminar 2 - Preparation",
-          description:
-            "Python Programming that covers classes and objects, class functions and methods and inheritance.",
-        },
       ],
       reading: {
         required: [
@@ -133,13 +124,7 @@ export const module = {
       writing:
         "../assets/artefacts/Reflections-M2-U4.pdf",
       activities: [
-        {
-          title: "Python Programming Exercises",
-          description:
-            "Use the Codio environment to conduct Python programming for classes and objects, class functions and methods and inheritance.",
-        },
-
-        {
+       {
           display: "date",
           month: "May",
           day: 27,
@@ -147,7 +132,7 @@ export const module = {
           description:
             "Classes and objects, class functions and methods and inheritance.",
           ref: "pdf",
-          href: "../assets/artefacts/Reflections-M2-U4-Seminar2.pdf",
+          href: "../assets/artefacts/Reflections-M2-U4_Seminar2.pdf",
         },
       ],
       reading: {
@@ -158,7 +143,7 @@ export const module = {
     },
     {
       title: "Unit 5",
-      description: "Introduction to Unified Modelling Language (UML).",
+      description: "Introduction to Unified Modelling Language (UML)",
       outcomes: [
         "Use UML to develop an object-oriented system design.",
         "Develop a sequence diagram to model the interactions between objects.",
@@ -213,7 +198,7 @@ export const module = {
           day: 10,
           description:
             "Develop a class diagram, sequence diagram and activity diagram for a given scenario.",
-          href: "../assets/artefacts/Reflections-M2-U6-Seminar3.pdf",
+          href: "../assets/artefacts/Reflections-M2-U6_Seminar3.pdf",
           ref: "pdf"
         },
       ],
@@ -237,6 +222,14 @@ export const module = {
         ],
       },
       activities: [
+        {
+          title: "Formative Activity",
+          description:
+            "Normalise a set of tables from first to third normal form.",
+          ref: "pdf",
+          href: "../assets/artefacts/Reflections-M2-U7_Formative.pdf",
+        },
+
         {
           title: "Mid-Module Assignment: System Design",
           description:
@@ -279,7 +272,7 @@ export const module = {
           title: "Collaborative Discussion - Alternatives to SQL",
           description:
             "Consider a worked example of database design from beginning to end and construct an ERD.",
-          href: "../assets/artefacts/Reflections-M2-U8-Initial_Post.pdf",
+          href: "../assets/artefacts/Reflections-M2-U8_Initial_Post.pdf",
           ref: "pdf"
         },
 
@@ -287,7 +280,7 @@ export const module = {
           title: "Collaborative Discussion - Reponses",
           description:
             "Continue the discussion concerning alternatives to traditional relational database systems.",
-            href: "../assets/artefacts/Reflections-M2-U8-Discussions.pdf",
+            href: "../assets/artefacts/Reflections-M2-U8_Discussions.pdf",
             ref: "pdf"
         },
 
@@ -305,7 +298,7 @@ export const module = {
           day: 24,
           description:
             "Consider a worked example of database design from beginning to end and construct an ERD.",
-          href: "../assets/artefacts/Reflections-M2-U8-Seminar4.pdf",
+          href: "../assets/artefacts/Reflections-M2-U8_Seminar4.pdf",
           ref: "pdf"
         },
 
@@ -339,7 +332,7 @@ export const module = {
         {
           title: "Collaborative Discussion - Responses",
           description: "Continue to engage fellow students in the discussion about alternates to SQL databases.",
-          href: "../assets/artefacts/Reflections-M2-U9-Discussions_Responses.pdf",
+          href: "../assets/artefacts/Reflections-M2-U9_Discussions_Responses.pdf",
           ref: "pdf"
         }
       ],
@@ -441,7 +434,7 @@ export const module = {
           {
             title: "Blog Post - Emerging Trends in Information Systems",
             description: "Consideration given to emerging technology and its implications",
-            href: "../assets/artefacts/Reflections-M2-U12-Blog_Post.pdf",
+            href: "../assets/artefacts/Reflections-M2-U12_Blog_Post.pdf",
             ref: "pdf"
           }
       ],
