@@ -366,6 +366,14 @@ export const module = {
         },
 
         {
+          title: "Discussion Forum - Summary",
+          description:
+            "",
+          ref: "pdf",
+          href: "../assets/artefacts/Reflections-M2-U10_Summary_Post.pdf",
+        },
+
+        {
           title: "Seminar 5 Preparation - System Implementation Discussion",
           display: "date",
           month: "Jul",
