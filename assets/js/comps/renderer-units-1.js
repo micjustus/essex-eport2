@@ -33,15 +33,27 @@ function buildActivities(content) {
           clickLink = `onclick='loadDoc("${content.title} - Launching", "${element.href}")'`;
         else if (element.ref == "pdf")
           clickLink = `onclick='loadPdf("${content.title}", "${element.href}")'`;
+        else if (element.ref == "zip")
+          clickLink = '';
         else
           clickLink = `data-href='${element.href}' onclick="openPost(this, 'image-only')"`;
+      }
 
+      if (element.ref == "zip"){
         first = `
+          <div>
+            ${first}
+            <div class="click-more"><p><em>Click to download content</em></p></div>
+          </div>`;
+
+        return `<section class="left nowrap card"><a href="${element.href}" alt='' download="${element.fileName}">${first}</a></section>`;
+      }
+      
+      first = `
           <div>
             ${first}
             <div class="click-more"><p><em>Click to read more</em></p></div>
           </div>`;
-      }
 
       return `<section class="left nowrap card" ${clickLink}>${first}</section>`;
     })
@@ -109,7 +121,7 @@ function buildOutcomes(content) {
     return (
       `<section>
         <section>
-        <header class="outcomes">Module Outcomes</header>
+        <header class="outcomes">Unit Learning Outcomes</header>
         <ul class="left-align">` + 
          content.outcomes.map((element) => `<li>${element}</li>`).join("") +
         `</ul>
@@ -132,7 +144,7 @@ UnitCard.prototype.render = function (content, targetSite) {
   if (lastRenderElm) tgt.removeChild(lastRenderElm);
 
   var outcomes = buildOutcomes(content);
-  var writing = '';//buildWriting(content);
+  var writing = '';
   var reading = buildReading(content);
   var activities = buildActivities(content);
 

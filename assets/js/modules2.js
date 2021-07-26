@@ -7,7 +7,10 @@ export const module = {
     "Develop an object-oriented information system design, implementing this knowledge in applicable programming languages, such as Python and SQL.",
     "Develop, implement and evaluate critically information system solutions to facilitate business decisions.",
   ],
-  reflections: "../assets/artefacts/Reflections-M2.pdf",
+  reflections: "../assets/artefacts/Reflections-M2_OOIS.pdf",
+  project: "../assets/artefacts/Reflections-M2_OOIS_Project.pdf",
+  actionPlan: "../assets/artefacts/M2_Action_Plan.pdf",
+  skillsMatrix: "../assets/artefacts/M2_Skills_Matrix.pdf",
   units: [
     {
       title: "Unit 1",
@@ -231,17 +234,18 @@ export const module = {
         },
 
         {
-          title: "Mid-Module Assignment: System Design",
+          title: "Assignment: System Design",
           description:
             "Develop a class diagram, activity and state diagram for a given scenario describing online shopping.",
-          href: "../assets/artefacts/M2_Mid-module_Assignment.pdf",
-          ref: "pdf"
+          href: "../assets/artefacts/M2_Assignment_1.pdf",
+          ref: "pdf",
+          activity: "assignment"
         },
 
         {
-          title: "Mid-Module Assignment: Feedback",
+          title: "Assignment: Feedback",
           description: "Tutor feedback of submitted work",
-          href: "../assets/artefacts/M2_Mid-module_Assignment_Feedback.pdf",
+          href: "../assets/artefacts/M2_Assignment_1_Feedback.pdf",
           ref: "pdf"
         }
       ],
@@ -291,16 +295,16 @@ export const module = {
           ref: "pdf"
         },
 
-        {
-          title: "Seminar 4 Preparation - Database Design",
-          display: "date",
-          month: "Jun",
-          day: 24,
-          description:
-            "Consider a worked example of database design from beginning to end and construct an ERD.",
-          href: "../assets/artefacts/Reflections-M2-U8_Seminar4.pdf",
-          ref: "pdf"
-        },
+        // {
+        //   title: "Seminar 4 Preparation - Database Design",
+        //   display: "date",
+        //   month: "Jun",
+        //   day: 24,
+        //   description:
+        //     "Consider a worked example of database design from beginning to end and construct an ERD.",
+        //   href: "../assets/artefacts/Reflections-M2-U8_Seminar4.pdf",
+        //   ref: "pdf"
+        // },
 
       ],
     },
@@ -373,16 +377,16 @@ export const module = {
           href: "../assets/artefacts/Reflections-M2-U10_Summary_Post.pdf",
         },
 
-        {
-          title: "Seminar 5 Preparation - System Implementation Discussion",
-          display: "date",
-          month: "Jul",
-          day: 9,
-          description:
-            "Consider an example of creating a system based on a design document.",
-          href: "../assets/artefacts/Reflections-M2-U10_Seminar5.pdf",
-          ref: "pdf"
-        }
+        // {
+        //   title: "Seminar 5 Preparation - System Implementation Discussion",
+        //   display: "date",
+        //   month: "Jul",
+        //   day: 9,
+        //   description:
+        //     "Consider an example of creating a system based on a design document.",
+        //   href: "../assets/artefacts/Reflections-M2-U10_Seminar5.pdf",
+        //   ref: "pdf"
+        // }
       ],
     },
 
@@ -414,6 +418,24 @@ export const module = {
           href: "../assets/artefacts/Reflections-M2-U11_Practical.pdf",
           ref: "pdf"
         },
+
+        {
+          title: "Assignment: System Implementation",
+          description:
+            "Implement Python code for the system design proposed in unit 7.",
+          href: "../assets/artefacts/M2_Assignment_2.pdf",
+          ref: "pdf",
+          activity: "assignment"
+        },
+
+        {
+          title: "Assignment: System Implementation (ZIP)",
+          href: "../assets/artefacts/M2_Unit11-System_Implementation.zip",
+          ref: "zip",
+          fileName: "Unit_11_Python_Code.zip",
+          activity: "assignment"
+        },
+
       ],
     },
 

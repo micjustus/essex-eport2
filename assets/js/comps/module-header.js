@@ -31,7 +31,7 @@ class ModuleHeader extends HTMLElement {
   }
 
   set title(value) {
-    this.setAttribute("pagTitle", value);
+    this.setAttribute("pageTitle", value);
   }
 
   get animation(){

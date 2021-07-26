@@ -140,29 +140,33 @@ export const module =
             ],
           },
         },
-        { title: "Unit 4", description: "Computing Infrastructure and Networks" },
+        { title: "Unit 4", description: "Computing Infrastructure and Networks", activities: [] },
         {
           title: "Unit 5",
           description:
             "Software as a Tool - Functionality and Development Methodologies",
+            activities: []
         },
-        { title: "Unit 6", description: "System Software - Operating Systems" },
-        { title: "Unit 7", description: "Data Abstraction" },
+        { title: "Unit 6", description: "System Software - Operating Systems", activities: [] },
+        { title: "Unit 7", description: "Data Abstraction", activities: [] },
         {
           title: "Unit 8",
           description:
             "Introduction to Algorithms and Basic Programming Concepts",
+            activities: []
         },
-        { title: "Unit 9", description: "Solving Problems using Python" },
+        { title: "Unit 9", description: "Solving Problems using Python", activities: [] },
         {
           title: "Unit 10",
           description: "Data Representation using Database Concepts",
+          activities: []
         },
-        { title: "Unit 11", description: "Advanced SQL" },
+        { title: "Unit 11", description: "Advanced SQL", activities: [] },
         {
           title: "Unit 12",
           description:
             "Research Topics in Computer Science - Data Science, AI and Standards",
+            activities: []
         },
       ],
     };
