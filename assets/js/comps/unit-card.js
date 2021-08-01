@@ -20,8 +20,7 @@ export class EmptyCard extends HTMLElement{
     const template = `
               <header class="unit-header">NO CONTENT SELECTED</header>
               <section class="nothing-here">
-                <div>Please select a unit to display its content here. <br/><br/>Oh! This empty space sure is lonely.<br/>
-                 Blank, nothing, nada. Now, if only these unfulfilled pixels had reason to blink with life...
+                <div>Please select a unit to display its content here. <br/><br/>Oh! This empty space sure is lonely. If only these unfulfilled pixels had reason to blink with life...
                  <br/><sub>
                  Hint! The answers you seek to all your questions lie just to the left.  
                 </sub>

@@ -36,7 +36,7 @@ class UnitCards extends HTMLElement {
     row.classList.add("row");
     row.classList.add("centered");
     row.style.textAlign = "center";
-    row.style.width= "80%";
+    row.style.width= "90%";
     row.style.gap = "1em";
 
     module.units.forEach((val, idx) => {
@@ -50,7 +50,7 @@ class UnitCards extends HTMLElement {
 
       elm.style.fontSize= "0.8em";
       elm.style.margin= 0;
-      elm.style.height = "90px";
+      elm.style.height = "120px";
       
       
         elm.setAttribute("onclick", `loadPdf('${val.title}', '${val.writing}')`);
