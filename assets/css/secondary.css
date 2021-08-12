@@ -728,3 +728,9 @@ code{
 .m-3{
   margin: 3em;
 }
+.clear-background{
+  background-color: transparent;
+}
+.justify{
+  text-align: justify;
+}

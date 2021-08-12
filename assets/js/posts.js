@@ -40,7 +40,7 @@ function stopScroll(event) {
   }
 }
 
-function openPostContent(elm, content, otherClass) {
+function openPostContent(content, otherClass) {
   var popup = document.createElement("div");
   popup.id = "popup__1";
   popup.addEventListener("click", clickToClosePost);
@@ -58,12 +58,7 @@ function openPostContent(elm, content, otherClass) {
   popup.appendChild(popupInner);
 
   if (content) popupInner.innerHTML = content;
-  else {
-    // var content2 = elm.querySelector(".post-content");
-    // if (content2) {
-    //   popupInner.innerHTML = content2.innerHTML;
-    // }
-  }
+
 
   document.body.appendChild(popup);
 }
@@ -74,11 +69,19 @@ function openPostContentWithFetch(elm, otherClass) {
 
   fetch(href)
     .then((response) => response.text())
-    .then((data) => openPostContent(elm, data, otherClass));
+    .then((data) => openPostContent(data, otherClass));
 }
 
 function openPost(evt, otherClass) {
   openPostContentWithFetch(evt, otherClass);
 }
 
+function openModuleUnits(moduleId){
+  openPostContent( 
+  `<body>
+    <div>
+        <module-units module-id=${moduleId}></module-units>
+    </div>
+</body>`);
+}
 initPosts();

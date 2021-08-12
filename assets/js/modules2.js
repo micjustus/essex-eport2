@@ -7,10 +7,10 @@ export const module = {
     "Develop an object-oriented information system design, implementing this knowledge in applicable programming languages, such as Python and SQL.",
     "Develop, implement and evaluate critically information system solutions to facilitate business decisions.",
   ],
-  reflections: "../assets/artefacts/Reflections-M2_OOIS.pdf",
-  project: "../assets/artefacts/Reflections-M2_OOIS_Project.pdf",
-  actionPlan: "../assets/artefacts/M2_Action_Plan.pdf",
-  skillsMatrix: "../assets/artefacts/M2_Skills_Matrix.pdf",
+  reflections: "../assets/artefacts/module2/Reflections-M2_OOIS.pdf",
+  project: "../assets/artefacts/module2/Reflections-M2_OOIS_Project.pdf",
+  actionPlan: "../assets/artefacts/module2/M2_Action_Plan.pdf",
+  skillsMatrix: "../assets/artefacts/module2/M2_Skills_Matrix.pdf",
   units: [
     {
       title: "Unit 1",
@@ -21,7 +21,7 @@ export const module = {
         "Gain an understanding of the SDLC, its phases and their importance.",
       ],
       writing:
-        "../assets/artefacts/Reflections-M2-U1.pdf",
+        "../assets/artefacts/module2/Reflections-M2-U1.pdf",
 
       reading: {
         required: [
@@ -42,7 +42,7 @@ export const module = {
             "Identify an instance of a failure with an information system, with a focus on the reasons for the failure.",
           // href: "/assets/activity-m2u1.html",
           ref: "pdf",
-          href: "../assets/artefacts/Reflections-M2-U1_Initial_Post.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U1_Initial_Post.pdf",
         },
 
         {
@@ -50,7 +50,7 @@ export const module = {
           title: "Seminar 1 Preparation",
           description:
             "Prepare for seminar which focuses on the En Route Automation Modernization failure. <em>Please refer to Reflective Writing for additional information</em>",
-          href: "../assets/artefacts/Reflections-M2-U1_Seminar1_Preparation.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U1_Seminar1_Preparation.pdf",
         },
       ],
     },
@@ -62,7 +62,7 @@ export const module = {
         "Evaluate a range of issues and appropriate solutions or mitigations.",
       ],
       writing:
-        "../assets/artefacts/Reflections-M2-U2.pdf",
+        "../assets/artefacts/module2/Reflections-M2-U2.pdf",
       activities: [
         {
           title: "Seminar 1 - En Route Automation Modernization (ERAM) System",
@@ -71,7 +71,7 @@ export const module = {
           ref: "pdf",
           month: "May",
           day: 11,
-          href: "../assets/artefacts/Reflections-M2-U1_Seminar1_Preparation.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U1_Seminar1_Preparation.pdf",
         },
       ],
       reading: {
@@ -92,14 +92,14 @@ export const module = {
         "Correctly apply composition and inheritance where appropriate.",
       ],
       writing:
-        "../assets/artefacts/Reflections-M2-U3.pdf",
+        "../assets/artefacts/module2/Reflections-M2-U3.pdf",
       activities: [
         {
           title: "Discussion Forum - Summary",
           description:
             "Identify an instance of a failure with an information system, with a focus on the reasons for the failure.",
           ref: "pdf",
-          href: "../assets/artefacts/Reflections-M2-U3_Summary_Post.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U3_Summary_Post.pdf",
         },
 
         {
@@ -107,7 +107,7 @@ export const module = {
           description:
             "This activity for this unit involves putting your object-oriented design skills into practice. Create an object model to represent a supermarket.",
           ref: "pdf",
-          href: "../assets/artefacts/Reflections-M2-U3_Practical.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U3_Practical.pdf",
         }
 
       ],
@@ -125,7 +125,7 @@ export const module = {
         "Develop object-oriented software using the Python programming languages.",
       ],
       writing:
-        "../assets/artefacts/Reflections-M2-U4.pdf",
+        "../assets/artefacts/module2/Reflections-M2-U4.pdf",
       activities: [
        {
           display: "date",
@@ -135,7 +135,7 @@ export const module = {
           description:
             "Classes and objects, class functions and methods and inheritance.",
           ref: "pdf",
-          href: "../assets/artefacts/Reflections-M2-U4_Seminar2.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U4_Seminar2.pdf",
         },
       ],
       reading: {
@@ -153,7 +153,7 @@ export const module = {
         "Identify and use the correct elements of UML to design a system.",
       ],
       writing:
-        "../assets/artefacts/Reflections-M2-U5.pdf",
+        "../assets/artefacts/module2/Reflections-M2-U5.pdf",
       reading: {
         required: [
           "Fowler, M. (2013) UML Distilled: a brief guide to the standard object modeling language. 3rd ed. Boston, MA: Addison Wesley Chapters 3, 4, 10 & 11",
@@ -170,7 +170,7 @@ export const module = {
           description:
             "Extend object model from <strong>Unit 3</strong> into a UML class diagram.",
           ref: "pdf",
-          href: "../assets/artefacts/Reflections-M2-U5_Practical.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U5_Practical.pdf",
         }       
       ],
     },
@@ -182,7 +182,7 @@ export const module = {
         "Develop a set of UML documentation for a specific scenario",
       ],
       writing:
-        "../assets/artefacts/Reflections-M2-U6.pdf",
+        "../assets/artefacts/module2/Reflections-M2-U6.pdf",
       reading: {
         required: [
           "Ambler, S. (2003) Elements of UML Style. Cambridge: Cambridge University Press Chapters 4, 6, 8 & 9",
@@ -201,7 +201,7 @@ export const module = {
           day: 10,
           description:
             "Develop a class diagram, sequence diagram and activity diagram for a given scenario.",
-          href: "../assets/artefacts/Reflections-M2-U6_Seminar3.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U6_Seminar3.pdf",
           ref: "pdf"
         },
       ],
@@ -215,7 +215,7 @@ export const module = {
         "Design a database that has been correctly normalised"
       ],
       writing:
-        "../assets/artefacts/Reflections-M2-U7.pdf",
+        "../assets/artefacts/module2/Reflections-M2-U7.pdf",
       reading: {
         required: [
           "Connolly, T. & Beg, C. (2015) Database Systems: A Practical Approach to Design, Implementation, and Management. Global Edition. Edinburgh: Pearson. Chapters 1, 4 & 14.",
@@ -230,14 +230,14 @@ export const module = {
           description:
             "Normalise a set of tables from first to third normal form.",
           ref: "pdf",
-          href: "../assets/artefacts/Reflections-M2-U7_Formative.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U7_Formative.pdf",
         },
 
         {
           title: "Assignment: System Design",
           description:
             "Develop a class diagram, activity and state diagram for a given scenario describing online shopping.",
-          href: "../assets/artefacts/M2_Assignment_1.pdf",
+          href: "../assets/artefacts/module2/M2_Assignment_1.pdf",
           ref: "pdf",
           activity: "assignment"
         },
@@ -245,7 +245,7 @@ export const module = {
         {
           title: "Assignment: Feedback",
           description: "Tutor feedback of submitted work",
-          href: "../assets/artefacts/M2_Assignment_1_Feedback.pdf",
+          href: "../assets/artefacts/module2/M2_Assignment_1_Feedback.pdf",
           ref: "pdf"
         }
       ],
@@ -259,7 +259,7 @@ export const module = {
         "Create an entity relationship diagram to document your design.",
       ],
       writing:
-        "../assets/artefacts/Reflections-M2-U8.pdf",
+        "../assets/artefacts/module2/Reflections-M2-U8.pdf",
       reading: {
         required: [
           "Connolly, T. & Beg, C. (2015) Database Systems: A Practical Approach to Design, Implementation, and Management. Global Edition. Edinburgh: Pearson. Chapters 12, 13.",
@@ -276,7 +276,7 @@ export const module = {
           title: "Collaborative Discussion - Alternatives to SQL",
           description:
             "Consider a worked example of database design from beginning to end and construct an ERD.",
-          href: "../assets/artefacts/Reflections-M2-U8_Initial_Post.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U8_Initial_Post.pdf",
           ref: "pdf"
         },
 
@@ -284,28 +284,16 @@ export const module = {
           title: "Collaborative Discussion - Reponses",
           description:
             "Continue the discussion concerning alternatives to traditional relational database systems.",
-            href: "../assets/artefacts/Reflections-M2-U8_Discussions.pdf",
+            href: "../assets/artefacts/module2/Reflections-M2-U8_Discussions.pdf",
             ref: "pdf"
         },
 
         {
           title: "Database Design",
           description: "Produce an entity relationship diagram based on the mid-module assigment submitted in unit 7.",
-          href: "../assets/artefacts/Reflections-M2-U8_Practical.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U8_Practical.pdf",
           ref: "pdf"
         },
-
-        // {
-        //   title: "Seminar 4 Preparation - Database Design",
-        //   display: "date",
-        //   month: "Jun",
-        //   day: 24,
-        //   description:
-        //     "Consider a worked example of database design from beginning to end and construct an ERD.",
-        //   href: "../assets/artefacts/Reflections-M2-U8_Seminar4.pdf",
-        //   ref: "pdf"
-        // },
-
       ],
     },
 
@@ -318,7 +306,7 @@ export const module = {
         "Understand the access and security issues around SQL."
       ],
       writing:
-        "../assets/artefacts/Reflections-M2-U9.pdf",
+        "../assets/artefacts/module2/Reflections-M2-U9.pdf",
       reading: {
         required: [
           "Han J., Haihong E., Guan L. & Jian D. (2011) 'Survey on NoSQL database'. 2011 6th International Conference on Pervasive Computing and Applications. Port Elizabeth, South Africa, 26-28 October. IEEE. 363-366. doi: 10.1109/ICPCA.2011.6106531.",
@@ -336,7 +324,7 @@ export const module = {
         {
           title: "Collaborative Discussion - Responses",
           description: "Continue to engage fellow students in the discussion about alternates to SQL databases.",
-          href: "../assets/artefacts/Reflections-M2-U9_Discussions_Responses.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U9_Discussions_Responses.pdf",
           ref: "pdf"
         }
       ],
@@ -351,7 +339,7 @@ export const module = {
         "Develop queries requiring multiple tables using either subqueries or joins."
       ],
       writing:
-        "../assets/artefacts/Reflections-M2-U10.pdf",
+        "../assets/artefacts/module2/Reflections-M2-U10.pdf",
       reading: {
         required: [
           "Connolly, T. & Beg, C. (2015) Database Systems: A Practical Approach to Design, Implementation, and Management. Global Edition. Edinburgh: Pearson. Chapters 6, 7, 8",
@@ -365,7 +353,7 @@ export const module = {
           title: "Codio Exercises - MySQL",
           description:
             "Continue coding exercises to gain experience with MySQL.",
-          href: "../assets/artefacts/Reflections-M2-U10_Practical.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U10_Practical.pdf",
           ref: "pdf"
         },
 
@@ -374,19 +362,8 @@ export const module = {
           description:
             "",
           ref: "pdf",
-          href: "../assets/artefacts/Reflections-M2-U10_Summary_Post.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U10_Summary_Post.pdf",
         },
-
-        // {
-        //   title: "Seminar 5 Preparation - System Implementation Discussion",
-        //   display: "date",
-        //   month: "Jul",
-        //   day: 9,
-        //   description:
-        //     "Consider an example of creating a system based on a design document.",
-        //   href: "../assets/artefacts/Reflections-M2-U10_Seminar5.pdf",
-        //   ref: "pdf"
-        // }
       ],
     },
 
@@ -400,7 +377,7 @@ export const module = {
         "Understand some of the security considerations around web applications."
       ],
       writing:
-        "../assets/artefacts/Reflections-M2-U11.pdf",
+        "../assets/artefacts/module2/Reflections-M2-U11.pdf",
       reading: {
         required: [
           "Ginberg, M. (2017) The Flask Mega Tutorial",
@@ -415,7 +392,7 @@ export const module = {
           title: "Codio - Introduction to Flask",
           description:
             "Learn to instantiate a simple web server and show data via a template.",
-          href: "../assets/artefacts/Reflections-M2-U11_Practical.pdf",
+          href: "../assets/artefacts/module2/Reflections-M2-U11_Practical.pdf",
           ref: "pdf"
         },
 
@@ -423,14 +400,14 @@ export const module = {
           title: "Assignment: System Implementation",
           description:
             "Implement Python code for the system design proposed in unit 7.",
-          href: "../assets/artefacts/M2_Assignment_2.pdf",
+          href: "../assets/artefacts/module2/M2_Assignment_2.pdf",
           ref: "pdf",
           activity: "assignment"
         },
 
         {
           title: "Assignment: System Implementation (ZIP)",
-          href: "../assets/artefacts/M2_Unit11-System_Implementation.zip",
+          href: "../assets/artefacts/module2/M2_Unit11-System_Implementation.zip",
           ref: "zip",
           fileName: "Unit_11_Python_Code.zip",
           activity: "assignment"
@@ -448,7 +425,7 @@ export const module = {
         "Discuss the emerging technologies in information systems."       
       ],
       writing:
-        "../assets/artefacts/Reflections-M2-U12.pdf",
+        "../assets/artefacts/module2/Reflections-M2-U12.pdf",
       reading: {
         required: [
           "Valacich, J. & Schneider, C. (2014) Information Systems Today: Managing in the Digital World. 6th ed. Boston, MA: Pearson. Chapters 1, 10.",
@@ -464,7 +441,7 @@ export const module = {
           {
             title: "Blog Post - Emerging Trends in Information Systems",
             description: "Consideration given to emerging technology and its implications",
-            href: "../assets/artefacts/Reflections-M2-U12_Blog_Post.pdf",
+            href: "../assets/artefacts/module2/Reflections-M2-U12_Blog_Post.pdf",
             ref: "pdf"
           }
       ],
