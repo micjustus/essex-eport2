@@ -734,3 +734,17 @@ code{
 .justify{
   text-align: justify;
 }
+.header-with-pic{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-32px);
+  width: 80%;
+  margin: 0 auto;
+}
+.header-pic{
+  max-block-size: 64px;
+  margin-right: 10px;
+  border-radius: 32px;
+  box-shadow: 6px 0px 12px 0px rgba(0, 0, 0, 0.1);
+}
