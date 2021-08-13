@@ -41,7 +41,7 @@ export class ModuleInfo extends HTMLElement {
         `;
 
         first = first + 
-      `<div>
+      `<div class="module-units">
         <header class="text-center">
           <h3>Module Documents</h3>
         </header>
