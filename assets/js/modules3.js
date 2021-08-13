@@ -7,10 +7,10 @@ export const module = {
     "Design and develop/adapt computer programs and to produce a solution that meets the design brief and critically evaluate solutions that are produced.",
     "Systematically develop and implement the skills required to be effective member of a development team in a virtual professional environment, adopting real-life perspectives on team roles and organisation.",
   ],
-  reflections: "../assets/artefacts/module3/Reflections-M3_SSD.pdf",
-  project: "../assets/artefacts/module3/Reflections-M3_SSD_Project.pdf",
-  actionPlan: "../assets/artefacts/module3/M3_Action_Plan.pdf",
-  skillsMatrix: "../assets/artefacts/module3/M3_Skills_Matrix.pdf",
+  reflections: "",//"../assets/artefacts/module3/Reflections-M3_SSD.pdf",
+  project: "",//"../assets/artefacts/module3/Reflections-M3_SSD_Project.pdf",
+  actionPlan: "",//"../assets/artefacts/module3/M3_Action_Plan.pdf",
+  skillsMatrix: "",//"../assets/artefacts/module3/M3_Skills_Matrix.pdf",
   units: [
     {
       title: "Unit 1",
