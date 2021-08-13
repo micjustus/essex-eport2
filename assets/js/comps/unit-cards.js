@@ -1,5 +1,5 @@
-import './unit-card.js';
-import { modules } from '../modules.js';
+import "./unit-card.js";
+import { modules } from "../modules.js";
 
 //this is our class where everything that goes into our element will be
 class UnitCards extends HTMLElement {
@@ -7,23 +7,23 @@ class UnitCards extends HTMLElement {
     return ["module-id"];
   }
 
-  constructor(){
+  constructor() {
     super();
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
-    if (name == "module-id")
-      this.moduleId = newValue;
+    if (name == "module-id") this.moduleId = newValue;
   }
 
-   get moduleId(){ return this.getAttribute("module-id");}
-   set moduleId(newValue){ }
+  get moduleId() {
+    return this.getAttribute("module-id");
+  }
+  set moduleId(newValue) {}
 
   connectedCallback() {
-
     var moduleId = this.moduleId;
-    var module = modules.find(val=> val.id == moduleId);
-    if (!module){
+    var module = modules.find((val) => val.id == moduleId);
+    if (!module) {
       return;
     }
 
@@ -36,32 +36,54 @@ class UnitCards extends HTMLElement {
     row.classList.add("row");
     row.classList.add("centered");
     row.style.textAlign = "center";
-    row.style.width= "90%";
+    row.style.width = "90%";
     row.style.gap = "1em";
 
+    var added = 0;
+
     module.units.forEach((val, idx) => {
-      var elm = document.createElement("div");
-      elm.classList.add("card");
-      elm.classList.add("small");
-      elm.classList.add("left");
-      elm.classList.add("nowrap");
-      elm.classList.add("active");
-      elm.classList.add("p-1");
+      if (!val.writing) return;
 
-      elm.style.fontSize= "0.8em";
-      elm.style.margin= 0;
-      elm.style.height = "120px";
-      
-      
-        elm.setAttribute("onclick", `loadPdf('${val.title}', '${val.writing}')`);
-      
-      elm.innerHTML = 
-      `<div >
-        ${val.title} - ${val.description}
-      </div>`;
+      fetch(`${val.writing}`, { method: "HEAD" })
+        .then((res) => {
+          if (res.ok) {
+            var elm = document.createElement("div");
+            elm.classList.add("card");
+            elm.classList.add("small");
+            elm.classList.add("left");
+            elm.classList.add("nowrap");
+            elm.classList.add("active");
+            elm.classList.add("p-1");
 
-      row.appendChild(elm);
+            elm.style.fontSize = "0.8em";
+            elm.style.margin = 0;
+            elm.style.height = "120px";
+
+            elm.setAttribute(
+              "onclick",
+              `loadPdf('${val.title}', '${val.writing}')`
+            );
+
+            elm.innerHTML = `<div>${val.title} - ${val.description}</div>`;
+
+            row.appendChild(elm);
+
+            added +=1;
+          }
+        });        
     });
+
+
+    setTimeout(()=>{
+    if (added <= 0){
+      var elm2 = document.createElement("div");
+      elm2.style.fontStyle = "italic";
+
+      elm2.innerText = "The future is still unwritten. Only the passage of time can manifest that which is to come.";
+
+      row.appendChild(elm2);
+    }
+  }, 200);
 
     this.appendChild(row);
   }
