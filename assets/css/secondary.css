@@ -778,4 +778,6 @@ code{
   padding: 20px 20px 30px 20px;
   border: 1px solid #dfdfdf;
   filter: drop-shadow(2px 2px 10px rgba(0,0,0,0.02));
+  width: 50%;
+  margin: 0 auto;
 }

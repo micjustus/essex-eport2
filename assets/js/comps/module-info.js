@@ -35,9 +35,10 @@ export class ModuleInfo extends HTMLElement {
         `<section class="band-1 p-5">
           <div class="centered content-width mw-80ch">
             <header class="text-center">
-            <h2>${mod.title}</h2>
+              <h2>${mod.title}</h2>
             </header>
-              <ul>${items}</ul>
+            <ul>${items}</ul>
+          </div>
         `;
 
         first = first + 
