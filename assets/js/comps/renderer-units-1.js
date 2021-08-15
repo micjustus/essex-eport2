@@ -20,12 +20,12 @@ function buildActivities(content) {
                   <p>${element.description}</p>
               </li>
           </ul>`;
-      } else  {
+      } else {
         first = `
           <h4>${element.title}</h4>
           <p>${element.description}</p>
           `;
-      } 
+      }
 
       var clickLink = "";
       if (element.href) {
@@ -33,13 +33,12 @@ function buildActivities(content) {
           clickLink = `onclick='loadDoc("${content.title} - Launching", "${element.href}")'`;
         else if (element.ref == "pdf")
           clickLink = `onclick='loadPdf("${content.title}", "${element.href}")'`;
-        else if (element.ref == "zip")
-          clickLink = '';
+        else if (element.ref == "zip") clickLink = "";
         else
           clickLink = `data-href='${element.href}' onclick="openPost(this, 'image-only')"`;
       }
 
-      if (element.ref == "zip"){
+      if (element.ref == "zip") {
         first = `
           <div>
             ${first}
@@ -48,7 +47,7 @@ function buildActivities(content) {
 
         return `<section class="left nowrap card"><a href="${element.href}" alt='' download="${element.fileName}">${first}</a></section>`;
       }
-      
+
       first = `
           <div>
             ${first}
@@ -59,9 +58,9 @@ function buildActivities(content) {
     })
     .join("");
 
-    var writing = '';
-    if (content.writing){
-      writing = `
+  var writing = "";
+  if (content.writing) {
+    writing = `
       <section class="left nowrap card" onclick='loadPdf("${content.title} - Launching", "${content.writing}")'>
         <h4>Reflective Writing</h4>
         <p>
@@ -71,7 +70,7 @@ function buildActivities(content) {
           <p><em>Click to read more</em></p>
         </div>
       </section>`;
-    }
+  }
   if (activities) {
     return `<section><header class="activities">Activities</header><div class="row gap-1 left">${writing}${activities}</row></section>`;
   }
@@ -122,9 +121,9 @@ function buildOutcomes(content) {
       `<section>
         <section>
         <header class="outcomes">Unit Learning Outcomes</header>
-        <ul class="left-align">` + 
-         content.outcomes.map((element) => `<li>${element}</li>`).join("") +
-        `</ul>
+        <ul class="left-align">` +
+      content.outcomes.map((element) => `<li>${element}</li>`).join("") +
+      `</ul>
         </section>
       </section>`
     );
@@ -144,7 +143,7 @@ UnitCard.prototype.render = function (content, targetSite) {
   if (lastRenderElm) tgt.removeChild(lastRenderElm);
 
   var outcomes = buildOutcomes(content);
-  var writing = '';
+  var writing = "";
   var reading = buildReading(content);
   var activities = buildActivities(content);
 
@@ -163,7 +162,7 @@ UnitCard.prototype.render = function (content, targetSite) {
   var div = document.createElement("div");
   div.innerHTML = template;
 
-  tgt.textContent = '';
+  tgt.textContent = "";
   tgt.appendChild(div);
 
   lastRenderElm = div;

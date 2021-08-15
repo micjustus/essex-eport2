@@ -44,46 +44,45 @@ class UnitCards extends HTMLElement {
     module.units.forEach((val, idx) => {
       if (!val.writing) return;
 
-      fetch(`${val.writing}`, { method: "HEAD" })
-        .then((res) => {
-          if (res.ok) {
-            var elm = document.createElement("div");
-            elm.classList.add("card");
-            elm.classList.add("small");
-            elm.classList.add("left");
-            elm.classList.add("nowrap");
-            elm.classList.add("active");
-            elm.classList.add("p-1");
+      fetch(`${val.writing}`, { method: "HEAD" }).then((res) => {
+        if (res.ok) {
+          var elm = document.createElement("div");
+          elm.classList.add("card");
+          elm.classList.add("small");
+          elm.classList.add("left");
+          elm.classList.add("nowrap");
+          elm.classList.add("active");
+          elm.classList.add("p-1");
 
-            elm.style.fontSize = "0.8em";
-            elm.style.margin = 0;
-            elm.style.height = "120px";
+          elm.style.fontSize = "0.8em";
+          elm.style.margin = 0;
+          elm.style.height = "120px";
 
-            elm.setAttribute(
-              "onclick",
-              `loadPdf('${val.title}', '${val.writing}')`
-            );
+          elm.setAttribute(
+            "onclick",
+            `loadPdf('${val.title}', '${val.writing}')`
+          );
 
-            elm.innerHTML = `<div>${val.title} - ${val.description}</div>`;
+          elm.innerHTML = `<div>${val.title} - ${val.description}</div>`;
 
-            row.appendChild(elm);
+          row.appendChild(elm);
 
-            added +=1;
-          }
-        });        
+          added += 1;
+        }
+      });
     });
 
+    setTimeout(() => {
+      if (added <= 0) {
+        var elm2 = document.createElement("div");
+        elm2.style.fontStyle = "italic";
 
-    setTimeout(()=>{
-    if (added <= 0){
-      var elm2 = document.createElement("div");
-      elm2.style.fontStyle = "italic";
+        elm2.innerText =
+          "The future is still unwritten. Only the passage of time shall manifest content.";
 
-      elm2.innerText = "The future is still unwritten. Only the passage of time can manifest that which is to come.";
-
-      row.appendChild(elm2);
-    }
-  }, 200);
+        row.appendChild(elm2);
+      }
+    }, 200);
 
     this.appendChild(row);
   }

@@ -1,5 +1,9 @@
 @import url(fontawesome-all.min.css);
 
+body{
+  --background: white;
+}
+
 section header{
   font-weight: 700;
   color: hsl(346, 89%, 53%);
@@ -141,7 +145,7 @@ ol{
 }
 .unit-content{
   margin:2em auto;
-  max-width: 70%;
+  max-width: 95%;
   box-shadow: 5px 5px 5px 0px rgba(20, 14, 14, 0.1);
   background-color: white;
   border-radius: 12px;
