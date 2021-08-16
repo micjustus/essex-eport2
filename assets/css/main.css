@@ -1238,8 +1238,7 @@ ul.social li a.fa-google-plus:hover {
   background-repeat: no-repeat;
   text-align: center;
   position: relative;
-  padding: 8em 0;
-  /* margin: 4em 0 0 0; */
+  padding: 3em 0;
 }
 
 #banner header {
@@ -1279,42 +1278,6 @@ ul.social li a.fa-google-plus:hover {
   position: relative;
   z-index: 1;
 }
-
-#intro .card:first-child{
-	border-right: 1px solid lightblue;
-}
-#intro .card:last-child{
-	border-left: 1px solid lightblue;
-}
-/*
-#intro .middle:before {
-  content: "";
-  width: 32px;
-  height: 100%;
-  position: absolute;
-  left: -24px;
-  top: 0;
-  display: block;
-  z-index: -1;
-
-  box-shadow: 32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff,
-    32px 32px 0 0 #fff, 32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
-}
-
-#intro .middle:after {
-  content: "";
-  width: 32px;
-  height: 100%;
-  position: absolute;
-  right: -24px;
-  top: 0;
-  display: block;
-  z-index: -1;
-  box-shadow: -32px 0 0 0 #fff, 0 -32px 0 0 #fff, 0 32px 0 0 #fff,
-    -32px 32px 0 0 #fff, -32px -32px 0 0 #fff, 0 0 32px 0 rgba(0, 0, 0, 0.15);
-}
-*/
-
 #intro .button {
   min-width: 12em;
 }

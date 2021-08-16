@@ -332,14 +332,12 @@ ol{
   border-right: solid 0.6em transparent;
 }
 .card {
-  --block-width: 300px;
-
   border: 1px solid hsl(0, 0%, 88%);
   border-radius: 6px;
   display: inline-block;
-  width: 400px;
+  width: 360px;
   aspect-ratio: 16/9;
-  padding: 15px 30px 15px 30px;
+  padding: 10px;
   overflow: auto;
   text-align: left;
   position: relative;
@@ -350,14 +348,14 @@ ol{
 .card .click-more{
   position: absolute;
   left: 20px;
-  bottom: 20px;
+  bottom: 0;
   display: block;
+  font-size:0.8em;
 }
 .card .click-more:after{
   content: "\f141";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
-  font-size: 1em;
 }
 .card .click-more p {
   margin: 0;
@@ -365,6 +363,10 @@ ol{
 .card header {
   font-size: 1.2em;
   font-weight: 700;
+}
+.card :is(h1,h2,h3,h4){
+  line-height: 1.4em;
+  margin-bottom: 0.6em;
 }
 .card.active header {
   color: black;
@@ -387,12 +389,12 @@ ol{
   color: inherit;
 }
 .card.completed:hover {
-  border: 1px solid lightgray;
   background: hsl(0, 0%, 96%);
-  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
-    cursor: pointer;
+  box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.09);
+  cursor: pointer;
   user-select: none;
-  color: white;
+  filter: grayscale(0.7);
+  transition: all 0.0.9s ease-in;
 }
 .card:not(.active):not(.completed):hover {
   border: 1px solid gray;
@@ -440,8 +442,12 @@ ol{
 }
 .card p{
   font-size: clamp(0.6em, 0.9em, 1.1em);
+  line-height: 1.5em;
 }
-
+.card.main{
+  padding: 10px 30px;
+  width: 380px;
+}
 .dates {
   padding-left: 0;
   text-align: left;
@@ -784,4 +790,7 @@ code{
   filter: drop-shadow(2px 2px 10px rgba(0,0,0,0.02));
   width: 50%;
   margin: 0 auto;
+}
+.color-8 :is(h1, h2, h3, h4){
+  color:#888;
 }
