@@ -4,62 +4,9 @@ import * as accordion from "./../accordion.js";
 
 var lastRenderElm;
 
-function buildActivities(content) {
-  if (!content || !content.activities || !content.activities.length) return "";
-
-  var activities = content.activities
-    .map((element) => {
-      var first;
-
-      if (element.display === "date") {
-        first = `
-          <ul class="dates">
-              <li class="dates">
-                  <span class="date">${element.month} <strong>${element.day}</strong></span>
-                  <h4>${element.title}</h4>
-                  <p>${element.description}</p>
-              </li>
-          </ul>`;
-      } else {
-        first = `
-          <h4>${element.title}</h4>
-          <p>${element.description}</p>
-          `;
-      }
-
-      var clickLink = "";
-      if (element.href) {
-        if (element.ref === "doc")
-          clickLink = `onclick='loadDoc("${content.title} - Launching", "${element.href}")'`;
-        else if (element.ref == "pdf")
-          clickLink = `onclick='loadPdf("${content.title}", "${element.href}")'`;
-        else if (element.ref == "zip") clickLink = "";
-        else
-          clickLink = `data-href='${element.href}' onclick="openPost(this, 'image-only')"`;
-      }
-
-      if (element.ref == "zip") {
-        first = `
-          <div>
-            ${first}
-            <div class="click-more"><p><em>Click to download content</em></p></div>
-          </div>`;
-
-        return `<section class="left nowrap card"><a href="${element.href}" alt='' download="${element.fileName}">${first}</a></section>`;
-      }
-
-      first = `
-          <div>
-            ${first}
-            <div class="click-more"><p><em>Click to read more</em></p></div>
-          </div>`;
-
-      return `<section class="left nowrap card" ${clickLink}>${first}</section>`;
-    })
-    .join("");
-
+function buildUnitWriting(content) {
   var writing = "";
-  if (content.writing) {
+  if (content.writing)
     writing = `
       <section class="left nowrap card" onclick='loadPdf("${content.title} - Launching", "${content.writing}")'>
         <h4>Reflective Writing</h4>
@@ -69,8 +16,79 @@ function buildActivities(content) {
         <div class="click-more">
           <p><em>Click to read more</em></p>
         </div>
-      </section>`;
+      </section>
+      `;
+
+  return writing;
+}
+
+function buildActivityLink(element) {
+  var clickLink = "";
+  if (!element.href) {
+    return clickLink;
   }
+
+  if (element.ref === "doc")
+    clickLink = `onclick='loadDoc("${content.title} - Launching", "${element.href}")'`;
+  else if (element.ref == "pdf")
+    clickLink = `onclick='loadPdf("${content.title}", "${element.href}")'`;
+  else if (element.ref != "zip");
+  clickLink = `data-href='${element.href}' onclick="openPost(this, 'image-only')"`;
+
+  return clickLink;
+}
+
+function buildActivity(element) {
+  var first = "";
+
+  if (element.display === "date") {
+    first = `
+      <ul class="dates">
+          <li class="dates">
+              <span class="date">${element.month} <strong>${element.day}</strong></span>
+              <h4>${element.title}</h4>
+              <p>${element.description || ""}</p>
+          </li>
+      </ul>
+      `;
+  } else {
+    first = `
+      <h4>${element.title}</h4>
+      <p>${element.description || ""}</p>
+      `;
+  }
+
+  var clickLink = buildActivityLink(element);
+
+  if (element.ref == "zip") {
+    first = `
+      <div>
+        ${first}
+        <div class="click-more"><p><em>Click to download content</em></p></div>
+      </div>`;
+
+    return `<section class="left nowrap card"><a href="${element.href}" alt='' download="${element.fileName}">${first}</a></section>`;
+  }
+
+  first = `
+      <div>
+        ${first}
+        <div class="click-more"><p><em>Click to read more</em></p></div>
+      </div>`;
+
+  return `<section class="left nowrap card" ${clickLink}>${first}</section>`;
+}
+
+function buildActivities(content) {
+  if (!content || !content.activities || !content.activities.length) return "";
+
+  var writing = buildUnitWriting(content);
+  var activities = "";
+
+  content.activities.forEach((element, idx)=>{
+    activities = activities + buildActivity(element);
+  });
+
   if (activities) {
     return `<section><header class="activities">Activities</header><div class="row gap-1 left">${writing}${activities}</row></section>`;
   }
@@ -103,33 +121,22 @@ function buildReading(content) {
   }
 }
 
-function buildWriting(content) {
-  if (content.writing) {
-    return `
-            <section>
-                <button onclick='loadDoc("${content.title} - Launching", "${content.writing}")'>
-                    Reflective Writing
-                </button>
-            </section>
-        `;
-  }
-}
-
 function buildOutcomes(content) {
-  if (content.outcomes) {
-    return (
-      `<section>
-        <section>
-        <header class="outcomes">Unit Learning Outcomes</header>
-        <ul class="left-align">` +
-      content.outcomes.map((element) => `<li>${element}</li>`).join("") +
-      `</ul>
-        </section>
-      </section>`
-    );
-  } else {
+  if (!content.outcomes) {
     return "No outcomes specified";
   }
+
+  return (
+    `<section>
+      <header class="outcomes">Unit Learning Outcomes</header>
+      <ul class="left-align">
+      ` +
+      content.outcomes.map((element) => `<li>${element}</li>`).join("")
+        +
+      `
+      </ul>
+   </section>`
+  );
 }
 
 UnitCard.prototype.render = function (content, targetSite) {
@@ -138,26 +145,19 @@ UnitCard.prototype.render = function (content, targetSite) {
   var tgt = document.getElementById(targetSite);
   if (!tgt) return;
 
-  accordion.closeAccordion();
-
-  if (lastRenderElm) tgt.removeChild(lastRenderElm);
+  if (lastRenderElm){
+    tgt.removeChild(lastRenderElm);
+    accordion.closeAccordion(lastRenderElm);
+  } 
 
   var outcomes = buildOutcomes(content);
-  var writing = "";
   var reading = buildReading(content);
   var activities = buildActivities(content);
 
   const template = `
-            <header class="unit-header">${content.description}</header>
-
-            ${outcomes}
-
-            <section id="gimme_gimme">
-              ${writing}
-              ${activities}
-            </section>
-            ${reading}
-        `;
+    <header class="unit-header">${content.description}</header>
+    ${outcomes}
+    <section id="gimme_gimme">${activities}</section>${reading}`;
 
   var div = document.createElement("div");
   div.innerHTML = template;
@@ -167,5 +167,5 @@ UnitCard.prototype.render = function (content, targetSite) {
 
   lastRenderElm = div;
 
-  accordion.initAccordion2(div);
+  accordion.initAccordion2(lastRenderElm);
 };

@@ -71,7 +71,16 @@ export const module = {
         "Reading areas of an ISO/IEC Standard on security and becoming familiar with the language and concepts.",
       ],
       writing: "../assets/artefacts/module3/Reflections-M3-U2.pdf",
-      activities: [],
+      activities: [
+        {
+          title: "Seminar 1 - Scrum Security Review",
+          href: "../assets/artefacts/module3/M3-Seminars_1.pdf",
+          ref: "pdf",
+          display: "date",
+          month: "Aug",
+          day: 19
+        }
+      ],
       reading: {
         required: ["Dadzie, J. (2005) Understanding Software Patching, IEEE."],
         optional: [

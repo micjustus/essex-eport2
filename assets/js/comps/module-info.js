@@ -21,6 +21,85 @@ export class ModuleInfo extends HTMLElement {
     this.setAttribute("moduleId", value);
   }
 
+  buildInfoActivites(mod) {
+    var first = "";
+
+    for (let unit of mod.units) {
+      for (let act of unit.activities) {
+        if (act.activity !== "assignment") continue;
+
+        if (act.ref == "zip") {
+          first =
+            first +
+            `<div class="card active text-center p-1 no-aspect">
+            <a href="${act.href}" download="${act.fileName}"><h4>${act.title}</h4></a>
+          </div>`;
+        } else {
+          first =
+            first +
+            `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('${act.title}', '${act.href}')">
+          <h4>${act.title}</h4>
+        </div>`;
+        }
+      }
+    }
+
+    return first;
+  }
+
+  buildInfoExtras(mod) {
+    var first = "";
+
+    if (mod.reflections) {
+      first =
+        first +
+        `<div class="card active text-center p-1 no-aspect" onclick='loadPdf("Module Reflections", "${mod.reflections}")'>
+          <h4>Module Reflection</h4>
+        </div>`;
+    }
+
+    if (mod.project) {
+      first =
+        first +
+        `<div class="card active text-center p-1 no-aspect"  onclick="loadPdf('Module Project', '${mod.project}')">
+      <h4>Project Reflection</h4>
+      </div>`;
+    }
+
+    if (mod.actionPlan) {
+      first =
+        first +
+        `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('Module Action Plan', '${mod.actionPlan}')">
+        <h4>Action Plan</h4>
+      </div>`;
+    }
+
+    if (mod.skillsMatrix) {
+      first =
+        first +
+        `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('Module Skills Matrix', '${mod.skillsMatrix}')">
+        <h4>Skills Matrix</h4>
+      </div>`;
+    }
+
+    if (mod.contract) {
+      first =
+        first +
+        `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('SSD Team Contract', '${mod.contract}')">
+        <h4>Team Contract</h4>
+      </div>`;
+    }
+
+    first = first + this.buildInfoActivites(mod);
+
+    if (mod.meetings) {
+      first =
+        first + `<module-meetings moduleId='${mod.id}'></module-meetings>`;
+    }
+
+    return first;
+  }
+
   connectedCallback() {
     var mod = modules.find((val, idx) => val.id == this.moduleId);
     if (!mod) return;
@@ -49,78 +128,13 @@ export class ModuleInfo extends HTMLElement {
         <div class="row" style="column-gap:1em;row-gap:1em; align-items: center;font-size:0.9em;line-height:1.2em;">
         `;
 
-    if (mod.reflections) {
-      first =
-        first +
-        `<div class="card active text-center p-1 no-aspect" onclick='loadPdf("Module Reflections", "${mod.reflections}")'>
-          <h4>Module Reflection</h4>
-        </div>`;
-    }
-
-    if (mod.project) {
-      first =
-        first +
-        `<div class="card active text-center p-1 no-aspect"  onclick="loadPdf('Module Project', '${mod.project}')">
-      <h4>Project Reflection</h4>
-      </div>`;
-    }
-
     first =
       first +
       `<div class="card active text-center p-1 no-aspect" onclick="openModuleUnits(${this.moduleId})">
-      <h4>Unit Reflections</h4>
-      </div>`;
-
-    if (mod.actionPlan) {
-      first =
-        first +
-        `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('Module Action Plan', '${mod.actionPlan}')">
-        <h4>Action Plan</h4>
-      </div>`;
-    }
-
-    if (mod.skillsMatrix) {
-      first =
-        first +
-        `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('Module Skills Matrix', '${mod.skillsMatrix}')">
-        <h4>Skills Matrix</h4>
-      </div>`;
-    }
-
-    for (let unit of mod.units) {
-      for (let act of unit.activities) {
-        if (act.activity !== "assignment")
-          continue;
-
-        if (act.ref == "zip") {
-          first =
-            first +
-            `<div class="card active text-center p-1 no-aspect">
-            <a href="${act.href}" download="${act.fileName}"><h4>${act.title}</h4></a>
-          </div>`;
-        } else {
-          first =
-            first +
-            `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('${act.title}', '${act.href}')">
-          <h4>${act.title}</h4>
+        <h4>Unit Reflections</h4>
         </div>`;
-        }
-      }
-    }
 
-    if (mod.contract){
-      first =
-        first +
-        `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('SSD Team Contract', '${mod.contract}')">
-        <h4>Team Contract</h4>
-      </div>`;
-    }
-
-    if (mod.meetings){
-      first = first + `<module-meetings moduleId='${mod.id}'></module-meetings>`;
-    }
-
-    first = first + `</div></div></section>`;
+    first = first + this.buildInfoExtras(mod) + `</div></div></section>`;
 
     this.innerHTML = first;
   }

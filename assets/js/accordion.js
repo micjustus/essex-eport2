@@ -1,4 +1,3 @@
-var elements;
 var lastElement;
 
 function toggleAccordion2(ev) {
@@ -11,23 +10,24 @@ function toggleAccordion2(ev) {
 export function initAccordion2(src) {
   src = src || document;
 
-  elements = src.querySelectorAll(".accordion-header");
-  elements.forEach(function (item) {
+  var elms = src.querySelectorAll(".accordion-header");
+  elms.forEach(function (item) {
     return item.addEventListener("click", toggleAccordion2);
   });
 
   // let's run an initialization on the items
-  elements.forEach(function (item) {
+  elms.forEach(function (item) {
     return toggleAccordionItem("true", item);
   });
 }
 
-export function closeAccordion() {
-  if (elements) {
-    elements.forEach(function (item) {
-      return item.removeEventListener("click", toggleAccordion2);
-    });
-  }
+export function closeAccordion(src) {
+  src = src || document;
+
+  var elms = src.querySelectorAll(".accordion-header");
+  elms.forEach(function (item) {
+    return item.removeEventListener("click", toggleAccordion2);
+  });
 }
 
 function hideBody(elm){
