@@ -52,7 +52,7 @@ export class ModuleInfo extends HTMLElement {
     if (mod.reflections) {
       first =
         first +
-        `<div class="card small active text-center p-1 no-aspect" onclick='loadPdf("Module Reflections", "${mod.reflections}")'>
+        `<div class="card active text-center p-1 no-aspect" onclick='loadPdf("Module Reflections", "${mod.reflections}")'>
           <h4>Module Reflection</h4>
         </div>`;
     }
@@ -60,21 +60,21 @@ export class ModuleInfo extends HTMLElement {
     if (mod.project) {
       first =
         first +
-        `<div class="card small active text-center p-1 no-aspect"  onclick="loadPdf('Module Project', '${mod.project}')">
+        `<div class="card active text-center p-1 no-aspect"  onclick="loadPdf('Module Project', '${mod.project}')">
       <h4>Project Reflection</h4>
       </div>`;
     }
 
     first =
       first +
-      `<div class="card small active text-center p-1 no-aspect" onclick="openModuleUnits(${this.moduleId})">
+      `<div class="card active text-center p-1 no-aspect" onclick="openModuleUnits(${this.moduleId})">
       <h4>Unit Reflections</h4>
       </div>`;
 
     if (mod.actionPlan) {
       first =
         first +
-        `<div class="card small active text-center p-1 no-aspect" onclick="loadPdf('Module Action Plan', '${mod.actionPlan}')">
+        `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('Module Action Plan', '${mod.actionPlan}')">
         <h4>Action Plan</h4>
       </div>`;
     }
@@ -82,30 +82,35 @@ export class ModuleInfo extends HTMLElement {
     if (mod.skillsMatrix) {
       first =
         first +
-        `<div class="card small active text-center p-1 no-aspect" onclick="loadPdf('Module Skills Matrix', '${mod.skillsMatrix}')">
+        `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('Module Skills Matrix', '${mod.skillsMatrix}')">
         <h4>Skills Matrix</h4>
       </div>`;
     }
 
     for (let unit of mod.units) {
       for (let act of unit.activities) {
-        if (act.activity == "assignment") {
-          if (act.ref == "zip") {
-            first =
-              first +
-              `<div class="card small active text-center p-1 no-aspect">
-              <a href="${act.href}" download="${act.fileName}"><h4>${act.title}</h4></a>
-            </div>`;
-          } else {
-            first =
-              first +
-              `<div class="card small active text-center p-1 no-aspect" onclick="loadPdf('${act.title}', '${act.href}')">
-            <h4>${act.title}</h4>
+        if (act.activity !== "assignment")
+          continue;
+
+        if (act.ref == "zip") {
+          first =
+            first +
+            `<div class="card active text-center p-1 no-aspect">
+            <a href="${act.href}" download="${act.fileName}"><h4>${act.title}</h4></a>
           </div>`;
-          }
+        } else {
+          first =
+            first +
+            `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('${act.title}', '${act.href}')">
+          <h4>${act.title}</h4>
+        </div>`;
         }
       }
     }
+
+    // if (mod.meetings){
+    //   first = first + `<module-meetings moduleId='${mod.id}'></module-meetings>`;
+    // }
 
     first = first + `</div></div></section>`;
 

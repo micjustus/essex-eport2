@@ -11,6 +11,18 @@ export const module = {
   project: "",//"../assets/artefacts/module3/Reflections-M3_SSD_Project.pdf",
   actionPlan: "",//"../assets/artefacts/module3/M3_Action_Plan.pdf",
   skillsMatrix: "",//"../assets/artefacts/module3/M3_Skills_Matrix.pdf",
+  meetings:[
+    {
+      date: "16 Aug 2021",
+      attendees: "soundmaven@gmail.com; tayloredgell@googlemail.com; micjustus@gmail.com;",
+      topic: "Discuss terms of Team Contract; agree on roles",
+      outcomes: [
+        "Roles assigned for first and second part of the module's assignment.",
+        "Discussed the need for different types of roles and what each role is required to do.",
+        
+      ] 
+    }
+  ],
   units: [
     {
       title: "Unit 1",
@@ -20,7 +32,7 @@ export const module = {
         "Decompose an activity into a set of tasks which can be represented using a flow chart from the UML portfolio of modelling techniques.",
         "Describe the importance of creating a culture of risk awareness in an organisation, in addition to the creation of secure software.",
       ],
-      writing: "../assets/artefacts/module3/Reflections-M3-U1.pdf",
+      writing: "",//"../assets/artefacts/module3/Reflections-M3-U1.pdf",
 
       reading: {
         required: [
@@ -43,7 +55,15 @@ export const module = {
           "Casteren, W. Van. (2017) The Waterfall Model and the Agile Methdologies: A Comparison by Project Characteristics.",
         ],
       },
-      activities: [],
+      activities: [
+        {
+          title: "Discussion - Initial Post",
+          description: "Identify and diagram an OWASP failure",
+          href: "../assets/artefacts/module3/Reflections-M3-U1_Initial_Post.pdf",
+          ref: "pdf"
+        }
+      ],
+     
     },
     {
       title: "Unit 2",
@@ -284,4 +304,5 @@ export const module = {
       activities: [],
     },
   ],
+
 };

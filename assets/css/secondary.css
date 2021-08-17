@@ -2,6 +2,7 @@
 
 body{
   --background: white;
+  --card-hover-color: white;
 }
 
 section header{
@@ -126,13 +127,13 @@ ol{
   overflow: hidden;
 }
 .units-block li:hover > a{
-  color: white;
+  color: var(--card-hover-color);
   font-weight: 500;
 }
 .units-block li:hover{
   background: hsl(346, 89%, 53%);
  
-  color: white;
+  color: var(--card-hover-color);
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   scale: 1.05;
   border-radius: 6px;
@@ -368,6 +369,10 @@ ol{
   line-height: 1.4em;
   margin-bottom: 0.6em;
 }
+.card :is(h1, h2, h3, h4):only-child {
+  padding: 0;
+  margin: 0;
+}
 .card.active header {
   color: black;
 }
@@ -382,8 +387,11 @@ ol{
   box-shadow: 0 0 30px 2px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   user-select: none;
-  color: white;
+  color: var(--card-hover-color);
   font-weight: 700;
+}
+.card.active:hover a{
+  color: var(--card-hover-color);
 }
 .card.active:hover :is(h1, h2, h3, h4, h5, h6){
   color: inherit;
@@ -425,10 +433,10 @@ ol{
   color: black;
 }
 .card:hover .icon.featured + header {
-  color: white;
+  color: var(--card-hover-color);
 }
 .card.active:hover p {
-  color: white;
+  color: var(--card-hover-color);
 }
 .card .icon {
   text-align: center;

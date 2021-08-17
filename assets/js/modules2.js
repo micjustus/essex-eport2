@@ -234,7 +234,7 @@ export const module = {
         },
 
         {
-          title: "Assignment: System Design",
+          title: "Assignment Design",
           description:
             "Develop a class diagram, activity and state diagram for a given scenario describing online shopping.",
           href: "../assets/artefacts/module2/M2_Assignment_1.pdf",
@@ -397,7 +397,7 @@ export const module = {
         },
 
         {
-          title: "Assignment: System Implementation",
+          title: "Assignment Implementation",
           description:
             "Implement Python code for the system design proposed in unit 7.",
           href: "../assets/artefacts/module2/M2_Assignment_2.pdf",
@@ -406,7 +406,7 @@ export const module = {
         },
 
         {
-          title: "Assignment: System Implementation (ZIP)",
+          title: "Assignment Python Code",
           href: "../assets/artefacts/module2/M2_Unit11-System_Implementation.zip",
           ref: "zip",
           fileName: "Unit_11_Python_Code.zip",
