@@ -108,9 +108,9 @@ export class ModuleInfo extends HTMLElement {
       }
     }
 
-    // if (mod.meetings){
-    //   first = first + `<module-meetings moduleId='${mod.id}'></module-meetings>`;
-    // }
+    if (mod.meetings){
+      first = first + `<module-meetings moduleId='${mod.id}'></module-meetings>`;
+    }
 
     first = first + `</div></div></section>`;
 

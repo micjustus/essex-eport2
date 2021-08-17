@@ -1,3 +1,4 @@
+import { initAccordion2 } from "../accordion.js";
 import { modules } from "../modules.js";
 
 export class Meetings extends HTMLElement {
@@ -27,47 +28,40 @@ export class Meetings extends HTMLElement {
 
     if (!mod.meetings) return;
 
-    var div = document.createElement("div");
-    div.classList.add("row");
-    div.classList.add("nowrap");
-  
+    var table  ='';
 
-    var col1 = document.createElement("div");
-    col1.classList.add("row");
-    col1.classList.add("cols");
-    col1.style.width="30%";
-    col1.innerText = "Date";
+    table = `<div class="table-container" role="table" aria-label="Meetings">
+      <div class="flex-table header" role="rowgroup">
+        <div class="flex-row first" role="columnheader">Date</div>
+        <div class="flex-row" role="columnheader">Attendees</div>
+        <div class="flex-row" role="columnheader">Minutes</div>
+      </div>`;
 
-    var col2 = document.createElement("div");
-    col2.classList.add("row");
-    col2.classList.add("cols");
-    col2.innerText = "Attendees";
-
-    var col3 = document.createElement("div");
-    col3.classList.add("row");
-    col3.classList.add("cols");
-    col3.style.width="70%";
-    col3.innerText= "Outcomes";
-
-    div.append(col1, col2, col3);
-
-    mod.meetings.forEach((val, idx)=> {
-        var p1 = document.createElement("p");
-        p1.innerText = val.date;
-        col1.append(p1);
-
-        var p2 = document.createElement("p");
-        p2.innerText = val.attendees;
-        col2.append(p2);
-
-        var p3 = document.createElement("p");
-        p3.innerText = val.outcomes;
-        col3.append(p3);
-
+    mod.meetings.forEach((val, idx)=>{
+      table = table + 
+      `
+      <div class="flex-table row" role="rowgroup">
+        <div class="flex-row" role="cell">${val.date}</div>
+        <div class="flex-row" role="cell">${val.attendees}</div>
+        <div class="flex-row" role="cell" onclick="loadPdf('Minutes of Meeting', '${val.minutes}')"><img src='../assets/css/images/pdf_icon.png' width=32 height=32/></div>
+      </div>
+      `;
     });
 
-    this.appendChild(div);
+    var text = 
+    `
+    <section class="p-1 accordion-header expander" style="border-radius: 6px" aria-expanded="false">
+      <header>Meetings</header>
+    </section>
+    <section class="accordion-body" style="display: none; overflow: hidden;">${table}</section>
+       `;
+
+       
+
+       this.style.display="contents";
+       this.innerHTML = text;
   }
 }
 
 customElements.define("module-meetings", Meetings);
+initAccordion2();

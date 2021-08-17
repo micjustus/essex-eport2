@@ -15,13 +15,9 @@ export const module = {
     {
       date: "16 Aug 2021",
       attendees: "soundmaven@gmail.com; tayloredgell@googlemail.com; micjustus@gmail.com;",
-      topic: "Discuss terms of Team Contract; agree on roles",
-      outcomes: [
-        "Roles assigned for first and second part of the module's assignment.",
-        "Discussed the need for different types of roles and what each role is required to do.",
-        
-      ] 
-    }
+      minutes: "../assets/artefacts/module3/Meetings_U1_20210816.pdf"
+    },
+
   ],
   units: [
     {

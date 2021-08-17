@@ -602,6 +602,9 @@ code{
 .p-1{
   padding: 1em;
 }
+.p-2{
+  padding: 2em;
+}
 .p-5{
   padding: 3em;
 }
@@ -801,4 +804,48 @@ code{
 }
 .color-8 :is(h1, h2, h3, h4){
   color:#888;
+}
+
+.flex-table{
+  display: grid;
+  grid-template-columns: 0.7fr 2fr .3fr;
+  grid-template-rows: 100% auto;
+  flex-flow: row wrap;
+  border-left: solid 1px black;
+}
+.flex-table:first-of-type{
+  border-top: solid 1px black;
+  border-left: solid 1px black;
+}
+.flex-table:first-of-type .flex-row{
+  background: white;
+  color: black;
+  border-color: purple;
+}
+.flex-row{
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 0.5em;
+  border-right: solid 1px;
+  border-bottom: solid 1px;
+  overflow: hidden;
+}
+.flex-table:hover{
+  background-color: lavender;
+}
+.flex-cell{
+  text-align: center;
+  padding: 0.5em;
+  border-right: solid 1px;
+}
+.flex-table .flex-row img{
+  cursor: pointer;
+}
+.flex-row > p{
+  display: inline-block;
+  vertical-align: middle;;
+}
+.round-1{
+  border-radius: 1em;
 }

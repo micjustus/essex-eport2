@@ -33,7 +33,6 @@ export function closeAccordion() {
 function hideBody(elm){
   var body = elm.parentElement.querySelector(".accordion-body");
   if (body) {
-    // body.style.height = "0";
     body.style.display = 'none';
     body.style.overflow = "hidden";
   }
@@ -57,7 +56,6 @@ function toggleAccordionItem(itemToggle, elm) {
 
     body = elm.parentElement.querySelector(".accordion-body");
     if (body) {
-      // body.style.height = "auto";
       body.style.display='block';
     }
   } else {
