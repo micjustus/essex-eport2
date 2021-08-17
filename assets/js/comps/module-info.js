@@ -108,6 +108,14 @@ export class ModuleInfo extends HTMLElement {
       }
     }
 
+    if (mod.contract){
+      first =
+        first +
+        `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('SSD Team Contract', '${mod.contract}')">
+        <h4>Team Contract</h4>
+      </div>`;
+    }
+
     if (mod.meetings){
       first = first + `<module-meetings moduleId='${mod.id}'></module-meetings>`;
     }

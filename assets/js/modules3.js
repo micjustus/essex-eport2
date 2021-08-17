@@ -11,6 +11,7 @@ export const module = {
   project: "",//"../assets/artefacts/module3/Reflections-M3_SSD_Project.pdf",
   actionPlan: "",//"../assets/artefacts/module3/M3_Action_Plan.pdf",
   skillsMatrix: "",//"../assets/artefacts/module3/M3_Skills_Matrix.pdf",
+  contract: "../assets/artefacts/module3/Team_Contract_SSD_0.4.pdf",
   meetings:[
     {
       date: "16 Aug 2021",
