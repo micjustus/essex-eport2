@@ -300,13 +300,8 @@ ol{
 }
 
 .sidebar{
-  position: sticky;
-  top: 0;
-  margin: 0;
-  background: rgba(255,255,255,0.8);
   padding: 20px;
-  background: white;
-  overflow: hidden;
+  overflow: hidden; 
 }
 .icon.placeholder {
   position: relative;

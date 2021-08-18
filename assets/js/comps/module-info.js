@@ -111,7 +111,7 @@ export class ModuleInfo extends HTMLElement {
       .join("");
 
     var first = `<section class="band-1 p-5">
-          <div class="centered content-width mw-80ch">
+          <div class="centered mw-80ch">
             <header class="text-center">
               <h2>${mod.title}</h2>
             </header>

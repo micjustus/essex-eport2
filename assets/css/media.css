@@ -4,3 +4,24 @@
         line-height: 1.5em;
     }
 }
+
+@media screen and (max-width: 890px){
+    .module-units{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px)
+{
+    .module-units{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px){
+    .sidebar{
+        width: 100% !important;
+    }
+    .unit-content-outer{
+        width: 100% !important;
+    }
+}
