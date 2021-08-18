@@ -42,7 +42,7 @@ export class Meetings extends HTMLElement {
       `
       <div class="flex-table row" role="rowgroup">
         <div class="flex-row" role="cell">${val.date}</div>
-        <div class="flex-row" role="cell">${val.attendees}</div>
+        <div class="flex-row tags left" role="cell"><ul style="margin:0;text-align:left;">${val.attendees.split(';').map((item)=> '<li>' + item + '</li>' ).join('')}</ul></div>
         <div class="flex-row" role="cell" onclick="loadPdf('Minutes of Meeting', '${val.minutes}')"><img src='../assets/css/images/pdf_icon.png' width=32 height=32/></div>
       </div>
       `;

@@ -15,7 +15,7 @@ export const module = {
   meetings:[
     {
       date: "16 Aug 2021",
-      attendees: "soundmaven@gmail.com; tayloredgell@googlemail.com; micjustus@gmail.com;",
+      attendees: "soundmaven@gmail.com; tayloredgell@googlemail.com; micjustus@gmail.com",
       minutes: "../assets/artefacts/module3/Meetings_U1_20210816.pdf"
     },
 
