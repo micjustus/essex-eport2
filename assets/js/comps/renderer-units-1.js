@@ -28,13 +28,14 @@ function buildActivityLink(element) {
     return clickLink;
   }
 
-  if (element.ref === "doc")
+  if (element.ref === "doc") {
     clickLink = `onclick='loadDoc("${content.title} - Launching", "${element.href}")'`;
-  else if (element.ref == "pdf")
+  } else if (element.ref === "pdf") {
     clickLink = `onclick='loadPdf("${content.title}", "${element.href}")'`;
-  else if (element.ref != "zip");
-  clickLink = `data-href='${element.href}' onclick="openPost(this, 'image-only')"`;
-
+  } else if (element.ref !== "zip") {
+  } else {
+    clickLink = `data-href='${element.href}' onclick="openPost(this, 'image-only')"`;
+  }
   return clickLink;
 }
 
@@ -45,7 +46,9 @@ function buildActivity(element) {
     first = `
       <ul class="dates">
           <li class="dates">
-              <span class="date">${element.month} <strong>${element.day}</strong></span>
+              <span class="date">${element.month} <strong>${
+      element.day
+    }</strong></span>
               <h4>${element.title}</h4>
               <p>${element.description || ""}</p>
           </li>
@@ -85,7 +88,7 @@ function buildActivities(content) {
   var writing = buildUnitWriting(content);
   var activities = "";
 
-  content.activities.forEach((element, idx)=>{
+  content.activities.forEach((element, idx) => {
     activities = activities + buildActivity(element);
   });
 
@@ -131,9 +134,8 @@ function buildOutcomes(content) {
       <header class="outcomes">Unit Learning Outcomes</header>
       <ul class="left-align">
       ` +
-      content.outcomes.map((element) => `<li>${element}</li>`).join("")
-        +
-      `
+    content.outcomes.map((element) => `<li>${element}</li>`).join("") +
+    `
       </ul>
    </section>`
   );
@@ -145,10 +147,10 @@ UnitCard.prototype.render = function (content, targetSite) {
   var tgt = document.getElementById(targetSite);
   if (!tgt) return;
 
-  if (lastRenderElm){
+  if (lastRenderElm) {
     tgt.removeChild(lastRenderElm);
     accordion.closeAccordion(lastRenderElm);
-  } 
+  }
 
   var outcomes = buildOutcomes(content);
   var reading = buildReading(content);

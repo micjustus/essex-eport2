@@ -38,9 +38,7 @@ export const module = {
       activities: [
         {
           title: "Discussion Forum",
-          description:
-            "Identify an instance of a failure with an information system, with a focus on the reasons for the failure.",
-          // href: "/assets/activity-m2u1.html",
+          description: "Identify an instance of a failure with an information system, with a focus on the reasons for the failure.",
           ref: "pdf",
           href: "../assets/artefacts/module2/Reflections-M2-U1_Initial_Post.pdf",
         },
@@ -48,8 +46,7 @@ export const module = {
         {
           ref: "pdf",
           title: "Seminar 1 Preparation",
-          description:
-            "Prepare for seminar which focuses on the En Route Automation Modernization failure. <em>Please refer to Reflective Writing for additional information</em>",
+          description: "Prepare for seminar which focuses on the En Route Automation Modernization failure. <em>Please refer to Reflective Writing for additional information</em>",
           href: "../assets/artefacts/module2/Reflections-M2-U1_Seminar1_Preparation.pdf",
         },
       ],
@@ -96,16 +93,14 @@ export const module = {
       activities: [
         {
           title: "Discussion Forum - Summary",
-          description:
-            "Identify an instance of a failure with an information system, with a focus on the reasons for the failure.",
+          description: "Identify an instance of a failure with an information system, with a focus on the reasons for the failure.",
           ref: "pdf",
           href: "../assets/artefacts/module2/Reflections-M2-U3_Summary_Post.pdf",
         },
 
         {
           title: "Practical Activity",
-          description:
-            "This activity for this unit involves putting your object-oriented design skills into practice. Create an object model to represent a supermarket.",
+          description: "This activity for this unit involves putting your object-oriented design skills into practice. Create an object model to represent a supermarket.",
           ref: "pdf",
           href: "../assets/artefacts/module2/Reflections-M2-U3_Practical.pdf",
         }

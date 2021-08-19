@@ -125,7 +125,7 @@ export class ModuleInfo extends HTMLElement {
         <header class="text-center color-8">
           <h3>Module Documents</h3>
         </header>
-        <div class="row" style="column-gap:1em;row-gap:1em; align-items: center;font-size:0.9em;line-height:1.2em;">
+        <div class="row module-unit-docs">
         `;
 
     first =

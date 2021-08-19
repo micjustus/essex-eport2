@@ -18,6 +18,9 @@
     }
 }
 @media screen and (max-width: 500px){
+    body>*{
+        font-size: 1em;
+    }
     .sidebar{
         width: 100% !important;
     }
