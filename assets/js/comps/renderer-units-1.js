@@ -28,9 +28,7 @@ function buildActivityLink(element) {
     return clickLink;
   }
 
-  if (element.ref === "doc") {
-    clickLink = `onclick='loadDoc("${content.title} - Launching", "${element.href}")'`;
-  } else if (element.ref === "pdf") {
+   if (element.ref === "pdf") {
     clickLink = `onclick='loadPdf("${content.title}", "${element.href}")'`;
   } else if (element.ref !== "zip") {
   } else {

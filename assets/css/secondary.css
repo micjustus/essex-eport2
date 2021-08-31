@@ -673,25 +673,23 @@ figcaption {
 
 .flex-table {
   display: grid;
-  grid-template-columns: 0.7fr 2fr 0.3fr;
+  grid-template-columns: 0.4fr 2fr 0.25fr;
   grid-template-rows: 100% auto;
   flex-flow: row wrap;
-  border-left: solid 1px black;
+  border-left: solid 1px ;
 }
 .flex-table:first-of-type {
-  border-top: solid 1px black;
-  border-left: solid 1px black;
+  border-top: solid 1px;
+  border-left: solid 1px ;
 }
 .flex-table:first-of-type .flex-row {
-  background: white;
-  color: black;
-  border-color: purple;
+ color: black;
 }
 .flex-row {
   display: block;
   width: 100%;
   text-align: center;
-  padding: 0.5em;
+  padding: 0.3em;
   border-right: solid 1px;
   border-bottom: solid 1px;
   overflow: hidden;

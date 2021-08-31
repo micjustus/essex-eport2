@@ -16,7 +16,17 @@ export const module = {
     {
       date: "16 Aug 2021",
       attendees: "soundmaven@gmail.com; tayloredgell@googlemail.com; micjustus@gmail.com",
-      minutes: "../assets/artefacts/module3/Meetings_U1_20210816.pdf"
+      minutes: "../assets/artefacts/module3/M3-Meetings_20210816.pdf"
+    },
+    {
+      date: "18 Aug 2021",
+      attendees: "soundmaven@gmail.com; tayloredgell@googlemail.com; micjustus@gmail.com",
+      minutes: "../assets/artefacts/module3/M3-Meetings_20210818.pdf"
+    },
+    {
+      date: "24 Aug 2021",
+      attendees: "soundmaven@gmail.com; tayloredgell@googlemail.com; micjustus@gmail.com",
+      minutes: "../assets/artefacts/module3/M3-Meetings_20210824.pdf"
     },
 
   ],
@@ -29,7 +39,7 @@ export const module = {
         "Decompose an activity into a set of tasks which can be represented using a flow chart from the UML portfolio of modelling techniques.",
         "Describe the importance of creating a culture of risk awareness in an organisation, in addition to the creation of secure software.",
       ],
-      writing: "",//"../assets/artefacts/module3/Reflections-M3-U1.pdf",
+      writing: "../assets/artefacts/module3/M3-Reflections_U1.pdf",
 
       reading: {
         required: [
@@ -56,7 +66,7 @@ export const module = {
         {
           title: "Discussion - Initial Post",
           description: "Identify and diagram an OWASP failure",
-          href: "../assets/artefacts/module3/Reflections-M3-U1_Initial_Post.pdf",
+          href: "../assets/artefacts/module3/M3-U1_Initial_Post.pdf",
           ref: "pdf"
         }
       ],
@@ -70,11 +80,11 @@ export const module = {
         "Break down the steps involved in a process so that they may be represented as a flow chart.",
         "Reading areas of an ISO/IEC Standard on security and becoming familiar with the language and concepts.",
       ],
-      writing: "../assets/artefacts/module3/Reflections-M3-U2.pdf",
+      writing: "../assets/artefacts/module3/M3-Reflections_U2.pdf",
       activities: [
         {
           title: "Seminar 1 - Scrum Security Review",
-          href: "../assets/artefacts/module3/M3-Seminars_1.pdf",
+          href: "../assets/artefacts/module3/M3-U2_Seminar_1.pdf",
           ref: "pdf",
           display: "date",
           month: "Aug",
@@ -108,7 +118,7 @@ export const module = {
         "Discuss key programming challenges and recommended best practices.",
         "Explain what design patterns are and when to use them.",
       ],
-      writing: "../assets/artefacts/module3/Reflections-M3-U3.pdf",
+      writing: "../assets/artefacts/module3/M3-Reflections-U3.pdf",
       activities: [],
       reading: {
         required: [

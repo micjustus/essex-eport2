@@ -554,7 +554,7 @@ ul.dates li:first-child .date {
 /* Banner */
 
 #banner {
-  background: #cce8f4 url("../../images/pic01.jpg");
+  background: #cce8f4;
   background-position: center center;
   background-size: auto 100%;
   background-repeat: no-repeat;
@@ -632,7 +632,6 @@ ul.dates li:first-child .date {
   top: 0;
   left: 0;
   width: 100%;
-  background: url("images/bg01.png");
   background-size: 100% 100%;
   z-index: 0;
   opacity: 0.5;
