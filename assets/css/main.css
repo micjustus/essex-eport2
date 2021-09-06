@@ -390,14 +390,14 @@ ul.dates {
 ul.dates li {
   position: relative;
   border-top: solid 1px #ddd;
-  padding: 1.3em 0 1.3em 6.75em;
+  padding: 0 0 0 5.2em;
   text-align: left;
 }
 
 ul.dates .date {
-  display: block;
+  /* display: block; */
   position: absolute;
-  left: 0;
+  /* left: 0;
   top: 1.3em;
   background-color: #d52349;
   height: 3.5em;
@@ -405,8 +405,9 @@ ul.dates .date {
   color: #fff;
   line-height: 1em;
   border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-bottom-left-radius: 5px; */
   padding: 0.5em 0.75em 0 1em;
+  font-size: 0.85em;
 }
 
 ul.dates .date:after {

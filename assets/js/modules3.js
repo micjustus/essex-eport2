@@ -15,20 +15,25 @@ export const module = {
   meetings:[
     {
       date: "16 Aug 2021",
-      attendees: "soundmaven@gmail.com; tayloredgell@googlemail.com; micjustus@gmail.com",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
       minutes: "../assets/artefacts/module3/M3-Meetings_20210816.pdf"
     },
     {
       date: "18 Aug 2021",
-      attendees: "soundmaven@gmail.com; tayloredgell@googlemail.com; micjustus@gmail.com",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
       minutes: "../assets/artefacts/module3/M3-Meetings_20210818.pdf"
     },
     {
       date: "24 Aug 2021",
-      attendees: "soundmaven@gmail.com; tayloredgell@googlemail.com; micjustus@gmail.com",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
       minutes: "../assets/artefacts/module3/M3-Meetings_20210824.pdf"
     },
-
+   
+    {
+      date: "3 Sep 2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
+      minutes: "../assets/artefacts/module3/M3-Meetings_20210903.pdf"
+    },
   ],
   units: [
     {
@@ -66,7 +71,7 @@ export const module = {
         {
           title: "Discussion - Initial Post",
           description: "Identify and diagram an OWASP failure",
-          href: "../assets/artefacts/module3/M3-U1_Initial_Post.pdf",
+          href: "../assets/artefacts/module3/M3-Discussion_Initial.pdf",
           ref: "pdf"
         }
       ],
@@ -83,8 +88,15 @@ export const module = {
       writing: "../assets/artefacts/module3/M3-Reflections_U2.pdf",
       activities: [
         {
+          title: "Discussion - Peer Responses",
+          description: "Identify and diagram an OWASP failure",
+          href: "../assets/artefacts/module3/M3-Discussion_Responses.pdf",
+          ref: "pdf"
+        },
+
+        {
           title: "Seminar 1 - Scrum Security Review",
-          href: "../assets/artefacts/module3/M3-U2_Seminar_1.pdf",
+          href: "../assets/artefacts/module3/M3-Seminars_1.pdf",
           ref: "pdf",
           display: "date",
           month: "Aug",
@@ -96,7 +108,9 @@ export const module = {
           description: "Managing humans and cybersecurity",
           href: "../assets/artefacts/module3/M3-U2_Blog_Post.pdf",
           ref: "pdf"
-        }
+        },
+
+      
       ],
       reading: {
         required: ["Dadzie, J. (2005) Understanding Software Patching, IEEE."],
@@ -119,7 +133,36 @@ export const module = {
         "Explain what design patterns are and when to use them.",
       ],
       writing: "../assets/artefacts/module3/M3-Reflections-U3.pdf",
-      activities: [],
+      activities: [
+        {
+          title: "Discussion - Summary Post",
+          description: "Final post based on peer responses and research in units 1, 2 and 3.",
+          href: "../assets/artefacts/module3/M3-Discussion_Summary.pdf",
+          ref: "pdf"
+        },
+
+        {
+          title: "Team Discussion - Secure Programming Languages",
+          description: "What is a secure programming language? Is Python secure?",
+          href: "../assets/artefacts/module3/M3-U3_SecureLanguage.pdf",
+          ref: "pdf"
+        },
+
+        {
+          title: "Team Discussion - Summary",
+          description: "Collated feedback from team members",
+          href: "../assets/artefacts/module3/M3-U3_SecureLanguage_Team.pdf",
+          ref: "pdf"
+        },
+
+       
+        {
+          title: "Codio Activity - Buffer Overflow",
+          description: "",
+          href: "../assets/artefacts/module3/M3-Codio_U3.pdf",
+          ref: "pdf"
+        },
+      ],
       reading: {
         required: [
           "Pillai, A.B. (2017) Software Architecture with Python. Birmingham, UK. Packt Publishing Ltd. Chapter 2, 6, 7, 8",
@@ -139,7 +182,23 @@ export const module = {
         "Discuss the security implications of both approaches.",
       ],
       writing: "../assets/artefacts/module3/Reflections-M3-U4.pdf",
-      activities: [],
+      activities: [
+        {
+          title: "Programming Language Concepts",
+          href: "../assets/artefacts/module3/M3-U4_ProgrammingConcepts.pdf",
+          ref: "pdf",
+        },
+
+        {
+          title: "Seminar 2 - Programming Language Concepts",
+          href: "../assets/artefacts/module3/M3-Seminars_2.pdf",
+          ref: "pdf",
+          display: "date",
+          month: "Sep",
+          day: 2
+        },
+
+      ],
       reading: {
         required: [
           "Larson, E. (2016) Generating Evil Test Strings for Regular Expressions. IEEE International Conference on Software Testing, Verification and Validation (ICST).",
