@@ -132,7 +132,7 @@ export const module = {
         "Discuss key programming challenges and recommended best practices.",
         "Explain what design patterns are and when to use them.",
       ],
-      writing: "../assets/artefacts/module3/M3-Reflections-U3.pdf",
+      writing: "../assets/artefacts/module3/M3-Reflections_U3.pdf",
       activities: [
         {
           title: "Discussion - Summary Post",
