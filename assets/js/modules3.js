@@ -34,6 +34,31 @@ export const module = {
       attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
       minutes: "../assets/artefacts/module3/M3-Meetings_20210903.pdf"
     },
+
+    {
+      date: "10 Sep 2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
+      minutes: "../assets/artefacts/module3/M3-Meetings_20210910.pdf"
+    },
+
+    {
+      date: "14 Sep 2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
+      minutes: "../assets/artefacts/module3/M3-Meetings_20210914.pdf"
+    },
+
+    {
+      date: "17 Sep 2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
+      minutes: "../assets/artefacts/module3/M3-Meetings_20210917.pdf"
+    },
+
+    {
+      date: "20 Sep 2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
+      minutes: "../assets/artefacts/module3/M3-Meetings_20210920.pdf"
+    },
+
   ],
   units: [
     {
@@ -255,7 +280,25 @@ export const module = {
           "Mannino, J. (n.d.) Security in a Microservice World, OWASP.",
         ],
       },
-      activities: [],
+      activities: [
+        {
+          title: "Assignment Design",
+          description:
+            "Develop a technical report as a team based on one of the selected domains.",
+          href: "../assets/artefacts/module3/M3_Assignment_1.pdf",
+          ref: "pdf",
+          activity: "assignment"
+        },
+
+        {
+          title: "Seminar 3 - Using Linters",
+          href: "../assets/artefacts/module3/M3-Seminars_3.pdf",
+          ref: "pdf",
+          display: "date",
+          month: "Sep",
+          day: 16
+        },
+      ],
     },
 
     {
