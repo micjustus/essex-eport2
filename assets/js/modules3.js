@@ -255,7 +255,15 @@ export const module = {
           "Song, I. Guedea-Elizalde, F. & Karray, F (2007) CONCORD: A Control Framework for Distributed Real-Time Systems. IEEE Sensors Journal 7(7):1078 – 1090.",
         ],
       },
-      activities: [],
+      activities: [
+        {
+          title: "Exploring Cyclomatic Complexity's Relevance",
+          description: "Is Cyclomatic complexity relevant in the context of secure software development.",
+          href: "../assets/artefacts/module3/M3-U5_CyclomaticComplexity.pdf",
+          ref: "pdf",
+        },
+
+      ],
     },
     {
       title: "Unit 6",
@@ -322,7 +330,14 @@ export const module = {
           "Corbato F. & Vyssotsky V. (1965) Introduction and Overview of the Multics System. Proceedings of the Joint Computer Conference, ACM 1:185– 196.",
         ],
       },
-      activities: [],
+      activities: [
+        {
+          title: "Codio Activity - Commandline Shell",
+          description: "",
+          href: "../assets/artefacts/module3/M3-Codio_U7.pdf",
+          ref: "pdf"
+        },
+      ],
     },
 
     {
