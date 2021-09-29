@@ -405,6 +405,13 @@ ol {
   margin: 0;
 }
 
+.dates .date.clear {
+  background-color: white !important;
+  outline: 1px solid hsl(0, 0%, 33%);
+  color: darkgrey !important;
+  border-radius: 3px !important;
+}
+
 .dates .date {
   display: block;
   position: relative;
@@ -428,6 +435,10 @@ ol {
   border-left: solid 1.25em #d52349;
   border-top: solid 1.8em transparent;
   border-bottom: solid 1.8em transparent;
+}
+
+.dates .date.clear:after{
+  border-left: transparent !important;
 }
 
 .dates .date strong {

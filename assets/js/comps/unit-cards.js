@@ -18,7 +18,8 @@ class UnitCards extends HTMLElement {
   get moduleId() {
     return this.getAttribute("module-id");
   }
-  set moduleId(newValue) {}
+
+  set moduleId(newValue) { }
 
   connectedCallback() {
     var moduleId = this.moduleId;

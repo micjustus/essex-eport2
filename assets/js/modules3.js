@@ -125,14 +125,16 @@ export const module = {
           ref: "pdf",
           display: "date",
           month: "Aug",
-          day: 19
+          day: 19,
+          type: "seminar"
         },
 
         {
           title: "Seminar 1 - Blog Post",
           description: "Managing humans and cybersecurity",
           href: "../assets/artefacts/module3/M3-U2_Blog_Post.pdf",
-          ref: "pdf"
+          ref: "pdf",
+          type: "seminar"
         },
 
       
@@ -220,7 +222,8 @@ export const module = {
           ref: "pdf",
           display: "date",
           month: "Sep",
-          day: 2
+          day: 2,
+          type: "seminar"
         },
 
       ],
@@ -304,7 +307,8 @@ export const module = {
           ref: "pdf",
           display: "date",
           month: "Sep",
-          day: 16
+          day: 16,
+          type: "seminar"
         },
       ],
     },

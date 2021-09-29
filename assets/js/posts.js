@@ -84,4 +84,14 @@ function openModuleUnits(moduleId){
     </div>
 </body>`);
 }
+
+function openModuleSeminars(moduleId){
+  openPostContent(
+    `<body>
+      <div>
+        <module-seminars module-id=${moduleId}></module-seminars>
+      </div>
+    </body>`);
+}
+
 initPosts();

@@ -53,7 +53,7 @@ export class ModuleInfo extends HTMLElement {
     if (mod.reflections) {
       first =
         first +
-        `<div class="card active text-center p-1 no-aspect" onclick='loadPdf("Module Reflections", "${mod.reflections}")'>
+        `<div class="card active text-center p-1 no-aspect" onclick='loadPdf("Module Reflection", "${mod.reflections}")'>
           <h4>Module Reflection</h4>
         </div>`;
     }
@@ -61,7 +61,7 @@ export class ModuleInfo extends HTMLElement {
     if (mod.project) {
       first =
         first +
-        `<div class="card active text-center p-1 no-aspect"  onclick="loadPdf('Module Project', '${mod.project}')">
+        `<div class="card active text-center p-1 no-aspect"  onclick="loadPdf('Project Reflection', '${mod.project}')">
       <h4>Project Reflection</h4>
       </div>`;
     }
@@ -132,6 +132,9 @@ export class ModuleInfo extends HTMLElement {
       first +
       `<div class="card active text-center p-1 no-aspect" onclick="openModuleUnits(${this.moduleId})">
         <h4>Unit Reflections</h4>
+        </div> 
+        <div class="card active text-center p-1 no-aspect" onclick="openModuleSeminars(${this.moduleId})">
+          <h4>Unit Seminars</h4>
         </div>`;
 
     first = first + this.buildInfoExtras(mod) + `</div></div></section>`;
