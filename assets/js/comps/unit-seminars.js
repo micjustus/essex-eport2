@@ -42,13 +42,12 @@ class SeminarCards extends HTMLElement {
 
     var added = 0;
 
-    let seminars= []
+    let seminars = [];
 
-    module.units.forEach((val, idx)=>{
-        val.activities.forEach((act)=>{
-            if (act.type == "seminar")
-                seminars.push(act);
-        });
+    module.units.forEach((val, idx) => {
+      val.activities.forEach((act) => {
+        if (act.type == "seminar") seminars.push(act);
+      });
     });
 
     seminars.forEach((val, idx) => {
@@ -57,7 +56,7 @@ class SeminarCards extends HTMLElement {
       }
 
       var elm = document.createElement("div");
-          elm.classList.add("card");
+      elm.classList.add("card");
       elm.classList.add("small");
       elm.classList.add("left");
       elm.classList.add("nowrap");
@@ -73,7 +72,9 @@ class SeminarCards extends HTMLElement {
       elm.innerHTML = `
         <ul class="dates">
             <li class="dates">
-                <span class="date clear">${val.month || ''} <strong>${val.day || ''}</strong></span>
+                <span class="date clear">${val.month || ""} <strong>${
+        val.day || ""
+      }</strong></span>
                 <h4>${val.title}</h4>
                 <p>${val.description || ""}</p>
             </li>

@@ -208,7 +208,7 @@ export const module = {
         "Describe how and when to use recursion in solutions.",
         "Discuss the security implications of both approaches.",
       ],
-      writing: "../assets/artefacts/module3/Reflections-M3-U4.pdf",
+      writing: "",
       activities: [
         {
           title: "Programming Language Concepts",
@@ -246,7 +246,7 @@ export const module = {
         "Prepare a list of questions to ask when designing a test plan for secure software.",
         "Design software tests through understanding the range of ways which the security of software can be breached.",
       ],
-      writing: "../assets/artefacts/module3/Reflections-M3-U5.pdf",
+      writing: "",
       reading: {
         required: [
           "Pillai, A. B (2017). Software Architecture with Python. Birmingham, UK. Packt Publishing Ltd. Chapter 3, 4, 10",
@@ -276,7 +276,7 @@ export const module = {
         "Compare and contrast the outputs from linters to recognise their relevance and applicability in different development and testing scenarios.",
         "Develop Python code, which is free of error, consistent in its design, and considered to be high quality according to common Python standards.",
       ],
-      writing: "../assets/artefacts/module3/Reflections-M3-U6.pdf",
+      writing: "",
       reading: {
         required: [
           "Firdaus, A., Ghani, I. & Jeong, S.  (2014) Secure Feature Driven Development (SFDD) Model for Secure Software Development, Procedia Social and Behavioral Sciences 129:546-553.",
@@ -321,7 +321,7 @@ export const module = {
         "Explain some of the key risks and vulnerabilities associated with operating systems.",
         "Outline the differences between static and dynamic libraries and when to use each.",
       ],
-      writing: "../assets/artefacts/module3/Reflections-M3-U7.pdf",
+      writing: "",
       reading: {
         required: [
           "Saltzer, J. & Schroeder, M. (1975) The Protection of Information in Computer Systems. Proceedings of the IEEE 63(9): 1278-1308.",
@@ -352,7 +352,7 @@ export const module = {
         "Explain the pros and cons of using common cryptographic libraries.",
         "Demonstrate the use of cryptographic libraries in a simple application.",
       ],
-      writing: "../assets/artefacts/module3/Reflections-M3-U8.pdf",
+      writing: "",
       reading: {
         required: [
           "Junestam, A. & Guigo, N. (2014) Open Crypto Audit Project Truecrypt Security Assessment.",
@@ -360,7 +360,14 @@ export const module = {
         ],
         optional: [],
       },
-      activities: [],
+      activities: [
+        {
+          title: "Blog Post - TrueCrypt",
+          description: "Is it secure and can it be recommended?",
+          href: "../assets/artefacts/module3/M3-U8_Blog_Post.pdf",
+          ref: "pdf",
+        },
+      ],
     },
 
     {
@@ -412,7 +419,7 @@ export const module = {
         "Describe some of the security issues with the above-mentioned systems.",
         "Recommend emerging technologies and solutions to investigate.",
       ],
-      writing: "../assets/artefacts/module3/Reflections-M3-U11.pdf",
+      writing: "",
       reading: {
         required: [
           "DiBona, C. & Ockman, S. (1999) Open Sources. 1st ed. Sebastapol: O’Reilly Media, Inc.",
@@ -435,7 +442,7 @@ export const module = {
         "Provide evidence to support your recommendation.",
         "Explain how faceted data approaches work.",
       ],
-      writing: "../assets/artefacts/module3/Reflections-M2-U12.pdf",
+      writing: "",
       reading: {
         required: [
           "Biggs, S. Lee, D. & Heiser, G. (2018) The Jury Is In: Monolithic OS Design Is Flawed: Microkernel-based Designs Improve Security. Proceedings of the 9th Asia-Pacific Workshop on Systems (APSys '18). ACM 16:1–7.",

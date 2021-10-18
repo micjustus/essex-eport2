@@ -337,6 +337,9 @@ ol {
 .card.active:hover :is(h1, h2, h3, h4, h5, h6) {
   color: inherit;
 }
+.card.active.outlined{
+  border: 2px solid 
+}
 .card.completed:hover {
   background: hsl(0, 0%, 96%);
   box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.09);
@@ -404,12 +407,16 @@ ol {
   text-align: left;
   margin: 0;
 }
+.card.active:hover .dates .date.clear{
+  background-color:hsl(0, 0%, 90%) !important;
+  border: 1px solid hsl(0, 0%, 93%);
+}
 
 .dates .date.clear {
   background-color: white !important;
-  outline: 1px solid hsl(0, 0%, 33%);
-  color: darkgrey !important;
+  border: 0;
   border-radius: 3px !important;
+  color: darkgrey !important;
 }
 
 .dates .date {
@@ -730,4 +737,22 @@ figcaption {
 }
 .flex-row.small{
   font-size: 0.9em;
+}
+.module-units-header{
+  text-align: center;
+  gap: 0.5em;
+  background-color: whitesmoke;
+  padding: 1em;
+  margin-top: 1em;
+  border: 1px solid rgba(0, 0,0,0.08);
+  box-shadow: inset 0 0 10px 0 rgba(0, 0, 0, 0.08);
+}
+.module-units-header .card{
+  background-color: white;
+  width: 100px;
+  font-size: 0.8em;
+  color: rgb(26, 70, 109);
+}
+.module-units-header .card.active.outlined{
+  border: 2px solid rgb(26, 70, 109);
 }
