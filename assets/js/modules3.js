@@ -367,6 +367,16 @@ export const module = {
           href: "../assets/artefacts/module3/M3-U8_Blog_Post.pdf",
           ref: "pdf",
         },
+
+        {
+          title: "Seminar 4 - cryptography",
+          href: "../assets/artefacts/module3/M3-Seminars_4.pdf",
+          ref: "pdf",
+          display: "date",
+          month: "Sep",
+          day: 30,
+          type: "seminar"
+        },
       ],
     },
 
@@ -456,4 +466,36 @@ export const module = {
     },
   ],
 
+ 
 };
+
+module.renderAdditional = renderModule.bind(module);
+
+function renderModule(){
+  var items = this.outcomes
+  .map((val, idx) => {
+    return `<li>${val}</li>`;
+  })
+  .join("");
+
+  return `<section class="band-1" style="padding:3em 0">
+    <div style="float:left;position:relative; clear:both; padding-left: 15%">
+      <div class="row vertical">
+        <img src="../assets/images/python-logo.png" width=64>
+        <ul class="topics semibold">
+        <li>Cryptography software</li>
+        <li>Cryptography algorithms</li>
+        <li>Secure programming</li>
+        <li>Team work and leadership</li>
+        <li>Cyclomatic complexity</li>
+        </ul>
+      </div>
+    </div>
+            <div class="centered mw-80ch">
+              <header class="text-center">
+                <h2>${this.title}</h2>
+              </header>
+              <ul>${items}</ul>
+            </div>
+          `;
+}

@@ -110,14 +110,21 @@ export class ModuleInfo extends HTMLElement {
       })
       .join("");
 
-    var first = `<section class="band-1 p-5">
-          <div class="centered mw-80ch">
-            <header class="text-center">
-              <h2>${mod.title}</h2>
-            </header>
-            <ul>${items}</ul>
-          </div>
-        `;
+      var first = "";
+
+    if (mod.renderAdditional){
+      first = mod.renderAdditional();
+    }
+    else{
+      first = `<section class="band-1" style="padding:3em 0">
+            <div class="centered mw-80ch">
+              <header class="text-center">
+                <h2>${mod.title}</h2>
+              </header>
+              <ul>${items}</ul>
+            </div>
+          `;
+    }
 
     first =
       first +

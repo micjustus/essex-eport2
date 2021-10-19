@@ -158,7 +158,7 @@ UnitCard.prototype.render = function (content, targetSite) {
   const template = `
     <header class="unit-header">${content.description}</header>
     ${outcomes}
-    <section id="gimme_gimme">${activities}</section>${reading}`;
+    <section>${activities}</section>${reading}`;
 
   var div = document.createElement("div");
   div.innerHTML = template;
