@@ -181,7 +181,6 @@ export const module = {
           href: "../assets/artefacts/module3/M3-U3_SecureLanguage_Team.pdf",
           ref: "pdf"
         },
-
        
         {
           title: "Codio Activity - Buffer Overflow",
@@ -388,7 +387,7 @@ export const module = {
         "Become familiar with the capabilities of Python’s flask library.",
         "Design an ontology which can be used in standardised service deployments.",
       ],
-      writing: "../assets/artefacts/module3/Reflections-M3-U9.pdf",
+      writing: "",
       reading: {
         required: [
           "Pillai, A.B. (2017) Software Architecture with Python. Birmingham, UK. Packt Publishing Ltd. Chapter 5.",
@@ -397,7 +396,21 @@ export const module = {
         ],
         optional: [],
       },
-      activities: [],
+      activities: [
+        {
+          title: "Codio Activity - Architecture Evolution",
+          description: "",
+          href: "../assets/artefacts/module3/M3-U9-ArchitectureEvolution.pdf",
+          ref: "pdf"
+        },
+
+        {
+          title: "Codio Activity - Developing an API",
+          description: "",
+          href: "../assets/artefacts/module3/M3-Codio_U9.pdf",
+          ref: "pdf"
+        },
+      ],
     },
 
     {
@@ -481,13 +494,15 @@ function renderModule(){
   return `<section class="band-1" style="padding:3em 0">
     <div style="float:left;position:relative; clear:both; padding-left: 15%">
       <div class="row vertical">
-        <img src="../assets/images/python-logo.png" width=64>
+        <img src="../assets/images/python-logo.png" width=64 height=64 style="margin-left:15%">
         <ul class="topics semibold">
         <li>Cryptography software</li>
         <li>Cryptography algorithms</li>
         <li>Secure programming</li>
         <li>Team work and leadership</li>
         <li>Cyclomatic complexity</li>
+        <li>Architecture evolution</li>
+        <li>APIs</li>
         </ul>
       </div>
     </div>
