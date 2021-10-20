@@ -22,7 +22,8 @@ ul.topics
   margin-left: 0;
 }
 ul.topics.semibold{
-  font-weight: 700;
+  font-weight: 600;
+  color:rgb(26, 70, 109);
 
 }
 .modules {

@@ -23,21 +23,14 @@
 			
 			<section style="background-color: var(--background);">
 				<section style="margin-bottom: 1em;">
-				<header class="text-center color-8">
-					<h3>Module Units</h3>
-				</header>
-				<module-units-header module-id=3></module-units-header>
-				</section>
-				<section class="row left" style="background-color: var(--background);">
-					<!-- <menu-sidebar id="sidebar" class="sidebar units-block col-2" content-area="unit-content"></menu-sidebar> -->
+					<header class="text-center color-8">
+						<h3>Module Units</h3>
+					</header>
 
-					<div class="unit-content-outer col-10 gradient-background centered">
-						<div id="unit-content" class="unit-content">
-							<unit-card-empty></unit-card-empty>
-						</div>
-					</div>
-					<section></section>
+					<module-units-header module-id=3></module-units-header>
 				</section>
+
+				<module-content-renderer module-id=3></module-content-renderer>
 			</section>
 		</section>
 
@@ -100,6 +93,7 @@
 	<script type="module" src="../assets/js/comps/unit-seminars.js"></script>
 	<script type="module" src="../assets/js/comps/module-meeting.js"></script>
 	<script type="module" src="../assets/js/comps/module-units-header.js"></script>
+	<script type="module" src="../assets/js/comps/module-content-render.js"></script>
 
 	<script type="module">
 		import { module } from '../assets/js/modules3.js';
