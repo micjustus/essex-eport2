@@ -500,7 +500,7 @@ module.renderContent = renderContent.bind(module);
 
 function renderContent(){
   return `<section class="row left" style="background: linear-gradient(to right, #dae2f8, #d6a4a4);">
-  <div style="min-width:65%;margin: -1em auto;">
+  <div style="min-width:65%;max-width:65%;margin: -1em auto;">
       <div id="unit-content" class="unit-content">
           <unit-card-empty></unit-card-empty>
       </div>
