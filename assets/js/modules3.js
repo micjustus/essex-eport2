@@ -421,7 +421,7 @@ export const module = {
         "Discuss the security attacks that distributed systems, in particular, are vulnerable to.",
         "Understand the ways in which virtual systems need to be protected due to the specific nature of attacks on them.",
       ],
-      writing: "../assets/artefacts/module3/Reflections-M3-U10.pdf",
+      writing: "",
       reading: {
         required: [
           "Arnaut, W., Oliveira, K. & Lima, F. (2010) OWL-SOA: A Service Oriented Architecture Ontology Useful during Development Time and Independent from Implementation Time, IEEE.",
@@ -431,7 +431,20 @@ export const module = {
           "Open Group (2016) The SOA Source Book: Service-Oriented Architecture Ontology Version 2.0. Chapter 2: System and Element.",
         ],
       },
-      activities: [],
+      activities: [
+        {
+          title: "Ontology",
+          description: "Learn what is an ontology and how to create a basic one.",
+          href: "../assets/artefacts/module3/M3-U10-Ontology.pdf",
+          ref: "pdf"
+        },
+        {
+          title: "Ontology (RDF file)",
+          description: "RDF output from developed ontology.",
+          href: "../assets/artefacts/module3/Essex-Ontology-Protege.owl",
+          ref: "text/xml"
+        },
+      ],
     },
 
     {
@@ -503,6 +516,7 @@ function renderModule(){
         <li>Cyclomatic complexity</li>
         <li>Architecture evolution</li>
         <li>APIs</li>
+        <li>Ontologies</li>
         </ul>
       </div>
     </div>

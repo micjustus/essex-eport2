@@ -1,0 +1,323 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4"
+     xml:base="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4">
+        <rdfs:comment xml:lang="en">This ontology represents the research project for team 4 on module 3 (Secure Software Development)</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#action_allowed_input -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#action_allowed_input">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#UserAction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#first_name -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#first_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#last_name -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#last_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#password -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#password">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenText"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#permission_level -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#permission_level">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Permission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#permission_name -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#permission_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#UnstructuredData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#screen_text_colour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#screen_text_colour">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenText"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#screen_text_position -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#screen_text_position">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenText"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#screen_text_value -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#screen_text_value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenText"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#structured_data_element_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#structured_data_element_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#StructuredData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#unstructured_data_value -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#unstructured_data_value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#DataPermission"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenPermission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#user_permission_level -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#user_permission_level">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#securePassword -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#securePassword">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:comment xml:lang="en">Represents password data that may not be shown to an end user</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Administrator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Administrator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#User"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#AdministratorScreen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#AdministratorScreen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Screen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Data"/>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#DataAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#DataAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#SystemAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#DataActionOutcome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#DataActionOutcome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#SystemAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#DataPermission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#DataPermission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Permission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#EditAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#EditAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#DataAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#EntriesScreen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#EntriesScreen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Screen"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Permission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Permission"/>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#PersistAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#PersistAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#DataAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#RemoveAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#RemoveAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#DataAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Screen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Screen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenActionOutcome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenActionOutcome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#SystemAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenInput -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenInput"/>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenPermission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenPermission">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Permission"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenText -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#ScreenText"/>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#SelectedOption -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#SelectedOption">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#UserAction"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#StructuredData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#StructuredData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#SystemAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#SystemAction"/>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#UnstructuredData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#UnstructuredData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#User"/>
+    
+
+
+    <!-- http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#UserAction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#UserAction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/michael/ontologies/2021/9/untitled-ontology-4#SystemAction"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

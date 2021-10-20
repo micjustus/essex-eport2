@@ -5,8 +5,7 @@ import * as accordion from "./../accordion.js";
 var lastRenderElm;
 
 function buildUnitWriting(content) {
-  if (!content.writing)
-    return "";
+  if (!content.writing) return "";
 
   var writing = `
       <section class="left nowrap card" onclick='loadPdf("${content.title} - Launching", "${content.writing}")'>
@@ -31,8 +30,13 @@ function buildActivityLink(element) {
 
   if (element.ref === "pdf") {
     clickLink = `onclick='loadPdf("${element.title}", "${element.href}")'`;
-  } else if (element.ref !== "zip") {
-  } else {
+  } 
+  else if (element.ref === "text/xml") {
+    clickLink = `onclick='openText("${element.title}", "${element.href}")'`;
+  } 
+  else if (element.ref !== "zip") {
+  } 
+  else {
     clickLink = `data-href='${element.href}' onclick="openPost(this, 'image-only')"`;
   }
   return clickLink;
