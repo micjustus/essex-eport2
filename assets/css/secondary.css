@@ -20,7 +20,7 @@ ol li p {
 ul.topics
 {
   list-style: none;
-  font-size: 0.9em;
+  font-size: 0.8em;
   padding: 1em 0;
   margin-left: 0;
 }
@@ -793,6 +793,9 @@ figcaption {
   padding: 10px;
   color: var(--blue-highlight);
 }
+.module-units-header .card:hover{
+  color: var(--card-hover-background);
+}
 .module-units-header .card.active.outlined{
   border: 2px solid rgb(26, 70, 109);
   background-color: var(--card-hover-background);
@@ -807,4 +810,4 @@ figcaption {
 }
 .module-meetings .accordion-body{
   padding: 0.5em;
-}
+}u

@@ -500,7 +500,14 @@ export const module = {
     cyclomatic: 
     "<blockquote><h1>Cyclomatic complexity</h1><p>The most widely referenced cyclomatic complexity metric is that devised by (?) McCabe which measures the <strong>complexity</strong> of a given program based on the number of <strong>edges</strong> and <strong>nodes</strong> within a given code path. " + 
     "The metric is defined as [(Edges) - (Nodes) + 2] with a recommended metric value being <strong>10</strong>. The McCabe metric is independent of source lines within a function and is not designed to measure software architecture complexity. " + 
-    "</p></blockquote><p>Michael Justus (2021)</p>"
+    "</p></blockquote><p>Michael Justus (2021)</p>",
+
+    secureprogramming:
+      "<h1>Secure Programming</h1><p>Secure programming involves ensuring <ul><li>Data is protected from unintended access (buffer overflows, index out-of-bounds)</li><li>Data is safe from unintended modifications</li></ul></p>",
+
+    python: 
+      "<h1>Python programming: What did I learn so far?</h1><ul><li>Function overloads are not supported in Python. Code must therefore introduce alternately named functions.</li>" + 
+      "<li>Observed some very strange behaviour with class variable as an array: could not add an object to the array, however adding a <strong>new string instance</strong> worked.</li></ul>"
   }
 };
 
@@ -527,11 +534,11 @@ function renderModule(){
   return `<section class="band-1" style="padding:3em 0">
     <div style="float:left;position:relative; clear:both; padding-left: 15%">
       <div class="row vertical">
-        <img src="../assets/images/python-logo.png" width=64 height=64 style="margin-left:15%">
         <ul class="topics semibold">
+        <img src="../assets/images/python-logo.png" width=64 height=64 style="margin-left: 25%;" class="snippet" onclick="openPostContent('${this.snippets?.python}')"/>
         <li>Cryptography software</li>
         <li>Cryptography algorithms</li>
-        <li>Secure programming</li>
+        <li class="snippet" onclick='openPostContent("${this.snippets?.secureprogramming}")'>Secure programming</li>
         <li>OWASP</li>
         <li>Team project</li>
         <li class="snippet" onclick='openPostContent("${this.snippets?.cyclomatic}")'>Cyclomatic complexity</li>
