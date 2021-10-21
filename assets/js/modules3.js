@@ -492,7 +492,16 @@ export const module = {
     },
   ],
 
- 
+  snippets: {
+    ontology: 
+    "<blockquote><h1>Ontologies</h1><p>They are <strong>hierarchal</strong> specifications of <i>concepts</i> related to <strong>entities</strong> and their associated <strong>properties</strong>. Ontologies facilitate reuse and knowledge sharing without relyiance on their underlying technological or physical implementation. " + 
+    "</p><p>They are catalogues of reusable information that can be applied to one or more concepts.</p></blockquote><p><i>Michael Justus (2021)</i></p>",
+
+    cyclomatic: 
+    "<blockquote><h1>Cyclomatic complexity</h1><p>The most widely referenced cyclomatic complexity metric is that devised by (?) McCabe which measures the <strong>complexity</strong> of a given program based on the number of <strong>edges</strong> and <strong>nodes</strong> within a given code path. " + 
+    "The metric is defined as [(Edges) - (Nodes) + 2] with a recommended metric value being <strong>10</strong>. The McCabe metric is independent of source lines within a function and is not designed to measure software architecture complexity. " + 
+    "</p></blockquote><p>Michael Justus (2021)</p>"
+  }
 };
 
 module.renderAdditional = renderModule.bind(module);
@@ -524,11 +533,11 @@ function renderModule(){
         <li>Cryptography algorithms</li>
         <li>Secure programming</li>
         <li>OWASP</li>
-        <li>Team work and leadership</li>
-        <li>Cyclomatic complexity</li>
+        <li>Team project</li>
+        <li class="snippet" onclick='openPostContent("${this.snippets?.cyclomatic}")'>Cyclomatic complexity</li>
         <li>Architecture evolution</li>
-        <li>APIs</li>
-        <li>Ontologies</li>
+        <li>APIs (Flask)</li>
+        <li class="snippet" onclick='openPostContent("${this.snippets?.ontology}")'>Ontologies</li>
         </ul>
       </div>
     </div>
