@@ -523,6 +523,7 @@ function renderModule(){
         <li>Cryptography software</li>
         <li>Cryptography algorithms</li>
         <li>Secure programming</li>
+        <li>OWASP</li>
         <li>Team work and leadership</li>
         <li>Cyclomatic complexity</li>
         <li>Architecture evolution</li>

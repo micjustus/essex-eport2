@@ -56,7 +56,7 @@ export class Meetings extends HTMLElement {
     <section class="accordion-body" style="display: none; overflow: hidden;width:100%;">${table}</section>
        `;
 
-       this.style.display="contents";
+       this.classList.add("module-meetings");
        this.innerHTML = text;
   }
 }

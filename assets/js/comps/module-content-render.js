@@ -29,8 +29,6 @@ export class ModuleContentRenderer extends HTMLElement {
     
         this.innerHTML = `
         <section class="row left" style="background-color: var(--background);">
-            <!-- <menu-sidebar id="sidebar" class="sidebar units-block col-2" content-area="unit-content"></menu-sidebar> -->
-
             <div class="unit-content-outer col-10 gradient-background centered">
                 <div id="unit-content" class="unit-content">
                     <unit-card-empty></unit-card-empty>
