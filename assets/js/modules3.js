@@ -94,9 +94,9 @@ export const module = {
       },
       activities: [
         {
-          title: "Discussion - Initial Post",
+          title: "Collaborative Discussion - Flowcharts",
           description: "Identify and diagram an OWASP failure",
-          href: "../assets/artefacts/module3/M3-Discussion_Initial.pdf",
+          href: "../assets/artefacts/module3/M3-U1_Discussion_FlowChart.pdf",
           ref: "pdf"
         }
       ],
@@ -113,15 +113,16 @@ export const module = {
       writing: "../assets/artefacts/module3/M3-Reflections_U2.pdf",
       activities: [
         {
-          title: "Discussion - Peer Responses",
+          title: "Collaborative Discussion - Responses",
           description: "Identify and diagram an OWASP failure",
-          href: "../assets/artefacts/module3/M3-Discussion_Responses.pdf",
+          href: "../assets/artefacts/module3/M3-U1_Discussion_flowchart_Responses.pdf",
           ref: "pdf"
         },
 
         {
-          title: "Seminar 1 - Scrum Security Review",
-          href: "../assets/artefacts/module3/M3-Seminars_1.pdf",
+          title: "Seminar 1 - Scrum Security Review (Question 1)",
+          description: "Map development processes to Scrum process for secure software development",
+          href: "../assets/artefacts/module3/M3-Seminars_1_Q1.pdf",
           ref: "pdf",
           display: "date",
           month: "Aug",
@@ -130,9 +131,9 @@ export const module = {
         },
 
         {
-          title: "Seminar 1 - Blog Post",
-          description: "Managing humans and cybersecurity",
-          href: "../assets/artefacts/module3/M3-U2_Blog_Post.pdf",
+          title: "Seminar 1 - Scrum Security Review (Question 2)",
+          description: "Write a short blog post about managing humans and cybersecurity.",
+          href: "../assets/artefacts/module3/M3-Seminars_1_Q2.pdf",
           ref: "pdf",
           type: "seminar"
         },
@@ -162,29 +163,29 @@ export const module = {
       writing: "../assets/artefacts/module3/M3-Reflections_U3.pdf",
       activities: [
         {
-          title: "Discussion - Summary Post",
-          description: "Final post based on peer responses and research in units 1, 2 and 3.",
-          href: "../assets/artefacts/module3/M3-Discussion_Summary.pdf",
+          title: "Collaborative Discussion - Summary",
+          description: "Identify and diagram an OWASP failure.",
+          href: "../assets/artefacts/module3/M3-U1_Discussion_FlowChart_Summary.pdf",
           ref: "pdf"
         },
 
         {
-          title: "Team Discussion - Secure Programming Languages",
-          description: "What is a secure programming language? Is Python secure?",
-          href: "../assets/artefacts/module3/M3-U3_SecureLanguage.pdf",
-          ref: "pdf"
-        },
-
-        {
-          title: "Team Discussion - Summary",
-          description: "Collated feedback from team members",
+          title: "Team Discussion - Secure programming languages",
+          description: "What makes a programming language secure? Can Python be considered 'secure'?",
           href: "../assets/artefacts/module3/M3-U3_SecureLanguage_Team.pdf",
+          ref: "pdf"
+        },
+
+        {
+          title: "Secure Programming Languages",
+          description: "Own research incorporating discussions points from team members",
+          href: "../assets/artefacts/module3/M3-U3_SecureLanguage.pdf",
           ref: "pdf"
         },
        
         {
-          title: "Codio Activity - Buffer Overflow",
-          description: "",
+          title: "Codio - Exploring Python tools and features",
+          description: "Two parts to investigate buffer overflow and role of linters.",
           href: "../assets/artefacts/module3/M3-Codio_U3.pdf",
           ref: "pdf"
         },
@@ -211,12 +212,14 @@ export const module = {
       activities: [
         {
           title: "Programming Language Concepts",
+          description: "Explore the concepts of ReDOS and the role of regular expressions.",
           href: "../assets/artefacts/module3/M3-U4_ProgrammingConcepts.pdf",
           ref: "pdf",
         },
 
         {
           title: "Seminar 2 - Programming Language Concepts",
+          description: "Investigte the concepts of recursion and regular expressions.",
           href: "../assets/artefacts/module3/M3-Seminars_2.pdf",
           ref: "pdf",
           display: "date",
@@ -224,6 +227,13 @@ export const module = {
           day: 2,
           type: "seminar"
         },
+
+        {
+          items:[
+            { title: "Towers of Hanoi script", href: "../assets/artefacts/module3/M3-Codio-U4-TowersOfHanoi.py"},
+            { title: "UK Postal codes script", href: "../assets/artefacts/module3/M3-Codio-U4-PostalCodes.py"}
+          ]
+        }
 
       ],
       reading: {
@@ -259,12 +269,22 @@ export const module = {
       },
       activities: [
         {
-          title: "Exploring Cyclomatic Complexity's Relevance",
+          title: "Exploring the relevance of Cyclomatic Complexity",
           description: "Is Cyclomatic complexity relevant in the context of secure software development.",
           href: "../assets/artefacts/module3/M3-U5_CyclomaticComplexity.pdf",
           ref: "pdf",
         },
-
+        {
+          title: "Codio - Equivalence Testing",
+          href: "../assets/artefacts/module3/M3-Codio_U5.pdf",
+          description: "",
+          ref: "pdf"
+        },
+        {
+          items: [
+            { title: "Equivalence testing script", href: "../assets/artefacts/module3/M3-Codio-U5-Testing.py" }
+          ]
+        }
       ],
     },
     {
@@ -292,7 +312,7 @@ export const module = {
       },
       activities: [
         {
-          title: "Assignment Design",
+          title: "Team Project Design Proposal",
           description:
             "Develop a technical report as a team based on one of the selected domains.",
           href: "../assets/artefacts/module3/M3_Assignment_1.pdf",
@@ -302,6 +322,7 @@ export const module = {
 
         {
           title: "Seminar 3 - Using Linters",
+          description: "Using <strong>pylint</strogn>, <strong>flake</strong> and <strong>mccabe</strong> linters to evaluate Python code.",
           href: "../assets/artefacts/module3/M3-Seminars_3.pdf",
           ref: "pdf",
           display: "date",
@@ -309,6 +330,13 @@ export const module = {
           day: 16,
           type: "seminar"
         },
+
+        {
+          items: [
+            { title: "Metric Test 2", href: "../assets/artefacts/module3/M3-Codio-U6-MetricTest_2.py"},
+            { title: "Linter Test 2", href: "../assets/artefacts/module3/M3-Codio-U6-PylintTest_2.py"}
+          ]
+        }
       ],
     },
 
@@ -335,17 +363,23 @@ export const module = {
       },
       activities: [
         {
-          title: "Codio Activity - Commandline Shell",
-          description: "",
+          title: "Codio - Develop a simple commandline shell",
+          description: "Identify security vulnerabilities and improvements.",
           href: "../assets/artefacts/module3/M3-Codio_U7.pdf",
           ref: "pdf"
         },
+
+        {
+          items:[
+            { title: "Custom commandline", href: "../assets/artefacts/module3/M3-Codio-U7-commandline.py"}
+          ]
+        }
       ],
     },
 
     {
       title: "Unit 8",
-      description: "Cryptography and Its Use in Operating Systems",
+      description: "Cryptography and its ise in Operating Systems",
       outcomes: [
         "Describe some of the issues encountered with cryptographic libraries.",
         "Explain the pros and cons of using common cryptographic libraries.",
@@ -361,14 +395,15 @@ export const module = {
       },
       activities: [
         {
-          title: "Blog Post - TrueCrypt",
-          description: "Is it secure and can it be recommended?",
+          title: "Collaborative Discussion - TrueCrypt",
+          description: "Is TrueCrypt secure and can it be recommended?",
           href: "../assets/artefacts/module3/M3-U8_Blog_Post.pdf",
           ref: "pdf",
         },
 
         {
-          title: "Seminar 4 - cryptography",
+          title: "Seminar 4 - Cryptography",
+          description: "Create Python program to encrypt and descrypt a text file.",
           href: "../assets/artefacts/module3/M3-Seminars_4.pdf",
           ref: "pdf",
           display: "date",
@@ -376,6 +411,12 @@ export const module = {
           day: 30,
           type: "seminar"
         },
+
+        {
+          items: [
+            { title: "Cryptography script", href: "../assets/artefacts/module3/M3-Codio-U8-Encryption.py"}
+          ]
+        }
       ],
     },
 
@@ -398,8 +439,8 @@ export const module = {
       },
       activities: [
         {
-          title: "Codio Activity - Architecture Evolution",
-          description: "",
+          title: "Architecture Evolution",
+          description: "Attempt to add a section to consider evolution of arhcitectures after microservices.",
           href: "../assets/artefacts/module3/M3-U9-ArchitectureEvolution.pdf",
           ref: "pdf"
         },
@@ -410,6 +451,12 @@ export const module = {
           href: "../assets/artefacts/module3/M3-Codio_U9.pdf",
           ref: "pdf"
         },
+
+        {
+          items: [
+            { title: "API script", href: "../assets/artefacts/module3/M3-Codio-U9-API.py"}
+          ]
+        }
       ],
     },
 
@@ -433,14 +480,14 @@ export const module = {
       },
       activities: [
         {
-          title: "Ontology",
+          title: "What is an ontology",
           description: "Learn what is an ontology and how to create a basic one.",
           href: "../assets/artefacts/module3/M3-U10-Ontology.pdf",
           ref: "pdf"
         },
         {
           title: "Ontology (RDF file)",
-          description: "RDF output from developed ontology.",
+          description: "RDF output of an ontology developed for the <strong>Team 4 Team Project</strong>.",
           href: "../assets/artefacts/module3/Essex-Ontology-Protege.owl",
           ref: "text/xml"
         },

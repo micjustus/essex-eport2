@@ -42,6 +42,22 @@ function buildActivityLink(element) {
   return clickLink;
 }
 
+function buildActivityList(element){
+  if (!element.items)
+    {
+      return "";
+    }
+
+  var html = `<section>
+  <ul class="topics">` + 
+  
+  element.items.map((val) => `<li class="snippet" onclick="openScript('${val.title}', '${val.href}')">${val.title}</li>`).join("")
+
+  + `</ul></section>`;
+
+  return html;
+}
+
 function buildActivity(element) {
   var first = "";
 
@@ -49,15 +65,19 @@ function buildActivity(element) {
     first = `
       <ul class="dates">
           <li class="dates">
-              <span class="date">${element.month} <strong>${
-      element.day
-    }</strong></span>
+              <span class="date">${element.month} <strong>${element.day}</strong></span>
               <h4>${element.title}</h4>
               <p>${element.description || ""}</p>
           </li>
       </ul>
       `;
-  } else {
+  } 
+  else if (element.items) 
+  {
+    return buildActivityList(element);
+  }
+  else 
+  {
     first = `
       <h4>${element.title}</h4>
       <p>${element.description || ""}</p>
