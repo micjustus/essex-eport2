@@ -486,10 +486,10 @@ export const module = {
           ref: "pdf"
         },
         {
-          title: "Ontology (RDF file)",
-          description: "RDF output of an ontology developed for the <strong>Team 4 Team Project</strong>.",
-          href: "../assets/artefacts/module3/Essex-Ontology-Protege.owl",
-          ref: "text/xml"
+          items:[
+            {title: "Ontology (RDF file)", href: "../assets/artefacts/module3/Essex-Ontology-Protege.owl", lang: "xml"},
+            {title: "Ontology (image)", href: "../assets/artefacts/module3/M3-U10-Ontology.png", type: "image"}
+          ]
         },
       ],
     },

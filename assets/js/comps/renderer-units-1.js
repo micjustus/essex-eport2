@@ -32,7 +32,7 @@ function buildActivityLink(element) {
     clickLink = `onclick='loadPdf("${element.title}", "${element.href}")'`;
   } 
   else if (element.ref === "text/xml") {
-    clickLink = `onclick='openText("${element.title}", "${element.href}")'`;
+    clickLink = `onclick='openXml("${element.title}", "${element.href}")'`;
   } 
   else if (element.ref !== "zip") {
   } 
@@ -51,7 +51,19 @@ function buildActivityList(element){
   var html = `<section>
   <ul class="topics">` + 
   
-  element.items.map((val) => `<li class="snippet" onclick="openScript('${val.title}', '${val.href}')">${val.title}</li>`).join("")
+  element.items.map((val) => {
+    if (val.lang && val.lang === "xml"){
+      return `<li class="snippet" onclick="openXml('${val.title}', '${val.href}')">${val.title}</li>`
+    }
+    else if (val.type && val.type == "image")
+    {
+        return `<li class="snippet" onclick="openImage('${val.title}', '${val.href}')">${val.title}</li>`
+    }
+    else
+    {
+      return `<li class="snippet" onclick="openScript('${val.title}', '${val.href}')">${val.title}</li>`
+    }
+  }).join("")
 
   + `</ul></section>`;
 
