@@ -379,7 +379,7 @@ export const module = {
 
     {
       title: "Unit 8",
-      description: "Cryptography and its ise in Operating Systems",
+      description: "Cryptography and its use in Operating Systems",
       outcomes: [
         "Describe some of the issues encountered with cryptographic libraries.",
         "Explain the pros and cons of using common cryptographic libraries.",
@@ -439,16 +439,23 @@ export const module = {
       },
       activities: [
         {
-          title: "Architecture Evolution",
-          description: "Attempt to add a section to consider evolution of arhcitectures after microservices.",
-          href: "../assets/artefacts/module3/M3-U9-ArchitectureEvolution.pdf",
-          ref: "pdf"
+          title: "Collaborative Discussion - Responses",
+          description: "Is TrueCrypt secure and can it be recommended?",
+          href: "../assets/artefacts/module3/M3-U8_Discussion_TrueCrypt_Responses.pdf",
+          ref: "pdf",
         },
 
         {
           title: "Codio Activity - Developing an API",
           description: "",
           href: "../assets/artefacts/module3/M3-Codio_U9.pdf",
+          ref: "pdf"
+        },
+
+        {
+          title: "Architecture Evolution",
+          description: "Attempt to add a section to consider evolution of arhcitectures after microservices.",
+          href: "../assets/artefacts/module3/M3-U9-ArchitectureEvolution.pdf",
           ref: "pdf"
         },
 
@@ -479,6 +486,13 @@ export const module = {
         ],
       },
       activities: [
+        {
+          title: "Collaborative Discussion - Summary",
+          description: "Is TrueCrypt secure and can it be recommended?",
+          href: "../assets/artefacts/module3/M3-U8_Discussion_TrueCrypt_Summary.pdf",
+          ref: "pdf",
+        },
+
         {
           title: "What is an ontology",
           description: "Learn what is an ontology and how to create a basic one.",

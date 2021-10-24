@@ -76,8 +76,7 @@ class SeminarCards extends HTMLElement {
         val.day || ""
       }</strong></span>
                 <h4>${val.title}</h4>
-                <p>${val.description || ""}</p>
-            </li>
+5            </li>
         </ul>`;
 
       row.appendChild(elm);

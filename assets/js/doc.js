@@ -39,7 +39,7 @@ function openXml(title, url){
                   Syntax highlighting is provided by <a href="https://highlightjs.org/">Highlight.js</a>
                   </span>
                   
-                `, null, 'padding: 1em;');
+                `, null, 'padding: 1em;max-width:70%;');
               
   
               document.body.querySelectorAll("pre code").forEach(el=>
@@ -55,5 +55,5 @@ function openImage(title, url){
     openPostContent( `<h1 style="margin-bottom: 2em">${title}</h1>
     <img src="${url}"/>
       
-    `, null, 'padding: 1em;');
+    `, null, 'padding: 1em;max-width:70%');
 }

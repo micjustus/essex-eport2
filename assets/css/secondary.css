@@ -95,7 +95,7 @@ ol {
 }
 #footer {
   font-size: 0.8em;
-  margin-top: 2em;
+  margin-top: 1px;
   margin-bottom: 0;
 }
 .units-block li {
@@ -188,8 +188,10 @@ ol {
   background: rgba(189, 189, 189, 0.2);
   line-height: 1.5em;
   vertical-align: middle;
-  font-weight: 500;
+  font-weight: 600;
   padding: 15px 0;
+  color: var(--blue-highlight);
+  font-size: 1.24em;
 }
 .reading-list p {
   font-size: 0.8em;
