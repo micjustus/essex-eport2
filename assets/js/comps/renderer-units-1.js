@@ -120,14 +120,12 @@ function buildActivity(element) {
 function buildActivities(content) {
   if (!content || !content.activities || !content.activities.length) return "";
 
-  console.log("buildActivities");
-  
   var writing = buildUnitWriting(content);
   var activities = "";
 
-  nonactivities = content.activities.filter((val, idx, array)=> val.type !== "assignment");
+  var nonactivities = content.activities.filter((val, idx, array)=> val.activity !== "assignment");
 
-  content.nonactivities.forEach((element, idx) => {
+  nonactivities.forEach((element, idx) => {
     activities = activities + buildActivity(element);
   });
 
