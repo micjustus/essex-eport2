@@ -404,7 +404,7 @@ export const module = {
           title: "Assignment Python Code",
           href: "../assets/artefacts/module2/M2_Unit11-System_Implementation.zip",
           ref: "zip",
-          fileName: "Unit_11_Python_Code.zip",
+          filename: "Unit_11_Python_Code.zip",
           activity: "assignment"
         },
 

@@ -8,10 +8,6 @@ export const module = {
     "Systematically develop and implement the skills required to be effective member of a development team in a virtual professional environment, adopting real-life perspectives on team roles and organisation.",
   ],
   reflections: "",
-  project: "",
-  actionPlan: "",
-  skillsMatrix: "",
-  contract: "../assets/artefacts/module3/Team_Contract_SSD_0.4.pdf",
   meetings:[
     {
       date: "16 Aug 2021",
@@ -138,7 +134,14 @@ export const module = {
           type: "seminar"
         },
 
-      
+      {
+        title: "Team Project - Contract",
+        description:
+          "Develop an initial contract between team members to agree roles, responsibilites and method of operation.",
+        href:  "../assets/artefacts/module3/Team_Contract_SSD_0.4.pdf",
+        ref: "pdf",
+        activity: "assignment"
+      }
       ],
       reading: {
         required: ["Dadzie, J. (2005) Understanding Software Patching, IEEE."],
@@ -553,6 +556,7 @@ export const module = {
             "Python source code for team project developed from unit 6. ",
           href: "../assets/artefacts/module3/M3-Team_Project_Team4_P2_Implementation.zip",
           ref: "zip",
+          filename: "Team4ProjectImplementation.zip",
           activity: "assignment"
         },
       ],

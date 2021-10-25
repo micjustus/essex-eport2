@@ -821,3 +821,20 @@ figcaption {
   font-family: 'JetBrains Mono';
   border-radius: 12px;
 }
+.assignment{
+  text-align:center; 
+  border:1px solid #dadada; 
+  border-radius:5px;
+  overflow:hidden;
+  padding-bottom:1em;
+}
+
+.assignment-header{
+  text-align: center;
+  background: rgba(189, 189, 189, 0.2);
+  line-height: 1em;
+  font-weight: 600;
+  padding: 15px 0;
+  color: var(--blue-highlight);
+  margin: 0 0 0.6em 0;
+}

@@ -105,7 +105,7 @@ function buildActivity(element) {
         <div class="click-more"><p><em>Click to download content</em></p></div>
       </div>`;
 
-    return `<section class="left nowrap card"><a href="${element.href}" alt='' download="${element.fileName}">${first}</a></section>`;
+    return `<section class="left nowrap card"><a href="${element.href}" alt='' download="${element.filename}">${first}</a></section>`;
   }
 
   first = `
@@ -120,10 +120,14 @@ function buildActivity(element) {
 function buildActivities(content) {
   if (!content || !content.activities || !content.activities.length) return "";
 
+  console.log("buildActivities");
+  
   var writing = buildUnitWriting(content);
   var activities = "";
 
-  content.activities.forEach((element, idx) => {
+  nonactivities = content.activities.filter((val, idx, array)=> val.type !== "assignment");
+
+  content.nonactivities.forEach((element, idx) => {
     activities = activities + buildActivity(element);
   });
 

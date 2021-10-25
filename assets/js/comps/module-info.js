@@ -22,7 +22,8 @@ export class ModuleInfo extends HTMLElement {
   }
 
   buildInfoActivites(mod) {
-    var first = "";
+    var first = "<section class='assignment'><h4 class='assignment-header'>Assignment</h4><section class='row module-unit-docs'>";
+
 
     for (let unit of mod.units) {
       for (let act of unit.activities) {
@@ -32,7 +33,7 @@ export class ModuleInfo extends HTMLElement {
           first =
             first +
             `<div class="card active text-center p-1 no-aspect">
-            <a href="${act.href}" download="${act.fileName}"><h4>${act.title}</h4></a>
+            <a href="${act.href}" download="${act.filename}"><h4>${act.title}</h4></a>
           </div>`;
         } else {
           first =
@@ -44,7 +45,7 @@ export class ModuleInfo extends HTMLElement {
       }
     }
 
-    return first;
+    return first + "</section></section>";
   }
 
   buildInfoExtras(mod) {
