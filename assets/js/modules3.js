@@ -7,10 +7,10 @@ export const module = {
     "Design and develop/adapt computer programs and to produce a solution that meets the design brief and critically evaluate solutions that are produced.",
     "Systematically develop and implement the skills required to be effective member of a development team in a virtual professional environment, adopting real-life perspectives on team roles and organisation.",
   ],
-  reflections: "",//"../assets/artefacts/module3/Reflections-M3_SSD.pdf",
-  project: "",//"../assets/artefacts/module3/Reflections-M3_SSD_Project.pdf",
-  actionPlan: "",//"../assets/artefacts/module3/M3_Action_Plan.pdf",
-  skillsMatrix: "",//"../assets/artefacts/module3/M3_Skills_Matrix.pdf",
+  reflections: "",
+  project: "",
+  actionPlan: "",
+  skillsMatrix: "",
   contract: "../assets/artefacts/module3/Team_Contract_SSD_0.4.pdf",
   meetings:[
     {
@@ -312,7 +312,7 @@ export const module = {
       },
       activities: [
         {
-          title: "Team Project Design Proposal",
+          title: "Team Project - Design",
           description:
             "Develop a technical report as a team based on one of the selected domains.",
           href: "../assets/artefacts/module3/M3_Assignment_1.pdf",
@@ -528,7 +528,34 @@ export const module = {
           "Bonomi, F., Milito, R., Zhu, J. & Addepalli, S. (2012) Fog computing and its role in the internet of things. Proceedings of the first edition of the MCC workshop on Mobile cloud computing - MCC 12 1(1): 13-16.",
         ],
       },
-      activities: [],
+      activities: [
+        {
+          title: "Team Project - Readme",
+          description:
+            "Readme document for team project developed from unit 6. ",
+          href: "../assets/artefacts/module3/M3-Team_Project_Team4_P2_Readme.pdf",
+          ref: "pdf",
+          activity: "assignment"
+        },
+
+        {
+          title: "Team Project - Test Outputs",
+          description:
+            "Document detailing automated and manually testing for team project developed from unit 6. ",
+          href: "../assets/artefacts/module3/M3-Team_Project_Team4_P2_TestingOutput.pdf",
+          ref: "pdf",
+          activity: "assignment"
+        },
+
+        {
+          title: "Team Project - Python implementation",
+          description:
+            "Python source code for team project developed from unit 6. ",
+          href: "../assets/artefacts/module3/M3-Team_Project_Team4_P2_Implementation.zip",
+          ref: "zip",
+          activity: "assignment"
+        },
+      ],
     },
 
     {
@@ -567,8 +594,11 @@ export const module = {
       "<h1>Secure Programming</h1><p>Secure programming involves ensuring <ul><li>Data is protected from unintended access (buffer overflows, index out-of-bounds)</li><li>Data is safe from unintended modifications</li></ul></p>",
 
     python: 
-      "<h1>Python programming: What did I learn so far?</h1><ul><li>Function overloads are not supported in Python. Code must therefore introduce alternately named functions.</li>" + 
-      "<li>Observed some very strange behaviour with class variable as an array: could not add an object to the array, however adding a <strong>new string instance</strong> worked.</li></ul>"
+      "<h1>Python programming: what was learned?</h1>" + 
+      "<ul><li>Function overloads are not supported in Python. Code must therefore introduce alternately named functions.</li>" + 
+      "<li>Observed some very strange behaviour withaccessing an array class variable through functions defined with the <strong>@staticmethod</strong> decorator.</li>" + 
+      "<li><strong>Flask</strong> is an incredibly easy module to start developing REST APIs in Python.</li>" + 
+      "</ul>"
   }
 };
 
@@ -596,7 +626,7 @@ function renderModule(){
     <div style="float:left;position:relative; clear:both; padding-left: 15%">
       <div class="row vertical">
         <ul class="topics semibold">
-        <img src="../assets/images/python-logo.png" width=64 height=64 style="margin-left: 25%;" class="snippet" onclick="openPostContent('${this.snippets?.python}')"/>
+        <li class="snippet"><img src="../assets/images/python-logo.png" width=64 height=64 style="margin-left: 25%;" onclick="openPostContent('${this.snippets?.python}')"/></li>
         <li>Cryptography software</li>
         <li>Cryptography algorithms</li>
         <li class="snippet" onclick='openPostContent("${this.snippets?.secureprogramming}")'>Secure programming</li>
