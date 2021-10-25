@@ -124,14 +124,17 @@ function buildActivities(content) {
   var activities = "";
 
   var nonactivities = content.activities.filter((val, idx, array)=> val.activity !== "assignment");
-
-  nonactivities.forEach((element, idx) => {
-    activities = activities + buildActivity(element);
-  });
-
-  if (activities) {
-    return `<section><header class="activities">Activities</header><div class="row gap-1 left">${writing}${activities}</row></section>`;
+  if (nonactivities){
+    nonactivities.forEach((element, idx) => {
+      activities = activities + buildActivity(element);
+    });
   }
+
+  if (!activities){
+    activities = `<section style="text-align:center">No activity data supplied</section>`;
+  }
+
+   return `<section><header class="activities">Activities</header><div class="row gap-1 left">${writing}${activities}</row></section>`;
 }
 
 function buildReading(content) {
