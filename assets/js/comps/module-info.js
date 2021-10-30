@@ -32,13 +32,13 @@ export class ModuleInfo extends HTMLElement {
         if (act.ref == "zip") {
           first =
             first +
-            `<div class="card active text-center p-1 no-aspect">
+            `<div class="card highlight text-center p-1 no-aspect">
             <a href="${act.href}" download="${act.filename}"><h4>${act.title}</h4></a>
           </div>`;
         } else {
           first =
             first +
-            `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('${act.title}', '${act.href}')">
+            `<div class="card highlight text-center p-1 no-aspect" onclick="loadPdf('${act.title}', '${act.href}')">
           <h4>${act.title}</h4>
         </div>`;
         }
@@ -60,7 +60,7 @@ export class ModuleInfo extends HTMLElement {
     if (mod.reflections) {
       first =
         first +
-        `<div class="card active text-center p-1 no-aspect" onclick='loadPdf("Module Reflection", "${mod.reflections}")'>
+        `<div class="card highlight text-center p-1 no-aspect" onclick='loadPdf("Module Reflection", "${mod.reflections}")'>
           <h4>Module Reflection</h4>
         </div>`;
     }
@@ -68,7 +68,7 @@ export class ModuleInfo extends HTMLElement {
     if (mod.project) {
       first =
         first +
-        `<div class="card active text-center p-1 no-aspect"  onclick="loadPdf('Project Reflection', '${mod.project}')">
+        `<div class="card highlight text-center p-1 no-aspect"  onclick="loadPdf('Project Reflection', '${mod.project}')">
       <h4>Project Reflection</h4>
       </div>`;
     }
@@ -76,7 +76,7 @@ export class ModuleInfo extends HTMLElement {
     if (mod.actionPlan) {
       first =
         first +
-        `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('Module Action Plan', '${mod.actionPlan}')">
+        `<div class="card highlight text-center p-1 no-aspect" onclick="loadPdf('Module Action Plan', '${mod.actionPlan}')">
         <h4>Action Plan</h4>
       </div>`;
     }
@@ -84,7 +84,7 @@ export class ModuleInfo extends HTMLElement {
     if (mod.skillsMatrix) {
       first =
         first +
-        `<div class="card active text-center p-1 no-aspect" onclick="loadPdf('Module Skills Matrix', '${mod.skillsMatrix}')">
+        `<div class="card highlight text-center p-1 no-aspect" onclick="loadPdf('Module Skills Matrix', '${mod.skillsMatrix}')">
         <h4>Skills Matrix</h4>
       </div>`;
     }
@@ -132,10 +132,10 @@ export class ModuleInfo extends HTMLElement {
 
     first =
       first +
-      `<div class="card active text-center p-1 no-aspect" onclick="openModuleUnits(${this.moduleId})">
+      `<div class="card highlight text-center p-1 no-aspect" onclick="openModuleUnits(${this.moduleId})">
         <h4>Unit Reflections</h4>
         </div> 
-        <div class="card active text-center p-1 no-aspect" onclick="openModuleSeminars(${this.moduleId})">
+        <div class="card highlight text-center p-1 no-aspect" onclick="openModuleSeminars(${this.moduleId})">
           <h4>Unit Seminars</h4>
         </div>`;
 

@@ -52,22 +52,26 @@ ul.topics .snippet:hover{
   color: var(--snippet-hover);
 }
 .modules {
-  margin: 10px 0;
   border: 1px solid lightgray;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border-left: 5px solid #f21e4e;
-  padding: 0 0 10px 0;
+  padding: 2em;
   position: relative;
+  margin-bottom: 3em;
+}
+.modules:not(.inactive){
+  background: linear-gradient(to right, hsl(224, 68.2%, 98%), hsl(0, 37.9%, 97%));
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  border-color: 1px solid hsl(0, 0%, 80%);
 }
 .modules.inactive {
   border-left: 5px solid lightgray;
 }
 .modules h4 {
-  font-weight: 400;
-  letter-spacing: 3px;
+  font-weight: 600;
   line-height: 2em;
-  padding: 0 0 20px 0;
+  padding-bottom: 1em;
 }
 .modules .row {
   gap: 10px;
@@ -319,16 +323,24 @@ ol {
 .card {
   border: 1px solid hsl(0, 0%, 88%);
   border-radius: 6px;
+  background: white;
   display: inline-block;
-  width: 330px;
+  width: 368px;
   aspect-ratio: 16/9;
-  padding: 6px;
   overflow: auto;
   text-align: left;
   position: relative;
+  padding: 0.1em 1.2em;
+}
+.card:hover{
+  cursor: pointer;
+  user-select: none;
 }
 .card.small {
   width: 190px;
+}
+.card.medium{
+  width: 240px;
 }
 .card .click-more {
   position: absolute;
@@ -348,22 +360,13 @@ ol {
 .card header {
   font-size: 1.2em;
   font-weight: 700;
+  margin-bottom: 0;
 }
-.card :is(h1, h2, h3, h4) {
-  line-height: 1.4em;
-  margin-bottom: 0.6em;
+
+.card.active{
+  border: 1px solid hsl(0, 0%, 30%);
 }
-.card :is(h1, h2, h3, h4):only-child {
-  padding: 0;
-  margin: 0;
-}
-.card.active header {
-  color: black;
-}
-.card:not(.active):not(.completed) header,
-.card:not(.active):not(.completed) p {
-  color: hsl(0, 0%, 26%);
-}
+
 .card.active:hover {
   border: 1px solid hsl(0, 0%, 33%);
   background: var(--card-hover-background);
@@ -373,33 +376,59 @@ ol {
   color: var(--card-hover-color);
   font-weight: 700;
 }
+
 .card.active:hover a {
   color: var(--card-hover-color);
 }
+
 .card.active:hover :is(h1, h2, h3, h4, h5, h6) {
   color: inherit;
 }
+
+.card.active:hover .dates .date.clear{
+  background-color:hsl(0, 0%, 90%) !important;
+  border: 1px solid hsl(0, 0%, 93%);
+}
+
 .card.active.outlined{
   border: 2px solid 
 }
+
+.card.completed header{
+  font-weight: 500;
+  font-size: inherit;
+  color: inherit;
+}
+
 .card.completed:hover {
-  background: hsl(0, 0%, 96%);
+  background: hsl(0, 0%, 90%);
   box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.09);
   cursor: pointer;
   user-select: none;
-  filter: grayscale(0.7);
-  transition: all 0.9s ease-in;
+  border: 1px solid hsl(0, 0%, 83%);
 }
-.card:not(.active):not(.completed):hover {
-  border: 1px solid gray;
-  background: hsl(346, 89%, 53%);
-  cursor: pointer;
-  user-select: none;
-}
-.card:hover:not(.active):not(.completed) {
+.card:not(.active):not(.completed):not(.highlight):hover 
+{
   background: hsl(0, 0%, 96%);
   border: 1px solid lightgray;
 }
+
+.card:not(.active):not(.completed) header,
+.card:not(.active):not(.completed) p {
+  color: hsl(0, 0%, 36%);
+  font-weight: 400;
+  font-size: 0.9em
+}
+
+.card.highlight:hover{
+  border: 1px solid gray;
+  background: hsl(346, 89%, 53%);
+}
+.card.highlight:hover :is(h1, h2, h3, h4){
+  color: white !important;
+
+}
+
 .card:hover .icon.featured {
   background-color: lightgray;
 }
@@ -414,10 +443,6 @@ ol {
 .card:hover .icon.featured + header {
   color: darkgray;
 }
-.card .icon.featured + header {
-  font-weight: 700;
-  color: black;
-}
 .card:hover .icon.featured + header {
   color: var(--card-hover-color);
 }
@@ -426,10 +451,6 @@ ol {
 }
 .card .icon {
   text-align: center;
-}
-.card .icon:not(.featured) + header {
-  font-size: 1.2em;
-  font-weight: 700;
 }
 .card > a {
   text-decoration: none;
@@ -440,18 +461,11 @@ ol {
   color:hsl(0, 0%, 33%);
   font-style: italic;;
 }
-.card.main {
-  padding: 10px 30px;
-  width: 380px;
-}
+
 .dates {
   padding-left: 0;
   text-align: left;
   margin: 0;
-}
-.card.active:hover .dates .date.clear{
-  background-color:hsl(0, 0%, 90%) !important;
-  border: 1px solid hsl(0, 0%, 93%);
 }
 
 .dates .date.clear {
@@ -725,7 +739,7 @@ figcaption {
   margin: 0 auto;
 }
 .module-unit-docs {
-  gap: 0.8em;
+  gap: 1em;
   align-items: center;
   font-size: 0.85em;
 }
@@ -733,6 +747,9 @@ figcaption {
   color: #888;
 }
 
+.table-container{
+  background-color: white;
+}
 .flex-table {
   display: grid;
   grid-template-columns: 0.2fr 1fr 0.2fr;
@@ -760,6 +777,7 @@ figcaption {
 .flex-table.header {
   font-size: 0.8em;
   font-weight: 600;
+  background-color: hsl(208.2, 61.5%, 80%);
 }
 .flex-cell {
   text-align: center;
@@ -827,14 +845,19 @@ figcaption {
   border-radius:5px;
   overflow:hidden;
   padding-bottom:1em;
+  background: hsl(1280,60%, 98%);
 }
 
 .assignment-header{
   text-align: center;
-  background: rgba(189, 189, 189, 0.2);
+  background: hsl(208.2, 61.5%, 90%);
   line-height: 1em;
   font-weight: 600;
   padding: 15px 0;
   color: var(--blue-highlight);
   margin: 0 0 0.6em 0;
+}
+.assignment .card{
+  width: 300px;
+  padding: 0.8em;
 }

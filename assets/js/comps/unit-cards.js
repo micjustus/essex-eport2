@@ -52,7 +52,6 @@ class UnitCards extends HTMLElement {
           elm.classList.add("small");
           elm.classList.add("left");
           elm.classList.add("nowrap");
-          elm.classList.add("active");
           elm.classList.add("p-1");
 
           elm.style.fontSize = "0.8em";

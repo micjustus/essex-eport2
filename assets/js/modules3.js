@@ -533,6 +533,13 @@ export const module = {
       },
       activities: [
         {
+            title: "Debate - Microkernels vs Microservices",
+            description: "Take a position for or against microkernel or monolithic architectures",
+            href: "../assets/artefacts/module3/M3-U11_Debate_Microservices.pdf",
+            ref: "pdf"
+        },
+
+        {
           title: "Team Project - Readme",
           description:
             "Readme document for team project developed from unit 6. ",

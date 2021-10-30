@@ -56,6 +56,7 @@ class ModuleUnitsHeader extends HTMLElement {
     module.units.forEach((val, idx) => {
       var elm = document.createElement("div");
       elm.classList.add("card");
+      elm.classList.add("small");
       elm.classList.add("text-center");
       elm.classList.add("p-1");
       elm.classList.add("no-aspect");
