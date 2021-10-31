@@ -31,12 +31,11 @@ class SeminarCards extends HTMLElement {
     var row = document.createElement("div");
 
     var h3 = document.createElement("h3");
+    h3.classList.add("title");
     h3.innerText = `Seminar activity for all units in ${module.title}`;
-    row.appendChild(h3);
 
     row.classList.add("row");
     row.classList.add("centered");
-    row.style.textAlign = "center";
     row.style.width = "90%";
     row.style.gap = "1em";
 
@@ -62,10 +61,6 @@ class SeminarCards extends HTMLElement {
       elm.classList.add("nowrap");
       elm.classList.add("p-1");
 
-      elm.style.fontSize = "0.8em";
-      elm.style.margin = 0;
-      elm.style.height = "120px";
-
       elm.setAttribute("onclick", `loadPdf('${val.title}', '${val.href}')`);
 
       elm.innerHTML = `
@@ -75,7 +70,7 @@ class SeminarCards extends HTMLElement {
         val.day || ""
       }</strong></span>
                 <h4>${val.title}</h4>
-5            </li>
+            </li>
         </ul>`;
 
       row.appendChild(elm);
@@ -95,7 +90,8 @@ class SeminarCards extends HTMLElement {
       }
     }, 200);
 
-    this.appendChild(row);
+    this.innerHTML = h3.outerHTML + row.outerHTML;
+    //this.appendChild(row);
   }
 }
 

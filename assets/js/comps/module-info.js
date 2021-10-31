@@ -33,15 +33,20 @@ export class ModuleInfo extends HTMLElement {
           first =
             first +
             `<div class="card highlight text-center p-1 no-aspect">
-            <a href="${act.href}" download="${act.filename}"><h4>${act.title}</h4></a>
-          </div>`;
+            <a href="${act.href}" download="${act.filename}"><h4>${act.title}</h4></a>`;
+            
+            first = first + `</div>`;
         } else {
           first =
             first +
             `<div class="card highlight text-center p-1 no-aspect" onclick="loadPdf('${act.title}', '${act.href}')">
           <h4>${act.title}</h4>
-        </div>`;
+          `;
+
+          first = first + `</div>`;
         }
+
+        
       }
     }
 
@@ -69,7 +74,7 @@ export class ModuleInfo extends HTMLElement {
       first =
         first +
         `<div class="card highlight text-center p-1 no-aspect"  onclick="loadPdf('Project Reflection', '${mod.project}')">
-      <h4>Project Reflection</h4>
+      <h4>Project Evaluation</h4>
       </div>`;
     }
 

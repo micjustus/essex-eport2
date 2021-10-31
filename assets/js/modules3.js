@@ -7,7 +7,8 @@ export const module = {
     "Design and develop/adapt computer programs and to produce a solution that meets the design brief and critically evaluate solutions that are produced.",
     "Systematically develop and implement the skills required to be effective member of a development team in a virtual professional environment, adopting real-life perspectives on team roles and organisation.",
   ],
-  reflections: "",
+  project: "../assets/artefacts/module3/M3-Team_Project_Evaluation.pdf",
+  reflections: "test",
   meetings:[
     {
       date: "16 Aug 2021",
@@ -587,7 +588,21 @@ export const module = {
           "Schmitz, T., Rhodes, D., Austin, T.H., Knowles, K., Flanagan, C. (2016) Faceted Dynamic Information Flow via Control and Data Monads. In: Piessens F., Viganò L. (eds) Principles of Security and Trust. POST 2016. Lecture Notes in Computer Science, vol 9635. Springer, Berlin, Heidelberg.",
         ],
       },
-      activities: [],
+      activities: [
+        {
+          title: "Recommendation: Microservices or Monolithic?",
+          href: "../assets/artefacts/module3/M3-U12_MicroOrMono.pdf",
+          ref: "pdf"
+        },
+
+        {
+          title: "Team Project Collaboration",
+          activity: "assignment",
+          href: "../assets/artefacts/module3/M3-Team_Project_Contributions.pdf",
+          tooltip: "Selected conversations taken from Slack conversation history."
+        }
+
+      ],
     },
   ],
 

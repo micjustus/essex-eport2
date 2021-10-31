@@ -284,6 +284,13 @@ ol {
 .post-popup .content.image-only {
   max-width: 60%;
 }
+.post-popup .title{
+  text-align: center;
+  margin-bottom: 1em;
+  margin-top: 0;
+  font-weight: 500;
+  color: rgb(26, 70, 109);
+}
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -338,6 +345,11 @@ ol {
 }
 .card.small {
   width: 190px;
+  font-size: 0.76em;
+  line-height: 1.5em;
+}
+.card.small .dates :is(h1,h2,h3,h4){
+  font-weight: 400;
 }
 .card.medium{
   width: 240px;
@@ -845,12 +857,12 @@ figcaption {
   border-radius:5px;
   overflow:hidden;
   padding-bottom:1em;
-  background: hsl(1280,60%, 98%);
+  background: hsl(128, 60%, 98%);
 }
 
 .assignment-header{
   text-align: center;
-  background: hsl(208.2, 61.5%, 90%);
+  background: hsl(208, 40%, 80%);
   line-height: 1em;
   font-weight: 600;
   padding: 15px 0;
@@ -860,4 +872,10 @@ figcaption {
 .assignment .card{
   width: 300px;
   padding: 0.8em;
+}
+.assignment .card :is(h1, h2, h3, h4){
+  font-size: 1.1em;
+  font-weight: 600;
+  color: rgb(26, 70, 109);
+
 }

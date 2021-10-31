@@ -31,6 +31,7 @@ class UnitCards extends HTMLElement {
     var row = document.createElement("div");
 
     var h3 = document.createElement("h3");
+    h3.classList.add("title");
     h3.innerText = `Reflective writing for units in ${module.title}`;
     row.appendChild(h3);
 
@@ -53,10 +54,6 @@ class UnitCards extends HTMLElement {
           elm.classList.add("left");
           elm.classList.add("nowrap");
           elm.classList.add("p-1");
-
-          elm.style.fontSize = "0.8em";
-          elm.style.margin = 0;
-          elm.style.height = "120px";
 
           elm.setAttribute(
             "onclick",
