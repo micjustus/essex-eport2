@@ -8,7 +8,7 @@ export const module = {
     "Systematically develop and implement the skills required to be effective member of a development team in a virtual professional environment, adopting real-life perspectives on team roles and organisation.",
   ],
   project: "../assets/artefacts/module3/M3-Team_Project_Evaluation.pdf",
-  reflections: "",// added after marking is complete "../assets/artefacts/module3/M3-Reflections_Module.pdf",
+  reflections: "../assets/artefacts/module3/M3-Reflections_Module.pdf",
   meetings:[
     {
       date: "16 Aug 2021",
