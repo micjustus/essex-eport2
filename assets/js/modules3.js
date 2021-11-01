@@ -8,7 +8,7 @@ export const module = {
     "Systematically develop and implement the skills required to be effective member of a development team in a virtual professional environment, adopting real-life perspectives on team roles and organisation.",
   ],
   project: "../assets/artefacts/module3/M3-Team_Project_Evaluation.pdf",
-  reflections: "test",
+  reflections: "../assets/artefacts/module3/M3-Reflections_Module.pdf",
   meetings:[
     {
       date: "16 Aug 2021",
@@ -607,17 +607,32 @@ export const module = {
   ],
 
   snippets: {
+    flask: 
+    "<h1>Python Flask </h1>" + 
+    "<p>Flask is a micro web framework Python module that allows easy development of web applications.</p>",
+
+    owasp: 
+    "<h1>Open Web Application Security Project</h1>" + 
+    "<p>Famously known for their Top 10 list of web application security risks. This is a great source for developers to consult when " + 
+    "attempting to determine the vulnerability levels of their web applications</p>",
+
     ontology: 
-    "<blockquote><h1>Ontologies</h1><p>They are <strong>hierarchal</strong> specifications of <i>concepts</i> related to <strong>entities</strong> and their associated <strong>properties</strong>. Ontologies facilitate reuse and knowledge sharing without relyiance on their underlying technological or physical implementation. " + 
-    "</p><p>They are catalogues of reusable information that can be applied to one or more concepts.</p></blockquote><p><i>Michael Justus (2021)</i></p>",
+    "<blockquote><h1>Ontologies</h1>They are <strong>hierarchal</strong> specifications of <i>concepts</i> related to <strong>entities</strong> and their associated " + 
+    "<strong>properties</strong>. Ontologies facilitate reuse and knowledge sharing without relyiance on their underlying technological or physical implementation. " + 
+    "They are also catalogues of reusable information that can be applied to one or more concepts.</blockquote><span>Michael Justus (2021)</span>",
 
     cyclomatic: 
-    "<blockquote><h1>Cyclomatic complexity</h1><p>The most widely referenced cyclomatic complexity metric is that devised by (?) McCabe which measures the <strong>complexity</strong> of a given program based on the number of <strong>edges</strong> and <strong>nodes</strong> within a given code path. " + 
+    "<blockquote><h1>Cyclomatic complexity</h1>The most widely referenced cyclomatic complexity metric is that devised by (?) McCabe which measures the <strong>complexity</strong> " + 
+    "of a given program based on the number of <strong>edges</strong> and <strong>nodes</strong> within a given code path. " + 
     "The metric is defined as [(Edges) - (Nodes) + 2] with a recommended metric value being <strong>10</strong>. The McCabe metric is independent of source lines within a function and is not designed to measure software architecture complexity. " + 
-    "</p></blockquote><p>Michael Justus (2021)</p>",
+    "</blockquote><span>Michael Justus (2021)</span>",
 
     secureprogramming:
-      "<h1>Secure Programming</h1><p>Secure programming involves ensuring <ul><li>Data is protected from unintended access (buffer overflows, index out-of-bounds)</li><li>Data is safe from unintended modifications</li></ul></p>",
+      "<blockquote><h1>Secure Programming</h1>Secure programming concerns reducing software vulnerabilities by ensuring: " + 
+      "<ul><li>Data is protected from unintended access (buffer overflows, index out-of-bounds)</li> " + 
+      "<li>Data is safe from unintended user modifications (authentication, permissions, GDPR)</li>" + 
+      "<li>Data is trusted (cryptography)</li>" + 
+      "</ul></blockquote><span>Michael Justus (2021)<span>",
 
     python: 
       "<h1>Python programming: what was learned?</h1>" + 
@@ -641,6 +656,15 @@ function renderContent(){
   </section>`;  
 }
 
+export function openSnippet(snippetName){
+  var text = module[snippetName];
+  if (!text){
+    return;
+  }
+
+  openPostContent(text);
+}
+
 function renderModule(){
   var items = this.outcomes
   .map((val, idx) => {
@@ -656,11 +680,11 @@ function renderModule(){
         <li>Cryptography software</li>
         <li>Cryptography algorithms</li>
         <li class="snippet" onclick='openPostContent("${this.snippets?.secureprogramming}")'>Secure programming</li>
-        <li>OWASP</li>
+        <li class="snippet" onclick='openPostContent("${this.snippets?.owasp}")'>OWASP</li>
         <li>Team project</li>
         <li class="snippet" onclick='openPostContent("${this.snippets?.cyclomatic}")'>Cyclomatic complexity</li>
         <li>Architecture evolution</li>
-        <li>APIs (Flask)</li>
+        <li class="snippet" onclick='openPostContent("${this.snippets?.flask}")'>APIs (Flask)</li>
         <li class="snippet" onclick='openPostContent("${this.snippets?.ontology}")'>Ontologies</li>
         </ul>
       </div>

@@ -1,5 +1,23 @@
 import { modules } from "./../modules.js";
 
+
+function hasSeminars(moduleId){
+    var module = modules.find((val) => val.id == moduleId);
+    if (!module) {
+      return false;
+    }
+
+    var count = 0;
+    module.units.forEach((val, idx) => {
+      val.activities.forEach((act) => {
+        if (act.type == "seminar") count += 1;
+      });
+    });
+
+    return count > 0;
+}
+
+
 export class ModuleInfo extends HTMLElement {
   static get observedAttributes() {
     return ["moduleId"];
@@ -139,10 +157,14 @@ export class ModuleInfo extends HTMLElement {
       first +
       `<div class="card highlight text-center p-1 no-aspect" onclick="openModuleUnits(${this.moduleId})">
         <h4>Unit Reflections</h4>
-        </div> 
-        <div class="card highlight text-center p-1 no-aspect" onclick="openModuleSeminars(${this.moduleId})">
-          <h4>Unit Seminars</h4>
         </div>`;
+        
+        if (hasSeminars(this.moduleId))
+        {
+          first = first + `<div class="card highlight text-center p-1 no-aspect" onclick="openModuleSeminars(${this.moduleId})">
+            <h4>Unit Seminars</h4>
+          </div>`;
+        }
 
     first = first + this.buildInfoExtras(mod) + `</div></div></section>`;
 
