@@ -2,7 +2,10 @@
 
 body{
   --card-hover-background: hsl(346, 89%, 53%);
+  --card-hover-background-completed: hsl(120, 37%, 90%);
+  --card-hover-border-completed: hsl(120, 37%, 68%);
   --card-hover-color: white;
+  --card-hover-background-inactive: hsl(0, 0%, 96%);
   --background: white;
   --blue-highlight: hsl(208.2, 61.5%, 26.5%);
   --blue-highlight-light: hsl(208, 0%, 46%);
@@ -61,7 +64,7 @@ ul.topics .snippet:hover{
   margin-bottom: 3em;
 }
 .modules:not(.inactive){
-  background: linear-gradient(to right, hsl(224, 68.2%, 98%), hsl(0, 37.9%, 97%));
+  background: linear-gradient(to right, hsl(224, 60%, 98%), hsl(224, 56%, 98%));
   box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
   border-color: 1px solid hsl(0, 0%, 80%);
 }
@@ -419,9 +422,21 @@ ol {
   user-select: none;
   border: 1px solid hsl(0, 0%, 83%);
 }
+.card.completed::after{
+  content: "done";
+  position: absolute;
+  bottom: 10px;
+  border: 1px solid var(--card-hover-border-completed);
+  border-radius: 15px;
+  padding: 0px 1em;
+  background: var(--card-hover-background-completed);
+  font-size: 0.7em;
+  font-weight: 500;
+  
+}
 .card:not(.active):not(.completed):not(.highlight):hover 
 {
-  background: hsl(0, 0%, 96%);
+  background: var(--card-hover-background-inactive);
   border: 1px solid lightgray;
 }
 
