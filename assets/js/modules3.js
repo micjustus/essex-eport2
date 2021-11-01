@@ -112,7 +112,7 @@ export const module = {
         {
           title: "Collaborative Discussion - Responses",
           description: "Identify and diagram an OWASP failure",
-          href: "../assets/artefacts/module3/M3-U1_Discussion_flowchart_Responses.pdf",
+          href: "../assets/artefacts/module3/M3-U1_Discussion_FlowChart_Responses.pdf",
           ref: "pdf"
         },
 
@@ -375,7 +375,7 @@ export const module = {
 
         {
           items:[
-            { title: "Custom commandline", href: "../assets/artefacts/module3/M3-Codio-U7-commandline.py"}
+            { title: "Custom commandline", href: "../assets/artefacts/module3/M3-Codio-U7-Commandline.py"}
           ]
         }
       ],
