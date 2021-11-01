@@ -608,13 +608,15 @@ export const module = {
 
   snippets: {
     flask: 
-    "<h1>Python Flask </h1>" + 
-    "<p>Flask is a micro web framework Python module that allows easy development of web applications.</p>",
+    "<blockquote><h1>Python Flask </h1>" + 
+    "<p>Flask is a micro web framework Python module that allows easy development of web applications.</p>" + 
+    "</blockquote><span>Michael Justus (2021)</span>",
 
     owasp: 
-    "<h1>Open Web Application Security Project</h1>" + 
+    "<blockquote><h1>Open Web Application Security Project</h1>" + 
     "<p>Famously known for their Top 10 list of web application security risks. This is a great source for developers to consult when " + 
-    "attempting to determine the vulnerability levels of their web applications</p>",
+    "attempting to determine the vulnerability levels of their web applications</p>" + 
+    "</blockquote><span>Michael Justus (2021)</span>",
 
     ontology: 
     "<blockquote><h1>Ontologies</h1>They are <strong>hierarchal</strong> specifications of <i>concepts</i> related to <strong>entities</strong> and their associated " + 
@@ -627,6 +629,11 @@ export const module = {
     "The metric is defined as [(Edges) - (Nodes) + 2] with a recommended metric value being <strong>10</strong>. The McCabe metric is independent of source lines within a function and is not designed to measure software architecture complexity. " + 
     "</blockquote><span>Michael Justus (2021)</span>",
 
+    cryptography_sw: 
+    "<blockquote><h1>Cryptogrpahic Software</h1>Not all software cryptographic tools and libraries are secure. It is imperative to always ensure that development teams " + 
+    "utilise the latest most up-to-date versions of appropriate tools and libraries." + 
+    "</blockquote><span>Michael Justus (2021)</span>",
+
     secureprogramming:
       "<blockquote><h1>Secure Programming</h1>Secure programming concerns reducing software vulnerabilities by ensuring: " + 
       "<ul><li>Data is protected from unintended access (buffer overflows, index out-of-bounds)</li> " + 
@@ -635,11 +642,15 @@ export const module = {
       "</ul></blockquote><span>Michael Justus (2021)<span>",
 
     python: 
-      "<h1>Python programming: what was learned?</h1>" + 
+      "<blockquote><h1>Python programming: what was learned?</h1>" + 
       "<ul><li>Function overloads are not supported in Python. Code must therefore introduce alternately named functions.</li>" + 
-      "<li>Observed some very strange behaviour withaccessing an array class variable through functions defined with the <strong>@staticmethod</strong> decorator.</li>" + 
+      "<li>Observed some very strange behaviour accessing an array class variable through functions defined with the <strong>@staticmethod</strong> decorator.</li>" + 
       "<li><strong>Flask</strong> is an incredibly easy module to start developing REST APIs in Python.</li>" + 
-      "</ul>"
+      "<li>The code flexibility of Python is close to JavaScript in that object properties can be dynamically added.</li>" + 
+      "<li>Indentation is a painful construct in Python: it is often times difficult to identify between SPACE or TAB characters.</li>" + 
+      "<li>Python properties are decorated with the <strong>@property</strong> decorator.</li>" + 
+      "<li>Generally, Python is easy to learn and use.</li>" + 
+      "</ul></blockquote><span>Michael Justus (2021)</span>"
   }
 };
 
@@ -677,7 +688,7 @@ function renderModule(){
       <div class="row vertical">
         <ul class="topics semibold">
         <li class="snippet"><img src="../assets/images/python-logo.png" width=64 height=64 style="margin-left: 25%;" onclick="openPostContent('${this.snippets?.python}')"/></li>
-        <li>Cryptography software</li>
+        <li class="snippet" onclick='openPostContent("${this.snippets?.cryptography_sw}")'>Cryptography software</li>
         <li>Cryptography algorithms</li>
         <li class="snippet" onclick='openPostContent("${this.snippets?.secureprogramming}")'>Secure programming</li>
         <li class="snippet" onclick='openPostContent("${this.snippets?.owasp}")'>OWASP</li>
