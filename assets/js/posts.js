@@ -71,6 +71,7 @@ function openScript(title, href){
     });
 }
 
+
 function openPostContent(content, otherClass, style) {
   var popup = document.createElement("div");
   popup.id = "popup__1";
