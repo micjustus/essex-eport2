@@ -169,7 +169,7 @@ export const module = {
         {
           title: "Collaborative Discussion - Summary",
           description: "Identify and diagram an OWASP failure.",
-          href: "../assets/artefacts/module3/M3-U1_Discussion_FlowChart_Summary.pdf",
+          href: "../assets/artefacts/module3/M3-U1_Discussion_Flowchart_Summary.pdf",
           ref: "pdf"
         },
 
