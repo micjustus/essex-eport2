@@ -597,7 +597,7 @@ figcaption {
   text-indent: 5em;
 }
 .gap-1 {
-  gap: 1em;
+  gap: 0.7em;
 }
 .text-center {
   text-align: center;
