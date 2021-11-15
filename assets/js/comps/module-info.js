@@ -140,33 +140,38 @@ export class ModuleInfo extends HTMLElement {
                 <h2>${mod.title}</h2>
               </header>
               <ul>${items}</ul>
-            </div>
+            
           `;
     }
 
     first =
       first +
-      `<div class="module-units">
-        <header class="text-center color-8">
-          <h3>Module Documents</h3>
-        </header>
-        <div class="row module-unit-docs">
+      `
+        <section class="accordion-header expander centered" style="border-radius: 6px" aria-expanded="false">
+            <header class="text-center color-8 centered" >
+              Module Documents
+            </header>
+      </section>
+            <section class="accordion-body module-units">
+              
+                <div class="row module-unit-docs">
         `;
 
     first =
       first +
       `<div class="card highlight text-center p-1 no-aspect" onclick="openModuleUnits(${this.moduleId})">
         <h4>Unit Reflections</h4>
-        </div>`;
+      </div>`;
         
         if (hasSeminars(this.moduleId))
         {
-          first = first + `<div class="card highlight text-center p-1 no-aspect" onclick="openModuleSeminars(${this.moduleId})">
+          first = first + 
+          `<div class="card highlight text-center p-1 no-aspect" onclick="openModuleSeminars(${this.moduleId})">
             <h4>Unit Seminars</h4>
           </div>`;
         }
 
-    first = first + this.buildInfoExtras(mod) + `</div></div></section>`;
+    first = first + this.buildInfoExtras(mod) + `</div></section></div>`;
 
     this.innerHTML = first;
   }

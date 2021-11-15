@@ -38,11 +38,10 @@ ul.topics
 {
   list-style: none;
   font-size: 0.8em;
-  padding: 1em 0;
-  margin-left: 0;
+  margin: 0 3em 3em 3em;
 }
 ul.topics.semibold{
-  font-weight: 600;
+  font-weight: 400;
   color:rgb(26, 70, 109);
 
 }
@@ -906,4 +905,36 @@ figcaption {
   font-weight: 600;
   color: rgb(26, 70, 109);
 
+}
+
+.card.profile::before{
+    content: '';
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    margin-right: 20px;
+    margin-bottom: 8px;
+    filter: opacity(0.8) drop-shadow(2px 2px 4px #aaa);
+    border: 1px solid;
+}
+.card.profile.profile1::before{
+  background: url(../css/images/EssexProfilePic_1b.png);
+  background-size: contain;
+}
+.card.profile.profile2::before{
+  background: url(../css/images/EssexProfilePic_2b.png);
+  background-size: contain;
+}
+.card.profile.profile3::before{
+  background: url(../css/images/EssexProfilePic_3b.png);
+  background-size: contain;
+}
+.card.profile.profile4::before{
+  background: url(../css/images/EssexProfilePic_4f.png);
+  background-size: contain;
 }
