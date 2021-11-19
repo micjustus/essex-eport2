@@ -1,99 +1,44 @@
 export const module = {
-  id: 3,
-  title: "Secure Software Development",
+  id: 4,
+  title: "Network Information Security Management",
   outcomes: [
-    "Identify and manage security risks as part of a software development project.",
-    "Critically analyse development problems and determine appropriate methodologies, tools and techniques (including program design and development) to solve them.",
-    "Design and develop/adapt computer programs and to produce a solution that meets the design brief and critically evaluate solutions that are produced.",
-    "Systematically develop and implement the skills required to be effective member of a development team in a virtual professional environment, adopting real-life perspectives on team roles and organisation.",
+    "Identify and analyse security risks and vulnerabilities in IT network systems and determine appropriate methodologies, tools and techniques to manage and/or solve them.",
+    "Design and critically appraise computer programs and systems to produce solutions that help manage and audit risk and security issues.",
+    "Gather and synthesise information from multiple sources (including internet security alerts & warning sites) to aid in the systematic analysis of security breaches and issues.",
+    "Articulate the legal, social, ethical and professional issues faced by information security professionals."
   ],
-  project: "../assets/artefacts/module3/M3-Team_Project_Evaluation.pdf",
-  reflections: "../assets/artefacts/module3/M3-Reflections_Module.pdf",
+  project: "",
+  reflections: "",
   meetings:[
-    {
-      date: "16 Aug 2021",
-      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
-      minutes: "../assets/artefacts/module3/M3-Meetings_20210816.pdf"
-    },
-    {
-      date: "18 Aug 2021",
-      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
-      minutes: "../assets/artefacts/module3/M3-Meetings_20210818.pdf"
-    },
-    {
-      date: "24 Aug 2021",
-      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
-      minutes: "../assets/artefacts/module3/M3-Meetings_20210824.pdf"
-    },
-   
-    {
-      date: "3 Sep 2021",
-      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
-      minutes: "../assets/artefacts/module3/M3-Meetings_20210903.pdf"
-    },
-
-    {
-      date: "10 Sep 2021",
-      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
-      minutes: "../assets/artefacts/module3/M3-Meetings_20210910.pdf"
-    },
-
-    {
-      date: "14 Sep 2021",
-      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
-      minutes: "../assets/artefacts/module3/M3-Meetings_20210914.pdf"
-    },
-
-    {
-      date: "17 Sep 2021",
-      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
-      minutes: "../assets/artefacts/module3/M3-Meetings_20210917.pdf"
-    },
-
-    {
-      date: "20 Sep 2021",
-      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus",
-      minutes: "../assets/artefacts/module3/M3-Meetings_20210920.pdf"
-    },
-
   ],
   units: [
     {
       title: "Unit 1",
-      description: "Introduction to Secure Software Development",
+      description: "Network and Information Security Management: History & Definitions",
       outcomes: [
-        "Identify relevant academic literature which discusses the ways in which secure software may be developed using an agile process.",
-        "Decompose an activity into a set of tasks which can be represented using a flow chart from the UML portfolio of modelling techniques.",
-        "Describe the importance of creating a culture of risk awareness in an organisation, in addition to the creation of secure software.",
+        "Explain the basic principles of Information Security Management.",
+        "Describe the 4 tenets/ principles of Information Security Management.",
+        "Describe what constitutes a threat and vulnerability.",
+        "List several common roles within the Information Security profession."
       ],
-      writing: "../assets/artefacts/module3/M3-Reflections_U1.pdf",
+      writing: "",
 
       reading: {
         required: [
-          "Core Text: Pillai, A.B. (2017) Software Architecture with Python. Birmingham, UK. Packt Publishing Ltd. Chapter 1., Chapter 6.",
-          "Asghar, M. Z., Alam, K. A. & Javed, S. (2019) Software Design Patterns Recommendation : A Systematic Literature Review, 2019 International Conference on Frontiers of Information Technology.",
-          "Royce, W. W. (1970) Managing the Development of Large Software Systems.",
-          "OMG (2017) Unified Modelling Language, Version 2.5.1.",
-          "Mitre (2017) Weaknesses in OWASP Top Ten.",
-          "Pohl, C. & Hof, H-J. (2015) Secure Scrum: Development of Secure Software with Scrum, in Proc. of the 9th International Conference on Emerging Security Information, Systems and Technologies.",
-          "ISO/IEC (2018) ISO/IEC Standard 27000 Section 3.",
+         "Campbell, T. (2016) Practical Information Security Management. 1st ed. APRESS. Chapters 1-3."
         ],
         optional: [
-          "Fowler, M. (2006) Code Smell.",
-          "Mougouei, D., Sani, F. M., & Almasi, M. (2013) S-Scrum: a Secure Methodology for Agile Development of Web Service, Computer Science and Information Technology.",
-          "Wichers, D. (2008) Breaking the Waterfall Mindset of the Security Industry. In: OWASP AppSec USA, New York.",
-          "Manadhata, P. & Wing, J. M. (2004) Measuring a System's Attack Surface, Carnegie Mellon.",
-          "Ofcom (2019) O2 Network Outage.",
-          "IBM (2015) 10 Essential Security Practices from IBM.",
-          "Open Group (2016) The SOA Source Book",
-          "Casteren, W. Van. (2017) The Waterfall Model and the Agile Methdologies: A Comparison by Project Characteristics.",
+          "Smith, C. and Brooks, D. (2013) Security Science. 1st ed. Amsterdam: Elsevier, BH. Chapter 1",
+          "Blakley, B., McDermott, E. & Geer, D.(2001) Information Security is Information Risk Management. Proceedings of the 2001 workshop on New security paradigms. 1(1): 97-104.",
+          "Humphreys, E. (2008) Information Security Management Standards: Compliance, Governance and Risk Management. Information Security Technical Report 13(4): 247-255.",
+          "Connolly, D. (2000) A Little History Of The World Wide Web."
         ],
       },
       activities: [
         {
-          title: "Collaborative Discussion - Flowcharts",
-          description: "Identify and diagram an OWASP failure",
-          href: "../assets/artefacts/module3/M3-U1_Discussion_FlowChart.pdf",
+          title: "Collaborative Discussion",
+          description: "Identify vulnerabilities and threats as described in the medical mannequin.",
+          href: "",
           ref: "pdf"
         }
       ],
@@ -154,6 +99,7 @@ export const module = {
         ],
       },
     },
+
     {
       title: "Unit 3",
       description: "Programming Languages: History, Concepts & Design",
@@ -204,6 +150,7 @@ export const module = {
         ],
       },
     },
+
     {
       title: "Unit 4",
       description: "Exploring Programming Language Concepts",
@@ -251,6 +198,7 @@ export const module = {
         ],
       },
     },
+
     {
       title: "Unit 5",
       description: "An Introduction to Testing",
@@ -291,6 +239,7 @@ export const module = {
         }
       ],
     },
+
     {
       title: "Unit 6",
       description: "Using Linters to Support Python Testing",
@@ -607,50 +556,7 @@ export const module = {
   ],
 
   snippets: {
-    flask: 
-    "<blockquote><h1>Python Flask </h1>" + 
-    "<p>Flask is a micro web framework Python module that allows easy development of web applications.</p>" + 
-    "</blockquote><span>Michael Justus (2021)</span>",
-
-    owasp: 
-    "<blockquote><h1>Open Web Application Security Project</h1>" + 
-    "<p>Famously known for their Top 10 list of web application security risks. This is a great source for developers to consult when " + 
-    "attempting to determine the vulnerability levels of their web applications</p>" + 
-    "</blockquote><span>Michael Justus (2021)</span>",
-
-    ontology: 
-    "<blockquote><h1>Ontologies</h1>They are <strong>hierarchal</strong> specifications of <i>concepts</i> related to <strong>entities</strong> and their associated " + 
-    "<strong>properties</strong>. Ontologies facilitate reuse and knowledge sharing without relyiance on their underlying technological or physical implementation. " + 
-    "They are also catalogues of reusable information that can be applied to one or more concepts.</blockquote><span>Michael Justus (2021)</span>",
-
-    cyclomatic: 
-    "<blockquote><h1>Cyclomatic complexity</h1>The most widely referenced cyclomatic complexity metric is that devised by (?) McCabe which measures the <strong>complexity</strong> " + 
-    "of a given program based on the number of <strong>edges</strong> and <strong>nodes</strong> within a given code path. " + 
-    "The metric is defined as [(Edges) - (Nodes) + 2] with a recommended metric value being <strong>10</strong>. The McCabe metric is independent of source lines within a function and is not designed to measure software architecture complexity. " + 
-    "</blockquote><span>Michael Justus (2021)</span>",
-
-    cryptography_sw: 
-    "<blockquote><h1>Cryptogrpahic Software</h1>Not all software cryptographic tools and libraries are secure. It is imperative to always ensure that development teams " + 
-    "utilise the latest most up-to-date versions of appropriate tools and libraries." + 
-    "</blockquote><span>Michael Justus (2021)</span>",
-
-    secureprogramming:
-      "<blockquote><h1>Secure Programming</h1>Secure programming concerns reducing software vulnerabilities by ensuring: " + 
-      "<ul><li>Data is protected from unintended access (buffer overflows, index out-of-bounds)</li> " + 
-      "<li>Data is safe from unintended user modifications (authentication, permissions, GDPR)</li>" + 
-      "<li>Data is trusted (cryptography)</li>" + 
-      "</ul></blockquote><span>Michael Justus (2021)<span>",
-
-    python: 
-      "<blockquote><h1>Python programming: what was learned?</h1>" + 
-      "<ul><li>Function overloads are not supported in Python. Code must therefore introduce alternately named functions.</li>" + 
-      "<li>Observed some very strange behaviour accessing an array class variable through functions defined with the <strong>@staticmethod</strong> decorator.</li>" + 
-      "<li><strong>Flask</strong> is an incredibly easy module to start developing REST APIs in Python.</li>" + 
-      "<li>The code flexibility of Python is close to JavaScript in that object properties can be dynamically added.</li>" + 
-      "<li>Indentation is a painful construct in Python: it is often times difficult to identify between SPACE or TAB characters.</li>" + 
-      "<li>Python properties are decorated with the <strong>@property</strong> decorator.</li>" + 
-      "<li>Generally, Python is easy to learn and use.</li>" + 
-      "</ul></blockquote><span>Michael Justus (2021)</span>"
+   
   }
 };
 
@@ -687,7 +593,7 @@ function renderModule(){
     <div style="float:left;">
       <div class="row vertical">
         <ul class="topics semibold">
-        <li class="snippet"><img src="../assets/images/python-logo.png" width=64 height=64 style="margin-left: 25%;" alt="Python logo" onclick="openPostContent('${this.snippets?.python}')"/></li>
+        <li class="snippet"><img src="../assets/images/python-logo.png" width=64 height=64 style="margin-left: 25%;" onclick="openPostContent('${this.snippets?.python}')"/></li>
         <li class="snippet" onclick='openPostContent("${this.snippets?.cryptography_sw}")'>Cryptography software</li>
         <li>Cryptography algorithms</li>
         <li class="snippet" onclick='openPostContent("${this.snippets?.secureprogramming}")'>Secure programming</li>

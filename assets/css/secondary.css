@@ -22,11 +22,9 @@ blockquote h1{
 }
 blockquote + :first-of-type{
   font-size: 0.8em;
-  font-weight: 700;
   font-style: italic;
 }
 section header {
-  font-weight: 700;
   color: hsl(346, 89%, 53%);
   margin-bottom: 1.1em;
 }
@@ -41,7 +39,6 @@ ul.topics
   margin: 0 3em 3em 3em;
 }
 ul.topics.semibold{
-  font-weight: 400;
   color:rgb(26, 70, 109);
 
 }
@@ -84,7 +81,6 @@ ul.topics .snippet:hover{
   border-left: 5px solid lightgray;
 }
 .modules h4 {
-  font-weight: 600;
   line-height: 2em;
   padding-bottom: 1em;
 }
@@ -129,7 +125,6 @@ ol {
   list-style-position: outside;
 }
 .units-block li.active {
-  font-weight: 900;
   background-color: rgba(189, 189, 189, 0.2);
   border-radius: 6px;
   scale: 1.05;
@@ -145,7 +140,7 @@ ol {
 }
 .units-block li:hover > a {
   color: var(--card-hover-color);
-  font-weight: 500;
+
 }
 .units-block li:hover {
   background: hsl(346, 89%, 53%);
@@ -155,11 +150,9 @@ ol {
   scale: 1.05;
   border-radius: 6px;
   cursor: pointer;
-  font-weight: 700;
 }
 .units-block li:hover::marker {
   color: black;
-  font-weight: 700;
 }
 .unit-content {
   margin: 2em auto;
@@ -209,7 +202,6 @@ ol {
   background: rgba(189, 189, 189, 0.2);
   line-height: 1.5em;
   vertical-align: middle;
-  font-weight: 600;
   padding: 15px 0;
   color: var(--blue-highlight);
   font-size: 1.24em;
@@ -264,11 +256,11 @@ ol {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
-  backdrop-filter: grayscale(50%);
   user-select: none;
+  -webkit-backdrop-filter: grayscale(50%);
+  backdrop-filter: grayscale(50%);
 }
 .post-popup .content header {
-  font-weight: 700;
   font-size: 1.5em;
   margin-bottom: 2em;
 }
@@ -303,7 +295,6 @@ ol {
   text-align: center;
   margin-bottom: 1em;
   margin-top: 0;
-  font-weight: 500;
   color: rgb(26, 70, 109);
 }
 @keyframes fade-in {
@@ -364,7 +355,6 @@ ol {
   line-height: 1.5em;
 }
 .card.small .dates :is(h1,h2,h3,h4){
-  font-weight: 400;
 }
 .card.medium{
   width: 240px;
@@ -379,14 +369,13 @@ ol {
 .card .click-more:after {
   content: "\f141";
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 600;
 }
 .card .click-more p {
   margin: 0;
 }
 .card header {
   font-size: 1.2em;
-  font-weight: 700;
   margin-bottom: 0;
 }
 
@@ -401,7 +390,6 @@ ol {
   cursor: pointer;
   user-select: none;
   color: var(--card-hover-color);
-  font-weight: 700;
 }
 
 .card.active:hover a {
@@ -422,7 +410,6 @@ ol {
 }
 
 .card.completed header{
-  font-weight: 500;
   font-size: inherit;
   color: inherit;
 }
@@ -443,8 +430,6 @@ ol {
   padding: 0px 1em;
   background: var(--card-hover-background-completed);
   font-size: 0.7em;
-  font-weight: 500;
-  
 }
 .card:not(.active):not(.completed):not(.highlight):hover 
 {
@@ -455,7 +440,6 @@ ol {
 .card:not(.active):not(.completed) header,
 .card:not(.active):not(.completed) p {
   color: hsl(0, 0%, 36%);
-  font-weight: 400;
   font-size: 0.9em
 }
 
@@ -642,7 +626,7 @@ figcaption {
   content: "\f015";
   font-size: 2em;
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 600;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -718,14 +702,14 @@ figcaption {
 .outcomes:before {
   content: "\f14e";
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 600;
   font-size: 2em;
   margin-right: 0.5em;
 }
 .activities:before {
   content: "\f00b";
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 600;
   font-size: 1.5em;
   margin-right: 0.5em;
 }
@@ -765,6 +749,8 @@ figcaption {
   max-block-size: 64px;
   margin-right: 10px;
   border-radius: 32px;
+  width: 64px;
+  height: 64px;
   box-shadow: 6px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -815,7 +801,6 @@ figcaption {
 }
 .flex-table.header {
   font-size: 0.8em;
-  font-weight: 600;
   background-color: hsl(208.2, 61.5%, 80%);
 }
 .flex-cell {
@@ -852,7 +837,6 @@ figcaption {
   border:1px solid hsl(0, 0%, 76%);
   width: 100px;
   font-size: 0.8em;
-  font-weight: 600;
   padding: 10px;
   color: var(--blue-highlight);
 }
@@ -891,7 +875,6 @@ figcaption {
   text-align: center;
   background: hsl(208, 40%, 80%);
   line-height: 1em;
-  font-weight: 600;
   padding: 15px 0;
   color: var(--blue-highlight);
   margin: 0 0 0.6em 0;
@@ -902,39 +885,39 @@ figcaption {
 }
 .assignment .card :is(h1, h2, h3, h4){
   font-size: 1.1em;
-  font-weight: 600;
   color: rgb(26, 70, 109);
 
 }
 
 .card.profile::before{
     content: '';
-    background-size: contain;
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 100%;
     position: absolute;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 38px;
     right: 0;
-    bottom: 0;
-    border-radius: 30px;
+    bottom: -2px;
+    border-radius: 22px;
     margin-right: 20px;
-    margin-bottom: 8px;
-    filter: opacity(0.8) drop-shadow(2px 2px 4px #aaa);
+    margin-bottom: 7px;
+    filter:  brightness(110%) opacity(0.6) grayscale(20%) drop-shadow(2px 2px 4px #aaa);
     border: 1px solid;
 }
 .card.profile.profile1::before{
-  background: url(../css/images/EssexProfilePic_1b.png);
-  background-size: contain;
+  background-image: linear-gradient(to right, #534734, #7a7b87, #8d7454, #aa8f6a, #d1c5b5), url(../css/images/EssexProfilePic_1b.png);
+  background-blend-mode: overlay;
 }
 .card.profile.profile2::before{
-  background: url(../css/images/EssexProfilePic_2b.png);
-  background-size: contain;
+  background-image: linear-gradient(to right, #147cfb, #1dd0fc,#2dabfb, #dbb4e9, #f4d1fd), url(../css/images/EssexProfilePic_2b.png);
+  background-blend-mode: overlay;
 }
 .card.profile.profile3::before{
-  background: url(../css/images/EssexProfilePic_3b.png);
-  background-size: contain;
+  background-image: linear-gradient(to right, #978d92, #d5b9b0, #e64c37, #f3624f, #f7a245), url(../css/images/EssexProfilePic_3b.png);
+  background-blend-mode: overlay;
 }
 .card.profile.profile4::before{
-  background: url(../css/images/EssexProfilePic_4f.png);
-  background-size: contain;
+  background-image: linear-gradient(to right,  #86347e, #9a5ca7, #a49cdc, #cba3d2, #f8f1f7), url(../css/images/EssexProfilePic_4f.png);
+  background-blend-mode: overlay;
 }

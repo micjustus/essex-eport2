@@ -62,7 +62,7 @@ class ModuleHeader extends HTMLElement {
 
     var html = 
      `<section id="header" class="header">
-        <a href="${path}index.html">
+        <a href="${path}index.html" title="Navigate to home page">
           <div class="header-back"></div>
         </a>
       `;
@@ -71,7 +71,7 @@ class ModuleHeader extends HTMLElement {
         html = html + 
         `
         <div class="header-with-pic">
-          <img src='${this.pic}' class="header-pic"/>
+          <img src='${this.pic}' class="header-pic" alt="Module profile picture"/>
           <h1 id="header-thing"><a data-hover="${this.title}" ${animation} href="${path}about.html">${this.title}</a></h1>
         </div>
         `

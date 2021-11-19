@@ -1,5 +1,20 @@
 import { modules } from "./../modules.js";
 
+function hasUnitReflections(moduleId){
+  var module = modules.find((val) => val.id == moduleId);
+  if (!module) {
+    return false;
+  }
+
+  var count = 0;
+  module.units.forEach((val, idx) => {
+    if (val.writing) {
+       count += 1;
+    };
+  });
+
+  return count > 0;
+}
 
 function hasSeminars(moduleId){
     var module = modules.find((val) => val.id == moduleId);
@@ -40,7 +55,7 @@ export class ModuleInfo extends HTMLElement {
   }
 
   buildInfoActivites(mod) {
-    var first = "<section class='assignment'><h4 class='assignment-header'>Assignment</h4><section class='row module-unit-docs'>";
+    var first ="";
 
 
     for (let unit of mod.units) {
@@ -73,8 +88,11 @@ export class ModuleInfo extends HTMLElement {
         first + `<module-meetings moduleId='${mod.id}'></module-meetings>`;
     }
 
+    if (first){
+        first=  "<section class='assignment'><h4 class='assignment-header'>Assignment</h4><section class='row module-unit-docs'>" + first + "</section></section>";
+    }
 
-    return first + "</section></section>";
+    return first;
   }
 
   buildInfoExtras(mod) {
@@ -157,11 +175,13 @@ export class ModuleInfo extends HTMLElement {
                 <div class="row module-unit-docs">
         `;
 
-    first =
-      first +
-      `<div class="card highlight text-center p-1 no-aspect" onclick="openModuleUnits(${this.moduleId})">
-        <h4>Unit Reflections</h4>
-      </div>`;
+    if (hasUnitReflections(this.moduleId)){
+      first =
+        first +
+        `<div class="card highlight text-center p-1 no-aspect" onclick="openModuleUnits(${this.moduleId})">
+          <h4>Unit Reflections</h4>
+        </div>`;
+    }
         
         if (hasSeminars(this.moduleId))
         {

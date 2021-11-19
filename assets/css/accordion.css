@@ -19,10 +19,6 @@
   font-size: initial;
   font-weight: initial;
 }
-/* section.accordion-body{
-  padding-top: 0;
-  padding-bottom: 0;
-} */
 .accordion-header {
   display: -webkit-box;
   display: -webkit-flex;
@@ -32,10 +28,12 @@
   justify-content: space-between;
   width: 100%;
   padding: 8px;
-  user-select: none;
   cursor: pointer;
   background-color: rgb(26, 70, 109);
   transition: background-color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .accordion-header.active {
   font-weight: 500;

@@ -1,5 +1,3 @@
-var lastElement;
-
 function toggleAccordion2(ev) {
   var itemToggle = undefined;
   var elm = ev.currentTarget; // this should be the '.accordion2 .accordion__item' element
@@ -41,14 +39,6 @@ function hideBody(elm){
 function toggleAccordionItem(itemToggle, elm) {
   var body;
 
-  if (lastElement) {
-    lastElement.setAttribute("aria-expanded", "false");
-    if (lastElement !== elm) {
-      lastElement.classList.remove("active");
-      hideBody(lastElement);
-    }
-  }
-
   // since it's a "toggle", we do the opposite of
   if (itemToggle == "false") {
     elm.setAttribute("aria-expanded", "true");
@@ -64,8 +54,6 @@ function toggleAccordionItem(itemToggle, elm) {
 
     hideBody(elm);
   }
-
-  lastElement = elm;
 }
 
 initAccordion2();

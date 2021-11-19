@@ -113,6 +113,9 @@ section {
 body {
   line-height: 1;
   font-family: 'Inter', sans-serif;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
 ol,
@@ -136,10 +139,6 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-}
-
-body {
-  -webkit-text-size-adjust: none;
 }
 
 input,
@@ -180,17 +179,13 @@ body,
 input,
 textarea,
 select {
-  /* font-family: "Source Sans Pro"; */
-  /* font-weight: 300; */
   color: #5d5d5d;
-  /* font-size: 14pt; */
   line-height: 1.7em;
 }
 
 strong,
 b {
   color: #252122;
-  font-weight: 400;
 }
 
 i,
@@ -223,7 +218,6 @@ h4,
 h5,
 h6 {
   color: #252122;
-  font-weight: 700;
 }
 
 h1 a,
@@ -461,15 +455,12 @@ ul.dates li:first-child .date {
   line-height: 1;
   text-transform: none !important;
   font-family: "Font Awesome 5 Free";
-  font-weight: 400;
-}
-
-.icon.solid:before {
-  font-weight: 900;
+  font-weight: 600;
 }
 
 .icon.brands:before {
   font-family: "Font Awesome 5 Brands";
+  font-weight: 600;
 }
 
 .icon:before {
@@ -546,7 +537,6 @@ ul.dates li:first-child .date {
 
 #header h1 {
   color: #252122;
-  font-weight: 900;
   font-size: 2.0em;
   letter-spacing: -0.035em;
   line-height: 1;
@@ -573,7 +563,6 @@ ul.dates li:first-child .date {
 
 #banner header h2 {
   color: #fff;
-  font-weight: 700;
   font-size: 2.5em;
   line-height: 1em;
   margin: 0 0 0.65em 0;
