@@ -354,8 +354,6 @@ ol {
   font-size: 0.76em;
   line-height: 1.5em;
 }
-.card.small .dates :is(h1,h2,h3,h4){
-}
 .card.medium{
   width: 240px;
 }
