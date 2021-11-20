@@ -895,14 +895,14 @@ figcaption {
     background-size: contain;
     background-position: 100%;
     position: absolute;
-    width: 100%;
+    width: 42%;
     height: 38px;
-    right: 0;
+    left: -30px;
     bottom: -2px;
     border-radius: 22px;
     margin-right: 20px;
     margin-bottom: 7px;
-    filter:  brightness(110%) opacity(0.6) grayscale(20%) drop-shadow(2px 2px 4px #aaa);
+    filter:  brightness(110%) opacity(0.8) grayscale(20%) drop-shadow(2px 2px 4px #aaa);
     border: 1px solid;
 }
 .card.profile.profile1::before{
