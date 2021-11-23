@@ -3,7 +3,7 @@ import "./accordion-item.js";
 import { modules } from "../modules.js";
 
 //this is our class where everything that goes into our element will be
-class Accordion extends HTMLElement {
+class ModuleUnitsAccordion extends HTMLElement {
   constructor() {
     super();
   }
@@ -39,4 +39,4 @@ class Accordion extends HTMLElement {
 }
 
 // this is where we "inject" our custom element into our HTML file
-customElements.define("module-units-accordion", Accordion);
+customElements.define("module-units-accordion", ModuleUnitsAccordion);

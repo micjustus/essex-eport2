@@ -892,6 +892,7 @@ figcaption {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 100%;
+    background-blend-mode: overlay;
     position: absolute;
     width: 42%;
     height: 38px;
@@ -900,22 +901,26 @@ figcaption {
     border-radius: 22px;
     margin-right: 20px;
     margin-bottom: 7px;
-    filter:  brightness(110%) opacity(0.8) grayscale(20%) drop-shadow(2px 2px 4px #aaa);
-    border: 1px solid;
+    filter:  brightness(110%) opacity(0.7) grayscale(70%) drop-shadow(2px 2px 4px #aaa);
+    border: 1px solid #444;
+}
+.card.active::before{
+  width: 72px;
+}
+
+.card:hover.profile::before{
+  filter: brightness(110%) opacity(1) grayscale(20%) drop-shadow(2px 2px 4px #aaa);
 }
 .card.profile.profile1::before{
   background-image: linear-gradient(to right, #534734, #7a7b87, #8d7454, #aa8f6a, #d1c5b5), url(../css/images/EssexProfilePic_1b.png);
-  background-blend-mode: overlay;
+  
 }
 .card.profile.profile2::before{
   background-image: linear-gradient(to right, #147cfb, #1dd0fc,#2dabfb, #dbb4e9, #f4d1fd), url(../css/images/EssexProfilePic_2b.png);
-  background-blend-mode: overlay;
 }
 .card.profile.profile3::before{
   background-image: linear-gradient(to right, #978d92, #d5b9b0, #e64c37, #f3624f, #f7a245), url(../css/images/EssexProfilePic_3b.png);
-  background-blend-mode: overlay;
 }
 .card.profile.profile4::before{
   background-image: linear-gradient(to right,  #86347e, #9a5ca7, #a49cdc, #cba3d2, #f8f1f7), url(../css/images/EssexProfilePic_4f.png);
-  background-blend-mode: overlay;
 }

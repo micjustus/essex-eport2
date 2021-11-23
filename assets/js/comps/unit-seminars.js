@@ -2,7 +2,7 @@ import "./unit-card.js";
 import { modules } from "../modules.js";
 
 //this is our class where everything that goes into our element will be
-class SeminarCards extends HTMLElement {
+export class SeminarCards extends HTMLElement {
   static get observedAttributes() {
     return ["module-id"];
   }

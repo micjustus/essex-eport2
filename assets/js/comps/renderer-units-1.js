@@ -2,8 +2,6 @@ import { UnitCard } from "./unit-card.js";
 import "./../posts.js";
 import * as accordion from "./../accordion.js";
 
-var lastRenderElm;
-
 function buildUnitWriting(content) {
   if (!content.writing) return "";
 
@@ -181,6 +179,8 @@ function buildOutcomes(content) {
   );
 }
 
+var lastRenderElm;
+
 UnitCard.prototype.render = function (content, targetSite) {
   if (!content) return;
 
@@ -189,7 +189,6 @@ UnitCard.prototype.render = function (content, targetSite) {
 
   if (lastRenderElm) {
     tgt.removeChild(lastRenderElm);
-    accordion.closeAccordion(lastRenderElm);
   }
 
   var outcomes = buildOutcomes(content);

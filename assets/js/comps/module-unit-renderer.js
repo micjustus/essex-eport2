@@ -1,6 +1,6 @@
-import { modules } from "./../modules.js";
+import { modules } from "../modules.js";
 
-export class ModuleContentRenderer extends HTMLElement {
+export class ModuleUnitRenderer extends HTMLElement {
 
     static get observedAttributes() {
         return ["module-id"];
@@ -39,4 +39,4 @@ export class ModuleContentRenderer extends HTMLElement {
       }
     }
     
-    customElements.define("module-content-renderer", ModuleContentRenderer);
+    customElements.define("module-unit-renderer", ModuleUnitRenderer);

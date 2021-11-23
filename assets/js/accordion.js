@@ -1,3 +1,5 @@
+export { initAccordion2 };
+
 function toggleAccordion2(ev) {
   var itemToggle = undefined;
   var elm = ev.currentTarget; // this should be the '.accordion2 .accordion__item' element
@@ -5,7 +7,7 @@ function toggleAccordion2(ev) {
   toggleAccordionItem(itemToggle, elm);
 }
 
-export function initAccordion2(src) {
+function initAccordion2(src) {
   src = src || document;
 
   var elms = src.querySelectorAll(".accordion-header");
@@ -19,7 +21,7 @@ export function initAccordion2(src) {
   });
 }
 
-export function closeAccordion(src) {
+function closeAccordion(src) {
   src = src || document;
 
   var elms = src.querySelectorAll(".accordion-header");
@@ -55,5 +57,3 @@ function toggleAccordionItem(itemToggle, elm) {
     hideBody(elm);
   }
 }
-
-initAccordion2();

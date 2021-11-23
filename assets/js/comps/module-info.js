@@ -1,4 +1,5 @@
 import { modules } from "./../modules.js";
+import * as accordion from './../accordion.js';
 
 function hasUnitReflections(moduleId){
   var module = modules.find((val) => val.id == moduleId);
@@ -85,7 +86,7 @@ export class ModuleInfo extends HTMLElement {
 
     if (mod.meetings) {
       first =
-        first + `<module-meetings moduleId='${mod.id}'></module-meetings>`;
+        first + `<module-meetings-list moduleId='${mod.id}'></module-meetings-list>`;
     }
 
     if (first){
@@ -194,6 +195,8 @@ export class ModuleInfo extends HTMLElement {
     first = first + this.buildInfoExtras(mod) + `</div></section></div>`;
 
     this.innerHTML = first;
+
+    accordion.initAccordion2();
   }
 }
 

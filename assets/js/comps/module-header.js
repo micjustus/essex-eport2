@@ -1,6 +1,6 @@
 
 
-class ModuleHeader extends HTMLElement {
+export class ModuleHeader extends HTMLElement {
   static get observedAttributes() {
     return ["pageTitle", "animation", "pageBase", "pagePic"];
   }

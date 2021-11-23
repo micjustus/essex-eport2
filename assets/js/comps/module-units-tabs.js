@@ -2,7 +2,7 @@ import "./unit-card.js";
 import { modules } from "../modules.js";
 
 //this is our class where everything that goes into our element will be
-class ModuleUnitsHeader extends HTMLElement {
+export class ModuleUnitTabs extends HTMLElement {
   _contentArea = "unit-content";
   _lastclicked;
 
@@ -87,4 +87,4 @@ class ModuleUnitsHeader extends HTMLElement {
 }
 
 // this is where we "inject" our custom element into our HTML file
-customElements.define("module-units-header", ModuleUnitsHeader);
+customElements.define("module-unit-tabs", ModuleUnitTabs);

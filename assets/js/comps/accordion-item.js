@@ -1,4 +1,4 @@
-  class AccordionItem extends HTMLElement {
+  export class AccordionItem extends HTMLElement {
     constructor() {
       super();
   

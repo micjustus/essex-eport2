@@ -1,7 +1,6 @@
-import { initAccordion2 } from "../accordion.js";
 import { modules } from "../modules.js";
 
-export class Meetings extends HTMLElement {
+export class ModuleMeetingsList extends HTMLElement {
   static get observedAttributes() {
     return ["moduleId"];
   }
@@ -61,5 +60,4 @@ export class Meetings extends HTMLElement {
   }
 }
 
-customElements.define("module-meetings", Meetings);
-initAccordion2();
+customElements.define("module-meetings-list", ModuleMeetingsList);

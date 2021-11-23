@@ -610,21 +610,8 @@ ul.dates li:first-child .date {
 /* Footer */
 
 #footer {
-  position: relative;
   background-color: black;
   color: #858484;
-  padding: 2em 0;
-}
-
-#footer:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-size: 100% 100%;
-  z-index: 0;
-  opacity: 0.5;
 }
 
 #footer a {
@@ -659,7 +646,7 @@ ul.dates li:first-child .date {
 }
 
 #footer header {
-  margin: 0 0 3em 0;
+  margin: 0 0 1em 0;
 }
 
 #footer header h2 {

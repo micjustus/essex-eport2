@@ -9,72 +9,19 @@
 	<link rel="stylesheet" href="../assets/css/main.css" />
 	<link rel="stylesheet" href="../assets/css/secondary.css" />
 	<link rel="stylesheet" href="../assets/css/media.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+	
+	<script type="module">
+		import * as RenderStyle1 from "../assets/js/comps/module-renderer-style-1.js";
+	</script>
 </head>
 
 <body class="homepage is-preload">
 	<module-header pageTitle="Michael Justus" pageBase="../" animation="true" pagePic="../assets/css/images/EssexProfilePic_3b.png"></module-header>
 
-	<div>
-		<!-- Main -->
-		<section id="main">
-			<section>
-				<module-info moduleId="3"></module-info>
-			</section>
-			
-			<section style="background-color: var(--background);">
-				<section>
-					<header class="text-center color-8">
-						<h3>Module Units</h3>
-					</header>
+	<module-renderer-style-1 module-id="3"></module-renderer-style-1>
 
-					<module-units-header module-id=3></module-units-header>
-				</section>
-
-				<module-content-renderer module-id=3></module-content-renderer>
-			</section>
-		</section>
-
-		<!-- Footer -->
-		<section id="footer">
-			<div class="container">
-				<header>
-					<h2>Contact</h2>
-				</header>
-
-				<div class="row col-12 left ">
-					<section>
-						<div class="row col-gap-3">
-							<div>
-								<h3>Address</h3>
-								<p>
-									Newbury<br />
-									United Kingdom
-								</p>
-							</div>
-							<div>
-								<h3>Mail</h3>
-								<p><a href="#">micjustus@gmail.com</a></p>
-							</div>
-							<div>
-								<h3>Phone</h3>
-								<p>(800) 000-0000</p>
-							</div>
-						</div>
-					</section>
-
-					<div class="col-12">
-						<!-- Copyright -->
-						<div id="copyright">
-							<ul class="links">
-								<li>&copy; Michael Justus. All rights reserved.</li>
-								<li>Design adapted from: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+	<page-footer></page-footer>
 
 	<!-- Scripts -->
 	<script src="../assets/js/jquery.min.js"></script>
@@ -84,18 +31,13 @@
     <script src="../assets/js/posts.js"></script>
 	<script src="../assets/js/doc.js"></script>
 	<script src="../assets/js/module-header-animations.js"></script>
+	<script src="../assets/js/comps/page-footer.js"></script>
 	
-    <script type="module" src="../assets/js/comps/sidebar.js"></script>
-    <script type="module" src="../assets/js/comps/module-info.js"></script>
-    <script type="module" src="../assets/js/comps/module-header.js"></script>
-    <script type="module" src="../assets/js/comps/renderer-units-1.js"></script>
-	<script type="module" src="../assets/js/comps/module-units.js"></script>
-	<script type="module" src="../assets/js/comps/unit-seminars.js"></script>
-	<script type="module" src="../assets/js/comps/module-meeting.js"></script>
-	<script type="module" src="../assets/js/comps/module-units-header.js"></script>
-	<script type="module" src="../assets/js/comps/module-content-render.js"></script>
-	<script type="module" src="../assets/js/modules3.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+	<script type="module" src="../assets/js/comps/renderer-units-1.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script> 
+
+	
 </body>
 
 </html>

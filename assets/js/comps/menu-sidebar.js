@@ -1,4 +1,4 @@
-class Sidebar extends HTMLElement {
+export class MenuSidebar extends HTMLElement {
   _items = [];
   _contentArea = "";
   _contentTemplate = "";
@@ -83,4 +83,4 @@ class Sidebar extends HTMLElement {
   }
 }
 
-customElements.define("menu-sidebar", Sidebar);
+customElements.define("menu-sidebar", MenuSidebar);
