@@ -100,6 +100,12 @@ ol {
 .row.vertical{
   flex-direction: column;
 }
+.row .stretch{
+  flex: 1;
+}
+.row.stretch{
+  flex:1;
+}
 .row.left {
   justify-content: flex-start;
 }
@@ -923,4 +929,38 @@ figcaption {
 }
 .card.profile.profile4::before{
   background-image: linear-gradient(to right,  #86347e, #9a5ca7, #a49cdc, #cba3d2, #f8f1f7), url(../css/images/EssexProfilePic_4f.png);
+}
+.button {
+  border: 1px solid hsl(0, 0%, 88%);
+  border-radius: 6px;
+  background: white;
+  display: inline-block;
+  overflow: auto;
+  text-align: left;
+  position: relative;
+  padding: 0.5em;
+}
+.button:hover{
+  cursor: pointer;
+  user-select: none;
+}
+.unit-header-1{
+  text-align: center;
+  background: rgba(189, 189, 189, 0.2);
+  line-height: 1.5em;
+  vertical-align: middle;
+  padding: 15px 0;
+  color: var(--blue-highlight);
+  font-size: 1.4em;
+}
+
+module-unit-simple > *{
+  border: 2px solid;
+  margin-top: 3em;
+}
+
+module-units-sidebar > * {
+  position: sticky;
+  top: 0;
+  display: block;
 }

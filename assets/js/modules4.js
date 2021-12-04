@@ -560,8 +560,8 @@ export const module = {
   }
 };
 
-module.renderAdditional = renderModule.bind(module);
-module.renderContent = renderContent.bind(module);
+//module.renderAdditional = renderModule.bind(module);
+//module.renderContent = renderContent.bind(module);
 
 function renderContent(){
   return `<section class="row left" style="background: linear-gradient(to right, #dae2f8, #d6a4a4);">

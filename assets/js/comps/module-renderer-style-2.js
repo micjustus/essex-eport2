@@ -1,11 +1,13 @@
 import { modules } from "./../modules.js";
 
-export { ModuleInfo } from './module-info.js';
-export { ModuleHeader } from './module-header.js';
-export { SeminarCards } from './unit-seminars.js';
-export { Meetings } from './module-meeting.js';
-export { ModuleUnitTabs } from './module-units-tabs.js';
-export { ModuleUnitRenderer } from './module-unit-renderer.js';
+export { ModuleInfo } from "./module-info.js";
+export { ModuleHeader } from "./module-header.js";
+export { SeminarCards } from "./unit-seminars.js";
+export { ModuleMeetingsList } from "./module-meetings-list.js";
+export { ModuleUnitTabs } from "./module-units-tabs.js";
+export { ModuleUnitRenderer } from "./module-unit-renderer.js";
+export { ModuleUnitsSidebar } from "./module-units-sidebar.js";
+export { ModuleUnitListRenderer } from "./module-unit-list-renderer.js";
 
 export class ModuleRendererStyle2 extends HTMLElement {
   static get observedAttributes() {
@@ -33,22 +35,24 @@ export class ModuleRendererStyle2 extends HTMLElement {
     }
 
     this.innerHTML = `
-        <section id="main">
-			<section>
-				<module-info moduleId="${this.moduleId}"></module-info>
-			</section>
-			
-			<section style="background-color: var(--background);">
-				<section>
-					<header class="text-center color-8">
-						<h3>Module Units</h3>
-					</header>
+      <section id="main" class="row">
+        <module-units-sidebar moduleId="${this.moduleId}"></module-units-sidebar>
+        
+        <section class="row vertical stretch">
+          <section class="stretch">
+            <module-info moduleId="${this.moduleId}"></module-info>
+          </section>
+          
+          <section style="background-color: var(--background);" class="stretch">
+            <section>
+              <header class="text-center color-8">
+                <h3>Module Units</h3>
+              </header>
+            </section>
 
-                    <module-unit-tabs module-id=${this.moduleId}></module-units-header>
-				</section>
-
-				<module-unit-renderer module-id=${this.moduleId}></module-unit-renderer>
-			</section>
+            <module-unit-list-renderer moduleId=${this.moduleId}></module-unit-list-renderer>
+          </section>
+        </section>
 		</section>`;
   }
 }

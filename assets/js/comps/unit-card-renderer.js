@@ -1,6 +1,6 @@
 import { UnitCard } from "./unit-card.js";
-import "./../posts.js";
-import * as accordion from "./../accordion.js";
+import "../posts.js";
+import * as accordion from "../accordion.js";
 
 function buildUnitWriting(content) {
   if (!content.writing) return "";
