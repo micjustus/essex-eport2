@@ -40,3 +40,4 @@ function openImage(title, url){
 
     `, null, 'padding: 1em;max-width:70%');
 }
+

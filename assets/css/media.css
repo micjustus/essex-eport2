@@ -28,3 +28,9 @@
         width: 100% !important;
     }
 }
+
+@media screen and (max-width: 1400px){
+    module-unit-simple > *{
+        max-width: 100%;
+      }
+}

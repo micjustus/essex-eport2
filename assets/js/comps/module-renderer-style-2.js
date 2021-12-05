@@ -38,21 +38,14 @@ export class ModuleRendererStyle2 extends HTMLElement {
       <section id="main" class="row">
         <module-units-sidebar moduleId="${this.moduleId}"></module-units-sidebar>
         
-        <section class="row vertical stretch">
-          <section class="stretch">
-            <module-info moduleId="${this.moduleId}"></module-info>
-          </section>
-          
-          <section style="background-color: var(--background);" class="stretch">
-            <section>
-              <header class="text-center color-8">
-                <h3>Module Units</h3>
-              </header>
-            </section>
-
+        <section class="row vertical stretch" style="background-color: var(--background); border-left: 1px solid #ccc;padding-right: 300px;" >
+          <module-info moduleId="${this.moduleId}"></module-info>
+            <header class="text-center color-8">
+              <h3>Module Units</h3>
+            </header>
+      
             <module-unit-list-renderer moduleId=${this.moduleId}></module-unit-list-renderer>
-          </section>
-        </section>
+      </section>
 		</section>`;
   }
 }

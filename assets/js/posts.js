@@ -35,7 +35,7 @@ function clickToClosePost(event) {
 }
 
 function stopScroll(event) {
-  if (event.target.id === "popup__1") {
+  if (event.srcElement.id === "popup__1") {
     event.preventDefault();
   }
 }
@@ -127,6 +127,15 @@ function openModuleSeminars(moduleId){
         <module-seminars module-id=${moduleId}></module-seminars>
       </div>
     </body>`);
+}
+
+function openPopupHTMLBase64(title, ...args){
+
+  var text = args.map((elm)=> {
+    return decodeURIComponent(window.atob(elm));
+  }).join("");
+
+  openPostContent(text);
 }
 
 initPosts();

@@ -71,18 +71,16 @@ function buildActivity(element) {
 function buildUnitWriting(content) {
   if (!content.writing) return "";
 
-  var writing = `<li class="button" onclick='loadPdf("${content.title} - Launching", "${content.writing}")'>Reflective Writing</li>`;
+  var writing = `<section class="button" onclick='loadPdf("${content.title} - Launching", "${content.writing}")'>Reflective Writing</section>`;
   return writing;
 }
 
 function buildActivities(content) {
   if (!content || !content.activities || !content.activities.length) return "";
 
-  var writing = buildUnitWriting(content);
-
   var activities = content.activities
-    .filter((val, idx, array) => val.activity !== "assignment")
-    .map((element, idx) => {
+    .filter((val) => val.activity !== "assignment")
+    .map((element) => {
       return buildActivity(element);
     }).join("");
 
@@ -90,7 +88,7 @@ function buildActivities(content) {
     activities = `<section style="text-align:center">No activity data supplied</section>`;
   }
 
-  return `<section><header class="activities">Activities</header><ul>${writing}${activities}</ul></section>`;
+  return `<section><ul>${activities}</ul></section>`;
 }
 
 function buildReading(content) {
@@ -116,7 +114,7 @@ function buildReading(content) {
   }
 
   if (required || optional) {
-    return `<section class="accordion-header expander" aria-expanded="false"><header>Reading Material</header></section><section class="accordion-body">${required} ${optional}</section>`;
+    return `<section class="button secondary snippet" onclick="openPopupHTMLBase64('Reading Material', '${window.btoa(encodeURIComponent(required))}', '${window.btoa(encodeURIComponent(optional))}')">Reading Material</section>`;
   }
 }
 
@@ -127,11 +125,9 @@ function buildOutcomes(content) {
 
   return (
     `<section>
-        <header class="outcomes">Unit Learning Outcomes</header>
+        <header>Unit Learning Outcomes</header>
         <ul class="left-align">
-        ` +
-    content.outcomes.map((element) => `<li>${element}</li>`).join("") +
-    `
+            ${content.outcomes.map((element) => `<li>${element}</li>`).join("")}
         </ul>
      </section>`
   );
@@ -173,16 +169,22 @@ export class ModuleUnitSimple extends HTMLElement {
 
     var content = mod.units[unit];
 
+    var writing = buildUnitWriting(content);
     var outcomes = buildOutcomes(content);
-    var reading = buildReading(content);
     var activities = buildActivities(content);
+    var reading = buildReading(content);
 
     const template = `
         <section>
-            <header class="unit-header-1">${content.description}</header>
-            ${outcomes}
-            <section>${activities}</section>
-            ${reading}
+            <header class="unit-header-1 sticky blurred" >${content.description}</header>
+            <section style="margin:1em">
+                ${outcomes}
+                <section>
+                    ${writing}
+                    ${activities}
+                    ${reading}
+                </section>
+            </section>            
         </section>`;
 
     this.innerHTML = template;

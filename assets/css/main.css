@@ -211,15 +211,6 @@ blockquote {
   font-style: italic;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #252122;
-}
-
 h1 a,
 h2 a,
 h3 a,
@@ -228,14 +219,6 @@ h5 a,
 h6 a {
   color: inherit;
   text-decoration: none;
-}
-
-h2 {
-  font-size: 1.5em;
-}
-
-h3 {
-  font-size: 1.35em;
 }
 
 a {
@@ -277,54 +260,6 @@ table {
   box-sizing: border-box;
 }
 
-.row > .col-1 {
-  width: 8.33333%;
-}
-
-.row > .col-2 {
-  width: 16.66667%;
-}
-
-.row > .col-3 {
-  width: 25%;
-}
-
-.row > .col-4 {
-  width: 33.33333%;
-}
-
-.row > .col-5 {
-  width: 41.66667%;
-}
-
-.row > .col-6 {
-  width: 50%;
-}
-
-.row > .col-7 {
-  width: 58.33333%;
-}
-
-.row > .col-8 {
-  width: 66.66667%;
-}
-
-.row > .col-9 {
-  width: 75%;
-}
-
-.row > .col-10 {
-  width: 83.33333%;
-}
-
-.row > .col-11 {
-  width: 91.66667%;
-}
-
-.row > .col-12 {
-  width: 100%;
-}
-
 /* Section/Article */
 
 section > :last-child,
@@ -342,7 +277,7 @@ header > p {
 /* List */
 
 ul{
-  list-style: square;
+  list-style: circle;
 }
 
 ul, ol {

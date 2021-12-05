@@ -1,6 +1,10 @@
 @import url(fontawesome-all.min.css);
 
 body{
+  --button-background: #f43e5c;
+  --button-foreground: white;
+  --button-background-secondary: rgb(243, 244, 246);  
+  --button-foreground-secondary: hsl(220, 14.3%, 30%);
   --card-hover-background: hsl(346, 89%, 53%);
   --card-hover-background-completed: hsl(120, 37%, 90%);
   --card-hover-border-completed: hsl(120, 37%, 68%);
@@ -9,6 +13,7 @@ body{
   --background: white;
   --blue-highlight: hsl(208.2, 61.5%, 26.5%);
   --blue-highlight-light: hsl(208, 0%, 46%);
+  --section-header: hsl(346, 89%, 53%);
   --snippet-hover: rgb(235, 193, 10);
 }
 
@@ -25,8 +30,8 @@ blockquote + :first-of-type{
   font-style: italic;
 }
 section header {
-  color: hsl(346, 89%, 53%);
-  margin-bottom: 1.1em;
+  color: var(--section-header);
+  font-weight: 600;
 }
 ul li p,
 ol li p {
@@ -40,18 +45,19 @@ ul.topics
 }
 ul.topics.semibold{
   color:rgb(26, 70, 109);
-
 }
 ul.topics .snippet{
   cursor: pointer;
-
 }
-ul.topics .snippet::after
+.snippet{
+  overflow: visible !important;
+}
+.snippet::after
 {
   content: "";
   width: 12px;
   height: 12px;
-  margin-left: .5em;
+  margin-left: .9em;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
@@ -255,7 +261,7 @@ ol {
 }
 .post-popup {
   padding: 5em;
-  z-index: 0;
+  z-index: 2;
   position: fixed;
   left: 0;
   top: 0;
@@ -263,6 +269,8 @@ ol {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.3);
   user-select: none;
+  
+
   -webkit-backdrop-filter: grayscale(50%);
   backdrop-filter: grayscale(50%);
 }
@@ -279,19 +287,18 @@ ol {
   max-width: 80ch;
   max-height: 70vh;
   background-color: white;
-  overflow: hidden;
   z-index: 2;
   position: relative;
   margin: 0 auto;
-  overflow-y: auto;
-  overflow-x: auto;
-  user-select: text;
+  overflow: auto;
   overscroll-behavior: contain;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  user-select: text;
   box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.2);
   position: relative;
   top: 50%;
   transform: translateY(-50%);
-  text-align: justify;
   animation: fade-in 0.1s;
 }
 .post-popup .content.image-only {
@@ -933,34 +940,58 @@ figcaption {
 .button {
   border: 1px solid hsl(0, 0%, 88%);
   border-radius: 6px;
-  background: white;
+  background-color: var(--button-background);
+  color: var(--button-foreground);
   display: inline-block;
-  overflow: auto;
-  text-align: left;
-  position: relative;
   padding: 0.5em;
+  transition: filter 0.1s ease-in;
+}
+.button.secondary{
+  background-color: var(--button-background-secondary);
+  color: var(--button-foreground-secondary);
+}
+.button + .button{
+  margin-left: 0.2em;
 }
 .button:hover{
   cursor: pointer;
   user-select: none;
+  filter: brightness(140%);
 }
 .unit-header-1{
   text-align: center;
-  background: rgba(189, 189, 189, 0.2);
-  line-height: 1.5em;
-  vertical-align: middle;
   padding: 15px 0;
   color: var(--blue-highlight);
   font-size: 1.4em;
+  border-radius: 12px;
+}
+
+.sticky{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.sticky.blurred{
+  background-color: rgba(255,255,255,0.7);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter:  blur(12px);
 }
 
 module-unit-simple > *{
-  border: 2px solid;
-  margin-top: 3em;
+  border: 1px solid lightblue;
+  margin: 2em auto;
+  border-radius: 12px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.09);
+  max-width: 60%;
+  background: white;
 }
 
 module-units-sidebar > * {
   position: sticky;
   top: 0;
   display: block;
+}
+
+module-unit-list-renderer {
+  
 }
