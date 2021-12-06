@@ -14,38 +14,9 @@
 <body class="homepage is-preload">
 	<module-header pageTitle="Michael Justus" pageBase="../" animation="true" pagePic="../assets/css/images/EssexProfilePic_2b.png"></module-header>
 
-	<div>
-		<!-- Main -->
-		<section id="main">
-			<section>
-				<module-info moduleId="2"></module-info>
-			</section>
-			
-			<section style="background-color: white">
-				<header class="text-center color-8">
-					<h3>Module Units</h3>
-				</header>
+	<module-renderer-style-0 module-id="2"></module-renderer-style-0>
 
-				<section class="row left">
-
-					<menu-sidebar id="sidebar"
-								class="sidebar units-block col-2"
-								content-area="unit-content">
-					</menu-sidebar>
-
-					<div class="unit-content-outer col-10 gradient-background">
-						<div id="unit-content" class="unit-content">
-							<unit-card-empty></unit-card-empty>
-						</div>
-					</div>
-					<section></section>
-				</section>
-			</section>
-		</section>
-
-		<!-- Footer -->
-		<page-footer></page-footer>
-	</div>
+	<page-footer></page-footer>
 
 	<!-- Scripts -->
 	<script src="../assets/js/jquery.min.js"></script>
@@ -57,20 +28,16 @@
 	<script src="../assets/js/module-header-animations.js"></script>
 	<script src="../assets/js/comps/page-footer.js"></script>
 	
-    <script type="module" src="../assets/js/comps/menu-sidebar.js"></script>
-    <script type="module" src="../assets/js/comps/module-info.js"></script>
-    <script type="module" src="../assets/js/comps/module-header.js"></script>
-    <script type="module" src="../assets/js/comps/unit-card-renderer.js"></script>
-	<script type="module" src="../assets/js/comps/module-units.js"></script>
+	<script type="module" src="../assets/js/comps/module-renderer-style-0.js"></script>
 
 	<script type="module">
-		import { module } from '../assets/js/modules2.js';
-	
-		var sb = document.getElementById("sidebar");
-		if (sb) {
-			sb.items = module.units;
-		}
-	</script>
+        import { module } from '../assets/js/modules2.js';
+
+        var sb = document.getElementById("sidebar");
+        if (sb) {
+            sb.items = module.units;
+        }
+    </script>
 </body>
 
 </html>

@@ -7,129 +7,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/secondary.css" />
+    <link rel="stylesheet" href="assets/css/media.css"/>
 </head>
 
 <body class="homepage is-preload">
-    <div id="page-wrapper">
-        <!-- Header -->
-        <section id="header" class="header">
-            <h1 id="header-thing" class="animate-out"><a data-hover="Michael Justus" onmouseenter="mouseenter();" onmouseleave="mouseleave();" href="about.html">Michael Justus</a></h1>
-        </section>
+    
+    <!-- Header -->
+    <div id="header" class="header">
+        <h1 id="header-thing" class="animate-out"><a data-hover="Michael Justus" onmouseenter="mouseenter();" onmouseleave="mouseleave();" href="about.html">Michael Justus</a></h1>
+    </div>
 
-        <!-- Banner -->
-        <section id="banner">
-            <header>
-                <h2>MSc Computer Science</h2>
-                <div style="cursor:pointer;" onclick="loadPdf('Masters of Computer Science', '../assets/artefacts/Essex_Brochure.pdf')"><p>University of Essex Online</p></div>
-            </header>
+    <!-- Banner -->
+    <section class="banner">
+        <section class="header centered mw-80ch">
+            <h2>MSc Computer Science</h2>
+            <div style="cursor:pointer;" onclick="loadPdf('Masters of Computer Science', '../assets/artefacts/Essex_Brochure.pdf')"><p>University of Essex Online</p></div>
         </section>
+    </section>
 
-        <!-- Intro -->
-        <section id="intro" class="container">
-            <div class="modules">
-                <div class="row">
-                    <a href="modules/m01-launching.html">
-                        <div class="card completed profile profile1">
-                            <section>
-                                <em class="icon solid fa-check"></em>
-                                <header>
-                                    Launching into Computer Science
-                                </header>
-                            </section>
-                        </div>
-                    </a>
-                    <a href="modules/m02-oois.html">
-                    <div class="card completed profile profile2">
-                            <section>
-                                <em class="icon solid fa-check"></em>
-                                <header>
-                                    Object-Oriented Information Systems
-                                </header>
-                            </section>
-                        </div>
-                        </a>
-                        <a href="modules/m03-ssd.html">
-                    <div class="card completed profile profile3">
+    <!-- Intro -->
+    <div class="container" style="background-color: whitesmoke;">
+        <div class="modules centered">
+            <div class="row">
+                <a href="modules/m01-launching.html">
+                    <div class="card completed profile profile1">
                         <section>
                             <em class="icon solid fa-check"></em>
                             <header>
-                                Secure Software Development
+                                Launching into Computer Science
+                            </header>
+                        </section>
+                    </div>
+                </a>
+                <a href="modules/m02-oois.html">
+                <div class="card completed profile profile2">
+                        <section>
+                            <em class="icon solid fa-check"></em>
+                            <header>
+                                Object-Oriented Information Systems
                             </header>
                         </section>
                     </div>
                     </a>
-                    <a href="modules/m04-nism.html">
-                    <div class="card active main profile profile4">
-                        <section>
-                            <em class="icon solid featured fa-bolt "></em>
-                            <header>
-                                Network and Security Information Management
-                            </header>
-                        </section>
-                    </div>
-                        </a>
-                    <div class="card">
-                        <section class="middle">
-                            <em class="icon placeholder "></em>
-                            <header>
-                                Software Engineering Project Management
-                            </header>
-                            <p></p>
-                        </section>
-                    </div>
-                    <div class="card">
-                        <section class="last">
-                            <em class="icon placeholder "></em>
-                            <header>
-                                Research Methods and Professional Practice
-                            </header>
-                            <p></p>
-                        </section>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-            
-        <section id="footer">
-            <div class="container">
-                <header>
-                    <h2>Contact</h2>
-                </header>
-    
-                <div class="row col-12 left ">
+                    <a href="modules/m03-ssd.html">
+                <div class="card completed profile profile3">
                     <section>
-                        <div class="row col-gap-3">
-                            <div>
-    
-                                <h3>Address</h3>
-                                <p>
-                                    Newbury<br />
-                                    United Kingdom
-                                </p>
-                            </div>
-                            <div>
-    
-                                <h3>Mail</h3>
-                                <p><a href="#">micjustus@gmail.com</a></p>
-                            </div>
-                        </div>
+                        <em class="icon solid fa-check"></em>
+                        <header>
+                            Secure Software Development
+                        </header>
                     </section>
-    
-                    <div class="col-12">
-                        <!-- Copyright -->
-                        <div id="copyright">
-                            <ul class="links">
-                                <li>&copy; Michael Justus. All rights reserved.</li>
-                                <li>Design adapted and heavily modified from: <a href="http://html5up.net">HTML5 UP</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                </div>
+                </a>
+                <a href="modules/m04-nism.html">
+                <div class="card active main profile profile4">
+                    <section>
+                        <em class="icon solid featured fa-bolt "></em>
+                        <header>
+                            Network and Security Information Management
+                        </header>
+                    </section>
+                </div>
+                    </a>
+                <div class="card">
+                    <section class="middle">
+                        <em class="icon placeholder "></em>
+                        <header>
+                            Software Engineering Project Management
+                        </header>
+                        <p></p>
+                    </section>
+                </div>
+                <div class="card">
+                    <section class="last">
+                        <em class="icon placeholder "></em>
+                        <header>
+                            Research Methods and Professional Practice
+                        </header>
+                        <p></p>
+                    </section>
                 </div>
             </div>
-        </section>
-
+        </div>
     </div>
+        
+    <page-footer></page-footer>
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>

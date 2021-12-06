@@ -38,7 +38,7 @@ export class ModuleRendererStyle2 extends HTMLElement {
       <section id="main" class="row">
         <module-units-sidebar moduleId="${this.moduleId}"></module-units-sidebar>
         
-        <section class="row vertical stretch" style="background-color: var(--background); border-left: 1px solid #ccc;padding-right: 300px;" >
+        <section class="row vertical stretch module-units-2" >
           <module-info moduleId="${this.moduleId}"></module-info>
             <header class="text-center color-8">
               <h3>Module Units</h3>

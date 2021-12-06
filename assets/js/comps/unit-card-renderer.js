@@ -170,7 +170,7 @@ function buildOutcomes(content) {
   return (
     `<section>
       <header class="outcomes">Unit Learning Outcomes</header>
-      <ul class="left-align">
+      <ul>
       ` +
     content.outcomes.map((element) => `<li>${element}</li>`).join("") +
     `

@@ -126,7 +126,7 @@ function buildOutcomes(content) {
   return (
     `<section>
         <header>Unit Learning Outcomes</header>
-        <ul class="left-align">
+        <ul>
             ${content.outcomes.map((element) => `<li>${element}</li>`).join("")}
         </ul>
      </section>`
@@ -175,19 +175,31 @@ export class ModuleUnitSimple extends HTMLElement {
     var reading = buildReading(content);
 
     const template = `
-        <section>
-            <header class="unit-header-1 sticky blurred" >${content.description}</header>
-            <section style="margin:1em">
-                ${outcomes}
-                <section>
-                    ${writing}
-                    ${activities}
-                    ${reading}
-                </section>
-            </section>            
-        </section>`;
+    <section>
+        <header class="unit-header-1 sticky blurred" >${content.description}</header>
+        <div style="padding: 1em">
+        ${outcomes}
+        ${writing}
+        ${activities}
+        ${reading}
+        </div>
+    </section>
+    `;
 
     this.innerHTML = template;
+
+    const  header = this.querySelector(".unit-header-1");
+    const temp = header.innerText;
+
+    const parent = header.parentElement;
+    const observer = new IntersectionObserver(([e])=> { 
+        if (e.boundingClientRect.top < -0.6) {
+        header.classList.add("pinned");
+     } else
+    {
+        header.classList.remove("pinned");
+    } }, { threshold: [0.9, 1] });
+    observer.observe(parent);
   }
 }
 

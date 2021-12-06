@@ -1,20 +1,18 @@
-@media screen and (max-width: 640px){
-    body {
-        font-size: 11pt;
-        line-height: 1.5em;
-    }
-}
 
-@media screen and (max-width: 890px){
-    .module-units{
-        width: 80%;
-    }
-}
 
-@media screen and (max-width: 600px)
-{
-    .module-units{
-        width: 100%;
+@media screen and (max-width: 455px){
+    .card{
+        width: 200px !important;
+    }
+    .card.profile::before {
+        visibility: hidden;
+    }
+    .card.completed::after {
+       visibility: hidden;
+      }
+    .container{
+        padding: 1em;
+        max-width: 100%;
     }
 }
 @media screen and (max-width: 500px){
@@ -28,9 +26,44 @@
         width: 100% !important;
     }
 }
-
+@media screen and (max-width: 590px){
+    .card{
+        width: 268px;
+    }
+    .card.profile::before {
+        height: 32px;
+        left: -10px;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .module-units{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 640px){
+    body {
+        font-size: 11pt;
+        line-height: 1.5em;
+    }
+}
+@media screen and (max-width: 775px){
+    module-unit-simple > * {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 890px){
+    .module-units{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 1140px){
+    .modules{
+        padding: 0;
+    }
+}
 @media screen and (max-width: 1400px){
-    module-unit-simple > *{
-        max-width: 100%;
-      }
+   .module-units-2 {
+        padding-right: 0;
+    }
 }

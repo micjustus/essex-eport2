@@ -25,11 +25,14 @@ export class ModuleUnitListRenderer extends HTMLElement {
     var mod = modules.find((val, idx) => val.id == this.moduleId);
     if (!mod) return;
 
-    this.innerHTML = mod.units
+    this.innerHTML = 
+    `<section class="centered mw-80ch">
+        ${mod.units
       .map((elm, idx) => {
         return `<module-unit-simple moduleId=${this.moduleId} unitId=${idx}></module-unit-simple>`;
       })
-      .join("");
+      .join("")}
+    </section>`;
   }
 }
 

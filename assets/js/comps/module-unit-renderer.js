@@ -29,7 +29,7 @@ export class ModuleUnitRenderer extends HTMLElement {
     
         this.innerHTML = `
         <section class="row left" style="background-color: var(--background);">
-            <div class="unit-content-outer col-10 gradient-background centered">
+            <div class="unit-content-outer gradient-background centered stretch">
                 <div id="unit-content" class="unit-content">
                     <unit-card-empty></unit-card-empty>
                 </div>
