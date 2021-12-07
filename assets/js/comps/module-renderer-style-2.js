@@ -6,7 +6,6 @@ export { SeminarCards } from "./unit-seminars.js";
 export { ModuleMeetingsList } from "./module-meetings-list.js";
 export { ModuleUnitTabs } from "./module-units-tabs.js";
 export { ModuleUnitRenderer } from "./module-unit-renderer.js";
-export { ModuleUnitsSidebar } from "./module-units-sidebar.js";
 export { ModuleUnitListRenderer } from "./module-unit-list-renderer.js";
 
 export class ModuleRendererStyle2 extends HTMLElement {

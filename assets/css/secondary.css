@@ -536,11 +536,15 @@ body {
   --card-hover-color: white;
   --card-hover-background-inactive: hsl(0, 0%, 96%);
   --background: white;
+  --border-color: #ccc;
+  --border-color-light: #eee;
   --blue-highlight: hsl(208.2, 61.5%, 26.5%);
   --blue-highlight-light: hsl(208, 0%, 46%);
   --section-header: hsl(346, 89%, 53%);
   --snippet-hover: rgb(235, 193, 10);
   --header-color: red;
+  --menu-item-background: hsl(346, 90%, 55%);
+  --menu-item-foreground: white;
 
   -webkit-text-size-adjust: none;
   -ms-text-size-adjust: none;
@@ -1366,8 +1370,43 @@ figcaption {
 
 .module-units-2 {
   background-color: var(--background);
-  border-left: 1px solid #ccc;
+  border-left: 1px solid var(--border-color);
   padding-right: 300px;
+}
+
+.menu li{
+  margin: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 22px;
+  border-bottom: 1px solid var(--border-color-light);
+  font-size: 0.9em;
+  border: 3px solid transparent;
+}
+.menu li header{
+  font-weight: 700;
+  color: var(--blue-highlight);
+}
+.menu li.active{
+  border: 3px solid;
+}
+.menu li:hover{
+  background-color: var(--menu-item-background);
+  border-radius: 6px;
+  border-color: var(--border-color);
+  color: var(--menu-item-foreground);
+  cursor: pointer;
+  user-select: none;
+}
+.menu li:hover header{
+  font-size: 1.2em;
+  color: lightgrey;
+}
+.menu ul{
+  list-style:none;
+  text-indent: 0;
+  padding: 0;
+  margin: 0;
+  background-color: whitesmoke;
 }
 
 module-unit-simple > * {
@@ -1378,7 +1417,9 @@ module-unit-simple > * {
   min-width: 100%;
   background: white;
 }
-
+module-unit-simple.active > * {
+  border: 3px solid;
+}
 module-units-sidebar > * {
   position: sticky;
   top: 0;

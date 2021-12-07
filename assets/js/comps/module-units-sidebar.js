@@ -1,6 +1,8 @@
 import { modules } from "./../modules.js";
 
 export class ModuleUnitsSidebar extends HTMLElement {
+  lastClicked;
+
   constructor() {
     super();
   }
@@ -21,20 +23,36 @@ export class ModuleUnitsSidebar extends HTMLElement {
     return ["moduleId"];
   }
 
+  menuItemClicked(itemIndex) { }
+
   connectedCallback() {
     var mod = modules.find((val, idx) => val.id == this.moduleId);
     if (!mod) return;
 
     var items = mod.units
       .map((elm, idx) => {
-        return `<li>${elm.title}</li>`;
+        return `<li><header>${elm.title}</header><p>${elm.description}</p></li>`;
       })
       .join("");
 
     this.innerHTML = 
-    `<section style='width: 300px'>
+    `<section class="menu" style='width: 300px'>
       <ul>${items}</ul>
     </section>`;
+
+    var listItems = document.querySelectorAll("li");
+    listItems.forEach((val, idx)=> {
+      val.addEventListener("click", (ev) =>{
+        if (this.lastClicked){
+          this.lastClicked.classList.remove("active");
+        }
+
+        val.classList.add("active");
+        this.lastClicked = val;
+
+        this.menuItemClicked(idx)
+      } );
+    })
   }
 }
 
