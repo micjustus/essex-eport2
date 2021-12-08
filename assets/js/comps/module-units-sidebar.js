@@ -23,7 +23,10 @@ export class ModuleUnitsSidebar extends HTMLElement {
     return ["moduleId"];
   }
 
-  menuItemClicked(itemIndex) { }
+  clickMenuItem(itemIndex) { 
+    this.menuItemClicked(itemIndex);
+    if (this.afterItemClicked) this.afterItemClicked(itemIndex);
+  }
 
   connectedCallback() {
     var mod = modules.find((val, idx) => val.id == this.moduleId);
@@ -36,8 +39,10 @@ export class ModuleUnitsSidebar extends HTMLElement {
       .join("");
 
     this.innerHTML = 
-    `<section class="menu" style='width: 300px'>
-      <ul>${items}</ul>
+    `<section style='width: 300px'>
+      <div class="menu">
+        <ul>${items}</ul>
+      </div>
     </section>`;
 
     var listItems = document.querySelectorAll("li");
@@ -50,7 +55,7 @@ export class ModuleUnitsSidebar extends HTMLElement {
         val.classList.add("active");
         this.lastClicked = val;
 
-        this.menuItemClicked(idx)
+        this.clickMenuItem(idx)
       } );
     })
   }

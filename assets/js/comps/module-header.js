@@ -1,6 +1,8 @@
 
 
 export class ModuleHeader extends HTMLElement {
+  menu;
+
   static get observedAttributes() {
     return ["pageTitle", "animation", "pageBase", "pagePic"];
   }
@@ -52,6 +54,25 @@ export class ModuleHeader extends HTMLElement {
     this.setAttribute("pagePic", value);
   }
 
+  get hamburger(){
+    return this.menu;
+  }
+
+  set hamburger(value){
+    this.menu = value;
+    this.menu.afterItemClicked = this.afterItemClicked.bind(this);
+  }
+
+  afterItemClicked(){
+      var elm = this.menu.querySelector(".menu");
+      elm.style.visibility = "hidden";      
+  }
+
+  hamburgerClicked(){
+    var elm = this.menu.querySelector(".menu");
+    elm.style.visibility = "visible";
+  }
+
   connectedCallback() {
     var animation = '';
     if (this.animate == "true"){
@@ -61,10 +82,9 @@ export class ModuleHeader extends HTMLElement {
     var path = this.base || './';
 
     var html = 
-     `<section id="header" class="header">
-        <a href="${path}index.html" title="Navigate to home page">
-          <div class="header-back"></div>
-        </a>
+     `<section id="header" class="row">
+        <a class="header-button home visible" href="${path}index.html" title="Navigate to home page"></a>
+        <div class="header-button hamburger"><div class="header-hamburger-content"></div></div>
       `;
             
     if (this.pic){
@@ -83,6 +103,11 @@ export class ModuleHeader extends HTMLElement {
     html = html + `</section>`;
 
     this.innerHTML = html;
+
+    var elm = document.querySelector(".header-button.hamburger");
+    if (elm){
+      elm.addEventListener("click", this.hamburgerClicked.bind(this));
+    }
   }
 }
 

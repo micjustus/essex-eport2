@@ -426,7 +426,6 @@ ol {
   box-shadow: 6px 0px 12px 0px rgba(0, 0, 0, 0.1);
 }
 
-
 header > p {
   display: block;
   font-style: italic;
@@ -434,35 +433,31 @@ header > p {
   padding-bottom: 0.5em;
 }
 
-.header {
-  position: relative;
-}
-
-.header-back {
+.header-button {
   width: 64px;
   height: 64px;
-  left: 10px;
-  top: 50%;
-  position: absolute;
-  transform: translateY(-50%);
   cursor: pointer;
   user-select: none;
   border: 1px solid transparent;
+  text-decoration: none;
+  position: relative;
+  visibility: collapse;
 }
 
-.header-back::after {
+.header-button.visible{
+  visibility: visible;
+}
+.header-button.home::after {
   content: "\f015";
   font-size: 2em;
   font-family: "Font Awesome 5 Free";
   font-weight: 600;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 25%;;
 }
 
-.header-back:hover {
+.header-button:hover {
   background-color: hsl(0, 0%, 96%);
   border: 1px solid hsl(0, 0%, 90%);
   box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.3);
@@ -472,6 +467,20 @@ header > p {
 
 .header h1 a {
   text-shadow: 0 0 1px rgba(111, 134, 134, 0.3);
+}
+
+.header-button.hamburger{
+  position: sticky;
+  top: 0;
+}
+.header-button.hamburger::after {
+  content: "\f0c9";
+  font-size: 2em;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  position: relative;
+  left: 0;
+  top: 25%;
 }
 
 #header-thing a {
@@ -1114,6 +1123,10 @@ figcaption {
 .justify {
   text-align: justify;
 }
+.accordion-body.module-units{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 
 .module-units {
   background: #fdfdfd;
@@ -1359,7 +1372,7 @@ figcaption {
 .sticky {
   position: sticky;
   top: 0;
-  z-index: 1;
+  /* z-index: 1; */
   transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 .sticky.blurred {
@@ -1375,9 +1388,8 @@ figcaption {
 }
 
 .menu li{
-  margin: 0.5em;
+  margin: 0 0.5em;
   padding-bottom: 0.5em;
-  padding-left: 22px;
   border-bottom: 1px solid var(--border-color-light);
   font-size: 0.9em;
   border: 3px solid transparent;
@@ -1409,6 +1421,15 @@ figcaption {
   background-color: whitesmoke;
 }
 
+module-info header {
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0 0 1em 0;
+}
+module-info ul {
+  margin-bottom: 2em;
+  font-family: 'Playfair Display';
+}
 module-unit-simple > * {
   border: 1px solid lightblue;
   margin: 2em auto;
@@ -1419,6 +1440,9 @@ module-unit-simple > * {
 }
 module-unit-simple.active > * {
   border: 3px solid;
+}
+module-unit-simple:hover > *{
+  background-color: var(--card-hover-background-inactive);
 }
 module-units-sidebar > * {
   position: sticky;

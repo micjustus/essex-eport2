@@ -1,7 +1,8 @@
 import { modules } from "./../modules.js";
+import { ModuleUnitsSidebar } from "./module-units-sidebar.js";
+import { ModuleHeader } from "./module-header.js";
 
 export { ModuleInfo } from "./module-info.js";
-export { ModuleHeader } from "./module-header.js";
 export { SeminarCards } from "./unit-seminars.js";
 export { ModuleMeetingsList } from "./module-meetings-list.js";
 export { ModuleUnitTabs } from "./module-units-tabs.js";
@@ -46,6 +47,19 @@ export class ModuleRendererStyle2 extends HTMLElement {
             <module-unit-list-renderer moduleId=${this.moduleId}></module-unit-list-renderer>
       </section>
 		</section>`;
+
+    var header = document.querySelector("module-header");
+    header.hamburger = document.querySelector("module-units-sidebar");
+    
+    ModuleUnitsSidebar.prototype.menuItemClicked = function(index) {
+      var elm = document.querySelector(`module-unit-simple[unitid='${index}']`);
+      if (elm){
+        if (this.lastCard) this.lastCard.classList.remove("active");
+        this.lastCard = elm;
+        elm.classList.add("active");
+        elm.scrollIntoView({ behavior: "smooth", block: 'center' });
+      }
+    };
   }
 }
 
