@@ -1,0 +1,46 @@
+body{
+    --accordion-padding: 0.5em;
+    --accordion-header-hover: hsl(208, 61%, 76%);
+    --accordion-header-border: hsla(297, 49%, 75%, 0.5);
+    --accordion-header-expanded: rgba(235, 235, 235, 0.6);
+    --accordion-header-default: var(--text-topic); 
+
+    --button-background: #f43e5c;
+    --button-foreground: white;
+    --button-background-secondary: rgb(243, 244, 246);
+    --button-foreground-secondary: hsl(220, 14.3%, 30%);
+
+    --card-hover-background: hsl(346, 89%, 53%);
+    --card-hover-background-completed: hsl(120, 37%, 90%);
+    --card-hover-border-completed: hsl(120, 37%, 68%);
+    --card-hover-color: white;
+    --card-hover-background-inactive: hsl(0, 0%, 96%);
+
+    --background: white;
+    --border-color: #ccc;
+    --border-color-light: #eee;
+    --blue-highlight: hsl(208.2, 61.5%, 26.5%);
+    --blue-highlight-light: hsl(208, 0%, 46%);
+    --section-header: hsl(346, 89%, 53%);
+    --header-color: red;
+    
+    --snippet-hover: rgb(235, 193, 10);
+    --snippet-border: hsl(48.8, 91.8%, 40%);
+
+    --menu-item-background: hsl(346, 90%, 55%);
+    --menu-item-foreground: white;
+
+    --text-topic: rgb(26, 70, 109);
+
+    --box-shadow-1: rgba(0, 0, 0, 0.1);
+    --box-shadow-1: rgba(0, 0, 0, 0.2);
+    --box-shadow-3: rgba(0, 0, 0, 0.3);
+
+    --table-header-background: hsl(208, 62%, 80%);
+
+    --font-size-08: 0.8em;
+    --font-size-11: 1.1em;
+    --font-size-12: 1.2em;
+    --font-size-15: 1.5em;
+    --font-size-2: 2em;
+}

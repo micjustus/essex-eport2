@@ -26,6 +26,11 @@
         width: 100% !important;
     }
 }
+@media screen and (max-width: 530px){
+    .null-button{
+       width: 0;
+    }
+}
 @media screen and (max-width: 590px){
     .card{
         width: 268px;
@@ -58,7 +63,7 @@
         visibility: collapse;
         max-height: 80vh;
         overflow-y: scroll;
-        box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 2px 20px -5px var(--box-shadow-3);
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
         overscroll-behavior: contain;

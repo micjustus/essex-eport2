@@ -1,4 +1,5 @@
 import { modules } from "../modules.js";
+import { initAccordion2} from '../accordion.js';
 
 function buildActivityLink(element) {
   var clickLink = "";
@@ -124,12 +125,9 @@ function buildOutcomes(content) {
   }
 
   return (
-    `<section>
-        <header>Unit Learning Outcomes</header>
-        <ul>
-            ${content.outcomes.map((element) => `<li>${element}</li>`).join("")}
-        </ul>
-     </section>`
+    `<ul>
+      ${content.outcomes.map((element) => `<li>${element}</li>`).join("")}
+    </ul>`
   );
 }
 
@@ -176,21 +174,61 @@ export class ModuleUnitSimple extends HTMLElement {
 
     const template = `
     <section>
-        <header class="unit-header-1 sticky blurred" >${content.description}</header>
-        <div style="padding: 1em">
-        ${outcomes}
-        ${writing}
-        ${activities}
-        ${reading}
-        </div>
-    </section>
-    `;
+        <header class="unit-header-1 sticky blurred">${content.description}</header>
+          <div class="accordion-header expander"><header>Unit outcomes</header></div>
+          <section class="accordion-body content-embossed">${outcomes}</section></div>
+          <div style="padding: 1em">
+            ${writing}
+            ${activities}
+            ${reading}
+          </div>
+    </section>`;
 
     this.innerHTML = template;
 
-    const  header = this.querySelector(".unit-header-1");
-    const temp = header.innerText;
+    //var showTooltip;
+    var div = document.createElement("div");
+    div.classList.add("tooltip");
+    div.innerHTML = outcomes;
 
+    initAccordion2();
+
+  //var target = document.querySelector(".unit-header-1");
+
+  //   var elm = this.querySelector(".unit-header-1");
+  //   elm.addEventListener("mouseenter", function() {
+  //       if (showTooltip){
+  //         clearTimeout(showTooltip);
+  //         showTooltip = null;
+  //       }
+
+  //       showTooltip = setTimeout(()=>{
+  //         // we figure out which side is the most appropriate to add this little tooltip
+  //         div.classList.remove(["left", "top", "bottom", "right"]);
+  //         div.classList.add("left");
+          
+  //         target.appendChild(div);
+
+  //         //console.log(`top = ${elm.getBoundingClientRect().top}`);
+
+  //         //div.style.top = elm.getBoundingClientRect().top + window.scrollY + "px";
+  //         //div.style.left = (elm.getBoundingClientRect().left - div.getBoundingClientRect().width + 100) + "px";
+
+  //         //div.style.right = `calc(-${div.clientWidth}px - 20px)`;
+  //       }, 500);
+  //   });
+
+  //   elm.addEventListener("mouseleave", function() {
+  //     if (showTooltip){
+  //       clearTimeout(showTooltip);
+  //       showTooltip = null;
+  //     }
+
+  //     if (target.contains(div))
+  //       target.removeChild(div);
+  // });
+
+    const  header = this.querySelector(".unit-header-1");
     const parent = header.parentElement;
     const observer = new IntersectionObserver(([e])=> { 
         if (e.boundingClientRect.top < -0.6) {
