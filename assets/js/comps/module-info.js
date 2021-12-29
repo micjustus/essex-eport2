@@ -36,7 +36,7 @@ function hasSeminars(moduleId){
 
 export class ModuleInfo extends HTMLElement {
   static get observedAttributes() {
-    return ["moduleId"];
+    return ["moduleId", "image"];
   }
 
   constructor() {
@@ -44,7 +44,8 @@ export class ModuleInfo extends HTMLElement {
   }
 
   attributeChangedCallback(name, oldValue, newValue) {
-    this.moduleId = newValue;
+    if (name == "moduleId") this.moduleId = newValue;
+    if (name == "image") this.image = newValue;
   }
 
   get moduleId() {
@@ -53,6 +54,14 @@ export class ModuleInfo extends HTMLElement {
 
   set moduleId(value) {
     this.setAttribute("moduleId", value);
+  }
+
+  get image(){
+    return this.getAttribute("image");
+  }
+
+  set image(value){
+    this.setAttribute("image", value);
   }
 
   buildInfoActivites(mod) {
@@ -147,19 +156,24 @@ export class ModuleInfo extends HTMLElement {
       })
       .join("");
 
-      var first = "";
+    var first = "";
 
     if (mod.renderAdditional){
       first = mod.renderAdditional();
     }
     else{
-      first = `<section class="band-1" style="padding:3em 0">
+      first = `<section class="band-1" style="padding:3em 0">`;
+
+      if (this.image){
+        first = first + `<img src='${this.image}' class="module-image"/>`;
+      }
+
+      first = first + `
             <div class="centered mw-80ch">
               <header class="text-center">
                 <h2>${mod.title}</h2>
               </header>
               <ul>${items}</ul>
-            
           `;
     }
 

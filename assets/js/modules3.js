@@ -630,7 +630,7 @@ export const module = {
     "</blockquote><span>Michael Justus (2021)</span>",
 
     cryptography_sw: 
-    "<blockquote><h1>Cryptogrpahic Software</h1>Not all software cryptographic tools and libraries are secure. It is imperative to always ensure that development teams " + 
+    "<blockquote><h1>Cryptographic Software</h1>Not all software cryptographic tools and libraries are secure. It is imperative to always ensure that development teams " + 
     "utilise the latest most up-to-date versions of appropriate tools and libraries." + 
     "</blockquote><span>Michael Justus (2021)</span>",
 

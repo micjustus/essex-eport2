@@ -36,15 +36,20 @@ export class ModuleRendererStyle2 extends HTMLElement {
 
     this.innerHTML = `
       <section id="main" class="row">
-        <module-units-sidebar moduleId="${this.moduleId}"></module-units-sidebar>
+        <module-units-sidebar moduleId="${this.moduleId}" ></module-units-sidebar>
         
         <section class="row vertical stretch module-units-2" >
-          <module-info moduleId="${this.moduleId}"></module-info>
-            <header class="text-center color-8">
-              <h3>Module Units</h3>
-            </header>
-      
-            <module-unit-list-renderer moduleId=${this.moduleId}></module-unit-list-renderer>
+          <module-info moduleId="${this.moduleId}" image="../assets/css/images/networking_image.jpg"></module-info>
+
+          <header class="text-center color-8">
+            <h3>Module Units</h3>
+          </header>
+  
+          <section class="module-units-texture">
+            <section class="module-units-3">
+              <module-unit-list-renderer moduleId=${this.moduleId} style="pages"></module-unit-list-renderer>
+            </section>
+          </section>
       </section>
 		</section>`;
 
@@ -52,12 +57,12 @@ export class ModuleRendererStyle2 extends HTMLElement {
     header.hamburger = document.querySelector("module-units-sidebar");
     
     ModuleUnitsSidebar.prototype.menuItemClicked = function(index) {
-      var elm = document.querySelector(`module-unit-simple[unitid='${index}']`);
+      var elm = document.querySelector(`module-unit-simple-card[unitid='${index}'], module-unit-simple-page[unitid='${index}']`);
       if (elm){
         if (this.lastCard) this.lastCard.classList.remove("active");
         this.lastCard = elm;
         elm.classList.add("active");
-        elm.scrollIntoView({ behavior: "smooth", block: 'center' });
+        elm.scrollIntoView({ behavior: "smooth", block: 'start' });
       }
     };
   }
