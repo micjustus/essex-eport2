@@ -1121,6 +1121,12 @@ figcaption {
   user-select: none;
   filter: brightness(140%);
 }
+.button.pre-think-icon::before{
+  content: "\f0eb";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  margin-right: 0.5em;
+}
 .unit-header-1 {
   text-align: center;
   padding: 15px;
@@ -1300,7 +1306,8 @@ module-info ul {
   font-family: "Playfair Display";
 }
 module-info .module-image{
-  width: 40vw;
+  max-width: 120ch;
+  min-width: 80ch;
   display: block;
   margin: 0 auto;
   border-radius: 12px;

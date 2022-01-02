@@ -21,7 +21,7 @@ export const module = {
         "Describe what constitutes a threat and vulnerability.",
         "List several common roles within the Information Security profession."
       ],
-      writing: "",
+      writing: "../assets/artefacts/module4/M4-Reflection_U1.pdf",
       reading: {
         required: [
          "Campbell, T. (2016) Practical Information Security Management. 1st ed. APRESS. Chapters 1-3."
@@ -51,7 +51,7 @@ export const module = {
         "Explain how common vulnerabilities can be exploited using software toolkits",
         "Use industry standard toolkits to classify and evaluate threats and vulnerabilities"
       ],
-      writing: "",
+      writing: "../assets/artefacts/module4/M4-Reflection_U2.pdf",
       activities: [
        
       ],
@@ -77,7 +77,7 @@ export const module = {
         "Evaluate a number of widely available tools to use for basic network troubleshooting",
         "Explain the differences between the IPv4 and IPv6 standards"
       ],
-      writing: "",
+      writing: "../assets/artefacts/module4/M4-Reflection_U3.pdf",
       activities: [
         
       ],
@@ -330,8 +330,4 @@ export const module = {
       ],
     },
   ],
-
-  snippets: {
-   
-  }
 };

@@ -23,6 +23,11 @@ export class ModuleUnitsSidebar extends HTMLElement {
     return ["moduleId"];
   }
 
+  afterItemClicked(){
+    // we hide the menu side bar
+    this.style.visibility = "hidden";
+  }
+
   clickMenuItem(itemIndex) { 
     this.menuItemClicked(itemIndex);
     if (this.afterItemClicked) this.afterItemClicked(itemIndex);
@@ -55,7 +60,7 @@ export class ModuleUnitsSidebar extends HTMLElement {
         val.classList.add("active");
         this.lastClicked = val;
 
-        this.clickMenuItem(idx)
+        this.clickMenuItem(idx);
       } );
     })
   }

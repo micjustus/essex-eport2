@@ -70,7 +70,12 @@ export class ModuleHeader extends HTMLElement {
 
   hamburgerClicked(){
     var elm = this.menu.querySelector(".menu");
+    if (elm.style.visibility == "visible") {
+      elm.style.visibility = "hidden";
+    }
+    else{
     elm.style.visibility = "visible";
+    }
   }
 
   connectedCallback() {

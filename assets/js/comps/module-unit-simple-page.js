@@ -8,6 +8,8 @@ function buildActivityLink(element) {
     return clickLink;
   }
 
+  if (!element.href) return "";
+
   if (element.ref === "pdf") {
     clickLink = `onclick='loadPdf("${element.title}", "${element.href}")'`;
   } else if (element.ref === "text/xml") {
@@ -66,13 +68,15 @@ function buildActivity(element) {
     return `<section class="left nowrap card"><a href="${element.href}" alt='' download="${element.filename}">${first}</a></section>`;
   }
 
+  if (!clickLink) return "";
+  
   return `<li class="button" ${clickLink}>${first}</li>`;
 }
 
 function buildUnitWriting(content) {
   if (!content.writing) return "";
 
-  var writing = `<section class="button" onclick='loadPdf("${content.title} - Launching", "${content.writing}")'>Reflective Writing</section>`;
+  var writing = `<section class="button pre-think-icon" onclick='loadPdf("${content.title} - Launching", "${content.writing}")'>Reflective Writing</section>`;
   return writing;
 }
 
