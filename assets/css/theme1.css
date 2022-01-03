@@ -25,6 +25,7 @@ body{
     --header-color: red;
     
     --snippet-hover: rgb(235, 193, 10);
+    --snippet-hover-fg: hsl(49, 92%, 10%);
     --snippet-border: hsl(48.8, 91.8%, 40%);
 
     --menu-item-background: hsl(346, 90%, 55%);
@@ -43,4 +44,7 @@ body{
     --font-size-12: 1.2em;
     --font-size-15: 1.5em;
     --font-size-2: 2em;
+    --ff-font-awesome: "Font Awesome 5 Free";
+    --ff-sub: "Source Sans Pro";
+    --ff-sub2: "Playfair Display";
 }

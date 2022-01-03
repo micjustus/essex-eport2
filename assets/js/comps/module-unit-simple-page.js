@@ -16,7 +16,7 @@ function buildActivityLink(element) {
     clickLink = `onclick='openXml("${element.title}", "${element.href}")'`;
   } else if (element.ref !== "zip") {
   } else {
-    clickLink = `data-href='${element.href}' onclick="openPost(this, 'image-only')"`;
+    clickLink = `data-href='${element.href}' onclick="openContentwithFetch(this, 'image-only')"`;
   }
   return clickLink;
 }
@@ -81,7 +81,9 @@ function buildUnitWriting(content) {
 }
 
 function buildActivities(content) {
-  if (!content || !content.activities || !content.activities.length) return "";
+  if (!content) return "";
+
+  if (!content.activities) content.activities = [];
 
   var activities = content.activities
     .filter((val) => val.activity !== "assignment")
@@ -90,10 +92,10 @@ function buildActivities(content) {
     }).join("");
 
   if (!activities) {
-    activities = `<section style="text-align:center">No activity data supplied</section>`;
+    return `<section class="activities-box" style="text-align:left">No activity data supplied</section>`;
   }
 
-  return `<section><ul>${activities}</ul></section>`;
+  return `<section class="activities-box"><ul>${activities}</ul></section>`;
 }
 
 function buildReading(content) {
@@ -119,7 +121,7 @@ function buildReading(content) {
   }
 
   if (required || optional) {
-    return `<section class="button secondary snippet" onclick="openPopupHTMLBase64('Reading Material', '${window.btoa(encodeURIComponent(required))}', '${window.btoa(encodeURIComponent(optional))}')">Reading Material</section>`;
+    return `<section class="secondary snippet" onclick="openPopupHTMLBase64('Reading Material', '${window.btoa(encodeURIComponent(required))}', '${window.btoa(encodeURIComponent(optional))}')">Reading Material</section>`;
   }
 }
 
@@ -178,10 +180,10 @@ export class ModuleUnitSimplePage extends HTMLElement {
 
     const template = `
     <section>
-        <header class="unit-header-1">${content.description}</header>
+        <header class="unit-header-1">${parseInt(this.unitId) + 1}. ${content.description}</header>
           <header>Unit outcomes</header>
           <section>${outcomes}</section></div>
-          <div style="padding: 1em">
+          <div class="unit-page-content">
             ${writing}
             ${activities}
             ${reading}
@@ -190,12 +192,7 @@ export class ModuleUnitSimplePage extends HTMLElement {
 
     this.innerHTML = template;
 
-    var div = document.createElement("div");
-    div.classList.add("tooltip");
-    div.innerHTML = outcomes;
-
     initAccordion2();
-
   }
 }
 

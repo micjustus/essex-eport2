@@ -27,6 +27,8 @@ export class ModuleUnitListRenderer extends HTMLElement {
 
   set moduleId(newValue) {}
 
+  set style(newValue){}
+
   connectedCallback() {
     var mod = modules.find((val, idx) => val.id == this.moduleId);
     if (!mod) return;

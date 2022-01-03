@@ -15,14 +15,14 @@ function openXml(title, url){
                 return "NO DATA";
             })
             .then(data =>{
-                openPostContent( `<h1 style="margin-bottom: 2em">${title}</h1>
+                openPopup({ content: `<h1 style="margin-bottom: 2em">${title}</h1>
                 <pre><code class="language-xml"><textarea>${data}</textarea></code></pre>
                 <div style="margin-top:1em; font-size:0.7em">
                   <span style="font-family: 'JetBrains Mono'">Font face used for Python script is <a href='https://www.jetbrains.com/lp/mono/#intro' target="_blank" style="font-face: 'JetBrains Mono'">JetBrains Mono</a>.
                   Syntax highlighting is provided by <a href="https://highlightjs.org/">Highlight.js</a>
                   </span>
 
-                `, null, 'padding: 1em;max-width:70%;');
+                `, style: 'padding: 1em;max-width:70%;' });
 
 
               document.body.querySelectorAll("pre code").forEach(el=>
@@ -35,9 +35,7 @@ function openXml(title, url){
 
 function openImage(title, url){
 
-    openPostContent( `<h1 style="margin-bottom: 2em">${title}</h1>
-    <img src="${url}"/>
-
-    `, null, 'padding: 1em;max-width:70%');
+    openPopup({ content: `<h1 style="margin-bottom: 2em">${title}</h1>
+    <img src="${url}"/>`, style: 'padding: 1em;max-width:70%' });
 }
 

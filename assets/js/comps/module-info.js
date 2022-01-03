@@ -60,9 +60,7 @@ export class ModuleInfo extends HTMLElement {
     return this.getAttribute("image");
   }
 
-  set image(value){
-    this.setAttribute("image", value);
-  }
+  set image(value){}
 
   buildInfoActivites(mod) {
     var first ="";

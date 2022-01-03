@@ -673,7 +673,7 @@ export function openSnippet(snippetName){
     return;
   }
 
-  openPostContent(text);
+  openPopup({ content: text });
 }
 
 function renderModule(){
@@ -687,16 +687,16 @@ function renderModule(){
     <div style="float:left;">
       <div class="row vertical">
         <ul class="topics semibold">
-        <li class="snippet"><img src="../assets/images/python-logo.png" width=64 height=64 style="margin-left: 25%;" alt="Python logo" onclick="openPostContent('${this.snippets?.python}')"/></li>
-        <li class="snippet" onclick='openPostContent("${this.snippets?.cryptography_sw}")'>Cryptography software</li>
+        <li class="snippet"><img src="../assets/images/python-logo.png" width=64 height=64 style="margin-left: 25%;" alt="Python logo" onclick="openPopup({ content: '${this.snippets?.python}' })"/></li>
+        <li class="snippet" onclick='openPopup({ content: "${this.snippets?.cryptography_sw}" })'>Cryptography software</li>
         <li>Cryptography algorithms</li>
-        <li class="snippet" onclick='openPostContent("${this.snippets?.secureprogramming}")'>Secure programming</li>
-        <li class="snippet" onclick='openPostContent("${this.snippets?.owasp}")'>OWASP</li>
+        <li class="snippet" onclick='openPopup({ content: "${this.snippets?.secureprogramming}" })'>Secure programming</li>
+        <li class="snippet" onclick='openPopup({ content: "${this.snippets?.owasp}" })'>OWASP</li>
         <li>Team project</li>
-        <li class="snippet" onclick='openPostContent("${this.snippets?.cyclomatic}")'>Cyclomatic complexity</li>
+        <li class="snippet" onclick='openPopup({ content: "${this.snippets?.cyclomatic}" })'>Cyclomatic complexity</li>
         <li>Architecture evolution</li>
-        <li class="snippet" onclick='openPostContent("${this.snippets?.flask}")'>APIs (Flask)</li>
-        <li class="snippet" onclick='openPostContent("${this.snippets?.ontology}")'>Ontologies</li>
+        <li class="snippet" onclick='openPopup({ content: "${this.snippets?.flask}" })'>APIs (Flask)</li>
+        <li class="snippet" onclick='openPopup({ content: "${this.snippets?.ontology}" })'>Ontologies</li>
         </ul>
       </div>
     </div>

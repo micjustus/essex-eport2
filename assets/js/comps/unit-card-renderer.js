@@ -35,7 +35,7 @@ function buildActivityLink(element) {
   else if (element.ref !== "zip") {
   } 
   else {
-    clickLink = `data-href='${element.href}' onclick="openPost(this, 'image-only')"`;
+    clickLink = `data-href='${element.href}' onclick="openContentWithFetch(this, 'image-only')"`;
   }
   return clickLink;
 }

@@ -4,7 +4,7 @@ function initPosts() {
     item.addEventListener(
       "click",
       function () {
-        openPostContent(item);
+        openPopup({ content: item });
       },
       false
     );
@@ -22,20 +22,20 @@ function keyPressToClosePost(event) {
 }
 
 function closePostContent() {
-  var popup = document.querySelector("#popup__1");
+  var popup = document.querySelector(".popup-overlay");
   popup.removeEventListener("click", clickToClosePost);
   document.body.removeChild(popup);
   document.removeEventListener("keydown", keyPressToClosePost);
 }
 
 function clickToClosePost(event) {
-  if (event.target.id === "popup__1") {
+  if (event.target.classList.contains("popup-overlay")) {
     closePostContent();
   }
 }
 
 function stopScroll(event) {
-  if (event.srcElement.id === "popup__1") {
+  if (event.srcElement.classList.contains("popup-overlay")) {
     event.preventDefault();
   }
 }
@@ -53,14 +53,14 @@ function openScript(title, href){
         })
         .then(data =>{
 
-            openPostContent( `<h1 style="margin-bottom: 2em">${title}</h1>
+            openPopup( { content: `<h1 style="margin-bottom: 2em">${title}</h1>
               <pre><code class="language-python">${data}</code></pre>
               <div style="margin-top:1em; font-size:0.7em">
                 <span style="font-family: 'JetBrains Mono'">Font face used for Python script is <a href='https://www.jetbrains.com/lp/mono/#intro' target="_blank" style="font-face: 'JetBrains Mono'">JetBrains Mono</a>. 
                 Syntax highlighting is provided by <a href="https://highlightjs.org/">Highlight.js</a>
                 </span>
                 
-              `, null, 'padding: 1em;max-width:70%;');
+              `}, null, 'padding: 1em;max-width:70%;');
             
 
             document.body.querySelectorAll("pre code").forEach(el=>
@@ -71,31 +71,42 @@ function openScript(title, href){
     });
 }
 
+function openPopup(options){
+  
+  var overlay = document.createElement("div");
+  overlay.addEventListener("click", clickToClosePost);
+  overlay.addEventListener("wheel", stopScroll);
+  overlay.classList.add("popup-overlay");
 
-function openPostContent(content, otherClass, style) {
   var popup = document.createElement("div");
-  popup.id = "popup__1";
-  popup.addEventListener("click", clickToClosePost);
-  popup.addEventListener("wheel", stopScroll);
-  popup.classList.add("post-popup");
+  popup.classList.add("popup");
 
+  if (options.title) {
+    var header = document.createElement("header");
+    header.innerText = options.title;
+    popup.appendChild(header);
+  }
+
+  var popupContent = document.createElement("div");
+  popupContent.classList.add("content");
+
+  if (options.otherClass)
+    popupContent.classList.add(options.otherClass);
+
+  if (options.style)
+    popupContent.style = options.style;
+
+  if (options.content) {
+    var content = document.createElement("div");
+    content.innerHTML = options.content;
+    popupContent.appendChild(content);
+  }
+
+  popup.appendChild(popupContent);
+  overlay.appendChild(popup);
+
+  document.body.appendChild(overlay);
   document.addEventListener("keydown", keyPressToClosePost);
-
-  var popupInner = document.createElement("div");
-  popupInner.classList.add("content");
-
-  if (otherClass)
-    popupInner.classList.add(otherClass);
-
-  if (style)
-    popupInner.style = style;
-
-  popup.appendChild(popupInner);
-
-  if (content) popupInner.innerHTML = content;
-
-
-  document.body.appendChild(popup);
 }
 
 function openPostContentWithFetch(elm, otherClass) {
@@ -104,29 +115,30 @@ function openPostContentWithFetch(elm, otherClass) {
 
   fetch(href)
     .then((response) => response.text())
-    .then((data) => openPostContent(data, otherClass));
-}
-
-function openPost(evt, otherClass) {
-  openPostContentWithFetch(evt, otherClass);
+    .then((data) => openPopup({ content: data, otherClass: otherClass }));
 }
 
 function openModuleUnits(moduleId){
-  openPostContent( 
-  `<body>
-    <div>
-        <module-units module-id=${moduleId}></module-units>
-    </div>
-</body>`);
+  openPopup( 
+    {
+      content: 
+      `<body>
+        <div>
+            <module-units module-id=${moduleId}></module-units>
+        </div>
+    </body>`
+    });
 }
 
 function openModuleSeminars(moduleId){
-  openPostContent(
+  openPopup( {
+    content:
     `<body>
       <div>
         <module-seminars module-id=${moduleId}></module-seminars>
       </div>
-    </body>`);
+    </body>` }
+    );
 }
 
 function openPopupHTMLBase64(title, ...args){
@@ -135,7 +147,7 @@ function openPopupHTMLBase64(title, ...args){
     return decodeURIComponent(window.atob(elm));
   }).join("");
 
-  openPostContent(text);
+  openPopup({ content: text, title: title });
 }
 
 initPosts();

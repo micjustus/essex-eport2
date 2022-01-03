@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700,900");
 
 @import url("fontawesome-all.min.css");
-
+@import url("theme1.css")
 
 html {
   box-sizing: border-box;
@@ -16,6 +16,7 @@ body {
   border: 0;
   font-size: 100%;
   font: inherit;
+  font-family: var(--ff-sub);;
   vertical-align: baseline;
 }
 
@@ -206,9 +207,12 @@ ul.topics li{
 .snippet {
   cursor: pointer;
   overflow: visible !important;
+  border: 1px solid transparent;
+  padding: 0.2em;
 }
 .snippet:hover {
   background-color: var(--snippet-hover);
+  color: var(--snippet-hover-fg);
   border: 1px solid var(--snippet-border);
   border-radius: 3px;
 }
@@ -243,7 +247,7 @@ ol {
   -webkit-font-smoothing: antialiased;
   display: inline-block;
   font-style: normal;
-  font-family: "Font Awesome 5 Free";
+  font-family: var(--ff-font-awesome);
   font-weight: 600;
 }
 
@@ -313,7 +317,7 @@ header > p {
 .header-button.home::after {
   content: "\f015";
   font-size: var(--font-size-2);
-  font-family: "Font Awesome 5 Free";
+  font-family: var(--ff-font-awesome);
   font-weight: 600;
   position: relative;
   left: 0;
@@ -339,7 +343,7 @@ header > p {
 .header-button.hamburger::after {
   content: "\f0c9";
   font-size: var(--font-size-2);
-  font-family: "Font Awesome 5 Free";
+  font-family: var(--ff-font-awesome);
   font-weight: 600;
   position: relative;
   left: 0;
@@ -403,7 +407,6 @@ body {
 
   color: #5d5d5d;
   line-height: var(--font-size-15);
-  font-family: "Inter", sans-serif;
   text-size-adjust: none;
 }
 
@@ -423,7 +426,7 @@ body.is-preload *:after {
 
 section header {
   color: var(--section-header);
-  font-family: "Source Sans Pro";
+  font-family: var(--ff-sub);
   font-weight: 600;
 }
 
@@ -518,7 +521,7 @@ section header {
 .unit-content .nothing-here::before {
   -webkit-text-stroke: 1px hsl(346, 89%, 90%);
   content: "\f03a";
-  font-family: "Font Awesome 5 Free";
+  font-family: var(--ff-font-awesome);
   font-weight: 600;
   display: block;
   font-size: 3em;
@@ -539,7 +542,10 @@ section header {
   color: var(--blue-highlight);
   font-size: var(--font-size-12);
 }
-
+.unit-page-content{
+  padding: 1em;
+  font-family: var(--ff-sub);
+}
 .accordion-body {
   flex-grow: 0;
 }
@@ -547,12 +553,17 @@ section header {
   padding-top: 0;
 }
 
+.reading-list{
+  margin-bottom: 2em;
+}
 .reading-list p {
-  font-size: var(--font-size-08);
   margin: 0;
   border-bottom: 1px solid lightgrey;
   padding-left: 1.5em;
   text-indent: -1.5em;
+}
+.reading-list :is(h1,h2,h3,h4){
+  margin: 1em 0;
 }
 .reading-list p:last-of-type {
   border-bottom: 1px solid transparent;
@@ -588,7 +599,7 @@ section header {
   user-select: none;
   cursor: pointer;
 }
-.post-popup {
+.popup-overlay {
   -webkit-backdrop-filter: grayscale(50%) blur(6px);
 
   z-index: 1;
@@ -600,39 +611,42 @@ section header {
   height: 100%;
   background-color: var(--box-shadow-3);
   backdrop-filter: grayscale(50%) blur(6px);
-}
-.post-popup .content header {
-  font-size: var(--font-size-15);
-  margin-bottom: 2em;
-}
-.post-popup .outer {
-  padding: 3em;
-}
-.post-popup .content {
-  -moz-user-select: text;
-  -webkit-user-select: text;
-  border-radius: 7px;
-  padding: 3em;
-  scrollbar-gutter: stable;
-  max-width: 80ch;
-  max-height: 70vh;
-  background-color: white;
-  z-index: 2;
-  position: relative;
-  margin: 0 auto;
-  overflow: auto;
   overscroll-behavior: contain;
-  user-select: contain;
+}
+.popup-overlay .popup{
+  margin: 0 auto;
+  top: 50%;
+  animation: fade-in 0.1s;
+  transform: translateY(-50%);
+  background-color: white;
+  border-radius: 7px;
   box-shadow: 0 0 40px 1px var(--box-shadow-2);
   position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  animation: fade-in 0.1s;
+  z-index: 2;
+  max-width: 120ch;
+  max-height: 70vh;
+  overflow: auto;
 }
-.post-popup .content.image-only {
+.popup-overlay .popup header {
+  font-size: var(--font-size-15);
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+  padding: 1em;
+  font-weight: 700;
+  color: var(--header-color);
+}
+.popup-overlay .popup .content {
+  padding: 0 2em 2em 2em;
+  scrollbar-gutter: stable;
+  overflow: auto;
+  user-select: text;
+  -moz-user-select: text;
+  -webkit-user-select: text;
+}
+.popup-overlay .content.image-only {
   max-width: 60%;
 }
-.post-popup .title {
+.popup-overlay .title {
   text-align: center;
   margin-bottom: 1em;
   margin-top: 0;
@@ -677,7 +691,7 @@ section header {
 }
 .card .click-more:after {
   content: "\f141";
-  font-family: "Font Awesome 5 Free";
+  font-family:var(--ff-font-awesome);
   font-weight: 600;
 }
 .card .click-more p {
@@ -855,14 +869,21 @@ figcaption {
 
 .outcomes:before {
   content: "\f14e";
-  font-family: "Font Awesome 5 Free";
+  font-family: var(--ff-font-awesome);
   font-weight: 600;
   font-size: var(--font-size-2);
   margin-right: 0.5em;
 }
+.activities-box{
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  margin: 1em 0;
+  padding: 1em 0.5em;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.06);
+}
 .activities:before {
   content: "\f00b";
-  font-family: "Font Awesome 5 Free";
+  font-family: var(--ff-font-awesome);
   font-weight: 600;
   font-size: var(--font-size-15);
   margin-right: 0.5em;
@@ -1107,7 +1128,6 @@ figcaption {
   display: inline-block;
   padding: 0.5em;
   transition: filter 0.1s ease-in;
-  font-family: "Source Sans Pro";
 }
 .button.secondary {
   background-color: var(--button-background-secondary);
@@ -1123,7 +1143,7 @@ figcaption {
 }
 .button.pre-think-icon::before{
   content: "\f0eb";
-  font-family: "Font Awesome 5 Free";
+  font-family:var(--ff-font-awesome);
   font-weight: 600;
   margin-right: 0.5em;
 }
@@ -1146,7 +1166,7 @@ figcaption {
 }
 .unit-header-1.info-icon::after {
   content: "\f05a";
-  font-family: "Font Awesome 5 Free";
+  font-family: var(--ff-font-awesome);
   font-weight: 600;
   font-size: var(--font-size-08);
   color: var(--blue-highlight-light);
@@ -1168,7 +1188,7 @@ figcaption {
   padding: 1em;
   /* z-index: 2; */
   color: black;
-  font-family: "Playfair Display";
+  font-family: var(--ff-sub2);
   /* top: 0; */
 }
 /* .tooltip.right{
@@ -1303,10 +1323,10 @@ module-info header {
 }
 module-info ul {
   margin-bottom: 2em;
-  font-family: "Playfair Display";
+  font-family: var(--ff-sub2);
 }
 module-info .module-image{
-  max-width: 120ch;
+  max-width: 90ch;
   min-width: 80ch;
   display: block;
   margin: 0 auto;
@@ -1360,7 +1380,7 @@ module-units-sidebar > * {
   display: block;
 }
 module-unit-list-renderer {
-  font-family: "Playfair Display";
+  font-family: var(--ff-sub2);
 }
 
 @keyframes fade-in {
