@@ -53,7 +53,14 @@ export const module = {
       ],
       writing: "../assets/artefacts/module4/M4-Reflection_U2.pdf",
       activities: [
-       
+       {
+        title: "Seminar: STRIDE & DREAD",
+        href: "../assets/artefacts/module4/M4-Seminar1_StrideDread.pdf",
+        ref: "pdf",
+        display: "date",
+        month: "Nov",
+        day: 20 
+       }
       ],
       reading: {
         required: [
@@ -104,7 +111,14 @@ export const module = {
       ],
       writing: "",
       activities: [
-
+        {
+          title: "Seminar: TCP/IP vs OSI",
+          href: "../assets/artefacts/module4/M4-Seminar2_TCPIPvsOSI.pdf",
+          ref: "pdf",
+          display: "date",
+          month: "Dec",
+          day: 4
+         }
       ],
       reading: {
         required: [
@@ -170,7 +184,14 @@ export const module = {
         ],
       },
       activities: [
-       
+        {
+          title: "Seminar: Penetration Testing",
+          href: "../assets/artefacts/module4/M4-Seminar3_PenetrationTesting.pdf",
+          ref: "pdf",
+          display: "date",
+          month: "Dec",
+          day: 18 
+         }       
       ],
     },
 

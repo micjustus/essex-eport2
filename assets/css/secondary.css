@@ -543,7 +543,6 @@ section header {
   font-size: var(--font-size-12);
 }
 .unit-page-content{
-  padding: 1em;
   font-family: var(--ff-sub);
 }
 .accordion-body {
@@ -875,11 +874,27 @@ figcaption {
   margin-right: 0.5em;
 }
 .activities-box{
-  border: 1px solid var(--border-color);
-  border-radius: 6px;
   margin: 1em 0;
-  padding: 1em 0.5em;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.06);
+}
+.activities-box header{
+  margin-bottom: 1em;
+}
+.activities-box .activity{
+  border: 2px solid var(--button-background-secondary-dark);
+  background-color: var(--button-background-secondary);
+  color: var(--button-foreground-dark);
+  cursor: pointer;
+  user-select: none;
+  padding: 0.4em 1em;
+  border-radius: 6px;;
+  display: inline-block;
+  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+  font-weight: 600;
+  margin-left: 1em;
+}
+.activities-box .activity:hover{
+  background: var(--blue-highlight-light);
+  color: var(--button-foreground); 
 }
 .activities:before {
   content: "\f00b";
@@ -888,6 +903,7 @@ figcaption {
   font-size: var(--font-size-15);
   margin-right: 0.5em;
 }
+
 .tags li {
   list-style-type: none;
   display: inline-block;
@@ -1127,7 +1143,7 @@ figcaption {
   color: var(--button-foreground);
   display: inline-block;
   padding: 0.5em;
-  transition: filter 0.1s ease-in;
+  transition: background-color 0.1s ease-in;
 }
 .button.secondary {
   background-color: var(--button-background-secondary);
@@ -1139,7 +1155,11 @@ figcaption {
 .button:hover {
   cursor: pointer;
   user-select: none;
-  filter: brightness(140%);
+  /* filter: brightness(140%); */
+  background-color: var(--button-background-hover);
+}
+.button.pre-think-icon{
+  margin-left: 1em;
 }
 .button.pre-think-icon::before{
   content: "\f0eb";
@@ -1326,14 +1346,15 @@ module-info ul {
   font-family: var(--ff-sub2);
 }
 module-info .module-image{
-  max-width: 90ch;
-  min-width: 80ch;
+  max-width: 45%;
+  min-width: 45%;
   display: block;
   margin: 0 auto;
   border-radius: 12px;
   margin-bottom: 2em;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
+  object-fit: cover;
   aspect-ratio: 16 / 9;
 }
 module-info {
@@ -1358,7 +1379,8 @@ module-unit-simple-card:hover > * {
 module-unit-simple-page > * {
   border: 1px solid transparent;
   margin: 0;
-  padding: 2em 20ch;
+  /* padding: 2em 20ch; */
+  padding: 1em;
   border-top: 1px solid lightblue;
 }
 module-unit-simple-page:first-child>*{

@@ -70,7 +70,7 @@ function buildActivity(element) {
 
   if (!clickLink) return "";
   
-  return `<li class="button" ${clickLink}>${first}</li>`;
+  return `<div class="activity" ${clickLink}>${first}</div>`;
 }
 
 function buildUnitWriting(content) {
@@ -92,10 +92,10 @@ function buildActivities(content) {
     }).join("");
 
   if (!activities) {
-    return `<section class="activities-box" style="text-align:left">No activity data supplied</section>`;
+    return `<section class="activities-box" style="text-align:left">No activity data.</section>`;
   }
 
-  return `<section class="activities-box"><ul>${activities}</ul></section>`;
+  return `<section class="activities-box"><header>Activities</header>${activities}</section>`;
 }
 
 function buildReading(content) {

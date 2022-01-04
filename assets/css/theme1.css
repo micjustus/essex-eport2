@@ -5,9 +5,12 @@ body{
     --accordion-header-expanded: rgba(235, 235, 235, 0.6);
     --accordion-header-default: var(--text-topic); 
 
-    --button-background: #f43e5c;
+    --button-background: hsl(350, 65%, 65%);
+    --button-background-hover: hsl(350.1, 89.2%, 55%);
     --button-foreground: white;
-    --button-background-secondary: rgb(243, 244, 246);
+    --button-foreground-dark: hsl(220, 14.3%, 25%);
+    --button-background-secondary: rgb(193, 213, 255);
+    --button-background-secondary-dark: hsl(220.6, 100%, 80%);
     --button-foreground-secondary: hsl(220, 14.3%, 30%);
 
     --card-hover-background: hsl(346, 89%, 53%);
@@ -20,7 +23,7 @@ body{
     --border-color: #ccc;
     --border-color-light: #eee;
     --blue-highlight: hsl(208.2, 61.5%, 26.5%);
-    --blue-highlight-light: hsl(208, 0%, 46%);
+    --blue-highlight-light: hsl(208, 61.5%, 46%);
     --section-header: hsl(346, 89%, 53%);
     --header-color: red;
     

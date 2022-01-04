@@ -163,7 +163,7 @@ export class ModuleInfo extends HTMLElement {
       first = `<section class="band-1" style="padding:3em 0">`;
 
       if (this.image){
-        first = first + `<img src='${this.image}' class="module-image"/>`;
+        first = first + `<img src='${this.image}' class="module-image" alt="Module Banner"/>`;
       }
 
       first = first + `
