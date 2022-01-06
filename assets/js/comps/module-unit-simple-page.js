@@ -49,7 +49,7 @@ function buildActivity(element) {
   var first = "";
 
   if (element.display === "date") {
-    first = `<span class="date">(${element.month} ${element.day}) ${element.title}</span>`;
+    first = `<span class="date podcast">(${element.month} ${element.day}) ${element.title}</span>`;
   } else if (element.items) {
     return buildActivityList(element);
   } else {
@@ -121,7 +121,7 @@ function buildReading(content) {
   }
 
   if (required || optional) {
-    return `<section class="secondary snippet" onclick="openPopupHTMLBase64('Reading Material', '${window.btoa(encodeURIComponent(required))}', '${window.btoa(encodeURIComponent(optional))}')">Reading Material</section>`;
+    return `<section class="activities-box"><header>Unit Reading</header><section class="activity snippet book" onclick="openPopupHTMLBase64('Reading Material', '${window.btoa(encodeURIComponent(required))}', '${window.btoa(encodeURIComponent(optional))}')">Reading Material</section></section>`;
   }
 }
 

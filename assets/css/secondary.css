@@ -208,7 +208,8 @@ ul.topics li{
   cursor: pointer;
   overflow: visible !important;
   border: 1px solid transparent;
-  padding: 0.2em;
+  padding: 0.2em 1em;
+  
 }
 .snippet:hover {
   background-color: var(--snippet-hover);
@@ -221,6 +222,7 @@ ul.topics li{
   width: 10px;
   height: 10px;
   margin-left: 0.3em; 
+  margin-right: 1em;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
   background-position: center;
   background-repeat: no-repeat;
@@ -892,18 +894,20 @@ figcaption {
   font-weight: 600;
   margin-left: 1em;
 }
+.activities-box .activity.snippet{
+  padding-right: 2em;
+}
 .activities-box .activity:hover{
   background: var(--blue-highlight-light);
   color: var(--button-foreground); 
 }
 .activities:before {
-  content: "\f00b";
+  content: "\f305";
   font-family: var(--ff-font-awesome);
   font-weight: 600;
   font-size: var(--font-size-15);
   margin-right: 0.5em;
 }
-
 .tags li {
   list-style-type: none;
   display: inline-block;
@@ -937,7 +941,7 @@ figcaption {
   border-radius: 12px;
   padding: 20px 20px 30px 20px;
   border: 1px solid #dfdfdf;
-  filter: drop-shadow(2px 2px 4px var(--box-shadow-1));
+  /*filter: drop-shadow(2px 2px 4px var(--box-shadow-1));*/
   max-width: 80ch;
   margin: 0 auto;
 }
@@ -1163,6 +1167,18 @@ figcaption {
 }
 .button.pre-think-icon::before{
   content: "\f0eb";
+  font-family:var(--ff-font-awesome);
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+.activity.book::before{
+  content: "\f02d";
+  font-family:var(--ff-font-awesome);
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+.date.podcast::before{
+  content: "\f2ce";
   font-family:var(--ff-font-awesome);
   font-weight: 600;
   margin-right: 0.5em;
