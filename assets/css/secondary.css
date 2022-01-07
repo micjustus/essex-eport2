@@ -664,12 +664,15 @@ section header {
   border-radius: 6px;
   background: white;
   display: inline-block;
-  width: 368px;
+  width: 290px;
   aspect-ratio: 16/9;
   overflow: auto;
   text-align: left;
-  position: relative;
-  padding: 0.1em 1.2em;
+  position: relative;  
+  padding: 0 .5em .5em .5em;
+}
+.card :is(h1,h2,h3,h4){
+  margin-top:0;
 }
 .card:hover {
   cursor: pointer;
@@ -806,7 +809,30 @@ section header {
   color: hsl(0, 0%, 33%);
   font-style: italic;
 }
-
+.tab {
+  border: 1px solid hsl(0, 0%, 88%);
+  border-radius: 6px;
+  background: white;
+  display: inline-block;
+  width: 220px;
+  overflow: auto;
+  text-align: left;
+  position: relative;  
+  padding: .5em;
+  text-decoration: none;
+}
+.tab :is(h1,h2,h3,h4){
+  margin: 0;
+}
+.tab.highlight:hover{
+  background-color: var(--card-hover-background);
+  cursor: pointer;
+  color: var(--card-hover-color);
+}
+.tab a{
+  text-decoration: none;
+  color: inherit;
+}
 .unit-card {
   border-radius: 8px;
   max-height: 110px;
@@ -948,7 +974,7 @@ figcaption {
 .module-unit-docs {
   gap: 1em;
   align-items: center;
-  font-size: var(--font-size-08);
+  /* font-size: var(--font-size-08); */
 }
 .color-8 :is(h1, h2, h3, h4) {
   color: #888;
@@ -1002,7 +1028,7 @@ figcaption {
   margin: 0 auto;
 }
 .flex-row.small {
-  font-size: 0.9em;
+  
 }
 .module-units-header {
   text-align: center;
@@ -1018,8 +1044,8 @@ figcaption {
   background-color: white;
   border: 1px solid hsl(0, 0%, 76%);
   width: 100px;
-  font-size: var(--font-size-08);
-  padding: 10px;
+  /* font-size: var(--font-size-08); */
+  /* padding: 10px; */
   color: var(--blue-highlight);
 }
 .module-units-header .card:hover {
@@ -1061,12 +1087,7 @@ figcaption {
   color: var(--blue-highlight);
   margin: 0 0 0.6em 0;
 }
-.assignment .card {
-  width: 300px;
-  padding: 0.8em;
-}
 .assignment .card :is(h1, h2, h3, h4) {
-  font-size: var(--font-size-11);
   color: var(--text-topic);
 }
 
@@ -1411,6 +1432,7 @@ module-unit-simple-page .unit-header-1 {
 module-unit-simple-page.active > * {
   border: 1px solid lightblue;
   border-radius: 8px;
+  background-color: #fbfaff;
 }
 module-units-sidebar > * {
   position: sticky;

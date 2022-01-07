@@ -109,7 +109,7 @@ export const module = {
         "Analyse the outputs provided by the tools",
         "Discuss the difference between TCP/IP and the ISO/OSI protocol stacks"
       ],
-      writing: "",
+      writing: "../assets/artefacts/module4/M4-Reflection_U4.pdf",
       activities: [
         {
           title: "Seminar: TCP/IP vs OSI",

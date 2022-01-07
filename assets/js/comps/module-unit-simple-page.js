@@ -92,7 +92,7 @@ function buildActivities(content) {
     }).join("");
 
   if (!activities) {
-    return `<section class="activities-box" style="text-align:left">No activity data.</section>`;
+    return `<section class="activities-box" style="text-align:left"><header>Activities</header><section>No activity data.</section></section>`;
   }
 
   return `<section class="activities-box"><header>Activities</header>${activities}</section>`;

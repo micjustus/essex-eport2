@@ -60,7 +60,9 @@ export class ModuleInfo extends HTMLElement {
     return this.getAttribute("image");
   }
 
-  set image(value){}
+  set image(value){
+    this.setAttribute("image", value);
+  }
 
   buildInfoActivites(mod) {
     var first ="";
@@ -73,14 +75,14 @@ export class ModuleInfo extends HTMLElement {
         if (act.ref == "zip") {
           first =
             first +
-            `<div class="card highlight text-center p-1 no-aspect">
+            `<div class="tab highlight text-center no-aspect">
             <a href="${act.href}" download="${act.filename}"><h4>${act.title}</h4></a>`;
             
             first = first + `</div>`;
         } else {
           first =
             first +
-            `<div class="card highlight text-center p-1 no-aspect" onclick="loadPdf('${act.title}', '${act.href}')">
+            `<div class="tab highlight text-center no-aspect" onclick="loadPdf('${act.title}', '${act.href}')">
           <h4>${act.title}</h4>
           `;
 
@@ -109,7 +111,7 @@ export class ModuleInfo extends HTMLElement {
     if (mod.reflections) {
       first =
         first +
-        `<div class="card highlight text-center p-1 no-aspect" onclick='loadPdf("Module Reflection", "${mod.reflections}")'>
+        `<div class="tab highlight text-center no-aspect" onclick='loadPdf("Module Reflection", "${mod.reflections}")'>
           <h4>Module Reflection</h4>
         </div>`;
     }
@@ -117,7 +119,7 @@ export class ModuleInfo extends HTMLElement {
     if (mod.project) {
       first =
         first +
-        `<div class="card highlight text-center p-1 no-aspect"  onclick="loadPdf('Project Reflection', '${mod.project}')">
+        `<div class="tab highlight text-center no-aspect"  onclick="loadPdf('Project Reflection', '${mod.project}')">
       <h4>Project Evaluation</h4>
       </div>`;
     }
@@ -125,7 +127,7 @@ export class ModuleInfo extends HTMLElement {
     if (mod.actionPlan) {
       first =
         first +
-        `<div class="card highlight text-center p-1 no-aspect" onclick="loadPdf('Module Action Plan', '${mod.actionPlan}')">
+        `<div class="tab highlight text-center no-aspect" onclick="loadPdf('Module Action Plan', '${mod.actionPlan}')">
         <h4>Action Plan</h4>
       </div>`;
     }
@@ -133,7 +135,7 @@ export class ModuleInfo extends HTMLElement {
     if (mod.skillsMatrix) {
       first =
         first +
-        `<div class="card highlight text-center p-1 no-aspect" onclick="loadPdf('Module Skills Matrix', '${mod.skillsMatrix}')">
+        `<div class="tab highlight text-center no-aspect" onclick="loadPdf('Module Skills Matrix', '${mod.skillsMatrix}')">
         <h4>Skills Matrix</h4>
       </div>`;
     }
@@ -163,7 +165,7 @@ export class ModuleInfo extends HTMLElement {
       first = `<section class="band-1" style="padding:3em 0">`;
 
       if (this.image){
-        first = first + `<img src='${this.image}' class="module-image" alt="Module Banner"/>`;
+        first = first + `<img src='${this.image}' class="module-image"/>`;
       }
 
       first = first + `
@@ -178,7 +180,7 @@ export class ModuleInfo extends HTMLElement {
     first =
       first +
       `
-        <section class="accordion-header expander centered" style="border-radius: 6px" aria-expanded="false">
+        <section class="accordion-header expander centered"  aria-expanded="false">
             <header class="text-center color-8 centered" >
               Module Documents
             </header>
@@ -191,7 +193,7 @@ export class ModuleInfo extends HTMLElement {
     if (hasUnitReflections(this.moduleId)){
       first =
         first +
-        `<div class="card highlight text-center p-1 no-aspect" onclick="openModuleUnits(${this.moduleId})">
+        `<div class="tab highlight text-center no-aspect" onclick="openModuleUnits(${this.moduleId})">
           <h4>Unit Reflections</h4>
         </div>`;
     }
@@ -199,7 +201,7 @@ export class ModuleInfo extends HTMLElement {
         if (hasSeminars(this.moduleId))
         {
           first = first + 
-          `<div class="card highlight text-center p-1 no-aspect" onclick="openModuleSeminars(${this.moduleId})">
+          `<div class="tab highlight text-center no-aspect" onclick="openModuleSeminars(${this.moduleId})">
             <h4>Unit Seminars</h4>
           </div>`;
         }

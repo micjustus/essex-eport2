@@ -5,6 +5,8 @@
 }
 .accordion-header[aria-expanded="true"] {
   border: 1px solid var(--accordion-header-border);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   background-color: var(--accordion-header-expanded);
 }
 .accordion-header[aria-expanded="false"] {
@@ -19,6 +21,7 @@
   transition: background-color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
   user-select: none;
   position: relative;
+  border-radius: 6px;
 }
 .accordion-header.expander:after {
   font-family: "Font Awesome 5 Free";
