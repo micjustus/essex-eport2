@@ -10,8 +10,56 @@ export const module = {
   project: "",
   reflections: "",
   meetings:[
+    {
+      date: "20 Nov 2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke",
+      minutes: ""
+    },
+    {
+      date: "23 Nov 2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke",
+      minutes: ""
+    },
+    {
+      date: "29 Nov  2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke",
+      minutes: ""
+    },
+   
+    {
+      date: "1 Dec 2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke",
+      minutes: ""
+    },
+
+    {
+      date: "8 Dec 2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke",
+      minutes: ""
+    },
+
+    {
+      date: "14 Dec 2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke",
+      minutes: ""
+    },
+    {
+      date: "17 Dec 2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke",
+      minutes: ""
+    },
+    {
+      date: "19 Dec 2021",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke",
+      minutes: ""
+    },
+    {
+      date: "11 Jan 2022",
+      attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke",
+      minutes: ""
+    },
   ],
-  units: [
+    units: [
     {
       title: "Unit 1",
       description: "Network and Information Security Management: History & Definitions",
@@ -35,10 +83,15 @@ export const module = {
       },
       activities: [
         {
-          title: "Collaborative Discussion",
-          description: "Identify vulnerabilities and threats as described in the medical mannequin.",
-          href: "",
+          title: "Collaborative Discussion: Medical Mannequin",
+          href: "../assets/artefacts/module4/M4-U1_Discussion_MedicalCompromise.pdf",
           ref: "pdf"
+        },
+        {
+          title: "Team Project - Contract",
+          href:  "../assets/artefacts/module4/M4-Team_Contract.pdf",
+          ref: "pdf",
+          type: "assignment"
         }
       ],
      
@@ -53,14 +106,20 @@ export const module = {
       ],
       writing: "../assets/artefacts/module4/M4-Reflection_U2.pdf",
       activities: [
+        {
+          title: "Collaborative Discussion: Responses",
+          href: "../assets/artefacts/module4/M4-U1_Discussion_MedicalCompromise_Responses.pdf",
+          ref: "pdf"
+          },
        {
         title: "Seminar: STRIDE & DREAD",
         href: "../assets/artefacts/module4/M4-Seminar1_StrideDread.pdf",
         ref: "pdf",
         display: "date",
         month: "Nov",
-        day: 20 
-       }
+        day: 20,
+        type: "seminar"
+       },
       ],
       reading: {
         required: [
@@ -86,7 +145,16 @@ export const module = {
       ],
       writing: "../assets/artefacts/module4/M4-Reflection_U3.pdf",
       activities: [
-        
+        {
+          title: "Collaborative Discussion: Summary",
+          href: "../assets/artefacts/module4/M4-U1_Discussion_MedicalCompromise_Summary.pdf",
+          ref: "pdf"
+          },
+        {
+          title: "Team Activity: Penetration Testing Tools",
+          href: "../assets/artefacts/module4/M4-Team_Seminar_3_Penetration_Tools.pdf",
+          ref: "pdf"
+        }
       ],
       reading: {
         required: [
@@ -112,13 +180,14 @@ export const module = {
       writing: "../assets/artefacts/module4/M4-Reflection_U4.pdf",
       activities: [
         {
-          title: "Seminar: TCP/IP vs OSI",
+          title: "Seminar #2: TCP/IP vs OSI",
           href: "../assets/artefacts/module4/M4-Seminar2_TCPIPvsOSI.pdf",
           ref: "pdf",
           display: "date",
           month: "Dec",
-          day: 4
-         }
+          day: 4,
+          type: "seminar"
+         },
       ],
       reading: {
         required: [
@@ -185,13 +254,20 @@ export const module = {
       },
       activities: [
         {
-          title: "Seminar: Penetration Testing",
+          title: "Seminar #3: Penetration Testing",
           href: "../assets/artefacts/module4/M4-Seminar3_PenetrationTesting.pdf",
           ref: "pdf",
           display: "date",
           month: "Dec",
-          day: 18 
-         }       
+          day: 18,
+          type: "seminar"
+        },
+        {
+          title: "Team Design Document",
+          href: "../assets/artefacts/module4/M4-Team_Design_Document.pdf",
+          type: "assignment",
+          ref: "pdf"
+        }      
       ],
     },
 

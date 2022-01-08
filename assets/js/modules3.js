@@ -141,7 +141,7 @@ export const module = {
           "Develop an initial contract between team members to agree roles, responsibilites and method of operation.",
         href:  "../assets/artefacts/module3/Team_Contract_SSD_0.4.pdf",
         ref: "pdf",
-        activity: "assignment"
+        type: "assignment"
       }
       ],
       reading: {
@@ -321,7 +321,7 @@ export const module = {
             "Develop a technical report as a team based on one of the selected domains.",
           href: "../assets/artefacts/module3/M3_Assignment_1.pdf",
           ref: "pdf",
-          activity: "assignment"
+          type: "assignment"
         },
 
         {
@@ -546,7 +546,7 @@ export const module = {
             "Readme document for team project developed from unit 6. ",
           href: "../assets/artefacts/module3/M3-Team_Project_Team4_P2_Readme.pdf",
           ref: "pdf",
-          activity: "assignment"
+          type: "assignment"
         },
 
         {
@@ -555,7 +555,7 @@ export const module = {
             "Document detailing automated and manually testing for team project developed from unit 6. ",
           href: "../assets/artefacts/module3/M3-Team_Project_Team4_P2_TestingOutput.pdf",
           ref: "pdf",
-          activity: "assignment"
+          type: "assignment"
         },
 
         {
@@ -565,7 +565,7 @@ export const module = {
           href: "../assets/artefacts/module3/M3-Team_Project_Team4_P2_Implementation.zip",
           ref: "zip",
           filename: "Team4ProjectImplementation.zip",
-          activity: "assignment"
+          type: "assignment"
         },
       ],
     },
@@ -597,7 +597,7 @@ export const module = {
 
         {
           title: "Team Project Collaboration",
-          activity: "assignment",
+          type: "assignment",
           href: "../assets/artefacts/module3/M3-Team_Project_Contributions.pdf",
           tooltip: "Selected conversations taken from Slack conversation history."
         }

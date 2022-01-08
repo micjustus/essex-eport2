@@ -9,8 +9,8 @@ body{
     --button-background-hover: hsl(350.1, 89.2%, 55%);
     --button-foreground: white;
     --button-foreground-dark: hsl(220, 14.3%, 25%);
-    --button-background-secondary: rgb(193, 213, 255);
-    --button-background-secondary-dark: hsl(220.6, 100%, 80%);
+    --button-background-secondary: hsl(220.6, 100%, 95.8%);
+    --button-background-secondary-dark: hsl(220.6, 100%, 90%);
     --button-foreground-secondary: hsl(220, 14.3%, 30%);
 
     --card-hover-background: hsl(346, 89%, 53%);

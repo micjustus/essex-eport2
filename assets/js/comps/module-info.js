@@ -1,5 +1,6 @@
 import { modules } from "./../modules.js";
 import * as accordion from './../accordion.js';
+import * as moduleunits from './../comps/module-units.js';
 
 function hasUnitReflections(moduleId){
   var module = modules.find((val) => val.id == moduleId);
@@ -53,7 +54,6 @@ export class ModuleInfo extends HTMLElement {
   }
 
   set moduleId(value) {
-    this.setAttribute("moduleId", value);
   }
 
   get image(){
@@ -61,41 +61,26 @@ export class ModuleInfo extends HTMLElement {
   }
 
   set image(value){
-    this.setAttribute("image", value);
   }
 
-  buildInfoActivites(mod) {
+  buildAssignmentActivities(mod) {
     var first ="";
 
 
     for (let unit of mod.units) {
       for (let act of unit.activities) {
-        if (act.activity !== "assignment") continue;
+        if (act.type !== "assignment") continue;
 
         if (act.ref == "zip") {
-          first =
-            first +
-            `<div class="tab highlight text-center no-aspect">
-            <a href="${act.href}" download="${act.filename}"><h4>${act.title}</h4></a>`;
-            
-            first = first + `</div>`;
+          first = first + `<div class="tab highlight text-center no-aspect"><a href="${act.href}" download="${act.filename}"><h4>${act.title}</h4></a></div>`;
         } else {
-          first =
-            first +
-            `<div class="tab highlight text-center no-aspect" onclick="loadPdf('${act.title}', '${act.href}')">
-          <h4>${act.title}</h4>
-          `;
-
-          first = first + `</div>`;
+          first = first + `<div class="tab highlight text-center no-aspect" onclick="loadPdf('${act.title}', '${act.href}')"><h4>${act.title}</h4></div>`;
         }
-
-        
       }
     }
 
     if (mod.meetings) {
-      first =
-        first + `<module-meetings-list moduleId='${mod.id}'></module-meetings-list>`;
+      first = first + `<module-meetings-list moduleId='${mod.id}'></module-meetings-list>`;
     }
 
     if (first){
@@ -105,67 +90,23 @@ export class ModuleInfo extends HTMLElement {
     return first;
   }
 
-  buildInfoExtras(mod) {
-    var first = "";
-
-    if (mod.reflections) {
-      first =
-        first +
-        `<div class="tab highlight text-center no-aspect" onclick='loadPdf("Module Reflection", "${mod.reflections}")'>
-          <h4>Module Reflection</h4>
-        </div>`;
-    }
-
-    if (mod.project) {
-      first =
-        first +
-        `<div class="tab highlight text-center no-aspect"  onclick="loadPdf('Project Reflection', '${mod.project}')">
-      <h4>Project Evaluation</h4>
-      </div>`;
-    }
-
-    if (mod.actionPlan) {
-      first =
-        first +
-        `<div class="tab highlight text-center no-aspect" onclick="loadPdf('Module Action Plan', '${mod.actionPlan}')">
-        <h4>Action Plan</h4>
-      </div>`;
-    }
-
-    if (mod.skillsMatrix) {
-      first =
-        first +
-        `<div class="tab highlight text-center no-aspect" onclick="loadPdf('Module Skills Matrix', '${mod.skillsMatrix}')">
-        <h4>Skills Matrix</h4>
-      </div>`;
-    }
-
-    first = first + this.buildInfoActivites(mod);
-
-   
-    return first;
-  }
-
   connectedCallback() {
     var mod = modules.find((val, idx) => val.id == this.moduleId);
     if (!mod) return;
 
-    var items = mod.outcomes
-      .map((val, idx) => {
-        return `<li>${val}</li>`;
-      })
-      .join("");
+    var items = mod.outcomes.map((val, idx) => { return `<li>${val}</li>`; }).join("");
 
     var first = "";
 
     if (mod.renderAdditional){
       first = mod.renderAdditional();
     }
-    else{
+    else
+    {
       first = `<section class="band-1" style="padding:3em 0">`;
 
       if (this.image){
-        first = first + `<img src='${this.image}' class="module-image"/>`;
+        first = first + `<img src='${this.image}' class="module-image" alt="Module header image"/>`;
       }
 
       first = first + `
@@ -177,36 +118,63 @@ export class ModuleInfo extends HTMLElement {
           `;
     }
 
-    first =
-      first +
-      `
-        <section class="accordion-header expander centered"  aria-expanded="false">
-            <header class="text-center color-8 centered" >
-              Module Documents
-            </header>
+    first = first +
+      `<section class="accordion-header expander centered"  aria-expanded="false">
+        <header class="text-center color-8 centered" >
+          Module Documents
+        </header>
       </section>
-            <section class="accordion-body module-units">
-              
-                <div class="row module-unit-docs">
+      <section class="accordion-body module-units">
+        <div class="row vertical module-unit-docs">
+          <div class="row horizontal" style="gap: 1em">
         `;
 
     if (hasUnitReflections(this.moduleId)){
-      first =
-        first +
+      first = first +
         `<div class="tab highlight text-center no-aspect" onclick="openModuleUnits(${this.moduleId})">
           <h4>Unit Reflections</h4>
         </div>`;
     }
         
-        if (hasSeminars(this.moduleId))
-        {
-          first = first + 
-          `<div class="tab highlight text-center no-aspect" onclick="openModuleSeminars(${this.moduleId})">
-            <h4>Unit Seminars</h4>
-          </div>`;
-        }
+    if (hasSeminars(this.moduleId))
+    {
+      first = first + 
+      `<div class="tab highlight text-center no-aspect" onclick="openModuleSeminars(${this.moduleId})">
+        <h4>Unit Seminars</h4>
+      </div>`;
+    }
 
-    first = first + this.buildInfoExtras(mod) + `</div></section></div>`;
+    if (mod.reflections) {
+      first = first +
+        `<div class="tab highlight text-center no-aspect" onclick='loadPdf("Module Reflection", "${mod.reflections}")'>
+          <h4>Module Reflection</h4>
+        </div>`;
+    }
+
+    if (mod.project) {
+      first = first +
+        `<div class="tab highlight text-center no-aspect"  onclick="loadPdf('Project Reflection', '${mod.project}')">
+      <h4>Project Evaluation</h4>
+      </div>`;
+    }
+
+    if (mod.actionPlan) {
+      first = first +
+        `<div class="tab highlight text-center no-aspect" onclick="loadPdf('Module Action Plan', '${mod.actionPlan}')">
+        <h4>Action Plan</h4>
+      </div>`;
+    }
+
+    if (mod.skillsMatrix) {
+      first = first +
+        `<div class="tab highlight text-center no-aspect" onclick="loadPdf('Module Skills Matrix', '${mod.skillsMatrix}')">
+        <h4>Skills Matrix</h4>
+      </div>`;
+    }
+
+    var extras = this.buildAssignmentActivities(mod);
+
+    first = first + `</div>${extras}</div></section></div>`;
 
     this.innerHTML = first;
 

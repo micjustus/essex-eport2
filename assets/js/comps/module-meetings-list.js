@@ -37,12 +37,19 @@ export class ModuleMeetingsList extends HTMLElement {
       </div>`;
 
     mod.meetings.forEach((val, idx)=>{
+      var click = "";
+      var image= "";
+      if (val.minutes){
+        click = `onclick="loadPdf('Minutes of Meeting', '${val.minutes}')"`;
+        image = `<img class="centered" src='../assets/css/images/pdf_icon.png' width=32 height=32/>`;
+      }
+
       table = table + 
       `
       <div class="flex-table row" role="rowgroup">
         <div class="flex-row small" role="cell">${val.date}</div>
         <div class="flex-row tags left" role="cell"><ul style="margin:0;text-align:left;">${val.attendees.split(';').map((item)=> '<li>' + item + '</li>' ).join('')}</ul></div>
-        <div class="flex-row" role="cell" onclick="loadPdf('Minutes of Meeting', '${val.minutes}')"><img class="centered" src='../assets/css/images/pdf_icon.png' width=32 height=32/></div>
+        <div class="flex-row" role="cell" ${click}>${image}</div>
       </div>
       `;
     });
@@ -52,7 +59,7 @@ export class ModuleMeetingsList extends HTMLElement {
     <section class="accordion-header expander" style="border-radius: 6px" aria-expanded="false">
       <header>Team Meetings</header>
     </section>
-    <section class="accordion-body" style="display: none; overflow: hidden;width:100%;">${table}</section>
+    <section class="accordion-body" style="display:none;overflow:hidden;">${table}</section>
        `;
 
        this.classList.add("module-meetings");

@@ -39,7 +39,7 @@ export class ModuleRendererStyle2 extends HTMLElement {
         <module-units-sidebar moduleId="${this.moduleId}" ></module-units-sidebar>
         
         <section class="row vertical stretch module-units-2" >
-          <module-info moduleId="${this.moduleId}" image="../assets/css/images/networking_image.jpg"></module-info>
+          <module-info moduleId="${this.moduleId}" image="../assets/css/images/security_lock_red_2.jpg"></module-info>
 
           <header class="text-center">
             <h3>Module Units</h3>

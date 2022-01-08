@@ -28,45 +28,40 @@ export class UnitCards extends HTMLElement {
       return;
     }
 
+    var header = document.createElement("header");
+    header.innerText = `Reflective writing for ${module.title}`;
+
     var row = document.createElement("div");
-
-    var h3 = document.createElement("h3");
-    h3.classList.add("title");
-    h3.innerText = `Reflective writing for units in ${module.title}`;
-    row.appendChild(h3);
-
     row.classList.add("row");
     row.classList.add("centered");
-    row.style.textAlign = "center";
-    row.style.width = "90%";
-    row.style.gap = "1em";
+    row.classList.add("module-units-list");
+    row.appendChild(header);
+
+    var units = document.createElement("div");
+    units.style.gap = "1em";
+    units.classList.add("row");
 
     var added = 0;
 
     module.units.forEach((val, idx) => {
       if (!val.writing) return;
 
-      fetch(`${val.writing}`, { method: "HEAD" }).then((res) => {
-        if (res.ok) {
-          var elm = document.createElement("div");
-          elm.classList.add("card");
-          elm.classList.add("small");
-          elm.classList.add("left");
-          elm.classList.add("nowrap");
-          elm.classList.add("p-1");
+      var elm = document.createElement("div");
+      elm.classList.add("card");
+      elm.classList.add("small");
+      elm.classList.add("left");
+      elm.classList.add("nowrap");
 
-          elm.setAttribute(
-            "onclick",
-            `loadPdf('${val.title}', '${val.writing}')`
-          );
+      elm.setAttribute(
+        "onclick",
+        `loadPdf('${val.title}', '${val.writing}')`
+      );
 
-          elm.innerHTML = `<div>${val.title} - ${val.description}</div>`;
+      elm.innerHTML = `<div><h4>${val.title}</h4>${val.description}</div>`;
 
-          row.appendChild(elm);
+      units.appendChild(elm);
 
-          added += 1;
-        }
-      });
+      added += 1;
     });
 
     setTimeout(() => {
@@ -77,9 +72,11 @@ export class UnitCards extends HTMLElement {
         elm2.innerText =
           "The future is still unwritten. Only the passage of time shall manifest content.";
 
-        row.appendChild(elm2);
+        units.appendChild(elm2);
       }
     }, 200);
+
+    row.appendChild(units);
 
     this.appendChild(row);
   }
