@@ -84,8 +84,9 @@ export const module = {
       activities: [
         {
           title: "Collaborative Discussion: Medical Mannequin",
-          href: "../assets/artefacts/module4/M4-U1_Discussion_MedicalCompromise.pdf",
-          ref: "pdf"
+          href: "../assets/artefacts/module4/M4-Discussion_1_MedicalCompromise.pdf",
+          ref: "pdf",
+          type: "discussion"
         },
         {
           title: "Team Project - Contract",
@@ -108,8 +109,9 @@ export const module = {
       activities: [
         {
           title: "Collaborative Discussion: Responses",
-          href: "../assets/artefacts/module4/M4-U1_Discussion_MedicalCompromise_Responses.pdf",
-          ref: "pdf"
+          href: "../assets/artefacts/module4/M4-Discussion_1_MedicalCompromise_Responses.pdf",
+          ref: "pdf",
+          type: "discussion"
           },
        {
         title: "Seminar: STRIDE & DREAD",
@@ -147,8 +149,9 @@ export const module = {
       activities: [
         {
           title: "Collaborative Discussion: Summary",
-          href: "../assets/artefacts/module4/M4-U1_Discussion_MedicalCompromise_Summary.pdf",
-          ref: "pdf"
+          href: "../assets/artefacts/module4/M4-Discussion_1_MedicalCompromise_Summary.pdf",
+          ref: "pdf",
+          type: "discussion"
           },
         {
           title: "Team Activity: Penetration Testing Tools",
@@ -180,6 +183,12 @@ export const module = {
       writing: "../assets/artefacts/module4/M4-Reflection_U4.pdf",
       activities: [
         {
+          title: "Collaborative Discussion: Scanning Exercise",
+          href: "../assets/artefacts/module4/M4-Discussion_2_ScanningExercise.pdf",
+          ref: "pdf",
+          type: "discussion"
+        },
+        {
           title: "Seminar #2: TCP/IP vs OSI",
           href: "../assets/artefacts/module4/M4-Seminar2_TCPIPvsOSI.pdf",
           ref: "pdf",
@@ -187,7 +196,7 @@ export const module = {
           month: "Dec",
           day: 4,
           type: "seminar"
-         },
+        }         
       ],
       reading: {
         required: [
@@ -215,7 +224,7 @@ export const module = {
         "Prepare a list of questions to ask when designing a test plan for secure software.",
         "Design software tests through understanding the range of ways which the security of software can be breached.",
       ],
-      writing: "",
+      writing: "../assets/artefacts/module4/M4-Reflection_U5.pdf",
       reading: {
         required: [
           "Niemietz, M. and Schwenk, J. (2015) Owning Your Home Network: Router Security Revisited. For discussion forum/ seminar"

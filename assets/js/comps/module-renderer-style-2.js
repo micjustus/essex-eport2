@@ -11,7 +11,7 @@ export { ModuleUnitListRenderer } from "./module-unit-list-renderer.js";
 
 export class ModuleRendererStyle2 extends HTMLElement {
   static get observedAttributes() {
-    return ["module-id"];
+    return ["module-id", "image"];
   }
 
   constructor() {
@@ -20,13 +20,16 @@ export class ModuleRendererStyle2 extends HTMLElement {
 
   attributeChangedCallback(name, oldValue, newValue) {
     if (name == "module-id") this.moduleId = newValue;
+    if (name == "image") this.image = newValue;
+  }
+
+  get image(){
+    return this.getAttribute("image");
   }
 
   get moduleId() {
     return this.getAttribute("module-id");
   }
-
-  set moduleId(newValue) {}
 
   connectedCallback() {
     var mod = modules.find((val, idx) => val.id == this.moduleId);
@@ -39,7 +42,7 @@ export class ModuleRendererStyle2 extends HTMLElement {
         <module-units-sidebar moduleId="${this.moduleId}" ></module-units-sidebar>
         
         <section class="row vertical stretch module-units-2" >
-          <module-info moduleId="${this.moduleId}" image="../assets/css/images/security_lock_red_2.jpg"></module-info>
+          <module-info moduleId="${this.moduleId}" image="${this.image}"></module-info>
 
           <header class="text-center">
             <h3>Module Units</h3>

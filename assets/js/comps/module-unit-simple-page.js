@@ -59,18 +59,14 @@ function buildActivity(element) {
   var clickLink = buildActivityLink(element);
 
   if (element.ref == "zip") {
-    first = `
-        <div>
-          ${first}
-          <div class="click-more"><p><em>Click to download content</em></p></div>
-        </div>`;
+    first = `<div>${first}<div class="click-more"><p><em>Click to download content</em></p></div></div>`;
 
     return `<section class="left nowrap card"><a href="${element.href}" alt='' download="${element.filename}">${first}</a></section>`;
   }
 
   if (!clickLink) return "";
   
-  return `<div class="activity" ${clickLink}>${first}</div>`;
+  return `<div class="activity ${element.type === "discussion" ? 'discussion' : ''}" ${clickLink}>${first}</div>`;
 }
 
 function buildUnitWriting(content) {

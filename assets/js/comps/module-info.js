@@ -53,15 +53,13 @@ export class ModuleInfo extends HTMLElement {
     return this.getAttribute("moduleId");
   }
 
-  set moduleId(value) {
-  }
+  set moduleId(value) { }
 
   get image(){
     return this.getAttribute("image");
   }
 
-  set image(value){
-  }
+  set image(value){ }
 
   buildAssignmentActivities(mod) {
     var first ="";
