@@ -947,6 +947,12 @@ figcaption {
   font-weight: 600;
   margin-right: 0.5em;  
 }
+.activities-box .activity.reflection::before{
+  content: "\f0eb";
+  font-family: var(--ff-font-awesome);
+  font-weight: 600;
+  margin-right: 0.5em;  
+}
 .activities:before {
   content: "\f305";
   font-family: var(--ff-font-awesome);

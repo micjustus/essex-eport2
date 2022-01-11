@@ -31,6 +31,9 @@ export class ModuleRendererStyle2 extends HTMLElement {
     return this.getAttribute("module-id");
   }
 
+  set image(newValue){}
+  set moduleId(newValue){}
+
   connectedCallback() {
     var mod = modules.find((val, idx) => val.id == this.moduleId);
     if (!mod) {

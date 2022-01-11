@@ -237,7 +237,18 @@ export const module = {
         ],
       },
       activities: [
-        
+        {
+          title: "Collaborative Discussion - Responses",
+          href: "../assets/artefacts/module4/M4-Discussion_2_ScanningExercise_Responses.pdf",
+          ref: "pdf",
+          type: "discussion"
+        },
+        {
+          title: "Scanning Exercise - Reflection",
+          href: "../assets/artefacts/module4/M4-Discussion_2_ScanningExercise_Reflection.pdf",
+          ref: "pdf",
+          type: "reflection"
+        }
       ],
     },
 
@@ -276,7 +287,13 @@ export const module = {
           href: "../assets/artefacts/module4/M4-Team_Design_Document.pdf",
           type: "assignment",
           ref: "pdf"
-        }      
+        },
+        {
+          title: "Team Design Document (Feedback)",
+          href: "../assets/artefacts/module4/M4-Team_Design_Document_Feedback.pdf",
+          type: "assignment",
+          ref: "pdf"
+        }          
       ],
     },
 

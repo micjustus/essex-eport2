@@ -66,7 +66,10 @@ function buildActivity(element) {
 
   if (!clickLink) return "";
   
-  return `<div class="activity ${element.type === "discussion" ? 'discussion' : ''}" ${clickLink}>${first}</div>`;
+  var css = element.type == "discussion" ? "discussion" : 
+  element.type == "reflection" ? "reflection" : "";
+
+  return `<div class="activity ${css}" ${clickLink}>${first}</div>`;
 }
 
 function buildUnitWriting(content) {
