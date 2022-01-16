@@ -79,6 +79,8 @@ a:hover {
     #e7e7e7 0,
     #e7e7e7 50%
   );
+  border-top: 1px solid rgba(189, 189, 189, 0.9);
+  border-bottom: 1px solid rgba(189, 189, 189, 0.9);
 }
 
 /* Row */
@@ -345,11 +347,6 @@ header > p {
 .header h1 a {
   text-shadow: 0 0 1px var(--box-shadow-3);
 }
-
-.header-button.hamburger {
-  position: sticky;
-  top: 0;
-}
 .header-button.hamburger::after {
   content: "\f0c9";
   font-size: var(--font-size-2);
@@ -443,10 +440,11 @@ section header {
   border: 1px solid lightgray;
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-left: 5px solid #f21e4e;
+  border-left: 5px solid #a388ea;
   padding: 4em;
   position: relative;
   max-width: 65%;
+  min-width: 120px;
 }
 .modules:not(.inactive) {
   background: linear-gradient(to right, hsl(224, 60%, 98%), hsl(224, 56%, 98%));
@@ -1403,7 +1401,11 @@ figcaption {
   overflow: auto;
   overscroll-behavior: contain;
 }
-
+.card-style-1{
+  min-width:85%;
+  max-width:85%;
+  margin: -1em auto;
+}
 module-info header {
   font-size: var(--font-size-12);
   font-weight: 700;

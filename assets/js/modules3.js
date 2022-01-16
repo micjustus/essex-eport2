@@ -659,7 +659,7 @@ module.renderContent = renderContent.bind(module);
 
 function renderContent(){
   return `<section class="row left" style="background: linear-gradient(to right, #dae2f8, #d6a4a4);">
-  <div style="min-width:85%;max-width:85%;margin: -1em auto;">
+  <div class="card-style-1" >
       <div id="unit-content" class="unit-content">
           <unit-card-empty></unit-card-empty>
       </div>

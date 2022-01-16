@@ -1,72 +1,5 @@
-
-
-@media screen and (max-width: 455px){
-    .card{
-        width: 200px !important;
-    }
-    .card.profile::before {
-        visibility: hidden;
-    }
-    .card.completed::after {
-       visibility: hidden;
-      }
-    .container{
-        padding: 1em;
-        max-width: 100%;
-    }
-}
-@media screen and (max-width: 500px){
-    body>*{
-        font-size: 1em;
-    }
-    .sidebar{
-        width: 100% !important;
-    }
-    .unit-content-outer{
-        width: 100% !important;
-    }
-}
-@media screen and (max-width: 530px){
-    .null-button{
-       width: 0;
-    }
-}
-@media screen and (max-width: 590px){
-    .card{
-        width: 268px;
-    }
-    .card.profile::before {
-        height: 32px;
-        left: -10px;
-    }
-}
-@media screen and (max-width: 600px)
-{
-    .module-units{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 775px){
-    module-unit-simple > * {
-        width: 100%;
-    }
-}
-@media screen and (max-width > 890px){
-    .module-units{
-        width: 80%;
-    }
-}
-@media screen and (max-width: 1140px){
-    .modules{
-        padding: 0;
-    }
-}
-@media screen and (max-width: 1400px){
-   .module-units-2 {
-        padding-right: 0;
-    }
-}
 @media screen and (max-width: 1620px){
+
     .menu{
         visibility: collapse;
         max-height: 80vh;
@@ -96,5 +29,60 @@
  @media (min-width: 1621px){
     .menu{
         visibility: visible !important;
+    }
+}
+
+@media screen and (max-width: 1120px){
+    .modules {
+        padding: 1em;
+    }
+    .modules .card{
+        width: 280px;
+    }
+}
+@media screen and (max-width: 1030px)
+{
+    module-unit-renderer .card-style-1 {
+        width: 100%;
+        max-width: inherit;
+    }
+    .module-units-3 {
+        margin: 0;
+    }
+    .modules .card{
+        width:260px;
+    }
+}
+@media screen and (max-width: 965px)
+{
+    .modules .card{
+        width:240px;
+    }
+    .card.profile::before{
+        content: none;
+    }
+    .card.profile::after{
+        content: none;
+    }
+}
+@media screen and (max-width: 905px)
+{
+    .modules .card {
+       width: 230px;
+    }
+}
+@media screen and (max-width: 680px){
+    .container{ 
+        padding: 0;
+        
+    }
+    .modules .container{
+        max-width: 95%;
+    }
+}
+@media screen and (max-width: 480px)
+{
+    .modules .card {
+       width: inherit;
     }
 }

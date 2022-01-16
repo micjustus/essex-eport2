@@ -193,41 +193,6 @@ export class ModuleUnitSimpleCard extends HTMLElement {
 
     initAccordion2();
 
-  //var target = document.querySelector(".unit-header-1");
-
-  //   var elm = this.querySelector(".unit-header-1");
-  //   elm.addEventListener("mouseenter", function() {
-  //       if (showTooltip){
-  //         clearTimeout(showTooltip);
-  //         showTooltip = null;
-  //       }
-
-  //       showTooltip = setTimeout(()=>{
-  //         // we figure out which side is the most appropriate to add this little tooltip
-  //         div.classList.remove(["left", "top", "bottom", "right"]);
-  //         div.classList.add("left");
-          
-  //         target.appendChild(div);
-
-  //         //console.log(`top = ${elm.getBoundingClientRect().top}`);
-
-  //         //div.style.top = elm.getBoundingClientRect().top + window.scrollY + "px";
-  //         //div.style.left = (elm.getBoundingClientRect().left - div.getBoundingClientRect().width + 100) + "px";
-
-  //         //div.style.right = `calc(-${div.clientWidth}px - 20px)`;
-  //       }, 500);
-  //   });
-
-  //   elm.addEventListener("mouseleave", function() {
-  //     if (showTooltip){
-  //       clearTimeout(showTooltip);
-  //       showTooltip = null;
-  //     }
-
-  //     if (target.contains(div))
-  //       target.removeChild(div);
-  // });
-
     const  header = this.querySelector(".unit-header-1");
     const parent = header.parentElement;
     const observer = new IntersectionObserver(([e])=> { 

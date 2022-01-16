@@ -260,7 +260,7 @@ export const module = {
         "Justify your selection.",
         "Submit the first part of your course assessment."
       ],
-      writing: "",
+      writing: "../assets/artefacts/module4/M4-Reflection_U6.pdf",
       reading: {
         required: [
           "Geer, D. (2015) 8 Penetration Testing Tools That Will Do The Job. Network World",
