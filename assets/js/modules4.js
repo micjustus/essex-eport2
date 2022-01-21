@@ -324,6 +324,16 @@ export const module = {
         ],
       },
       activities: [
+        {
+          title: "e-Portfolio Activity",
+          ref: "pdf",
+          href: "../assets/artefacts/module4/M4-Activity_U7_ePortfolio.pdf"
+        },
+        {
+          title: "Scanning Exercise",
+          ref: "pdf",
+          href: "../assets/artefacts/module4/M4-Activity_U7_Scanning.pdf"
+        }
       ],
     },
 
