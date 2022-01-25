@@ -358,7 +358,22 @@ export const module = {
         ],
       },
       activities: [
-        
+        {
+          title: "Seminar: Data Standards",
+          href: "../assets/artefacts/module4/M4-Seminar4_standards.pdf",
+          ref: "pdf",
+          display: "date",
+          month: "Jan",
+          day: 22,
+          type: "seminar"
+         },
+        {
+          title: "Collaborative Discussion: GDPR Case Study",
+          href: "../assets/artefacts/module4/M4-Discussion_3_GDPRCaseStudy.pdf",
+          ref: "pdf",
+          type: "discussion"
+        },
+  
       ],
     },
 
