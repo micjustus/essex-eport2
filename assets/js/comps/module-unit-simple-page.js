@@ -184,8 +184,10 @@ export class ModuleUnitSimplePage extends HTMLElement {
           <section>${outcomes}</section></div>
           <div class="unit-page-content">
             ${writing}
+            <div class="activity-section">
             ${activities}
             ${reading}
+            </div>
           </div>
     </section>`;
 

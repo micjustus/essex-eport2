@@ -911,17 +911,18 @@ figcaption {
 .activities-box {
   margin: 1em 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 0.5em;
   align-items: flex-start;
   justify-items: flex-start;
 }
 .activities-box header {
   margin-bottom: 1em;
+  min-width: 16ch;
 }
 .activities-box .activity {
-  border: 2px solid var(--button-background-secondary-dark);
-  background-color: var(--button-background-secondary);
+  border: 1px solid var(--button-background-secondary-dark);
+  /* background-color: var(--button-background-secondary); */
   color: var(--button-foreground-dark);
   cursor: pointer;
   user-select: none;
@@ -931,6 +932,9 @@ figcaption {
   transition: background-color 0.1s ease-in, color 0.1s ease-in;
   font-weight: 600;
   margin-left: 1em;
+}
+.activity-section{
+  margin-top: 0.6em;
 }
 .activities-box .activity.snippet {
   padding-right: 2em;

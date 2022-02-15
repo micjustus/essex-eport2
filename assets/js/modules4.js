@@ -83,7 +83,7 @@ export const module = {
       },
       activities: [
         {
-          title: "Collaborative Discussion: Medical Mannequin",
+          title: "Collaborative Discussion 1: Medical Mannequin",
           href: "../assets/artefacts/module4/M4-Discussion_1_MedicalCompromise.pdf",
           ref: "pdf",
           type: "discussion"
@@ -108,8 +108,8 @@ export const module = {
       writing: "../assets/artefacts/module4/M4-Reflection_U2.pdf",
       activities: [
         {
-          title: "Collaborative Discussion: Responses",
-          href: "../assets/artefacts/module4/M4-Discussion_1_MedicalCompromise_Responses.pdf",
+          title: "Collaborative Discussion 1: Responses",
+          href: "../assets/artefacts/module4/M4-Discussion_1_Responses.pdf",
           ref: "pdf",
           type: "discussion"
           },
@@ -148,14 +148,14 @@ export const module = {
       writing: "../assets/artefacts/module4/M4-Reflection_U3.pdf",
       activities: [
         {
-          title: "Collaborative Discussion: Summary",
-          href: "../assets/artefacts/module4/M4-Discussion_1_MedicalCompromise_Summary.pdf",
+          title: "Collaborative Discussion 1: Summary",
+          href: "../assets/artefacts/module4/M4-Discussion_1_Summary.pdf",
           ref: "pdf",
           type: "discussion"
           },
         {
           title: "Team Activity: Penetration Testing Tools",
-          href: "../assets/artefacts/module4/M4-Team_Seminar_3_Penetration_Tools.pdf",
+          href: "../assets/artefacts/module4/M4-Seminar3_TeamResults_Penetration_Tools.pdf",
           ref: "pdf"
         }
       ],
@@ -183,7 +183,7 @@ export const module = {
       writing: "../assets/artefacts/module4/M4-Reflection_U4.pdf",
       activities: [
         {
-          title: "Collaborative Discussion: Scanning Exercise",
+          title: "Collaborative Discussion 2: Scanning Exercise",
           href: "../assets/artefacts/module4/M4-Discussion_2_ScanningExercise.pdf",
           ref: "pdf",
           type: "discussion"
@@ -238,14 +238,14 @@ export const module = {
       },
       activities: [
         {
-          title: "Collaborative Discussion - Responses",
-          href: "../assets/artefacts/module4/M4-Discussion_2_ScanningExercise_Responses.pdf",
+          title: "Collaborative Discussion 2 - Responses",
+          href: "../assets/artefacts/module4/M4-Discussion_2_Responses.pdf",
           ref: "pdf",
           type: "discussion"
         },
         {
           title: "Scanning Exercise - Reflection",
-          href: "../assets/artefacts/module4/M4-Discussion_2_ScanningExercise_Reflection.pdf",
+          href: "../assets/artefacts/module4/M4-Discussion_2_Reflection.pdf",
           ref: "pdf",
           type: "reflection"
         }
@@ -273,6 +273,13 @@ export const module = {
         ],
       },
       activities: [
+        {
+          title: "Collaborative Discussion 2 - Summary",
+          href: "../assets/artefacts/module4/M4-Discussion_2_Summary.pdf",
+          ref: "pdf",
+          type: "discussion"
+        },
+
         {
           title: "Seminar 3: Penetration Testing",
           href: "../assets/artefacts/module4/M4-Seminar3_PenetrationTesting.pdf",
@@ -306,7 +313,7 @@ export const module = {
         "Describe the difference between business continuity and disaster recovery.",
         "List common security standards and select the appropriate one(s) for a given situation."
       ],
-      writing: "",
+      writing: "../assets/artefacts/module4/M4-Reflection_U7.pdf",
       reading: {
         required: [
           "Campbell, T. (2016) Practical Information Security Management. 1st ed. APRESS. Chapters 5 and 6",
@@ -359,6 +366,12 @@ export const module = {
       },
       activities: [
         {
+          title: "Collaborative Discussion 3: GDPR Case Study",
+          href: "../assets/artefacts/module4/M4-Discussion_3_GDPRCaseStudy.pdf",
+          ref: "pdf",
+          type: "discussion"
+        },
+        {
           title: "Seminar 4: Data Standards",
           href: "../assets/artefacts/module4/M4-Seminar4_standards.pdf",
           ref: "pdf",
@@ -366,14 +379,7 @@ export const module = {
           month: "Jan",
           day: 22,
           type: "seminar"
-         },
-        {
-          title: "Collaborative Discussion: GDPR Case Study",
-          href: "../assets/artefacts/module4/M4-Discussion_3_GDPRCaseStudy.pdf",
-          ref: "pdf",
-          type: "discussion"
-        },
-  
+         }  
       ],
     },
 
@@ -386,7 +392,7 @@ export const module = {
         "Explain how logging is used in incident investigations.",
         "Describe the best forensic techniques to use."
       ],
-      writing: "",
+      writing: "../assets/artefacts/module4/M4-Reflection_U9.pdf",
       reading: {
         required: [
           "Campbell, T. (2016) Practical Information Security Management. 1st ed. APRESS. Chapters 10 and 11",
@@ -399,7 +405,12 @@ export const module = {
         ],
       },
       activities: [
-        
+        {
+          title: "Collaborative Discussion 3: Responses",
+          href: "../assets/artefacts/module4/M4-Discussion_3_Responses.pdf",
+          ref: "pdf",
+          type: "discussion"
+        },
       ],
     },
 
@@ -411,7 +422,7 @@ export const module = {
         "Recommend a number of actions and tools based on the analysis.",
         "Critically assess published responses."
       ],
-      writing: "",
+      writing: "../assets/artefacts/module4/M4-Reflection_U10.pdf",
       reading: {
         required: [
           "Swinhoe, D. (2020) The 15 Biggest Data Breaches Of The 21St Century. CSO Online."
@@ -423,7 +434,12 @@ export const module = {
         ]
       },
       activities: [
-        
+        {
+          title: "Collaborative Discussion 3: Summary",
+          href: "../assets/artefacts/module4/M4-Discussion_3_Summary.pdf",
+          ref: "pdf",
+          type: "discussion"
+        },
       ],
     },
 
@@ -448,7 +464,12 @@ export const module = {
         ],
       },
       activities: [
-        
+        {
+          title: "Team Design Document Executive Summary",
+          href: "../assets/artefacts/module4/M4-Team_Design_ExecutiveSummary.pdf",
+          type: "assignment",
+          ref: "pdf"
+        }
       ],
     },
 
