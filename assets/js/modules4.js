@@ -189,7 +189,7 @@ export const module = {
           type: "discussion"
         },
         {
-          title: "Seminar #2: TCP/IP vs OSI",
+          title: "Seminar 2: TCP/IP vs OSI",
           href: "../assets/artefacts/module4/M4-Seminar2_TCPIPvsOSI.pdf",
           ref: "pdf",
           display: "date",
@@ -274,7 +274,7 @@ export const module = {
       },
       activities: [
         {
-          title: "Seminar #3: Penetration Testing",
+          title: "Seminar 3: Penetration Testing",
           href: "../assets/artefacts/module4/M4-Seminar3_PenetrationTesting.pdf",
           ref: "pdf",
           display: "date",
@@ -345,7 +345,7 @@ export const module = {
         "Describe which other standards their assigned website needs to meet.",
         "Advise on mitigations to help a website meet any of the standards applicable to its specific industry, such as data and privacy (GDPR) or financial (PCI-DSS)."
       ],
-      writing: "",
+      writing: "../assets/artefacts/module4/M4-Reflection_U8.pdf",
       reading: {
         required: [
           "Data Protection Commission (2020) CaseStudies|DataProtection Commission.",
@@ -359,7 +359,7 @@ export const module = {
       },
       activities: [
         {
-          title: "Seminar: Data Standards",
+          title: "Seminar 4: Data Standards",
           href: "../assets/artefacts/module4/M4-Seminar4_standards.pdf",
           ref: "pdf",
           display: "date",
