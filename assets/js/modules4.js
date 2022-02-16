@@ -373,7 +373,7 @@ export const module = {
         },
         {
           title: "Seminar 4: Data Standards",
-          href: "../assets/artefacts/module4/M4-Seminar4_standards.pdf",
+          href: "../assets/artefacts/module4/M4-Seminar4_Standards.pdf",
           ref: "pdf",
           display: "date",
           month: "Jan",
