@@ -1221,6 +1221,24 @@ figcaption {
   font-weight: 600;
   margin-right: 0.5em;
 }
+.team-icon{
+  margin-right: 1em;
+}
+.team-icon::before{
+  content: "\f0c0";
+  font-family: var(--ff-font-awesome);
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+.tutor-icon{
+  margin-right: 1em;
+}
+.tutor-icon::before{
+  content: "\f19d";
+  font-family: var(--ff-font-awesome);
+  font-weight: 600;
+  margin-right: 0.5em;
+}
 .activity.book::before {
   content: "\f02d";
   font-family: var(--ff-font-awesome);

@@ -92,7 +92,8 @@ export const module = {
           title: "Team Project - Contract",
           href:  "../assets/artefacts/module4/M4-Team_Contract.pdf",
           ref: "pdf",
-          type: "assignment"
+          type: "assignment",
+          display: "team"
         }
       ],
      
@@ -114,7 +115,7 @@ export const module = {
           type: "discussion"
           },
        {
-        title: "Seminar: STRIDE & DREAD",
+        title: "Seminar 1: STRIDE & DREAD",
         href: "../assets/artefacts/module4/M4-Seminar1_StrideDread.pdf",
         ref: "pdf",
         display: "date",
@@ -156,7 +157,8 @@ export const module = {
         {
           title: "Team Activity: Penetration Testing Tools",
           href: "../assets/artefacts/module4/M4-Seminar3_TeamResults_Penetration_Tools.pdf",
-          ref: "pdf"
+          ref: "pdf",
+          display: "team"
         }
       ],
       reading: {
@@ -293,13 +295,15 @@ export const module = {
           title: "Team Design Document",
           href: "../assets/artefacts/module4/M4-Team_Design_Document.pdf",
           type: "assignment",
-          ref: "pdf"
+          ref: "pdf",
+          display: "team"
         },
         {
           title: "Team Design Document (Feedback)",
           href: "../assets/artefacts/module4/M4-Team_Design_Document_Feedback.pdf",
           type: "assignment",
-          ref: "pdf"
+          ref: "pdf",
+          display: "tutor"
         }          
       ],
     },
@@ -440,6 +444,15 @@ export const module = {
           ref: "pdf",
           type: "discussion"
         },
+        {
+          title: "Seminar 5: GDPR Data Breach",
+          href: "../assets/artefacts/module4/M4-Seminar5_DataBreach.pdf",
+          ref: "pdf",
+          display: "date",
+          month: "Feb",
+          day: 5,
+          type: "seminar"
+         }  
       ],
     },
 
@@ -468,7 +481,8 @@ export const module = {
           title: "Team Design Document Executive Summary",
           href: "../assets/artefacts/module4/M4-Team_Design_ExecutiveSummary.pdf",
           type: "assignment",
-          ref: "pdf"
+          ref: "pdf",
+          display: "team"
         }
       ],
     },
@@ -499,12 +513,17 @@ export const module = {
           title: "Team Meeting Minutes",
           href:  "../assets/artefacts/module4/M4-Team_Meeting_Minutes.pdf",
           ref: "pdf",
-          type: "assignment"
+          type: "assignment",
+          display: "team"
         },
         {
           title: "Team Activity - Seminar 6 Debate",
           href:  "../assets/artefacts/module4/M4-Seminar6_Team_Debate.pdf",
           ref: "pdf",
+          type: "seminar",
+          display: "date;team",
+          month: "Feb",
+          day: 19
            },
       ],
     },

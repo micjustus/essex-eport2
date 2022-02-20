@@ -1,5 +1,5 @@
 import { modules } from "../modules.js";
-import { initAccordion2} from '../accordion.js';
+import { initAccordion2 } from '../accordion.js';
 
 function buildActivityLink(element) {
   var clickLink = "";
@@ -48,9 +48,37 @@ function buildActivityList(element) {
 function buildActivity(element) {
   var first = "";
 
-  if (element.display === "date") {
-    first = `<span class="date podcast">(${element.month} ${element.day}) ${element.title}</span>`;
-  } else if (element.items) {
+  if (element.display) {
+    var parts = element.display.split(';');
+
+    if (parts.length == 1){
+      if (element.display === "date") {
+        first = `<span class="date podcast">(${element.month} ${element.day}) ${element.title}</span>`;
+      }
+      else if (element.display === "team") {
+        first = `<span class="team-icon">${element.title}</span>`;
+      }
+      else if (element.display == "tutor"){
+        first = `<span class="tutor-icon">${element.title}</span>`;
+      }
+      else {
+        first = `<span>${element.title}</span>`;
+      }
+    }
+    else{
+      var span = document.createElement("span");
+      if (parts.includes("date")){
+        span.classList.add("date");
+        span.innerText = `(${element.month} ${element.day}) ${element.title}`;
+      }
+      if (parts.includes("team")){
+        span.classList.add("team-icon");
+      }
+
+      first = span.outerHTML;
+    }
+  }
+  else if (element.items) {
     return buildActivityList(element);
   } else {
     first = `${element.title}`;
@@ -65,9 +93,9 @@ function buildActivity(element) {
   }
 
   if (!clickLink) return "";
-  
-  var css = element.type == "discussion" ? "discussion" : 
-  element.type == "reflection" ? "reflection" : "";
+
+  var css = element.type == "discussion" ? "discussion" :
+    element.type == "reflection" ? "reflection" : "";
 
   return `<div class="activity ${css}" ${clickLink}>${first}</div>`;
 }
@@ -155,13 +183,13 @@ export class ModuleUnitSimplePage extends HTMLElement {
     return this.getAttribute("moduleId");
   }
 
-  set moduleId(newValue) {}
+  set moduleId(newValue) { }
 
   get unitId() {
     return this.getAttribute("unitId");
   }
 
-  set unitId(newValue) {}
+  set unitId(newValue) { }
 
   connectedCallback() {
     var mod = modules.find((val, idx) => val.id == this.moduleId);
