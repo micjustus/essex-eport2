@@ -20,22 +20,39 @@
   background-color: var(--accordion-header-default);
   transition: background-color 0.2s cubic-bezier(0.075, 0.82, 0.165, 1);
   user-select: none;
-  position: relative;
+  /* position: relative; */
   border-radius: 6px;
 }
+.accordion-header header::after {
+  font-weight: 700;
+  font-size: 1.5em;
+  content: "+";
+  position: relative;
+  right: -30%;
+
+  /* right: var(--accordion-padding);   */
+  transition: 0.3s all cubic-bezier(0.865, 0.14, 0.095, 0.87);
+  transform: rotate(-0deg);
+
+}
+.accordion-header[aria-expanded="true"] header::after {
+  content: "-";
+  font-weight: 700;
+}
 .accordion-header.expander:after {
-  font-family: "Font Awesome 5 Free";
+  /* font-family: "Font Awesome 5 Free";
   font-weight: 900;
   font-size: 1em;
   content: "\f077";
   position: absolute;
-  right: var(--accordion-padding);
   top: 50%;
+
+  right: var(--accordion-padding);  
   transition: 0.3s all cubic-bezier(0.865, 0.14, 0.095, 0.87);
-  transform: translateY(-50%) rotate(-0deg);
+  transform: translateY(-50%) rotate(-0deg); */
 }
 .accordion-header[aria-expanded="true"].expander::after {
-  transform: translateY(-50%) rotate(-180deg);
+  /*transform: translateY(-50%) rotate(-180deg);*/
 }
 .content-embossed{
   padding: 20px 10px;

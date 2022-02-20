@@ -1,15 +1,28 @@
 @media screen and (max-width: 1620px){
 
+    #header{
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    #main{
+        flex-direction: column;
+        z-index: -10;
+    }
+
     .menu{
         visibility: collapse;
         max-height: 80vh;
+        max-width: 40ch;
         overflow-y: scroll;
         box-shadow: 0 2px 20px -5px var(--box-shadow-3);
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
         overscroll-behavior: contain;
-        position: absolute;
-        z-index:5;
+        position: fixed;
+        pointer-events: all;
+        z-index:10; 
         border-right: 1px solid var(--border-color);
         border-bottom: 1px solid var(--border-color);
     }
@@ -19,12 +32,10 @@
     .module-units-2 {
          padding-right: 0;
      }
-     #main{
-        flex-direction: column;
-    }
-     module-units-sidebar > * {
-        position: relative;
-    }
+     /* module-units-sidebar > * {
+        position: sticky;
+        top: 0;
+    } */
  }
  @media (min-width: 1621px){
     .menu{

@@ -59,7 +59,7 @@ export const module = {
       minutes: ""
     },
   ],
-    units: [
+  units: [
     {
       title: "Unit 1",
       description: "Network and Information Security Management: History & Definitions",
@@ -495,7 +495,17 @@ export const module = {
         ],
       },
       activities: [
-
+        {
+          title: "Team Meeting Minutes",
+          href:  "../assets/artefacts/module4/M4-Team_Meeting_Minutes.pdf",
+          ref: "pdf",
+          type: "assignment"
+        },
+        {
+          title: "Team Activity - Seminar 6 Debate",
+          href:  "../assets/artefacts/module4/M4-Seminar6_Team_Debate.pdf",
+          ref: "pdf",
+           },
       ],
     },
   ],
