@@ -1351,7 +1351,7 @@ figcaption {
   border-left: 1px solid var(--border-color);
 }
 .module-units-3 {
-  /* padding: 2em 0; */
+  padding: 0.5em 0;
   border-radius: 12px;
   border: 1px solid #dfdfdf;
   margin: 0 10vw;

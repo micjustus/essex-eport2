@@ -517,6 +517,13 @@ export const module = {
           display: "team"
         },
         {
+          title: "Team Contributions",
+          href:  "../assets/artefacts/module4/M4-Contributions.pdf",
+          ref: "pdf",
+          type: "assignment",
+          display: "team"          
+        },
+        {
           title: "Team Activity - Seminar 6 Debate",
           href:  "../assets/artefacts/module4/M4-Seminar6_Team_Debate.pdf",
           ref: "pdf",
