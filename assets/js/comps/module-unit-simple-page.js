@@ -103,7 +103,7 @@ function buildActivity(element) {
 function buildUnitWriting(content) {
   if (!content.writing) return "";
 
-  var writing = `<section class="button pre-think-icon" onclick='loadPdf("${content.title} - Launching", "${content.writing}")'>Reflective Writing</section>`;
+  var writing = `<section class="button pre-think-icon" onclick='loadPdf("${content.title} - Launching", "${content.writing}")'>Unit Reflections</section>`;
   return writing;
 }
 

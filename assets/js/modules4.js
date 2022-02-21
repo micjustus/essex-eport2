@@ -9,6 +9,8 @@ export const module = {
   ],
   project: "",
   reflections: "",
+  actionPlan: "../assets/artefacts/module4/M4-Action_Plan.pdf",
+  skillsMatrix: "../assets/artefacts/module4/M4-Professional_Skills_Matrix.pdf",
   meetings:[
     {
       date: "20 Nov 2021",
@@ -464,7 +466,7 @@ export const module = {
         "Explain the impact of emerging changes.",
         "Describe some challenges encountered with both current and new solutions.",
       ],
-      writing: "",
+      writing: "../assets/artefacts/module4/M4-Reflection_U11.pdf",
       reading: {
         required: [
           "Rawat, D. & Reddy, S. (2017) Software Defined Networking Architecture, Security and Energy Efficiency: A Survey. IEEE Communications Surveys & Tutorials 19(1): 325-346.",
@@ -509,6 +511,7 @@ export const module = {
         ],
       },
       activities: [
+       
         {
           title: "Team Meeting Minutes",
           href:  "../assets/artefacts/module4/M4-Team_Meeting_Minutes.pdf",

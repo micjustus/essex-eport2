@@ -13,13 +13,13 @@
 
     .menu{
         visibility: collapse;
-        max-height: 80vh;
+        max-height: 100vh;
         max-width: 40ch;
-        overflow-y: scroll;
+        /* overflow-y: scroll; 
+        overscroll-behavior: contain;*/
         box-shadow: 0 2px 20px -5px var(--box-shadow-3);
         border-bottom-left-radius: 12px;
         border-bottom-right-radius: 12px;
-        overscroll-behavior: contain;
         position: fixed;
         pointer-events: all;
         z-index:10; 

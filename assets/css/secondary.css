@@ -91,6 +91,9 @@ a:hover {
   align-items: stretch;
   justify-content: center;
 }
+.row.between{
+  justify-content: space-between;
+}
 .row.vertical {
   flex-direction: column;
 }
@@ -278,9 +281,10 @@ ol {
 
 #header {
   position: relative;
-  background: #fff;
+  background: hsla(0, 0%, 100%, 0.85);
   border-bottom: solid 1px #ccc;
   text-align: center;
+  backdrop-filter: blur(24px);
 }
 
 #header h1 {
@@ -1421,7 +1425,7 @@ figcaption {
   padding: 0;
   margin: 0;
   background-color: whitesmoke;
-  max-height: 100vh;
+  max-height: calc(100vh - 79px);
   overflow: auto;
   overscroll-behavior: contain;
 }
@@ -1498,9 +1502,9 @@ module-unit-simple-page.active > * {
   background-color: #fbfaff;
 }
 module-units-sidebar > * {
-  position: sticky;
+  /* position: sticky;
   top: 0;
-  display: block;
+  display: block; */
 }
 module-unit-list-renderer {
   font-family: var(--ff-sub2);

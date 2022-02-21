@@ -41,11 +41,18 @@ export class ModuleRendererStyle2 extends HTMLElement {
     }
 
     this.innerHTML = `
-      <section id="main" class="row">
-        <module-units-sidebar moduleId="${this.moduleId}" ></module-units-sidebar>
-        
-        <section class="row vertical stretch module-units-2" >
+      <div class="row between">
+        <div>
+          <module-units-sidebar moduleId="${this.moduleId}" ></module-units-sidebar>
+        </div>
+
+        <div style="margin: 0 auto;transform: translateX(-150px);">
           <module-info moduleId="${this.moduleId}" image="${this.image}"></module-info>
+        </div>
+      </div>
+
+      <section id="main" class="row">
+        <section class="row vertical stretch module-units-2" >
 
           <header class="text-center">
             <h3>Module Units</h3>
@@ -56,8 +63,8 @@ export class ModuleRendererStyle2 extends HTMLElement {
               <module-unit-list-renderer moduleId=${this.moduleId} style="pages"></module-unit-list-renderer>
             </section>
           </section>
-      </section>
-		</section>`;
+        </section>
+      </section>`;
 
     var header = document.querySelector("module-header");
     header.hamburger = document.querySelector("module-units-sidebar");
