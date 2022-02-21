@@ -497,7 +497,7 @@ export const module = {
         "Argue for and against several architectures.",
         "Reflect on the role of Information Security Management in modern computing solutions."
       ],
-      writing: "",
+      writing: "../assets/artefacts/module4/M4-Reflection_U12.pdf",
       reading: {
         required: [
           "Soomro, Z., Shah, M. & Ahmed, J. (2016) Information security management needs more holistic approach: A literature review. International Journal of Information Management 36(2): 215-225."
