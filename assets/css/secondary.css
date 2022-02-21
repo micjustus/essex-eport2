@@ -912,13 +912,14 @@ figcaption {
   margin: 1em 0;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 0.5em;
   align-items: flex-start;
   justify-items: flex-start;
 }
 .activities-box header {
   margin-bottom: 1em;
-  min-width: 16ch;
+  min-width: 12ch;
 }
 .activities-box .activity {
   border: 1px solid var(--button-background-secondary-dark);
@@ -1367,6 +1368,7 @@ figcaption {
     #e7e7e7 0,
     #e7e7e7 50%
   );
+  max-width: 100vw;
 
   /* background:
   radial-gradient(rgb(255, 44, 44) 3px, transparent 4px),
@@ -1438,7 +1440,7 @@ module-info ul {
   font-family: var(--ff-sub2);
 }
 module-info .module-image {
-  max-width: 675px;
+  max-width: min(675px, 100vw);
   display: block;
   margin: 0 auto;
   border-radius: 12px;
