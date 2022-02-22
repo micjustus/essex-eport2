@@ -46,7 +46,7 @@ export class ModuleRendererStyle2 extends HTMLElement {
           <module-units-sidebar moduleId="${this.moduleId}" ></module-units-sidebar>
         </div>
 
-        <div style="margin: 0 auto;transform: translateX(-150px);">
+        <div class="info-offset">
           <module-info moduleId="${this.moduleId}" image="${this.image}"></module-info>
         </div>
       </div>
