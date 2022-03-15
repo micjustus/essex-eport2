@@ -39,7 +39,19 @@ export const module = {
           ],
         },
         activities: [
-         
+          {
+            title: "Collaborative Discussion 1: Project Failures",
+            href: "../assets/artefacts/module5/M5-Discussion_1_ProjectFailures.pdf",
+            ref: "pdf",
+            type: "discussion"
+          },
+          {
+            title: "Team Project - Contract",
+            href:  "../assets/artefacts/module5/M5-Team_Contract.pdf",
+            ref: "pdf",
+            type: "assignment",
+            display: "team"
+          }
         ],
        
       },
