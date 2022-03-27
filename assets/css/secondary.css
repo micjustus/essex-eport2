@@ -1197,6 +1197,17 @@ figcaption {
     ),
     url(../css/images/EssexProfilePic_4f.png);
 }
+.card.profile.profile5::before {
+  background-image: linear-gradient(
+      to right,
+      #86347e,
+      #9a5ca7,
+      #a49cdc,
+      #cba3d2,
+      #f8f1f7
+    ),
+    url(../css/images/EssexProfilePic_50.png);
+}
 .button {
   border: 1px solid hsl(0, 0%, 88%);
   border-radius: 6px;

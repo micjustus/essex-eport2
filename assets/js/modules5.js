@@ -64,7 +64,21 @@ export const module = {
         ],
         writing: "",//"../assets/artefacts/module5/M5-Reflection_U2.pdf",
         activities: [
-          
+          {
+            title: "Collaborative Discussion 1: Responses",
+            href: "../assets/artefacts/module5/M5-Discussion_1_ProjectFailures_Responses.pdf",
+            ref: "pdf",
+            type: "discussion"
+          },
+          {
+            title: "Seminar 1: Requirements Gathering",
+            href: "../assets/artefacts/module5/M5-Seminar1_RequirementsGathering.pdf",
+            ref: "pdf",
+            display: "date",
+            month: "Mar",
+            day: 16,
+            type: "seminar"
+           },
         ],
         reading: {
           required: [
