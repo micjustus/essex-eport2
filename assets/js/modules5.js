@@ -100,7 +100,17 @@ export const module = {
         ],
         writing: "",//"../assets/artefacts/module5/M5-Reflection_U3.pdf",
         activities: [
-          
+          {
+            title: "Collaborative Discussion 1 - Summary",
+            href: "../assets/artefacts/module5/M5-Discussion_1_ProjectFailures_Summary.pdf",
+            ref: "pdf",
+            type: "discussion"
+          },
+          {
+            title: "e-Portfolio Activity",
+            ref: "pdf",
+            href: "../assets/artefacts/module5/M5-Activity_1_DataStructures.pdf"
+          },
         ],
         reading: {
           required: [
@@ -133,7 +143,15 @@ export const module = {
         ],
         writing: "",//"../assets/artefacts/module5/M5-Reflection_U4.pdf"
         activities: [
-                
+          {
+            title: "Seminar 2: Requirements Identification",
+            href: "../assets/artefacts/module5/M5-Seminar2_RequirementsIdentification.pdf",
+            ref: "pdf",
+            display: "date",
+            month: "Mar",
+            day: 30,
+            type: "seminar"
+           },
         ],
         reading: {
           required: [
