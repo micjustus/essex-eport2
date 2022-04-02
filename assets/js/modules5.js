@@ -13,9 +13,24 @@ export const module = {
     skillsMatrix: "",//"../assets/artefacts/module5/M5-Professional_Skills_Matrix.pdf",
     meetings:[
       {
-        date: "13 Mar. 2022",
+        date: "13 Mar. 2022 (@2pm)",
         attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke; Shan Swanlow",
-        minutes: ""
+        minutes: "../assets/artefacts/module5/M5-TeamMeetings_1_Minutes.pdf"
+      },
+      {
+        date: "21 Mar. 2022 (@5pm)",
+        attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke; Shan Swanlow",
+        minutes: "../assets/artefacts/module5/M5-TeamMeetings_2_Minutes.pdf"
+      },
+      {
+        date: "26 Mar. 2022 (@3pm)",
+        attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke; Shan Swanlow",
+        minutes: "../assets/artefacts/module5/M5-TeamMeetings_3_Minutes.pdf"
+      },
+      {
+        date: "2 Apr. 2022 (@2pm)",
+        attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke; Shan Swanlow",
+        minutes: "../assets/artefacts/module5/M5-TeamMeetings_5_Minutes.pdf"
       },
     ],
     units: [

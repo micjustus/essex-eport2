@@ -926,6 +926,9 @@ figcaption {
   margin-bottom: 1em;
   min-width: 12ch;
 }
+module-unit-simple-page > section:hover .activity{
+  background-color: var(--button-background-secondary);
+}
 .activities-box .activity {
   border: 1px solid var(--button-background-secondary-dark);
   /* background-color: var(--button-background-secondary); */
