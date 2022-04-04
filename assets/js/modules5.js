@@ -42,7 +42,7 @@ export const module = {
             "Explain the relationship between Project Management, TOGAF and the SDLC.",
             "Describe the differences between the development of the Software Engineering and Project Management disciplines."
         ],
-        writing: "",//"../assets/artefacts/module5/M5-Reflection_U1.pdf",
+        writing: "../assets/artefacts/module5/M5-Reflection_U1.pdf",
         reading: {
           required: [
             "Stellman, A. & Greene, J. (2008) Applied software project management. 1st ed. Sebastopol, CA: O'Reilly. Chapters 1 - 6.",
@@ -77,7 +77,7 @@ export const module = {
             "Suggest mitigations for common project failures.",
             "Carry out requirements gathering using Gherkin."
         ],
-        writing: "",//"../assets/artefacts/module5/M5-Reflection_U2.pdf",
+        writing: "../assets/artefacts/module5/M5-Reflection_U2.pdf",
         activities: [
           {
             title: "Collaborative Discussion 1: Responses",
