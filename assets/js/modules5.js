@@ -32,6 +32,11 @@ export const module = {
         attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke; Shan Swanlow",
         minutes: "../assets/artefacts/module5/M5-TeamMeetings_5_Minutes.pdf"
       },
+      {
+        date: "6 Apr. 2022 (@2pm)",
+        attendees: "Andrey Smirnov; Michael Justus; Grace Clarke; Shan Swanlow",
+        minutes: "../assets/artefacts/module5/M5-TeamMeetings_6_Minutes.pdf"
+      },
     ],
     units: [
       {
@@ -207,7 +212,12 @@ export const module = {
           ],
         },
         activities: [
-        
+          {
+            title: "Collaborative Discussion 2: Factors Affecting User Experience",
+            href: "../assets/artefacts/module5/M5-Discussion_2_FactorsAffectingUX.pdf",
+            ref: "pdf",
+            type: "discussion"
+          },        
         ],
       },
   
