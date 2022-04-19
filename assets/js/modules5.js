@@ -37,6 +37,16 @@ export const module = {
         attendees: "Andrey Smirnov; Michael Justus; Grace Clarke; Shan Swanlow",
         minutes: "../assets/artefacts/module5/M5-TeamMeetings_6_Minutes.pdf"
       },
+      {
+        date: "17 Apr. 2022 (@10am)",
+        attendees: "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke; Shan Swanlow",
+        minutes: ""
+      },
+      {
+        date: "18 Apr. 2022 (@5pm)",
+        attendees: "",
+        minutes: ""
+      }
     ],
     units: [
       {
