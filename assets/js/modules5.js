@@ -128,7 +128,7 @@ export const module = {
             "Collect the requirements of a software engineering project using the Volere template.",
             "Define a behaviour-driven development scenario."
         ],
-        writing: "",//"../assets/artefacts/module5/M5-Reflection_U3.pdf",
+        writing: "../assets/artefacts/module5/M5-Reflection_U3.pdf",
         activities: [
           {
             title: "Collaborative Discussion 1 - Summary",
@@ -171,7 +171,7 @@ export const module = {
             "Identify the most appropriate data structure to retain different attributes of data.",
             "Use Python’s built-in capabilities to practically retain data electronically."
         ],
-        writing: "",//"../assets/artefacts/module5/M5-Reflection_U4.pdf"
+        writing: "../assets/artefacts/module5/M5-Reflection_U4.pdf",
         activities: [
           {
             title: "Seminar 2: Requirements Identification",
