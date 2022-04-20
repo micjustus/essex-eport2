@@ -207,7 +207,7 @@ export const module = {
             "Define a strategy by which the User Experience can be measured and managed. ",
             "Recognise how to implement a Test-driven Development approach in Python."
         ],
-        writing: "",//"../assets/artefacts/module5/M5-Reflection_U5.pdf",
+        writing: "../assets/artefacts/module5/M5-Reflection_U5.pdf",
         reading: {
           required: [
             "Lopes, A., Valentim, N., Moraes, B., Zilse, R. & Conte, T. (2018) Applying User-centered Techniques to Analyse and Design a Mobile Application. Journal of Software Engineering Research and Development 6: 5. DOI: https://doi.org/ 10.1186/s40411-018-0049-1",
