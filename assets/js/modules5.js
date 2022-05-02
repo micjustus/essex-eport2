@@ -251,7 +251,34 @@ export const module = {
           ],
         },
         activities: [
-                   
+          {
+            title: "Codio Activity - Linters",
+            href: "../assets/artefacts/module5/M5-Codio_U6_Linters.pdf",
+            ref: "pdf",
+            type: "codio"
+          },    
+          {
+            title: "Codio Activity - pytest",
+            href: "../assets/artefacts/module5/M5-Codio_U6.pdf",
+            ref: "pdf",
+            type: "codio"
+          },    
+          {
+            title: "Development Team Project - Project Report",
+            href: "../assets/artefacts/module5/M5-Group_1_Project_Report_V1.pdf",
+            ref: "pdf",
+            type: "activity",
+            type: "assignment",
+            display: "team"
+          },   
+          {
+            title: "Development Team Project - Project Report (Feedback)",
+            href: "../assets/artefacts/module5/M5-Team_Design_Document_Feedback.pdf",
+            ref: "pdf",
+            type: "activity",
+            type: "assignment",
+            display: "tutor"
+          },        
         ],
       },
   
@@ -278,7 +305,12 @@ export const module = {
           ],
         },
         activities: [
-          
+          {
+            title: "Collaborative Discussion 2: Factors Affecting User Experience (Responses)",
+            href: "../assets/artefacts/module5/M5-Discussion_2_Responses.pdf",
+            ref: "pdf",
+            type: "discussion",
+          },      
         ],
       },
   
