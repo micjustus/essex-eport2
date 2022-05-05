@@ -310,13 +310,18 @@ export const module = {
             href: "../assets/artefacts/module5/M5-Discussion_2_Responses.pdf",
             ref: "pdf",
             type: "discussion",
+          },    
+          {
+            title: "e-portfolio Activity: Components of User Experience",
+            href: "../assets/artefacts/module5/M5-Activity_2_CUE.pdf",
+            ref: "pdf",
           },      
         ],
       },
   
       {
         title: "Unit 8",
-        description: "HRisk Assessment and Estimating Tools",
+        description: "Risk Assessment and Estimating Tools",
         outcomes: [
             "Select an appropriate tool for project estimation based on a number of common factors.",
             "Utilise the tool to create a project estimate.",
