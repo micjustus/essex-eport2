@@ -338,7 +338,18 @@ export const module = {
           ],
         },
         activities: [
-          
+          {
+            title: "Wiki Entry: Risks and Mitigations",
+            href: "../assets/artefacts/module5/M5-Seminar4_Activity2.pdf",
+            ref: "pdf",
+            display: "seminar",
+          },    
+          {
+            title: "Seminar 4: Activity 2",
+            href: "../assets/artefacts/module5/M5-Seminar4_Activity1.pdf",
+            ref: "pdf",
+            display: "semainar"
+          },    
         ],
       },
   
