@@ -61,6 +61,9 @@ function buildActivity(element) {
       else if (element.display == "tutor"){
         first = `<span class="tutor-icon">${element.title}</span>`;
       }
+      else if (element.display == "seminar"){
+        first = `<span class="seminar-icon">${element.title}</span>`;
+      }
       else {
         first = `<span>${element.title}</span>`;
       }
@@ -94,8 +97,15 @@ function buildActivity(element) {
 
   if (!clickLink) return "";
 
-  var css = element.type == "discussion" ? "discussion" :
-    element.type == "reflection" ? "reflection" : "";
+  var css = 
+    element.type == "discussion" ? "a-discussion" :
+    element.type == "reflection" ? "a-reflection" : 
+    element.type == "assignment" ? "a-assignment" :
+    element.type == "codio" ? "a-codio" : 
+    element.type == "activity" ? "a-activity" : 
+    element.type == "seminar" ? "a-seminar" :
+    element.type == "team" ? "a-team" :
+    "";
 
   return `<div class="activity ${css}" ${clickLink}>${first}</div>`;
 }
@@ -122,7 +132,7 @@ function buildActivities(content) {
     return `<section class="activities-box" style="text-align:left"><header>Activities</header><section>No activity data.</section></section>`;
   }
 
-  return `<section class="activities-box"><header>Activities</header>${activities}</section>`;
+  return `<section class="activities-box"><header>Activities</header><div class="activities-child">${activities}</div></section>`;
 }
 
 function buildReading(content) {
@@ -208,15 +218,24 @@ export class ModuleUnitSimplePage extends HTMLElement {
     const template = `
     <section>
         <header class="unit-header-1">${parseInt(this.unitId) + 1}. ${content.description}</header>
-          <header>Unit outcomes</header>
-          <section>${outcomes}</section></div>
-          <div class="unit-page-content">
-            ${writing}
-            <div class="activity-section">
+        
+        <section class="activities-box">
+            <header>Unit outcomes</header>
+            <div class="activities-child">
+              ${outcomes}
+            </div>
+        </section>
+          
+        <div class="unit-page-content">
+          <div class="activity-section">
             ${activities}
             ${reading}
-            </div>
           </div>
+        </div>
+
+        <footer>
+          ${writing}
+        </footer>
     </section>`;
 
     this.innerHTML = template;

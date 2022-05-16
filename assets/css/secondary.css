@@ -1,10 +1,12 @@
-@import url(fontawesome-all.min.css);
+@import url("fontawesome-all.min.css");
+@import url("brands.min.css");
+@import url("theme1.css");
+
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,500,600,700,900");
 
-@import url("fontawesome-all.min.css");
-@import url("theme1.css") html {
+html {
   box-sizing: border-box;
 }
 
@@ -441,6 +443,14 @@ section header {
   font-weight: 600;
 }
 
+section footer {
+  background-color: rgba(0, 0, 0, 0.02);
+  padding: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  border-radius: 9px;
+  font-family: var(--ff-sub);
+  margin: 0;
+}
 .modules {
   border: 1px solid lightgray;
   border-top-right-radius: 8px;
@@ -917,8 +927,6 @@ figcaption {
   margin: 1em 0;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  gap: 0.5em;
   align-items: flex-start;
   justify-items: flex-start;
 }
@@ -931,16 +939,21 @@ module-unit-simple-page > section:hover .activity{
 }
 .activities-box .activity {
   border: 1px solid var(--button-background-secondary-dark);
-  /* background-color: var(--button-background-secondary); */
   color: var(--button-foreground-dark);
   cursor: pointer;
   user-select: none;
   padding: 0.4em 1em;
   border-radius: 6px;
   display: inline-block;
-  transition: background-color 0.1s ease-in, color 0.1s ease-in;
+  transition: 0.1s ease;
   font-weight: 600;
   margin-left: 1em;
+}
+.activities-child{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.6em;
+  row-gap:1em;
 }
 .activity-section{
   margin-top: 0.6em;
@@ -951,15 +964,41 @@ module-unit-simple-page > section:hover .activity{
 .activities-box .activity:hover {
   background: var(--blue-highlight-light);
   color: var(--button-foreground);
+  outline: 3px solid var(--blue-highlight);
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
 }
-.activities-box .activity.discussion::before{
+.activities-box .activity.a-discussion::before{
   content: "\f4ad";
   font-family: var(--ff-font-awesome);
   font-weight: 600;
   margin-right: 0.5em;  
 }
-.activities-box .activity.reflection::before{
+.activities-box .activity.a-reflection::before{
   content: "\f0eb";
+  font-family: var(--ff-font-awesome);
+  font-weight: 600;
+  margin-right: 0.5em;  
+}
+.activities-box .activity.a-assignment::before{
+  content: "\f0eb";
+  font-family: var(--ff-font-awesome);
+  font-weight: 600;
+  margin-right: 0.5em;  
+}
+.activities-box .activity.a-codio::before{
+  content: "\f3e2";
+  font-family: var(--ff-font-awesome-brands-6);
+  font-weight: 400;
+  margin-right: 0.5em;  
+}
+.activities-box .activity.a-activity::before{
+  content: "\f0eb";
+  font-family: var(--ff-font-awesome);
+  font-weight: 600;
+  margin-right: 0.5em;  
+}
+.activities-box .activity.a-seminar::before{
+  content: "\f03d";
   font-family: var(--ff-font-awesome);
   font-weight: 600;
   margin-right: 0.5em;  
@@ -1217,7 +1256,7 @@ module-unit-simple-page > section:hover .activity{
   background-color: var(--button-background);
   color: var(--button-foreground);
   display: inline-block;
-  padding: 0.5em;
+  padding: 0.6em 0.8em;
   transition: background-color 0.1s ease-in;
 }
 .button.secondary {
@@ -1231,6 +1270,7 @@ module-unit-simple-page > section:hover .activity{
   cursor: pointer;
   user-select: none;
   background-color: var(--button-background-hover);
+  outline: 3px solid darkgray;
 }
 .button.pre-think-icon {
   margin-left: 1em;
@@ -1255,6 +1295,15 @@ module-unit-simple-page > section:hover .activity{
 }
 .tutor-icon::before{
   content: "\f19d";
+  font-family: var(--ff-font-awesome);
+  font-weight: 600;
+  margin-right: 0.5em;
+}
+.seminar-icon{
+  margin-right: 1em;
+}
+.seminar-icon::before{
+  content: "\f03d";
   font-family: var(--ff-font-awesome);
   font-weight: 600;
   margin-right: 0.5em;
