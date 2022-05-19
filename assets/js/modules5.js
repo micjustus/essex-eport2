@@ -242,7 +242,7 @@ export const module = {
         "Appreciate the roles to be played when working within User Experience research.",
         "Contextualise a reaction to a software development project on the basis of the emotions of the stakeholders.",
       ],
-      writing: "", //"../assets/artefacts/module5/M5-Reflection_U6.pdf",
+      writing: "../assets/artefacts/module5/M5-Reflection_U6.pdf",
       reading: {
         required: [
           "Krekel, H. et al. (n.d.) Pytest: helps you write better programs. Pytest. ",
@@ -291,7 +291,7 @@ export const module = {
         "Select and utilise an appropriate tool for estimating.",
         "Select and utilise an appropriate tool for risk assessment.",
       ],
-      writing: "", //"../assets/artefacts/module5/M5-Reflection_U7.pdf",
+      writing: "../assets/artefacts/module5/M5-Reflection_U7.pdf",
       reading: {
         required: [
           "Brooks, P. (1975) The Mythical Man-Month - Essays in Software Engineering. Anniversary ed. Addison-Wesley. Chapters 1-5.",
@@ -331,7 +331,7 @@ export const module = {
         "Evaluate the usefulness of the tool in estimating.",
         "Discuss risk evaluation and mitigation approaches.",
       ],
-      writing: "", //"../assets/artefacts/module5/M5-Reflection_U8.pdf",
+      writing: "../assets/artefacts/module5/M5-Reflection_U8.pdf",
       reading: {
         required: [
           "‌Verner, M., Brereton, P., Kitchenham, A., Turner, M. & Niazi, M. (2014) Risks and risk mitigation in global software development: A tertiary study. Information and Software Technology 56(1):54–78.",
@@ -421,6 +421,12 @@ export const module = {
           href: "../assets/artefacts/module5/M5-Codio_U10.pdf",
           ref: "pdf",
           type: "codio",
+        },
+        {
+          title: "Activity: Reflection on Software Quality",
+          href: "../assets/artefacts/module5/M5-Activity_4_ReflectionOnSoftwareQuality.pdf",
+          ref: "pdf",
+          type: "activity",
         },
       ],
     },
