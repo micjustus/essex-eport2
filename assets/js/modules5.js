@@ -369,7 +369,7 @@ export const module = {
         "Write a set of non-functional requirements by which a software development may be tested to demonstrate that quality has been achieved.",
         "Appreciate the ways in which technical debt may be accrued through ineffective software quality management.",
       ],
-      writing: "", //"../assets/artefacts/module5/M5-Reflection_U9.pdf",
+      writing: "../assets/artefacts/module5/M5-Reflection_U9.pdf",
       reading: {
         required: [
           "McCall, A., Richards, K. & Walters, F. (1977) Factors in Software Quality Concept and Definitions of Software Quality. RADC-TR-77. 369(1).",
@@ -390,6 +390,12 @@ export const module = {
           ref: "pdf",
           type: "activity",
         },
+        {
+          title: "Activity: Beginning Engineers Project Management",
+          href: "../assets/artefacts/module5/M5-Activity_5_BeginningEngineersPM.pdf",
+          ref: "pdf",
+          type: "activity",
+        },
       ],
     },
 
@@ -401,7 +407,7 @@ export const module = {
         "Describe how the concept of software quality has evolved over time.",
         "Make suggestions on techniques to recover a software engineering project which has been considered to have failed. ",
       ],
-      writing: "", //"../assets/artefacts/module5/M5-Reflection_U10.pdf",
+      writing: "../assets/artefacts/module5/M5-Reflection_U10.pdf",
       reading: {
         required: [
           "McCall, J. A., Richards, P. K., & Walters, G. F. (1977) Factors in Software Quality, Concept and Definitions of Software Quality. General Electric Company. ",
@@ -437,7 +443,7 @@ export const module = {
       outcomes: [
         "Present a case that promotes one of the future trends as the main factor that will drive the future direction of SEPM.",
       ],
-      writing: "", //"../assets/artefacts/module5/M5-Reflection_U11.pdf",
+      writing: "../assets/artefacts/module5/M5-Reflection_U11.pdf",
       reading: {
         required: [
           "Jaafari, A. (2003) Project Management in the Age of Complexity and Change. Project Management Journal 34(4): 47–57.",
@@ -448,7 +454,29 @@ export const module = {
         ],
         optional: [],
       },
-      activities: [],
+      activities: [
+        {
+          title: "Team Project: Submission",
+          href: "../assets/artefacts/module5/M5-Team_Project_FlipIt_Game_Mechanics.pdf",
+          ref: "pdf",
+          type: "assignment",
+          display: "team",
+        },
+        {
+          title: "Team Project: Project Requirements",
+          href: "../assets/artefacts/module5/M5-Team_Project_Requirements_Summation.pdf",
+          ref: "pdf",
+          type: "assignment",
+          display: "team",
+        },
+        {
+          title: "Team Project: Project Timeline",
+          href: "../assets/artefacts/module5/M5-Team_Project_Gantt_Overview.pdf",
+          ref: "pdf",
+          type: "assignment",
+          display: "team",
+        },
+      ],
     },
 
     {
@@ -469,7 +497,17 @@ export const module = {
         ],
         optional: [],
       },
-      activities: [],
+      activities: [
+        {
+          title: "Seminar 6: Future Trends in SEPM",
+          href: "../assets/artefacts/module5/M5-Seminar6_FutureTrends.pdf",
+          ref: "pdf",
+          month: "May",
+          day: 25,
+          type: "seminar",
+          display: "date",
+        },
+      ],
     },
   ],
 };
