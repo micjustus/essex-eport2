@@ -10,7 +10,7 @@ export const module = {
   project: "",
   reflections: "",
   actionPlan: "../assets/artefacts/module5/M5-Action_Plan.pdf",
-  skillsMatrix: "", //"../assets/artefacts/module5/M5-Professional_Skills_Matrix.pdf",
+  skillsMatrix: "../assets/artefacts/module5/M5-Professional_Skills_Matrix.pdf",
   meetings: [
     {
       date: "13 Mar. 2022 (@2pm)",
