@@ -9,7 +9,7 @@ export const module = {
   ],
   project: "",
   reflections: "",
-  actionPlan: "", //"../assets/artefacts/module5/M5-Action_Plan.pdf",
+  actionPlan: "../assets/artefacts/module5/M5-Action_Plan.pdf",
   skillsMatrix: "", //"../assets/artefacts/module5/M5-Professional_Skills_Matrix.pdf",
   meetings: [
     {
@@ -106,13 +106,19 @@ export const module = {
           type: "discussion",
         },
         {
-          title: "Seminar 1: Requirements Gathering",
+          title: "Seminar 1: (My) Requirements Gathering",
           href: "../assets/artefacts/module5/M5-Seminar1_RequirementsGathering.pdf",
           ref: "pdf",
           month: "Mar",
           day: 16,
           type: "seminar",
           display: "date",
+        },
+        {
+          title: "Seminar 1: Slides",
+          href: "../assets/artefacts/module5/SEPM_Seminar_Unit_2.pdf",
+          ref: "pdf",
+          type: "seminar"
         },
       ],
       reading: {
@@ -178,13 +184,19 @@ export const module = {
       writing: "../assets/artefacts/module5/M5-Reflection_U4.pdf",
       activities: [
         {
-          title: "Seminar 2: Requirements Identification",
+          title: "Seminar 2: (My) Requirements Identification",
           href: "../assets/artefacts/module5/M5-Seminar2_RequirementsIdentification.pdf",
           ref: "pdf",
           month: "Mar",
           day: 30,
           type: "seminar",
           display: "date",
+        },
+        {
+          title: "Seminar: Slides",
+          href: "../assets/artefacts/module5/SEPM_Seminar_Unit_4.pdf",
+          ref: "pdf",
+          type: "seminar"
         },
       ],
       reading: {
@@ -267,18 +279,24 @@ export const module = {
           type: "codio",
         },
         {
-          title: "Team Project: Project Report",
+          title: "Team Project: Design Report",
           href: "../assets/artefacts/module5/M5-Group_1_Project_Report_V1.pdf",
           ref: "pdf",
           type: "assignment",
           display: "team",
         },
         {
-          title: "Team Project: Report Feedback",
+          title: "Team Project: Design Report (Feedback)",
           href: "../assets/artefacts/module5/M5-Team_Design_Document_Feedback.pdf",
           ref: "pdf",
           type: "assignment",
           display: "tutor",
+        },
+        {
+          title: "Seminar: Slides",
+          href: "../assets/artefacts/module5/SEPM_Seminar_Unit_6.pdf",
+          ref: "pdf",
+          type: "seminar"
         },
       ],
     },
@@ -348,16 +366,22 @@ export const module = {
           type: "discussion",
         },
         {
-          title: "Seminar 4: Activity 1 - NIST Privacy Tools",
+          title: "Seminar 4: Activity 1 - (My) NIST Privacy Tools",
           href: "../assets/artefacts/module5/M5-Seminar4_Activity1.pdf",
           ref: "pdf",
           type: "seminar",
         },
         {
-          title: "Seminar 4: Activity 2 - Risks and Mitigations",
+          title: "Seminar 4: Activity 2 - (My) Risks and Mitigations",
           href: "../assets/artefacts/module5/M5-Seminar4_Activity2.pdf",
           ref: "pdf",
           type: "seminar",
+        },
+        {
+          title: "Seminar: Slides",
+          href: "../assets/artefacts/module5/SEPM_Seminar_Unit_8.pdf",
+          ref: "pdf",
+          type: "seminar"
         },
       ],
     },
@@ -434,6 +458,12 @@ export const module = {
           ref: "pdf",
           type: "activity",
         },
+        {
+          title: "Seminar: Slides",
+          href: "../assets/artefacts/module5/SEPM_Seminar_Unit_10.pdf",
+          ref: "pdf",
+          type: "seminar"
+        },
       ],
     },
 
@@ -456,22 +486,36 @@ export const module = {
       },
       activities: [
         {
-          title: "Team Project: Submission",
-          href: "../assets/artefacts/module5/M5-Team_Project_FlipIt_Game_Mechanics.pdf",
-          ref: "pdf",
-          type: "assignment",
-          display: "team",
-        },
-        {
-          title: "Team Project: Project Requirements",
+          title: "Team Project: Requirements",
           href: "../assets/artefacts/module5/M5-Team_Project_Requirements_Summation.pdf",
           ref: "pdf",
           type: "assignment",
           display: "team",
         },
         {
-          title: "Team Project: Project Timeline",
+          title: "Team Project: Timeline",
           href: "../assets/artefacts/module5/M5-Team_Project_Gantt_Overview.pdf",
+          ref: "pdf",
+          type: "assignment",
+          display: "team",
+        },
+        {
+          title: "Team Project: Game Mechanics",
+          href: "../assets/artefacts/module5/M5-Team_Project_FlipIt_Game_Mechanics.pdf",
+          ref: "pdf",
+          type: "assignment",
+          display: "team",
+        },
+        {
+          title: "Team Project: Presentation Transcript",
+          href: "../assets/artefacts/module5/M5-Team_Project_Presentation_Transcript.pdf",
+          ref: "pdf",
+          type: "assignment",
+          display: "team",
+        },
+        {
+          title: "Team Project: Unit 6 vs Unit 11",
+          href: "../assets/artefacts/module5/M5-Team_Project_Evaluation.pdf",
           ref: "pdf",
           type: "assignment",
           display: "team",
@@ -499,13 +543,19 @@ export const module = {
       },
       activities: [
         {
-          title: "Seminar 6: Future Trends in SEPM",
+          title: "Seminar 6: (Team) Future Trends in SEPM",
           href: "../assets/artefacts/module5/M5-Seminar6_FutureTrends.pdf",
           ref: "pdf",
           month: "May",
           day: 25,
           type: "seminar",
           display: "date",
+        },
+        {
+          title: "Seminar: Slides",
+          href: "../assets/artefacts/module5/SEPM_Seminar_Unit_12.pdf",
+          ref: "pdf",
+          type: "seminar"
         },
       ],
     },
