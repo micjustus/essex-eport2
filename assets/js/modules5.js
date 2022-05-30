@@ -527,6 +527,13 @@ export const module = {
           type: "assignment",
           display: "team",
         },
+        {
+          title: "Team Project: Contributions",
+          href:  "../assets/artefacts/module5/M5-Contributions.pdf",
+          ref: "pdf",
+          type: "assignment",
+          display: "team"          
+        },
       ],
     },
 
