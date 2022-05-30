@@ -48,9 +48,16 @@ export const module = {
       minutes: "",
     },
     {
-      date: "18 Apr. 2022 (@5pm)",
-      attendees: "",
-      minutes: "",
+      date: "8 May. 2022 (@10am)",
+      attendees:
+        "Andrey Smirnov; Taylor Edgell; Grace Clarke; Shan Swanlow",
+      minutes: "../assets/artefacts/module5/M5-TeamMeetings_8May_Minutes.pdf",
+    },
+    {
+      date: "15 May. 2022 (@10am)",
+      attendees:
+        "Andrey Smirnov; Taylor Edgell; Michael Justus; Grace Clarke; Shan Swanlow",
+      minutes: "../assets/artefacts/module5/M5-TeamMeetings_15May_Minutes.pdf",
     },
   ],
   units: [
@@ -81,7 +88,7 @@ export const module = {
           type: "discussion",
         },
         {
-          title: "Team Project: Contract Setup",
+          title: "Team Project: Contract",
           href: "../assets/artefacts/module5/M5-Team_Contract.pdf",
           ref: "pdf",
           type: "assignment",
@@ -115,7 +122,7 @@ export const module = {
           display: "date",
         },
         {
-          title: "Seminar 1: Slides",
+          title: "Seminar: Slides",
           href: "../assets/artefacts/module5/SEPM_Seminar_Unit_2.pdf",
           ref: "pdf",
           type: "seminar"
