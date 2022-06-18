@@ -77,7 +77,7 @@ export class ModuleInfo extends HTMLElement {
       }
     }
 
-    if (mod.meetings) {
+    if (mod.meetings && mod.meetings.length) {
       first = first + `<module-meetings-list moduleId='${mod.id}'></module-meetings-list>`;
     }
 

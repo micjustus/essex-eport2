@@ -50,6 +50,12 @@ export const module = {
           ],
         },
         activities: [
+          {
+            title: "Discussion 1: Code of Ethics and Professional Conduct",
+            href: "../assets/artefacts/module6/M6-Discussion_1_EthicsAndConduct.pdf",
+            ref: "pdf",
+            type: "discussion",
+          },
           
         ],
       },
