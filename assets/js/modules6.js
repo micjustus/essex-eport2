@@ -56,6 +56,12 @@ export const module = {
             ref: "pdf",
             type: "discussion",
           },
+          {
+            title: "Activity: Ethics in Computing",
+            href: "../assets/artefacts/module6/M6-Activity_1_EthicsInComputing.pdf",
+            ref: "pdf",
+            type: "activity",
+          },
           
         ],
       },
