@@ -22,7 +22,7 @@ export const module = {
             "Differentiate between inductive and deductive reasoning.",
             "Understand why ethics are important and how they may relate to your area of research and your professional practice."        
         ],
-        writing: "",//../assets/artefacts/module5/M5-Reflection_U1.pdf",
+        writing: "../assets/artefacts/module6/M6-Reflection_U1.pdf",
         reading: {
           required: [
             "Dawson, C. (2015) Projects in Computing and Information Systems: A Student's Guide. Harlow: Pearson. Chapter 2 p 24-25., Chapter 2 p 38-40.",
