@@ -62,7 +62,12 @@ export const module = {
             ref: "pdf",
             type: "activity",
           },
-          
+          {
+            title: "Seminar: Slides",
+            href: "../assets/artefacts/module6/RMPP_Seminar_Unit_1.pdf",
+            ref: "pdf",
+            type: "seminar"
+          },
         ],
       },
       {
@@ -75,9 +80,14 @@ export const module = {
             "Identify means of transforming research ideas into crafted research questions and proposal.",
             "Conduct a literature search, critique the literature and to present a literature review."
         ],
-        writing: "",//../assets/artefacts/module5/M5-Reflection_U2.pdf",
+        writing: "../assets/artefacts/module6/M6-Reflection_U2.pdf",
         activities: [
-          
+          {
+            title: "Discussion 1: Code of Ethics and Professional Conduct Responses",
+            href: "../assets/artefacts/module6/M6-Discussion_1_EthicsAndConduct_Responses.pdf",
+            ref: "pdf",
+            type: "discussion",
+          },
         ],
         reading: {
           required: [
@@ -101,7 +111,22 @@ export const module = {
         ],
         writing: "",//../assets/artefacts/module5/M5-Reflection_U3.pdf",
         activities: [
-         
+          {
+            title: "Peer Review Activity",
+            href: "../assets/artefacts/module6/M6-Seminar2_LiteraturePeerReview.pdf",
+            ref: "pdf",
+            month: "Jun",
+            day: 29,
+            type: "seminar",
+            display: "date",
+          },
+          {
+            title: "Seminar: Slides",
+            href: "../assets/artefacts/module6/RMPP_Seminar_Unit_3.pdf",
+            ref: "pdf",
+            type: "seminar"
+          },
+          
         ],
         reading: {
           required: [
