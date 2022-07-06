@@ -66,7 +66,10 @@ export const module = {
             title: "Seminar: Slides",
             href: "../assets/artefacts/module6/RMPP_Seminar_Unit_1.pdf",
             ref: "pdf",
-            type: "seminar"
+            type: "seminar",
+            display: "date",
+            month: "Jun",
+            day: 15
           },
         ],
       },
@@ -112,19 +115,25 @@ export const module = {
         writing: "",//../assets/artefacts/module5/M5-Reflection_U3.pdf",
         activities: [
           {
-            title: "Peer Review Activity",
+            title: "Discussion 1: Code of Ethics and Professional Conduct Summary",
+            href: "../assets/artefacts/module6/M6-Discussion_1_EthicsAndConduct_Summary.pdf",
+            ref: "pdf",
+            type: "discussion",
+          },
+          {
+            title: "Activity: Literature Peer Review",
             href: "../assets/artefacts/module6/M6-Seminar2_LiteraturePeerReview.pdf",
             ref: "pdf",
-            month: "Jun",
-            day: 29,
-            type: "seminar",
-            display: "date",
+            type: "activity",
           },
           {
             title: "Seminar: Slides",
             href: "../assets/artefacts/module6/RMPP_Seminar_Unit_3.pdf",
             ref: "pdf",
-            type: "seminar"
+            type: "seminar",
+            display: "date",
+            month: "Jun",
+            day: 29
           },
           
         ],
@@ -152,7 +161,12 @@ export const module = {
         ],
         writing: "",//../assets/artefacts/module5/M5-Reflection_U4.pdf",
         activities: [
-         
+          {
+            title: "Activity: Case Study - Privacy",
+            href: "../assets/artefacts/module6/M6-Seminar3_CaseStudyPrivacy.pdf",
+            ref: "pdf",
+            type: "activity",
+          },
         ],
         reading: {
           required: [
