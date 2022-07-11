@@ -167,6 +167,21 @@ export const module = {
             ref: "pdf",
             type: "activity",
           },
+          {
+            title: "Activity: Literature Review - Draft",
+            href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Draft.pdf",
+            ref: "pdf",
+            type: "activity",
+          },
+          {
+            title: "Seminar: Slides",
+            href: "../assets/artefacts/module6/RMPP_Seminar_Unit_4.pdf",
+            ref: "pdf",
+            type: "seminar",
+            display: "date",
+            month: "Jun",
+            day: 15
+          },
         ],
         reading: {
           required: [

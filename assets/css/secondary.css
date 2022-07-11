@@ -399,9 +399,14 @@ header > p {
 .banner .header {
   background-color: rgba(34, 30, 31, 0.98);
   padding: 2em;
+  border-radius: 8px;
   margin: 0 auto;
   text-align: center;
   line-height: 2em;
+  transition: box-shadow 0.1s ease;
+}
+.banner .header:hover{
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.4);
 }
 
 .banner .header h2 {
@@ -1585,4 +1590,17 @@ module-unit-list-renderer {
     transform: scale(1.2) translateX(15px) translateY(15px) rotate(10deg);
     opacity: 0;
   }
+}
+.uni-link{
+  color: lightgray;
+  text-decoration: none;
+  padding: 5px 16px;
+  border: 2px solid;
+  border-radius: 14px;
+  transition: background 0.05s ease-in, outline 0.05s ease-in;
+}
+.uni-link:hover{
+  color: black;
+  background-color: whitesmoke;
+  outline: 3px solid var(--button-background-hover);
 }
