@@ -112,7 +112,7 @@ export const module = {
             "Know which data collection methods are related to each method of research.",
             "Have some idea which of these would be suited to your area of research."
         ],
-        writing: "",//../assets/artefacts/module5/M5-Reflection_U3.pdf",
+        writing: "../assets/artefacts/module6/M6-Reflection_U3.pdf",
         activities: [
           {
             title: "Discussion 1: Code of Ethics and Professional Conduct Summary",
@@ -159,7 +159,7 @@ export const module = {
             "Know which method would be suitable, if any, for your investigation.",
             "Consider the type of data you would obtain.",
         ],
-        writing: "",//../assets/artefacts/module5/M5-Reflection_U4.pdf",
+        writing: "../assets/artefacts/module6/M6-Reflection_U4.pdf",
         activities: [
           {
             title: "Activity: Case Study - Privacy",
@@ -218,7 +218,12 @@ export const module = {
           ],
         },
         activities: [
-          
+          {
+            title: "Activity: Inapporpriate use of questionnaires",
+            href: "../assets/artefacts/module6/M6-Activity_3_InappropriateUseOfSurveys.pdf",
+            ref: "pdf",
+            type: "activity",
+          },
         ],
       },
   
@@ -244,7 +249,12 @@ export const module = {
           ],
         },
         activities: [
-          
+          {
+            title: "Wiki Activity: Questionnaires",
+            href: "../assets/artefacts/module6/M6-Activity_4_Questionnaires.pdf",
+            ref: "pdf",
+            type: "activity",
+          },
         ],
       },
   

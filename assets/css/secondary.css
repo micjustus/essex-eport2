@@ -403,7 +403,7 @@ header > p {
   margin: 0 auto;
   text-align: center;
   line-height: 2em;
-  transition: box-shadow 0.1s ease;
+  transition: box-shadow 0.2s ease-in;
 }
 .banner .header:hover{
   box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.4);
@@ -1597,7 +1597,7 @@ module-unit-list-renderer {
   padding: 5px 16px;
   border: 2px solid;
   border-radius: 14px;
-  transition: background 0.05s ease-in, outline 0.05s ease-in;
+  transition: background 0.2s ease-in, outline 0.2s ease-in;
 }
 .uni-link:hover{
   color: black;
