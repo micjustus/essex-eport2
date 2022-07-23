@@ -235,7 +235,7 @@ export const module = {
             "Design a questionnaire to obtain the responses you will need for your investigation.",
             "Understand how the data obtained can be analysed."
         ],
-        writing: "",//../assets/artefacts/module5/M5-Reflection_U6.pdf",
+        writing: "../assets/artefacts/module6/M6-Reflection_U6.pdf",
         reading: {
           required: [
             "Dawson, C. (2015) Projects in Computing and Information Systems: A Student's Guide. Harlow: Pearson. Chapter 2 Section 2.4.4 p 31-37."
@@ -252,6 +252,12 @@ export const module = {
           {
             title: "Wiki Activity: Questionnaires",
             href: "../assets/artefacts/module6/M6-Activity_4_Questionnaires.pdf",
+            ref: "pdf",
+            type: "activity",
+          },
+          {
+            title: "Thoughts: Resolving Topic Conflicts",
+            href: "../assets/artefacts/module6/M6-Selecting_Project_Proposal.pdf",
             ref: "pdf",
             type: "activity",
           },
