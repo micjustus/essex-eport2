@@ -281,7 +281,12 @@ export const module = {
           ],
         },
         activities: [
-          
+          {
+            title: "Discussion 2: Accuracy of Information",
+            href: "../assets/artefacts/module6/M6-Discussion_2_AccuracyOfInformation.pdf",
+            ref: "pdf",
+            type: "discussion",
+          },
         ],
       },
   
