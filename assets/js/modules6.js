@@ -271,7 +271,7 @@ export const module = {
             "Understand how the concepts of validity, generalisability and reliability affect your investigation and the design of your research method.",
             "Consider how to analyse and present the results you obtain from your investigation and how they will enable you to answer your research question."
         ],
-        writing: "",//../assets/artefacts/module5/M5-Reflection_U7.pdf",
+        writing: "../assets/artefacts/module6/M6-Reflection_U7.pdf",
         reading: {
           required: [
 "Kaplan, B. & Maxwell, J.A. (2005) Qualitative Research Methods for Evaluating Computer Information Systems. In: Anderson J.G. & Aydin C.E. (Eds) Evaluating the Organizational Impact of Healthcare Information Systems. Health Informatics. New York, NY: Springer.",
@@ -284,6 +284,12 @@ export const module = {
           {
             title: "Discussion 2: Accuracy of Information",
             href: "../assets/artefacts/module6/M6-Discussion_2_AccuracyOfInformation.pdf",
+            ref: "pdf",
+            type: "discussion",
+          },
+          {
+            title: "Literature Review",
+            href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Final.pdf",
             ref: "pdf",
             type: "discussion",
           },
