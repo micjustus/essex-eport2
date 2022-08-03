@@ -291,7 +291,7 @@ export const module = {
             title: "Literature Review",
             href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Final.pdf",
             ref: "pdf",
-            type: "discussion",
+            type: "activity",
           },
         ],
       },
@@ -315,7 +315,37 @@ export const module = {
           optional: [],
         },
         activities: [
-         
+          {
+            title: "Measures Testing (8.1)",
+            href: "../assets/artefacts/module6/M6-Activity_3_Stats_Exercise8.1.pdf",
+            ref: "pdf",
+            type: "activity",
+          },
+          {
+            title: "Measures Testing (8.2)",
+            href: "../assets/artefacts/module6/M6-Activity_3_Stats_Exercise8.2.pdf",
+            ref: "pdf",
+            type: "activity",
+          },
+          {
+            title: "Measures Testing (8.3)",
+            href: "../assets/artefacts/module6/M6-Activity_3_Stats_Exercise8.3.pdf",
+            ref: "pdf",
+            type: "activity",
+          },
+          {
+            title: "Hypothesis Testing: t-Test (One and Two-table) (8.4, 8.5)",
+            href: "../assets/artefacts/module6/M6-Activity_3_Stats_Exercise8.4.pdf",
+            ref: "pdf",
+            type: "activity",
+          },
+          {
+            title: "Hypothesis Testing: F-Test (8.6)",
+            href: "../assets/artefacts/module6/M6-Activity_3_Stats_Exercise8.6.pdf",
+            ref: "pdf",
+            type: "activity",
+          },
+       
         ],
       },
   
