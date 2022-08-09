@@ -168,10 +168,10 @@ export const module = {
             type: "activity",
           },
           {
-            title: "Activity: Literature Review - Draft",
+            title: "Literature Review - Draft",
             href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Draft.pdf",
             ref: "pdf",
-            type: "activity",
+            type: "assignment",
           },
           {
             title: "Seminar: Slides",
@@ -219,7 +219,7 @@ export const module = {
         },
         activities: [
           {
-            title: "Activity: Inapporpriate use of questionnaires",
+            title: "Activity: Inappropriate questionnaire use",
             href: "../assets/artefacts/module6/M6-Activity_3_InappropriateUseOfSurveys.pdf",
             ref: "pdf",
             type: "activity",
@@ -291,7 +291,7 @@ export const module = {
             title: "Literature Review",
             href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Final.pdf",
             ref: "pdf",
-            type: "activity",
+            type: "assignment",
           },
         ],
       },
@@ -304,7 +304,7 @@ export const module = {
             "Produce measures of location and spread.",
             "Perform appropriate hypothesis tests."
         ],
-        writing: "",//../assets/artefacts/module5/M5-Reflection_U8.pdf",
+        writing: "../assets/artefacts/module6/M6-Reflection_U8.pdf",
         reading: {
           required: [
 "Berenson, L., Levine, D. & Szabat, K. (2015) Basic Business Statistics: Concepts and Applications. 13th Ed. Pearson. Chapter 1 Section 1.2 p 44-45. Chapter 3 Section 3.1 130-135. Chapter 3 Section 3.2 p 135-144. Chapter 3 Section 3.3 p 148-153." +
@@ -315,6 +315,12 @@ export const module = {
           optional: [],
         },
         activities: [
+          {
+            title: "Research Proposal - Draft",
+            href: "../assets/artefacts/module6/M6-Activity_5_researchProposal_Draft.pdf",
+            ref: "pdf",
+            type: "assignment",
+          },
           {
             title: "Measures Testing (8.1)",
             href: "../assets/artefacts/module6/M6-Activity_3_Stats_Exercise8.1.pdf",
