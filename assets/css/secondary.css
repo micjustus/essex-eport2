@@ -1604,3 +1604,22 @@ module-unit-list-renderer {
   background-color: whitesmoke;
   outline: 3px solid var(--button-background-hover);
 }
+
+.slide-in-module-info.hidden{
+  opacity:0;
+}
+
+.info-card {
+  border: 1px solid lightgray;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 1em;
+  z-index: -1;
+  max-width: 55%;
+  min-width: 120px;
+  background-color: white;
+}
+.slide-in-module-info{
+  transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+  opacity: 1;
+}

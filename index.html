@@ -42,6 +42,10 @@
 
     <!-- Intro -->
     <div class="container">
+        <!-- <div class="info-card centered slide-in-module-info hidden" id="module-info-card">
+            <p>Do the hover thang</p>
+        </div> -->
+
         <div class="modules centered">
             <div class="row">
                 <a href="modules/m01-launching.html">
@@ -109,6 +113,8 @@
         </div>
     </div>
 
+
+
     <page-footer></page-footer>
 
     <!-- Scripts -->
@@ -117,6 +123,49 @@
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/module-header-animations.js"></script>
+  
+
+    <!-- <script type="module">
+            import { modules } from "./assets/js/modules.js";
+
+            document.onreadystatechange = () =>{
+
+            if (document.readyState === "complete"){
+                var card = document.querySelector("#module-info-card");
+
+                var elms = document.querySelectorAll(".modules a");
+                elms.forEach((val, index) =>{
+                    val.addEventListener("mouseover", f =>{
+                        var module = modules[index];
+
+                        if (module && module.infoCard){
+                            card.innerHTML = module.infoCard
+                            card.classList.remove("hidden");
+                        }
+                    })
+
+                    val.addEventListener("mouseleave", f =>{
+                       
+                            card.classList.add("hidden");
+                        
+                    })
+
+                    val.addEventListener("focusin", f =>{
+                        var module = modules[index];
+
+                        if (module && module.infoCard){
+                            card.innerHTML = module.infoCard
+                            card.classList.remove("hidden");
+                        }
+                    })
+
+                    val.addEventListener("focusout", f =>{
+                        card.classList.add("hidden");
+                    })
+            });
+        }
+    };
+    </script> -->
 </body>
 
 </html>
