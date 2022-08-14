@@ -316,6 +316,18 @@ export const module = {
         },
         activities: [
           {
+            title: "Discussion 2: Responses",
+            href: "../assets/artefacts/module6/M6-Discussion_2_AccuracyOfInformation_Responses.pdf",
+            ref: "pdf",
+            type: "discussion",
+          },
+          {
+            title: "Literature Review - Feedback",
+            href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Final_Feedback.pdf",
+            ref: "pdf",
+            type: "assignment",
+          },
+          {
             title: "Research Proposal - Draft",
             href: "../assets/artefacts/module6/M6-Activity_5_researchProposal_Draft.pdf",
             ref: "pdf",
@@ -376,7 +388,12 @@ export const module = {
           ],
         },
         activities: [
-         
+          {
+            title: "Discussion 2: Summary",
+            href: "../assets/artefacts/module6/M6-Discussion_2_AccuracyOfInformation_Summary.pdf",
+            ref: "pdf",
+            type: "discussion",
+          },         
         ],
       },
   

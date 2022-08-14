@@ -985,7 +985,7 @@ module-unit-simple-page > section:hover .activity {
   margin-right: 0.5em;
 }
 .activities-box .activity.a-assignment::before {
-  content: "\f0eb";
+  content: "\f518";
   font-family: var(--ff-font-awesome);
   font-weight: 600;
   margin-right: 0.5em;
