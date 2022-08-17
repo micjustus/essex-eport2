@@ -1,4 +1,11 @@
 export const module = {
+  infoCard: 
+    `<h2>What is it about?</h2>
+    <span>
+    The management of a software engineering project, using techniques like Gantt charts, task boards, time management.
+    </span>
+    `,
+  
   id: 5,
   title: "Software Engineering Project Management",
   outcomes: [

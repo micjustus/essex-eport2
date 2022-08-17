@@ -1,5 +1,13 @@
 export const module = {
   id: 4,
+
+  infoCard: 
+  `<h2>What is it about?</h2>
+  <span>
+  
+  </span>
+  `,
+
   title: "Network Information Security Management",
   outcomes: [
     "Identify and analyse security risks and vulnerabilities in IT network systems and determine appropriate methodologies, tools and techniques to manage and/or solve them.",

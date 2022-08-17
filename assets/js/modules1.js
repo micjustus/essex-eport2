@@ -1,5 +1,12 @@
 export const module = 
     {
+      infoCard: 
+      `<h2>What is it about?</h2>
+      <span>
+      An introduction into the topic of computer science.
+      </span>
+      `,
+
       id: 1,
       title: "Launching into Computer Science",
       outcomes: [

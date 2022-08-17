@@ -70,6 +70,9 @@ a:hover {
   text-decoration: none;
 }
 
+a.card {
+  text-decoration: none;
+}
 .container {
   margin: 0 auto;
   padding: 3em;
@@ -1606,19 +1609,32 @@ module-unit-list-renderer {
 }
 
 .slide-in-module-info.hidden{
-  opacity:0;
+  /* opacity:0; */
 }
 
 .info-card {
   border: 1px solid lightgray;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  padding: 1em;
-  z-index: -1;
-  max-width: 55%;
-  min-width: 120px;
-  background-color: white;
+  padding: 1em 4em;
+  /* max-width: 55%; */
+  min-width: 50ch;
+  max-height: 100px;
+  min-height: 100px;
+  overflow: auto;
+  background-color: hsl(257deg 70% 96%);
+  margin-bottom: 1em;
+  margin-top: -4.5em;
+    margin-left: -4.4em;
+    margin-right: -4.5em;
+    border-top-right-radius: 7px;
+    color: hsl(257deg 70% 6%);
+    font-size: 0.9em;
+    
 }
+.info-card :is(h1, h2, h3, h4){
+  margin: 0;
+  color: #a388ea;
+}
+
 .slide-in-module-info{
   transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
   opacity: 1;

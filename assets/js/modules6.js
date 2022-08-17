@@ -1,9 +1,10 @@
 export const module = {
   infoCard: 
    
-    `<h2>Purpose</h2>
+    `<h2>What is it about?</h2>
     <span>To introduce students to the world of academic research. This module looks at the various
-    types of research, how to interpret the data, conduct studies and perform a literature review.`,
+    types of research, how to interpret the data, conduct studies and perform a literature review.
+    `,
 
   id: 6,
   title: "Research Methods and Professional Practice",
@@ -67,8 +68,8 @@ export const module = {
           type: "activity",
         },
         {
-          title: "Seminar: Slides",
-          href: "../assets/artefacts/module6/RMPP_Seminar_Unit_1.pdf",
+          title: "Seminar 1: Slides",
+          href: "../assets/artefacts/module6/RMPP_Seminar_1.pdf",
           ref: "pdf",
           type: "seminar",
           display: "date",
@@ -133,8 +134,8 @@ export const module = {
           type: "activity",
         },
         {
-          title: "Seminar: Slides",
-          href: "../assets/artefacts/module6/RMPP_Seminar_Unit_3.pdf",
+          title: "Seminar 2: Slides",
+          href: "../assets/artefacts/module6/RMPP_Seminar_2.pdf",
           ref: "pdf",
           type: "seminar",
           display: "date",
@@ -179,13 +180,13 @@ export const module = {
           type: "assignment",
         },
         {
-          title: "Seminar: Slides",
-          href: "../assets/artefacts/module6/RMPP_Seminar_Unit_4.pdf",
+          title: "Seminar 3: Slides",
+          href: "../assets/artefacts/module6/RMPP_Seminar_3.pdf",
           ref: "pdf",
           type: "seminar",
           display: "date",
-          month: "Jun",
-          day: 15,
+          month: "Jul",
+          day: 12,
         },
       ],
       reading: {
@@ -331,40 +332,56 @@ export const module = {
         },
         {
           title: "Research Proposal - Draft",
-          href: "../assets/artefacts/module6/M6-Activity_5_researchProposal_Draft.pdf",
+          href: "../assets/artefacts/module6/Exe",
           ref: "pdf",
           type: "assignment",
         },
         {
           title: "Measures Testing (8.1)",
-          href: "../assets/artefacts/module6/M6-Activity_3_Stats_Exercise8.1.pdf",
+          href: "../assets/artefacts/module6/Exe_8.1B.xlsx",
           ref: "pdf",
           type: "activity",
         },
         {
           title: "Measures Testing (8.2)",
-          href: "../assets/artefacts/module6/M6-Activity_3_Stats_Exercise8.2.pdf",
+          href: "../assets/artefacts/module6/Exe_8.2B.xlsx",
           ref: "pdf",
           type: "activity",
         },
         {
           title: "Measures Testing (8.3)",
-          href: "../assets/artefacts/module6/M6-Activity_3_Stats_Exercise8.3.pdf",
+          href: "../assets/artefacts/module6/Exe_8.3D.xlsx",
           ref: "pdf",
           type: "activity",
         },
         {
-          title: "Hypothesis Testing: t-Test (One and Two-table) (8.4, 8.5)",
-          href: "../assets/artefacts/module6/M6-Activity_3_Stats_Exercise8.4.pdf",
+          title: "Hypothesis Testing: t-Test Two-tail (8.4)",
+          href: "../assets/artefacts/module6/Exe_8.4G.xlsx",
+          ref: "pdf",
+          type: "activity",
+        },
+        {
+          title: "Hypothesis Testing: t-Test one-tail (8.5)",
+          href: "../assets/artefacts/module6/Exe_8.5G.xlsx",
           ref: "pdf",
           type: "activity",
         },
         {
           title: "Hypothesis Testing: F-Test (8.6)",
-          href: "../assets/artefacts/module6/M6-Activity_3_Stats_Exercise8.6.pdf",
+          href: "../assets/artefacts/module6/Exe_8.6C.xlsx",
           ref: "pdf",
           type: "activity",
         },
+        {
+          title: "Seminar 4: Slides",
+          href: "../assets/artefacts/module6/RMPP_Seminar_4.pdf",
+          ref: "pdf",
+          type: "seminar",
+          display: "date",
+          month: "Aug",
+          day: 3,
+        },
+
       ],
     },
 
@@ -394,6 +411,34 @@ export const module = {
           ref: "pdf",
           type: "discussion",
         },
+        {
+          title: "Measures Testing (9.1)",
+          href: "../assets/artefacts/module6/Exe_9.1D.xlsx",
+          ref: "pdf",
+          type: "activity",
+        },
+        {
+          title: "Measures Testing (9.2)",
+          href: "../assets/artefacts/module6/Exe_9.2E.xlsx",
+          ref: "pdf",
+          type: "activity",
+        },
+        {
+          title: "Measures Testing (9.3)",
+          href: "../assets/artefacts/module6/Exe_9.3B.xlsx",
+          ref: "pdf",
+          type: "activity",
+        },
+        {
+          title: "Seminar 5: Slides",
+          href: "../assets/artefacts/module6/RMPP_Seminar_5.pdf",
+          ref: "pdf",
+          type: "seminar",
+          display: "date",
+          month: "Aug",
+          day: 10,
+        },
+
       ],
     },
 

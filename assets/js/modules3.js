@@ -1,5 +1,13 @@
 export const module = {
   id: 3,
+
+  infoCard: 
+  `<h2>What is it about?</h2>
+  <span>
+  Introduces the importance of developing software that is secure and protected. 
+  </span>
+  `,
+
   title: "Secure Software Development",
   outcomes: [
     "Identify and manage security risks as part of a software development project.",

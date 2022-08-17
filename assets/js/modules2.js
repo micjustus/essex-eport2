@@ -1,5 +1,13 @@
 export const module = {
   id: 2,
+
+  infoCard: 
+  `<h2>What is it about?</h2>
+  <span>
+  Deals with the concept of object-oriented software engineering in information systems.
+  </span>
+  `,
+
   title: "Object-oriented Information Systems",
   outcomes: [
     "Appraise and evaluate critically the concepts and principles of information systems.",
