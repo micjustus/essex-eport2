@@ -390,7 +390,12 @@ header > p {
 }
 
 .footer {
-  background-color: black;
+  background-color: #d9d9d957;
+  background-image: none;
+  display: flexbox;
+  gap: 5em;
+  align-items: flex-start;
+  border-top: inherit;
 }
 
 /* Banner */

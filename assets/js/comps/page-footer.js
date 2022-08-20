@@ -12,12 +12,12 @@ class PageFooter extends HTMLElement {
 	  </div>
 	  <div>
 		  <h3>Mail</h3>
-		  <a href="#">micjustus@gmail.com</a>
+		  <a href="mailto:micjustus@outlook.com">micjustus@outlook.com</a>
 	  </div>
 	  <div>
-		  <ul class="links">
-			  <li>&copy; Michael Justus. All rights reserved.</li>
-		  </ul>
+	  	<h3>Who dunnit?</h3>
+			  &copy; Michael Justus. All rights reserved.
+		
 	  </div>
   </div>`;
   }
