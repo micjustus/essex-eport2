@@ -414,7 +414,7 @@ header > p {
   transition: box-shadow 0.2s ease-in;
 }
 .banner .header:hover{
-  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.35);
 }
 
 .banner .header h2 {
@@ -469,8 +469,7 @@ section footer {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   border-left: 5px solid #a388ea;
-  padding: 4em;
-  position: relative;
+  /* position: relative; */
   max-width: 65%;
   min-width: 120px;
 }
@@ -490,6 +489,9 @@ section footer {
   gap: 10px;
 }
 
+.modules .cards{
+  padding: 1em;
+}
 .col-gap-3 {
   column-gap: 5em;
 }
@@ -1613,34 +1615,68 @@ module-unit-list-renderer {
   outline: 3px solid var(--button-background-hover);
 }
 
-.slide-in-module-info.hidden{
-  /* opacity:0; */
-}
-
 .info-card {
-  border: 1px solid lightgray;
-  padding: 1em 4em;
-  /* max-width: 55%; */
-  min-width: 50ch;
+  outline: 1px solid lightgray;
+  padding: 1em 4em 2em 4em;
+  position: sticky;
+  top:0;
+  z-index: 1;
   max-height: 100px;
   min-height: 100px;
-  overflow: auto;
-  background-color: hsl(257deg 70% 96%);
-  margin-bottom: 1em;
-  margin-top: -4.5em;
-    margin-left: -4.4em;
-    margin-right: -4.5em;
-    border-top-right-radius: 7px;
-    color: hsl(257deg 70% 6%);
-    font-size: 0.9em;
-    
+  /* overflow: auto; */
+  background-color: rgba(242, 238, 252, 0.92);
+  backdrop-filter: blur(3px);
+  border-top-right-radius: 7px;
+  color: hsl(257deg 70% 6%);
+  font-size: 0.9em;
+  transition: box-shadow 0.2s ease-in;
 }
 .info-card :is(h1, h2, h3, h4){
   margin: 0;
   color: #a388ea;
 }
+.info-card.is-pinned{
+  box-shadow: 0 30px 20px -3px rgb(0 0 0 / 10%);
+  border-bottom-right-radius: 7px;
+}
 
-.slide-in-module-info{
-  transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
-  opacity: 1;
+.spill-the-t{
+  /* background: rgb(255, 119, 119); */
+  border-radius: 50px;
+  border: 1px solid transparent;
+  overflow: hidden;
+  right: 20px;
+  bottom: 10px;
+  height: 60px;
+  position: absolute;
+  /* width: 50%; */
+  filter: grayscale(100%) blur(1px);
+  text-align: center;
+  transition: filter 0.2s ease-in;
+
+}
+.spill-the-t:hover,
+.spill-the-t:focus {
+  filter: grayscale(0) blur(0);
+  border: 1px solid;
+}
+.spill-the-t div{
+  vertical-align: middle;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%)  ;
+}
+.spill-the-t > h3 {
+  color: red;
+}
+.spill-the-t a {
+  text-decoration: none;
+  
+}
+.spill-the-t > a div{
+  padding: 1em;
+}
+.spill-the-t > a div:hover {
+  outline: 3px solid;
+  text-decoration: none;
 }

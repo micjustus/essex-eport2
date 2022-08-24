@@ -1,9 +1,15 @@
 export const module = {
   infoCard: 
    
-    `<h2>What is it about?</h2>
-    <span>To introduce students to the world of academic research. This module looks at the various
-    types of research, how to interpret the data, conduct studies and perform a literature review.
+  `<div style="display:flex;">
+    <div>
+      <h2>What is it about?</h2>
+      <span>
+        To introduce students to the world of academic research. This module looks at the various
+        types of research, how to interpret the data, conduct studies and perform a literature review.
+      </span>
+    </div>
+  </div>
     `,
 
   id: 6,
@@ -392,7 +398,7 @@ export const module = {
         "Understand the different types of analysis and how they may be useful for the data you have collected.",
         "Understand the different charts available to present the different types of data you have obtained.",
       ],
-      writing: "", //../assets/artefacts/module5/M5-Reflection_U9.pdf",
+      writing: "../assets/artefacts/module6/M6-Reflection_U9.pdf",
       reading: {
         required: [
           "Berenson, L., Levine, D. & Szabat, K. (2015) Basic Business Statistics: Concepts and Applications. 13th Ed. Pearson. Chapter 2 Section 2.2 p 66-68. Chapter 2 Section 2.3 p 79-83. Chapter 2 Section 2.4 p 85-90. Chapte 2 Section 2.5 p 93-95.",
@@ -448,7 +454,7 @@ export const module = {
       outcomes: [
         "Understand how to structure a dissertation and how to prepare yourself for the writing.",
       ],
-      writing: "", //../assets/artefacts/module5/M5-Reflection_U10.pdf",
+      writing: "../assets/artefacts/module6/M6-Reflection_U10.pdf",
       reading: {
         required: [
           "Dawson, C. (2015) Projects in Computing and Information Systems: A Student's Guide. Harlow: Pearson. Chapter 8.",
