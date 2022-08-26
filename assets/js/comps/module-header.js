@@ -87,7 +87,7 @@ export class ModuleHeader extends HTMLElement {
     var path = this.base || './';
 
     var html = 
-     `<section id="header" class="row vcenter align-start">
+     `<section class="row vcenter align-start header">
         <a class="header-button home visible" href="${path}index.html" title="Navigate to home page"></a>
         <div class="header-button hamburger"><div class="header-hamburger-content"></div></div>
       `;
@@ -97,12 +97,12 @@ export class ModuleHeader extends HTMLElement {
         `
         <div class="row vcenter centered" >
           <img src='${this.pic}' class="header-pic" alt="Module profile picture"/>
-          <h1 id="header-thing"><a data-hover="${this.title}" ${animation} href="${path}about.html">${this.title}</a></h1>
+          <h1 id="header-animate"><a data-hover="${this.title}" ${animation} href="${path}about.html">${this.title}</a></h1>
         </div>
         `
     }
     else{
-      html = html + `<div class="row vcenter centered" ><h1 id="header-thing"><a data-hover="${this.title}" ${animation} href="${path}about.html">${this.title}</a></h1></div>`;
+      html = html + `<div class="row vcenter centered header" ><h1 ><a data-hover="${this.title}" ${animation} href="${path}about.html">${this.title}</a></h1></div>`;
     }       
 
     html = html + `<div class="null-button"></div><div class="null-button"></div></section>`;

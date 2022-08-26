@@ -22,7 +22,7 @@ export const module = {
   ],
   project: "",
   reflections: "",
-  actionPlan: "", //../assets/artefacts/module5/M6-Action_Plan.pdf",
+  actionPlan: "../assets/artefacts/module6/M6-Action_Plan.pdf",
   skillsMatrix: "", //../assets/artefacts/module5/M6-Professional_Skills_Matrix.pdf",
   meetings: [],
   units: [
@@ -302,6 +302,13 @@ export const module = {
           ref: "pdf",
           type: "assignment",
         },
+        {
+          title: "Literature Review - Feedback",
+          href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Final_Feedback.pdf",
+          ref: "pdf",
+          type: "assignment",
+        },
+
       ],
     },
 
@@ -329,18 +336,6 @@ export const module = {
           href: "../assets/artefacts/module6/M6-Discussion_2_AccuracyOfInformation_Responses.pdf",
           ref: "pdf",
           type: "discussion",
-        },
-        {
-          title: "Literature Review - Feedback",
-          href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Final_Feedback.pdf",
-          ref: "pdf",
-          type: "assignment",
-        },
-        {
-          title: "Research Proposal - Draft",
-          href: "../assets/artefacts/module6/Exe",
-          ref: "pdf",
-          type: "assignment",
         },
         {
           title: "Measures Testing (8.1)",
@@ -386,6 +381,18 @@ export const module = {
           display: "date",
           month: "Aug",
           day: 3,
+        },
+        {
+          title: "Research Proposal - Draft",
+          href: "../assets/artefacts/module6/M6-Activity_5_ResearchProposal_Draft.pdf",
+          ref: "pdf",
+          type: "assignment",
+        },
+        {
+          title: "Research Proposal - Feedback",
+          href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Final_Feedback.pdf",
+          ref: "pdf",
+          type: "assignment",
         },
 
       ],
@@ -444,7 +451,7 @@ export const module = {
           month: "Aug",
           day: 10,
         },
-
+        
       ],
     },
 

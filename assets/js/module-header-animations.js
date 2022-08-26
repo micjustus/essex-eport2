@@ -1,5 +1,5 @@
 function mouseenter(evt) {
-  var elm = document.getElementById("header-thing");
+  var elm = document.getElementById("header-animate");
   if (!elm) return;
 
   elm.classList.remove("animate-out");
@@ -7,7 +7,7 @@ function mouseenter(evt) {
 }
 
 function mouseleave(evt) {
-  var elm = document.getElementById("header-thing");
+  var elm = document.getElementById("header-animate");
   if (!elm) return;
 
   elm.classList.remove("animate-in");
@@ -15,7 +15,7 @@ function mouseleave(evt) {
 }
 
 (function () {
-  var elm = document.getElementById("header-thing");
+  var elm = document.getElementById("header-animate");
   if (elm) {
       elm.className = "";
   }

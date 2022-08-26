@@ -17,9 +17,8 @@
 <body class="homepage is-preload">
 
     <!-- Header -->
-    <div id="header"
-         class="header">
-        <h1 id="header-thing"
+    <div id="header-thing">
+        <h1 
             class="animate-out"><a data-hover="Michael Justus"
                onmouseenter="mouseenter();"
                onmouseleave="mouseleave();"
@@ -28,27 +27,23 @@
 
     <!-- Banner -->
     <section class="banner">
-        <section class="header centered mw-80ch">
+        <div class="sliding-background">
+        </div>        
+        
+        <section class="header centered mw-80ch" style="overflow:hidden">
             <h2>MSc Computer Science</h2>
-            <div>
-                <p><a class="uni-link"
-                       href="https://online.essex.ac.uk/"
-                       target="_blank">University of Essex Online</a></p>
-                
-            </div>
+                <a class="uni-link" href="https://online.essex.ac.uk/" target="_blank">
+                        <img src="/assets/images/UoEO_red.png" alt="University logo, red" height=32/>
+                        University of Essex Online
+                </a>
         </section>
     </section>
 
     <!-- Intro -->
 
     <div class="container">
-
-
         <div class="modules centered" id="main-man">
-
-            <div class="info-card centered"
-                 id="module-info-card">
-               
+            <div class="info-card centered" id="module-info-card">
             </div>
 
             <div class="row cards">
@@ -127,13 +122,13 @@
 
         var parent = document.querySelector('#module-info-card');
 
-        var elm = document.querySelector('#danger-zone')
-        if (elm){
-            elm.addEventListener('click', (ev)=>{
-                window.open("../assets/artefacts/module6/M6-TeaTime.pdf", "Unit 6 - T-Time!")
-                ev.preventDefault(); 
-            });
-        }
+        // var elm = document.querySelector('#danger-zone')
+        // if (elm){
+        //     elm.addEventListener('click', (ev)=>{
+        //         window.open("../assets/artefacts/module6/M6-TeaTime.pdf", "Unit 6 - T-Time!")
+        //         ev.preventDefault(); 
+        //     });
+        // }
 
         document.addEventListener('scroll', ev=>{
             let rect = parent.getBoundingClientRect()

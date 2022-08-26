@@ -30,15 +30,22 @@ export class SeminarCards extends HTMLElement {
 
     var row = document.createElement("div");
 
-    var h3 = document.createElement("h3");
-    h3.classList.add("title");
-    h3.innerText = `Seminar activity for all units in ${module.title}`;
-
     row.classList.add("row");
     row.classList.add("centered");
-    row.style.width = "90%";
-    row.style.gap = "1em";
+    row.classList.add("module-units-list");
 
+    
+    var h3 = document.createElement("header");
+    h3.innerText = `Seminar activity for all units in ${module.title}`;
+
+    row.appendChild(h3);
+
+    var div = document.createElement("div");
+    div.classList.add("row");
+    div.style.gap = "1em";
+
+    row.appendChild(div)
+    
     var added = 0;
 
     let seminars = [];
@@ -59,7 +66,6 @@ export class SeminarCards extends HTMLElement {
       elm.classList.add("small");
       elm.classList.add("left");
       elm.classList.add("nowrap");
-      elm.classList.add("p-1");
 
       elm.setAttribute("onclick", `loadPdf('${val.title}', '${val.href}')`);
 
@@ -73,7 +79,7 @@ export class SeminarCards extends HTMLElement {
             </li>
         </ul>`;
 
-      row.appendChild(elm);
+      div.appendChild(elm);
 
       added += 1;
     });
@@ -90,7 +96,7 @@ export class SeminarCards extends HTMLElement {
       }
     }, 200);
 
-    this.innerHTML = h3.outerHTML + row.outerHTML;
+    this.innerHTML = row.outerHTML
     //this.appendChild(row);
   }
 }
