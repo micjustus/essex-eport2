@@ -321,6 +321,9 @@ header > p {
 }
 .header-button:first-child {
   margin-left: 2em;
+  /* position: fixed;
+  top: 0; 
+  left: 0; */
 }
 .header-button.visible {
   visibility: visible;
@@ -368,7 +371,7 @@ header > p {
 #header-animate a {
   text-decoration: none
 }
-.animate-out a::before {
+.animate-out::before {
   animation: play-out 0.3s ease-in;
   animation-fill-mode: forwards;
   content: attr(data-hover);
@@ -377,7 +380,7 @@ header > p {
   pointer-events: none;
 }
 
-.animate-in a::before {
+.animate-in::before {
   animation: play-in 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
   animation-fill-mode: forwards;
   padding: 15px;
@@ -1732,11 +1735,11 @@ module-unit-list-renderer {
 
 @keyframes slide{
   0%{
-    background-position: 0;
+    background-position: 0 0;
     /* transform: translate3d(0, 0, 0); */
   }
   100% {
-    background-position: -1578px;
+    background-position: -1578px 0;
     /* transform: translate3d(-100px, 0, 0); */
   }
 }
