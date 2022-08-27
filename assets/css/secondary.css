@@ -967,9 +967,7 @@ figcaption {
   margin-bottom: 1em;
   min-width: 12ch;
 }
-module-unit-simple-page > section:hover .activity {
-  background-color: var(--button-background-secondary);
-}
+
 .activities-box .activity {
   border: 1px solid var(--button-background-secondary-dark);
   color: var(--button-foreground-dark);
@@ -1562,6 +1560,10 @@ module-unit-simple-page > * {
 module-unit-simple-page:first-child > * {
   border-top: 1px solid transparent;
 }
+module-unit-simple-page:first-child:hover > * {
+  border-top: 1px solid lightblue;
+}
+
 module-unit-simple-page.active + module-unit-simple-page:not(.active) > * {
   border-top: 1px solid transparent;
 }
@@ -1575,6 +1577,23 @@ module-unit-simple-page.active > * {
 }
 module-unit-list-renderer {
   font-family: var(--ff-sub2);
+}
+module-unit-list-renderer section module-unit-simple-page > section{
+  transition: filter 0.3s linear, box-shadow 0.3s linear;
+  padding: 3em;
+}
+module-unit-list-renderer section:hover module-unit-simple-page >section:hover {
+  background-color: var(--button-background-secondary);
+  box-shadow: 0 0px 60px 0 rgb(0 0 0 / 15%);
+}
+module-unit-simple-page >section:hover .activity {
+  background-color: var(--button-background-secondary-dark);
+  outline: 1px solid hsl(220.6, 100%, 83%);
+  box-shadow: 0 10px 40px 0 rgb(0 0 0 / 20%);
+}
+
+module-unit-list-renderer section:hover module-unit-simple-page > section:not(:hover) {
+  filter: grayscale(0.3) opacity(0.5);
 }
 
 @keyframes fade-in {
@@ -1648,7 +1667,7 @@ module-unit-list-renderer {
   z-index: 1;
   max-height: 100px;
   min-height: 100px;
-  /* overflow: auto; */
+  overflow: auto;
   background-color: rgba(242, 238, 252, 0.92);
   backdrop-filter: blur(3px);
   border-top-right-radius: 7px;
