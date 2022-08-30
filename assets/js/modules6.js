@@ -186,6 +186,12 @@ export const module = {
           type: "assignment",
         },
         {
+          title: "Literature Review - Draft (Feedback)",
+          href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Draft_Feedback.pdf",
+          ref: "pdf",
+          type: "assignment",
+        },
+        {
           title: "Seminar 3: Slides",
           href: "../assets/artefacts/module6/RMPP_Seminar_3.pdf",
           ref: "pdf",
@@ -297,13 +303,13 @@ export const module = {
           type: "discussion",
         },
         {
-          title: "Literature Review",
+          title: "Literature Review - Final",
           href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Final.pdf",
           ref: "pdf",
           type: "assignment",
         },
         {
-          title: "Literature Review - Feedback",
+          title: "Literature Review - Final (Feedback)",
           href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Final_Feedback.pdf",
           ref: "pdf",
           type: "assignment",
@@ -337,6 +343,93 @@ export const module = {
           ref: "pdf",
           type: "discussion",
         },
+       
+        {
+          title: "Seminar 4: Slides",
+          href: "../assets/artefacts/module6/RMPP_Seminar_4.pdf",
+          ref: "pdf",
+          type: "seminar",
+          display: "date",
+          month: "Aug",
+          day: 3,
+        },
+        {
+          title: "Research Proposal - Draft",
+          href: "../assets/artefacts/module6/M6-Activity_5_ResearchProposal_Draft.pdf",
+          ref: "pdf",
+          type: "assignment",
+        },
+        {
+          title: "Research Proposal - Draft (Feedback)",
+          href: "../assets/artefacts/module6/M6-Activity_5_ResearchProposal_Draft_Feedback.pdf",
+          ref: "pdf",
+          type: "assignment",
+        },
+
+      ],
+    },
+
+    {
+      title: "Unit 9",
+      description: "Analysing Qualitative Data",
+      outcomes: [
+        "Understand the different types of analysis and how they may be useful for the data you have collected.",
+        "Understand the different charts available to present the different types of data you have obtained.",
+      ],
+      writing: "../assets/artefacts/module6/M6-Reflection_U9.pdf",
+      reading: {
+        required: [
+          "Berenson, L., Levine, D. & Szabat, K. (2015) Basic Business Statistics: Concepts and Applications. 13th Ed. Pearson. Chapter 2 Section 2.2 p 66-68. Chapter 2 Section 2.3 p 79-83. Chapter 2 Section 2.4 p 85-90. Chapte 2 Section 2.5 p 93-95.",
+          "Learning for Action (n.d.). Analyzing Qualitative Data.",
+        ],
+        optional: [
+          "Schneider, C. (2018) Making the case: A Qualitative Approach to Studying Social Media Documents in: Bryman, A. & Buchanon D. (Eds) Unconventional Methodology in Organization and Management Research. Oxford Scholarship Online.",
+          "Business Research Methodology (BRM) (2018) Qualitative Data Analysis Methods.",
+          "Bhatia, M. (2018) Your Quide to Qualitative and Quantitative Data Analysis Methods. Humans of Data.",
+        ],
+      },
+      activities: [
+        {
+          title: "Discussion 2: Summary",
+          href: "../assets/artefacts/module6/M6-Discussion_2_AccuracyOfInformation_Summary.pdf",
+          ref: "pdf",
+          type: "discussion",
+        },
+       
+        {
+          title: "Seminar 5: Slides",
+          href: "../assets/artefacts/module6/RMPP_Seminar_5.pdf",
+          ref: "pdf",
+          type: "seminar",
+          display: "date",
+          month: "Aug",
+          day: 10,
+        },
+        
+      ],
+    },
+
+    {
+      title: "Unit 10",
+      description: "Research Writing",
+      outcomes: [
+        "Understand how to structure a dissertation and how to prepare yourself for the writing.",
+      ],
+      writing: "../assets/artefacts/module6/M6-Reflection_U10.pdf",
+      reading: {
+        required: [
+          "Dawson, C. (2015) Projects in Computing and Information Systems: A Student's Guide. Harlow: Pearson. Chapter 8.",
+          "Urban, T. (2016) TEDTalk: Inside the mind of a master procrastinator.",
+          "University of Essex (2012) How to write a research project.",
+        ],
+        optional: [
+          "Heard, S. (2016) The Scientist's Guide to Writing. Princeton, N.J.: Princeton University Press.",
+          "Farquhar J D. (2012) Case Study Research for Business. Sage. Chapter 8.",
+          "Dawson, C. (2015) Projects in Computing and Information Systems: A Student's Guide. Harlow: Pearson. Chapter 9.",
+          "Kitchin, R. & Fuller, D. (2005) The Academic's Guide to Publishing. London: Sage. Chapters 1, 6 and 7.",
+        ],
+      },
+      activities: [
         {
           title: "Measures Testing (8.1)",
           href: "../assets/artefacts/module6/Exe_8.1B.xlsx",
@@ -374,57 +467,6 @@ export const module = {
           type: "activity",
         },
         {
-          title: "Seminar 4: Slides",
-          href: "../assets/artefacts/module6/RMPP_Seminar_4.pdf",
-          ref: "pdf",
-          type: "seminar",
-          display: "date",
-          month: "Aug",
-          day: 3,
-        },
-        {
-          title: "Research Proposal - Draft",
-          href: "../assets/artefacts/module6/M6-Activity_5_ResearchProposal_Draft.pdf",
-          ref: "pdf",
-          type: "assignment",
-        },
-        {
-          title: "Research Proposal - Feedback",
-          href: "../assets/artefacts/module6/M6-Activity_2_LiteratureReview_Final_Feedback.pdf",
-          ref: "pdf",
-          type: "assignment",
-        },
-
-      ],
-    },
-
-    {
-      title: "Unit 9",
-      description: "Analysing Qualitative Data",
-      outcomes: [
-        "Understand the different types of analysis and how they may be useful for the data you have collected.",
-        "Understand the different charts available to present the different types of data you have obtained.",
-      ],
-      writing: "../assets/artefacts/module6/M6-Reflection_U9.pdf",
-      reading: {
-        required: [
-          "Berenson, L., Levine, D. & Szabat, K. (2015) Basic Business Statistics: Concepts and Applications. 13th Ed. Pearson. Chapter 2 Section 2.2 p 66-68. Chapter 2 Section 2.3 p 79-83. Chapter 2 Section 2.4 p 85-90. Chapte 2 Section 2.5 p 93-95.",
-          "Learning for Action (n.d.). Analyzing Qualitative Data.",
-        ],
-        optional: [
-          "Schneider, C. (2018) Making the case: A Qualitative Approach to Studying Social Media Documents in: Bryman, A. & Buchanon D. (Eds) Unconventional Methodology in Organization and Management Research. Oxford Scholarship Online.",
-          "Business Research Methodology (BRM) (2018) Qualitative Data Analysis Methods.",
-          "Bhatia, M. (2018) Your Quide to Qualitative and Quantitative Data Analysis Methods. Humans of Data.",
-        ],
-      },
-      activities: [
-        {
-          title: "Discussion 2: Summary",
-          href: "../assets/artefacts/module6/M6-Discussion_2_AccuracyOfInformation_Summary.pdf",
-          ref: "pdf",
-          type: "discussion",
-        },
-        {
           title: "Measures Testing (9.1)",
           href: "../assets/artefacts/module6/Exe_9.1D.xlsx",
           ref: "pdf",
@@ -443,39 +485,18 @@ export const module = {
           type: "activity",
         },
         {
-          title: "Seminar 5: Slides",
-          href: "../assets/artefacts/module6/RMPP_Seminar_5.pdf",
+          title: "Research Proposal - Final",
+          href: "../assets/artefacts/module6/M6-Activity_5_ResearchProposal_Final.pdf",
           ref: "pdf",
-          type: "seminar",
-          display: "date",
-          month: "Aug",
-          day: 10,
+          type: "assignment",
         },
-        
+        {
+          title: "Research Proposal - Final (Transcript)",
+          href: "../assets/artefacts/module6/M6-Activity_5_ResearchProposal_Transcript.pdf",
+          ref: "pdf",
+          type: "assignment",
+        },
       ],
-    },
-
-    {
-      title: "Unit 10",
-      description: "Research Writing",
-      outcomes: [
-        "Understand how to structure a dissertation and how to prepare yourself for the writing.",
-      ],
-      writing: "../assets/artefacts/module6/M6-Reflection_U10.pdf",
-      reading: {
-        required: [
-          "Dawson, C. (2015) Projects in Computing and Information Systems: A Student's Guide. Harlow: Pearson. Chapter 8.",
-          "Urban, T. (2016) TEDTalk: Inside the mind of a master procrastinator.",
-          "University of Essex (2012) How to write a research project.",
-        ],
-        optional: [
-          "Heard, S. (2016) The Scientist's Guide to Writing. Princeton, N.J.: Princeton University Press.",
-          "Farquhar J D. (2012) Case Study Research for Business. Sage. Chapter 8.",
-          "Dawson, C. (2015) Projects in Computing and Information Systems: A Student's Guide. Harlow: Pearson. Chapter 9.",
-          "Kitchin, R. & Fuller, D. (2005) The Academic's Guide to Publishing. London: Sage. Chapters 1, 6 and 7.",
-        ],
-      },
-      activities: [],
     },
 
     {
@@ -485,7 +506,7 @@ export const module = {
         "Provide necessary reflection for the completion your learning loop.",
         "Complete the Professional Skills matrix and ensuing action plan.",
       ],
-      writing: "", //../assets/artefacts/module5/M5-Reflection_U11.pdf",
+      writing: "../assets/artefacts/module6/M6-Reflection_U11.pdf",
       reading: {
         required: [
           "Weber, K. (2018) Employer perceptions of an engineering student's electronic portfolio. International Journal of ePortoflio 8(1): 57-71.",
@@ -503,7 +524,14 @@ export const module = {
           "Jisc (2012) Stories of e-Portfolio Implementation - Thanet College, Kent.",
         ],
       },
-      activities: [],
+      activities: [
+        {
+          title: "Research Proposal - Final (Feedback)",
+          href: "../assets/artefacts/module6/M6-Activity_5_ResearchProposal_Final_Feedback.pdf",
+          ref: "pdf",
+          type: "assignment",
+        },
+      ],
     },
 
     {

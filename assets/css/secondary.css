@@ -956,6 +956,22 @@ figcaption {
   font-size: var(--font-size-2);
   margin-right: 0.5em;
 }
+.activities:before {
+  content: "\f305";
+  font-family: var(--ff-font-awesome);
+  font-weight: 600;
+  font-size: var(--font-size-15);
+  margin-right: 0.5em;
+}
+.activities-child {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.6em;
+  row-gap: 1em;
+}
+.activity-section {
+  margin-top: 0.6em;
+}
 .activities-box {
   margin: 1em 0;
   display: flex;
@@ -967,28 +983,6 @@ figcaption {
   margin-bottom: 1em;
   min-width: 12ch;
 }
-
-.activities-box .activity {
-  border: 1px solid var(--button-background-secondary-dark);
-  color: var(--button-foreground-dark);
-  cursor: pointer;
-  user-select: none;
-  padding: 0.4em 1em;
-  border-radius: 6px;
-  display: inline-block;
-  transition: 0.1s ease;
-  font-weight: 600;
-  margin-left: 1em;
-}
-.activities-child {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 0.6em;
-  row-gap: 1em;
-}
-.activity-section {
-  margin-top: 0.6em;
-}
 .activities-box .activity.snippet {
   padding-right: 2em;
 }
@@ -996,7 +990,7 @@ figcaption {
   background: var(--blue-highlight-light);
   color: var(--button-foreground);
   outline: 3px solid var(--blue-highlight);
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+  /* box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4); */
 }
 .activities-box .activity.a-discussion::before {
   content: "\f4ad";
@@ -1034,12 +1028,19 @@ figcaption {
   font-weight: 600;
   margin-right: 0.5em;
 }
-.activities:before {
-  content: "\f305";
-  font-family: var(--ff-font-awesome);
+.activities-box .activity {
+  border: 1px solid var(--button-background-secondary-dark);
+  color: var(--button-foreground-dark);
+  cursor: pointer;
+  user-select: none;
+  padding: 0.4em 1em;
+  border-radius: 6px;
+  display: inline-block;
+  /* transition-property: outline, background-color, border, color, box-shadow;
+  transition-duration: 6.1s;
+  transition-timing-function: ease; */
   font-weight: 600;
-  font-size: var(--font-size-15);
-  margin-right: 0.5em;
+  margin-left: 1em;
 }
 .tags li {
   list-style-type: none;
@@ -1544,18 +1545,18 @@ module-unit-simple-card:hover > * {
   background-color: var(--card-hover-background-inactive);
 }
 module-unit-simple-page > * {
-  transition: background-color 0.12s ease-in;
-}
-module-unit-simple-page > *:hover {
-  background-color: #fbfaff;
-  border: 1px solid lightblue;
-  border-radius: 8px;
-}
-module-unit-simple-page > * {
   border: 1px solid transparent;
   margin: 0;
   padding: 1em;
   border-top: 1px solid lightblue;
+}
+module-unit-simple-page > section:hover {
+  border: 1px solid lightblue;
+  border-radius: 8px;
+}
+module-unit-simple-page > section:hover footer {
+  background-color: #fafafa;
+  border: 1px solid rgba(0, 0, 0, 0.15);
 }
 module-unit-simple-page:first-child > * {
   border-top: 1px solid transparent;
@@ -1563,7 +1564,6 @@ module-unit-simple-page:first-child > * {
 module-unit-simple-page:first-child:hover > * {
   border-top: 1px solid lightblue;
 }
-
 module-unit-simple-page.active + module-unit-simple-page:not(.active) > * {
   border-top: 1px solid transparent;
 }
@@ -1575,25 +1575,27 @@ module-unit-simple-page.active > * {
   border-radius: 8px;
   background-color: #fbfaff;
 }
+module-unit-simple-page >section:hover .activity {
+  background-color: var(--button-background-secondary-dark);
+  border: 1px solid hsl(220.6, 100%, 83%);
+  box-shadow: 0 2px 10px 0 rgb(0 0 0 / 15%);
+}
+module-unit-simple-page > section{
+  transition-duration: 0.25s;
+  transition-property: filter, background-color, box-shadow;
+  transition-timing-function: ease;
+  padding: 3em;
+}
+module-unit-simple-page >section:hover {
+  background-color: var(--button-background-secondary);
+  box-shadow: 0 0px 20px 0 rgb(0 0 0 / 15%);
+
+}
 module-unit-list-renderer {
   font-family: var(--ff-sub2);
 }
-module-unit-list-renderer section module-unit-simple-page > section{
-  transition: filter 0.3s linear, box-shadow 0.3s linear;
-  padding: 3em;
-}
-module-unit-list-renderer section:hover module-unit-simple-page >section:hover {
-  background-color: var(--button-background-secondary);
-  box-shadow: 0 0px 60px 0 rgb(0 0 0 / 15%);
-}
-module-unit-simple-page >section:hover .activity {
-  background-color: var(--button-background-secondary-dark);
-  outline: 1px solid hsl(220.6, 100%, 83%);
-  box-shadow: 0 10px 40px 0 rgb(0 0 0 / 20%);
-}
-
 module-unit-list-renderer section:hover module-unit-simple-page > section:not(:hover) {
-  filter: grayscale(0.3) opacity(0.5);
+  filter: opacity(0.4);
 }
 
 @keyframes fade-in {
@@ -1749,7 +1751,6 @@ module-unit-list-renderer section:hover module-unit-simple-page > section:not(:h
   position: absolute;
   top: 0px;
   z-index: -1;
-  /* background-size: 100%; */
 }
 
 @keyframes slide{
