@@ -108,9 +108,14 @@ function buildActivity(element) {
 
   first = `
       <div>
-        ${first}
-        <div class="click-more"><p><em>Click to read more</em></p></div>
-      </div>`;
+        ${first}`;
+  if (element.href){
+    first = first +
+        `<div class="click-more"><p><em>Click to read more</em></p></div>`
+      
+  }
+
+  first = first + `</div>`;
 
   return `<section class="left nowrap card" ${clickLink}>${first}</section>`;
 }

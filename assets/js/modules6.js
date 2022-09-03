@@ -531,6 +531,15 @@ export const module = {
           ref: "pdf",
           type: "assignment",
         },
+        {
+          title: "Seminar 6: Slides",
+          href: "../assets/artefacts/module6/RMPP_Seminar_6.pdf",
+          ref: "pdf",
+          type: "seminar",
+          display: "date",
+          month: "Aug",
+          day: 26,
+        },
       ],
     },
 

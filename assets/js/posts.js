@@ -35,9 +35,9 @@ function clickToClosePost(event) {
 }
 
 function stopScroll(event) {
-  if (event.srcElement.classList.contains("popup-overlay")) {
+  //if (event.srcElement.classList.contains("popup-overlay")) {
     event.preventDefault();
-  }
+  //}
 }
 
 function openScript(title, href){

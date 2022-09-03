@@ -294,7 +294,10 @@ export const module = {
         },
         {
           items: [
-            { title: "Equivalence testing script", href: "../assets/artefacts/module3/M3-Codio-U5-Testing.py" }
+            { 
+              title: "Equivalence testing script", 
+              href: "../assets/artefacts/module3/M3-Codio-U5-Testing.py" 
+            }
           ]
         }
       ],

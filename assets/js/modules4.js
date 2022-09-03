@@ -16,7 +16,7 @@ export const module = {
     "Articulate the legal, social, ethical and professional issues faced by information security professionals."
   ],
   project: "",
-  reflections: "",
+  reflections: "../assets/artefacts/module4/M4-Reflection.pdf",
   actionPlan: "../assets/artefacts/module4/M4-Action_Plan.pdf",
   skillsMatrix: "../assets/artefacts/module4/M4-Professional_Skills_Matrix.pdf",
   meetings:[

@@ -15,7 +15,7 @@ export const module = {
     "Systematically develop and implement the skills required to be effective member of a development team in a virtual professional environment, adopting real-life perspectives on roles and team organisation.",
   ],
   project: "",
-  reflections: "",
+  reflections: "../assets/artefacts/module5/M5-Reflection.pdf",
   actionPlan: "../assets/artefacts/module5/M5-Action_Plan.pdf",
   skillsMatrix: "../assets/artefacts/module5/M5-Professional_Skills_Matrix.pdf",
   meetings: [
