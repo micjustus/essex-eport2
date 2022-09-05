@@ -1747,7 +1747,7 @@ module-unit-list-renderer section:hover module-unit-simple-page > section:not(:h
 }
 
 .sliding-background {
-  background: url(./assets/images/sliding-background.png);
+  background: url(../images/sliding-background.png);
   filter: opacity(0.25) grayscale(0.3) blur(3px);
   animation: slide 300s linear infinite;
   background-repeat: repeat-x;
