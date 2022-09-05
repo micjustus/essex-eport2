@@ -127,13 +127,30 @@ function buildActivities(content) {
     .filter((val) => val.activity !== "assignment")
     .map((element) => {
       return buildActivity(element);
-    }).join("");
+    })
+    .join("");
+  
+  // var discussion = activities.filter (v => v.type == "discussion").map(elm => buildActivity(elm)).join("")
+  // var activity = activities.filter (v=> v.type == "activity").map(elm => buildActivity(elm)).join("")
+  // var team = activities.filter(v=> v.type == "team").map(elm => buildActivity(elm)).join("")
+  // var effort = activities.filter(v=> v.type == "effort").map(elm => buildActivity(elm)).join("")
+  // var assignment = activities.filter (v=> v.type == "assignment").map(elm => buildActivity(elm)).join("")
+
 
   if (!activities) {
     return `<section class="activities-box" style="text-align:left"><header>Activities</header><section>No activity data.</section></section>`;
   }
 
-  return `<section class="activities-box"><header>Activities</header><div class="activities-child">${activities}</div></section>`;
+   var result = `<section class="activities-box"><header>Activities</header><div class="activities-child">${activities}</div></section>`
+  // if (discussion) result += `<div class="activities-child">${discussion}</div>`
+  // if (team) result += `<div class="activities-child">${team}</div>`
+  // if (activity) result += `<div class="activities-child">${activity}</div>`
+  // if (effort) result += `<div class="activities-child">${effort}</div>`
+  // if (assignment) result += `<div class="activities-child">${assignment}</div>`
+  
+  //result += `</section>`;
+
+  return result
 }
 
 function buildReading(content) {
@@ -241,6 +258,18 @@ export class ModuleUnitSimplePage extends HTMLElement {
 
     this.innerHTML = template;
 
+    // var elms = this.querySelectorAll('.activity');
+    // elms.forEach(element => {
+    //   element.addEventListener('mouseenter', (e)=>{
+    //     e.target.style.transition= 'none'
+    //   });
+
+    //   element.addEventListener('mouseleave', (e )=>{
+    //     console.log("left element ")
+
+    //     e.target.style.transition = "none";
+    //   })
+    // });
     initAccordion2();
   }
 }

@@ -984,6 +984,7 @@ figcaption {
   flex-direction: row;
   align-items: flex-start;
   justify-items: flex-start;
+  row-gap: 0.9em;
 }
 .activities-box header {
   margin-bottom: 1em;
@@ -1562,38 +1563,38 @@ module-unit-simple-page > * {
 /* This is for when there is no :hover state */
 module-unit-simple-page > section {
   border-radius: 0px;
-  transition-duration: .25s;
+  transition-duration: var(--trans-duration);
   transition-property: filter, background-color, box-shadow, border-color;
   transition-timing-function: ease;
   padding: 3em;
 }
 module-unit-simple-page > section:hover {
-  border: 1px solid lightblue;
+  border-color: lightblue;
   border-radius: 8px;
   background-color: var(--button-background-secondary);
   box-shadow: 0 0px 20px 0 rgb(0 0 0 / 15%);
 }
+module-unit-simple-page > section:hover footer {
+  background-color: #f5f5f5;
+  border-color:  rgba(0, 0, 0, 0.15);
+  transition-duration: var(--trans-duration);
+  transition-property: border-color, background-color;
+  transition-timing-function: ease;
+}
 module-unit-simple-page:has(section:hover) + module-unit-simple-page > section {
   border-top: 1px solid transparent;
-}
-module-unit-simple-page > section:hover footer {
-  background-color: #fafafa;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  transition-duration: .25s;
-  transition-property: border-color, background-color, box-shadow;;
-  transition-timing-function: ease;
 }
 module-unit-simple-page > section:hover .activity {
   background-color: var(--button-background-secondary-dark);
   border: 1px solid hsl(220.6, 100%, 83%);
   box-shadow: 0 2px 10px 0 rgb(0 0 0 / 15%);
-  transition-duration: .25s;
+  /* transition-delay: 1.08s;
   transition-property: border-color, background-color, box-shadow;;
-  transition-timing-function: ease;
+  transition-timing-function: ease; */
 }
-module-unit-simple-page > section:hover .activities-box:hover .activity {
+/* module-unit-simple-page > section:hover .activities-box:hover .activity {
   transition: none;
-}
+} */
 module-unit-simple-page:first-child > * {
   border-top: 1px solid transparent;
 }
@@ -1616,8 +1617,7 @@ module-unit-list-renderer {
   font-family: var(--ff-sub2);
 }
 module-unit-list-renderer section:hover module-unit-simple-page > section:not(:hover) {
-  filter: grayscale(0.7) opacity(0.5) ;
-  transition-duration: 0.1s;
+  filter: grayscale(0.7) opacity(0.5);
 }
 
 @keyframes fade-in {

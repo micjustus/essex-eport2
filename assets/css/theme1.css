@@ -51,4 +51,6 @@ body{
     --ff-font-awesome-brands-6: "Font Awesome 6 Brands";
     --ff-sub: "Source Sans Pro";
     --ff-sub2: "Playfair Display";
+
+    --trans-duration: .1s;
 }
