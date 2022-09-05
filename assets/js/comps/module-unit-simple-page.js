@@ -105,6 +105,7 @@ function buildActivity(element) {
     element.type == "activity" ? "a-activity" : 
     element.type == "seminar" ? "a-seminar" :
     element.type == "team" ? "a-team" :
+    element.type == "effort" ? "a-effort" :
     "";
 
   return `<div class="activity ${css}" ${clickLink}>${first}</div>`;

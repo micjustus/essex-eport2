@@ -1033,6 +1033,12 @@ figcaption {
   font-weight: 600;
   margin-right: 0.5em;
 }
+.activities-box .activity.a-effort::before {
+  content: "\f714";
+  font-family: var(--ff-font-awesome);
+  font-weight: 600;
+  margin-right: 0.5em;
+}
 .activities-box .activity {
   border: 1px solid var(--button-background-secondary-dark);
   color: var(--button-foreground-dark);

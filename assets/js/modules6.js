@@ -23,7 +23,7 @@ export const module = {
   project: "",
   reflections: "",
   actionPlan: "../assets/artefacts/module6/M6-Action_Plan.pdf",
-  skillsMatrix: "", //../assets/artefacts/module5/M6-Professional_Skills_Matrix.pdf",
+  skillsMatrix: "../assets/artefacts/module6/M6-Professional_Skills_Matrix.pdf",
   meetings: [],
   units: [
     {
@@ -530,6 +530,12 @@ export const module = {
           href: "../assets/artefacts/module6/M6-Activity_5_ResearchProposal_Final_Feedback.pdf",
           ref: "pdf",
           type: "assignment",
+        },
+        {
+          title: "Research Proposal - Literature Pain",
+          href: "../assets/artefacts/module6/Research_Proposal_Gaps_Identification.pdf",
+          ref: "pdf",
+          type: "effort"
         },
         {
           title: "Seminar 6: Slides",
