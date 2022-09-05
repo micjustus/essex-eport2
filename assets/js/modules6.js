@@ -21,7 +21,7 @@ export const module = {
     "Produce and evaluate critically a research proposal for the chosen topic.",
   ],
   project: "",
-  reflections: "",
+  reflections: "../assets/artefacts/module6/M6-Reflection.pdf",
   actionPlan: "../assets/artefacts/module6/M6-Action_Plan.pdf",
   skillsMatrix: "../assets/artefacts/module6/M6-Professional_Skills_Matrix.pdf",
   meetings: [],
