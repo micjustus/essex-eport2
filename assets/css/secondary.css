@@ -1747,19 +1747,7 @@ module-unit-list-renderer section:hover module-unit-simple-page > section:not(:h
 }
 
 .sliding-background {
-  background: 
-    /*radial-gradient(circle at 1em 1.5em, #d9e9ed 3px, transparent 3px) 1em 0em / 11em 4.5em, 
-    radial-gradient(circle at 1em 1.5em, #4b7b85 3px, transparent 3px) 1em 0em / 7em 4.5em, 
-    radial-gradient(circle at 1em 1.5em, #87b9c7 3px, transparent 3px) 1em 0em / 5em 4.5em, 
-    radial-gradient(circle at 1em 1.5em, #382c42 3px, transparent 3px) 1em 0em / 3em 4.5em, 
-    radial-gradient(circle at 1em 1.5em, #382c42 3px, transparent 3px) 2em 1.5em / 11em 4.5em, 
-    radial-gradient(circle at 1em 1.5em, #4b7b85 3px, transparent 3px) 2em 1.5em / 7em 4.5em, 
-    radial-gradient(circle at 1em 1.5em, #87b9c7 3px, transparent 3px) 2em 1.5em / 5em 4.5em, 
-    radial-gradient(circle at 1em 1.5em, #d9e9ed 3px, transparent 3px) 2em 1.5em / 3em 4.5em, 
-    radial-gradient(circle at 1em 1.5em, #4b7b85 3px, transparent 3px) 0em 3em / 11em 4.5em, 
-    radial-gradient(circle at 1em 1.5em, #382c42 3px, transparent 3px) 0em 3em / 7em 4.5em, 
-    radial-gradient(circle at 1em 1.5em, #d9e9ed 3px, transparent 3px) 0em 3em / 5em 4.5em, 
-    radial-gradient(circle at 1em 1.5em, #d9e9ed 3px, transparent 3px) 0em 3em / 3em 4.5em, */ url(../images/sliding-background.png);
+  background: url(./assets/images/sliding-background.png);
   filter: opacity(0.25) grayscale(0.3) blur(3px);
   animation: slide 300s linear infinite;
   background-repeat: repeat-x;
